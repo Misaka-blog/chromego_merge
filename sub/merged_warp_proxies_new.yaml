@@ -1,0 +1,1058 @@
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: WARP
+  type: wireguard
+  server: 188.114.97.7
+  port: 987
+  ip: 172.16.0.2
+  ipv6: 2606:4700:110:8a36:df92:102a:9602:fa18
+  private-key: YFYOAdbw1bKTHlNNi+aEjBM3BO7unuFC5rOkMRAz9XY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  udp: true
+  ip-version: ipv6-prefer
+  reserved:
+  - 78
+  - 135
+  - 76
+  remote-dns-resolve: true
+  dns:
+  - 1.1.1.1
+  - 8.8.8.8
+  dialer-proxy: WARP前置节点
+- name: Canada_Ottawa_vmess_01
+  type: vmess
+  server: 23.227.38.23
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: Canada_Ottawa_vmess_02
+  type: vmess
+  server: 23.227.38.44
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: Canada_Ottawa_vmess_03
+  type: vmess
+  server: 23.227.38.22
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: Canada_Ottawa_vmess_04
+  type: vmess
+  server: 23.227.38.11
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: championship-bidding-oxygen-brochure.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+- name: None_None_vmess_05
+  type: vmess
+  server: 162.159.153.11
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 5f7934bf-a228-49a7-9572-5ce4377c34d5-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: None_None_vmess_06
+  type: vmess
+  server: 162.159.134.23
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: championship-bidding-oxygen-brochure.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+- name: None_None_vmess_07
+  type: vmess
+  server: 162.159.137.31
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: None_None_vmess_08
+  type: vmess
+  server: 162.159.130.208
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: United States_None_vmess_09
+  type: vmess
+  server: yh1.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: None_None_vmess_010
+  type: vmess
+  server: yh1.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: championship-bidding-oxygen-brochure.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+- name: None_None_vmess_011
+  type: vmess
+  server: yh1.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: United States_None_vmess_012
+  type: vmess
+  server: yh1.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: United States_None_vmess_013
+  type: vmess
+  server: yh2.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: None_None_vmess_014
+  type: vmess
+  server: yh2.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: championship-bidding-oxygen-brochure.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+- name: United States_None_vmess_015
+  type: vmess
+  server: yh2.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: None_None_vmess_016
+  type: vmess
+  server: yh2.dtku41.xyz
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: None_None_vmess_11
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: None_None_vmess_12
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+- name: None_None_vmess_13
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: nest-emily-healing-h.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+- name: None_None_vmess_14
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+- name: United States_Los Angeles_tuic_21
+  server: 64.31.55.18
+  port: 11223
+  type: tuic
+  uuid: 1a0a455e-4207-44be-b5a0-062747671570
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: United States_None_vmess_31
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: United States_None_vmess_32
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: United States_None_vmess_33
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: championship-bidding-oxygen-brochure.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+- name: None_None_vmess_34
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: Canada_Ottawa_vmess_41
+  type: vmess
+  server: 23.227.39.12
+  port: 8080
+  cipher: auto
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: uh-lawyers-instruments-kernel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+- name: Canada_Ottawa_vmess_42
+  type: vmess
+  server: 23.227.39.24
+  port: 8080
+  cipher: auto
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: per-essex-patterns-bowling.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+- name: Canada_Ottawa_vmess_43
+  type: vmess
+  server: 23.227.39.23
+  port: 8080
+  cipher: auto
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: championship-bidding-oxygen-brochure.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+    headers:
+      host: championship-bidding-oxygen-brochure.trycloudflare.com
+- name: Canada_Ottawa_vmess_44
+  type: vmess
+  server: 23.227.39.45
+  port: 8080
+  cipher: auto
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: widescreen-instruction-breakdown-postage.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+- name: None_None_vmess_51
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: None_None_vmess_52
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+- name: None_None_vmess_53
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: nest-emily-healing-h.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+- name: None_None_vmess_54
+  type: vmess
+  server: fbi.gov
+  port: 8080
+  cipher: auto
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+- name: None_None_vmess_55
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+- name: None_None_vmess_56
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: nest-emily-healing-h.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+- name: None_None_vmess_57
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: United States_None_vmess_58
+  type: vmess
+  server: yh1.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+- name: None_None_vmess_59
+  type: vmess
+  server: yh2.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+- name: None_None_vmess_510
+  type: vmess
+  server: yh2.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: nest-emily-healing-h.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+- name: None_None_vmess_511
+  type: vmess
+  server: yh2.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: United States_None_vmess_512
+  type: vmess
+  server: yh3.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+- name: None_None_vmess_513
+  type: vmess
+  server: yh3.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: bibliographic-sword-sequence-advertisers.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+- name: None_None_vmess_514
+  type: vmess
+  server: yh3.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: nest-emily-healing-h.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+    headers:
+      host: nest-emily-healing-h.trycloudflare.com
+- name: United States_None_vmess_515
+  type: vmess
+  server: yh3.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: pcs-referenced-camera-concerns.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+- name: None_None_vmess_516
+  type: vmess
+  server: yh3.freeh1.xyz
+  port: 8080
+  cipher: auto
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: larger-marketing-amounts-skin.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+    headers:
+      host: larger-marketing-amounts-skin.trycloudflare.com
+- name: Taiwan_Taipei_hysteria_61
+  type: hysteria
+  server: www2.dtku48.xyz
+  port: 22334
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
+- name: France_Paris_hysteria2_71
+  type: hysteria2
+  server: 51.159.77.153
+  port: 33390
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United States_Seattle_ss_81
+  type: ss
+  server: 62.204.54.81
+  port: 44550
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=
+  plugin: shadow-tls
+  plugin-opts:
+    host: nijigen-works.jp
+    password: FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=
+    version: 3
+- name: Taiwan_New Taipei_hysteria_91
+  type: hysteria
+  server: www.dtku50.xyz
+  port: 18470
+  sni: www.amazon.cn
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 2
+  down: 10
+- name: France_Paris_hy_0
+  type: hysteria
+  server: 51.158.54.46
+  port: 55396
+  ports: 55396
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: youku.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: United States_Los Angeles_hy_1
+  type: hysteria
+  server: 173.234.25.52
+  port: 48919
+  ports: 48919
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Taiwan_Banqiao_hy_2
+  type: hysteria
+  server: www.dtku40.xyz
+  port: 18490
+  ports: 18490
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: United States_Los Angeles_hy_3
+  type: hysteria
+  server: 167.160.91.115
+  port: 41189
+  ports: 41189
+  auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: www.amazon.cn
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: France_Neuilly-sur-Seine_hy2_0
+  type: hysteria2
+  server: 62.210.103.0
+  port: 22483
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: United States_Los Angeles_hy2_1
+  type: hysteria2
+  server: 64.110.25.11
+  port: 33337
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: France_Neuilly-sur-Seine_hy2_2
+  type: hysteria2
+  server: 62.210.103.0
+  port: 22483
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: France_Paris_hy2_3
+  type: hysteria2
+  server: 51.159.77.198
+  port: 53967
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - WARP
+  - 自动选择
+  - 负载均衡
+  - 手动选择
+  - DIRECT
+- name: WARP前置节点
+  type: select
+  proxies:
+  - 自动选择
+  - 负载均衡
+  - 手动选择
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - Canada_Ottawa_vmess_01
+  - Canada_Ottawa_vmess_02
+  - Canada_Ottawa_vmess_03
+  - Canada_Ottawa_vmess_04
+  - None_None_vmess_05
+  - None_None_vmess_06
+  - None_None_vmess_07
+  - None_None_vmess_08
+  - United States_None_vmess_09
+  - None_None_vmess_010
+  - None_None_vmess_011
+  - United States_None_vmess_012
+  - United States_None_vmess_013
+  - None_None_vmess_014
+  - United States_None_vmess_015
+  - None_None_vmess_016
+  - None_None_vmess_11
+  - None_None_vmess_12
+  - None_None_vmess_13
+  - None_None_vmess_14
+  - United States_Los Angeles_tuic_21
+  - United States_None_vmess_31
+  - United States_None_vmess_32
+  - United States_None_vmess_33
+  - None_None_vmess_34
+  - Canada_Ottawa_vmess_41
+  - Canada_Ottawa_vmess_42
+  - Canada_Ottawa_vmess_43
+  - Canada_Ottawa_vmess_44
+  - None_None_vmess_51
+  - None_None_vmess_52
+  - None_None_vmess_53
+  - None_None_vmess_54
+  - None_None_vmess_55
+  - None_None_vmess_56
+  - None_None_vmess_57
+  - United States_None_vmess_58
+  - None_None_vmess_59
+  - None_None_vmess_510
+  - None_None_vmess_511
+  - United States_None_vmess_512
+  - None_None_vmess_513
+  - None_None_vmess_514
+  - United States_None_vmess_515
+  - None_None_vmess_516
+  - Taiwan_Taipei_hysteria_61
+  - France_Paris_hysteria2_71
+  - United States_Seattle_ss_81
+  - Taiwan_New Taipei_hysteria_91
+  - France_Paris_hy_0
+  - United States_Los Angeles_hy_1
+  - Taiwan_Banqiao_hy_2
+  - United States_Los Angeles_hy_3
+  - France_Neuilly-sur-Seine_hy2_0
+  - United States_Los Angeles_hy2_1
+  - France_Neuilly-sur-Seine_hy2_2
+  - France_Paris_hy2_3
+- name: 手动选择
+  type: select
+  proxies:
+  - Canada_Ottawa_vmess_01
+  - Canada_Ottawa_vmess_02
+  - Canada_Ottawa_vmess_03
+  - Canada_Ottawa_vmess_04
+  - None_None_vmess_05
+  - None_None_vmess_06
+  - None_None_vmess_07
+  - None_None_vmess_08
+  - United States_None_vmess_09
+  - None_None_vmess_010
+  - None_None_vmess_011
+  - United States_None_vmess_012
+  - United States_None_vmess_013
+  - None_None_vmess_014
+  - United States_None_vmess_015
+  - None_None_vmess_016
+  - None_None_vmess_11
+  - None_None_vmess_12
+  - None_None_vmess_13
+  - None_None_vmess_14
+  - United States_Los Angeles_tuic_21
+  - United States_None_vmess_31
+  - United States_None_vmess_32
+  - United States_None_vmess_33
+  - None_None_vmess_34
+  - Canada_Ottawa_vmess_41
+  - Canada_Ottawa_vmess_42
+  - Canada_Ottawa_vmess_43
+  - Canada_Ottawa_vmess_44
+  - None_None_vmess_51
+  - None_None_vmess_52
+  - None_None_vmess_53
+  - None_None_vmess_54
+  - None_None_vmess_55
+  - None_None_vmess_56
+  - None_None_vmess_57
+  - United States_None_vmess_58
+  - None_None_vmess_59
+  - None_None_vmess_510
+  - None_None_vmess_511
+  - United States_None_vmess_512
+  - None_None_vmess_513
+  - None_None_vmess_514
+  - United States_None_vmess_515
+  - None_None_vmess_516
+  - Taiwan_Taipei_hysteria_61
+  - France_Paris_hysteria2_71
+  - United States_Seattle_ss_81
+  - Taiwan_New Taipei_hysteria_91
+  - France_Paris_hy_0
+  - United States_Los Angeles_hy_1
+  - Taiwan_Banqiao_hy_2
+  - United States_Los Angeles_hy_3
+  - France_Neuilly-sur-Seine_hy2_0
+  - United States_Los Angeles_hy2_1
+  - France_Neuilly-sur-Seine_hy2_2
+  - France_Paris_hy2_3
+- name: 负载均衡
+  type: load-balance
+  proxies:
+  - Canada_Ottawa_vmess_01
+  - Canada_Ottawa_vmess_02
+  - Canada_Ottawa_vmess_03
+  - Canada_Ottawa_vmess_04
+  - None_None_vmess_05
+  - None_None_vmess_06
+  - None_None_vmess_07
+  - None_None_vmess_08
+  - United States_None_vmess_09
+  - None_None_vmess_010
+  - None_None_vmess_011
+  - United States_None_vmess_012
+  - United States_None_vmess_013
+  - None_None_vmess_014
+  - United States_None_vmess_015
+  - None_None_vmess_016
+  - None_None_vmess_11
+  - None_None_vmess_12
+  - None_None_vmess_13
+  - None_None_vmess_14
+  - United States_Los Angeles_tuic_21
+  - United States_None_vmess_31
+  - United States_None_vmess_32
+  - United States_None_vmess_33
+  - None_None_vmess_34
+  - Canada_Ottawa_vmess_41
+  - Canada_Ottawa_vmess_42
+  - Canada_Ottawa_vmess_43
+  - Canada_Ottawa_vmess_44
+  - None_None_vmess_51
+  - None_None_vmess_52
+  - None_None_vmess_53
+  - None_None_vmess_54
+  - None_None_vmess_55
+  - None_None_vmess_56
+  - None_None_vmess_57
+  - United States_None_vmess_58
+  - None_None_vmess_59
+  - None_None_vmess_510
+  - None_None_vmess_511
+  - United States_None_vmess_512
+  - None_None_vmess_513
+  - None_None_vmess_514
+  - United States_None_vmess_515
+  - None_None_vmess_516
+  - Taiwan_Taipei_hysteria_61
+  - France_Paris_hysteria2_71
+  - United States_Seattle_ss_81
+  - Taiwan_New Taipei_hysteria_91
+  - France_Paris_hy_0
+  - United States_Los Angeles_hy_1
+  - Taiwan_Banqiao_hy_2
+  - United States_Los Angeles_hy_3
+  - France_Neuilly-sur-Seine_hy2_0
+  - United States_Los Angeles_hy2_1
+  - France_Neuilly-sur-Seine_hy2_2
+  - France_Paris_hy2_3
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: round-robin
+rules:
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,节点选择
