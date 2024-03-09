@@ -1,7 +1,7 @@
 import requests
 import os
 
-url = "https://sing-box-subscribe-doraemon.vercel.app/config/https:/mareep.netlify.app/sub/shadowrocket_base64.txt"
+url = "https://sing-box-subscribe-doraemon.vercel.app/config/https://raw.githubusercontent.com/Misaka-blog/chromego_merge/main/sub/base64.txt"
 output_folder = "sub"
 output_filename = "sing-box.json"
 

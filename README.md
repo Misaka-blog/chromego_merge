@@ -24,23 +24,23 @@
 ### 不套warp版本（clashmeta）
 
 ```
-https://mareep.netlify.app/sub/merged_proxies_new.yaml
+https://chromego-sub.netlify.app/sub/merged_proxies_new.yaml
 ```
 ### 套warp版本（clashmeta）
 
 ```
-https://mareep.netlify.app/sub/merged_warp_proxies_new.yaml
+https://chromego-sub.netlify.app/sub/merged_warp_proxies_new.yaml
 ```
 
 ### 通用base64链接 （shadowrocket和nekoray系列）
 ```
-https://mareep.netlify.app/sub/shadowrocket_base64.txt
+https://chromego-sub.netlify.app/sub/base64.txt
 ```
 
 ### sing-box订阅链接（1.8.0以上）
 
 ```
-https://mareep.netlify.app/sub/sb.json
+https://chromego-sub.netlify.app/sub/sing-box.json
 ```
 
 
