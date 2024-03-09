@@ -3,7 +3,7 @@ import os
 
 url = "https://sing-box-subscribe-doraemon.vercel.app/config/https:/mareep.netlify.app/sub/shadowrocket_base64.txt"
 output_folder = "sub"
-output_filename = "sb.json"
+output_filename = "sing-box.json"
 
 # 发送HTTP请求
 response = requests.get(url)
