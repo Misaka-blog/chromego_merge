@@ -307,9 +307,4 @@ update_warp_proxy_groups(config_warp_data, merged_proxies)
 with open('./sub/merged_proxies_new.yaml', 'w', encoding='utf-8') as file:
     yaml.dump(config_data, file, sort_keys=False, allow_unicode=True)
 
-with open('./sub/merged_warp_proxies_new.yaml', 'w', encoding='utf-8') as file:
-    yaml.dump(config_warp_data, file, sort_keys=False, allow_unicode=True)
-
 print("聚合完成")
-
-

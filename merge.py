@@ -353,4 +353,3 @@ try:
     print("Content successfully encoded and written to base64.txt.")
 except Exception as e:
     print(f"Error encoding and writing to file: {e}")
-

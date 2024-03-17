@@ -1,43 +1,27 @@
-# chromego_merge
+# Chromego_merge
+
+不仅限于 ChromeGo 工具包的免费订阅合集
 
 ## 注意事项
 
-套上warp可绕过chromego封锁的网站（P，X）
-
-开启浏览器自带doh以及客户端tun模式也可绕过封锁，参考：[开启chrome自带doh](https://blog.misaka.rest/2023/10/30/enable-doh-ech)
-
-## 如何修改为自己的warp节点
-
-<details>
-  <summary>点击展开/折叠</summary>
-
-可以用warp+机器人和提取wg节点替换掉配置文件中的wg信息
-
-[warp提取wireguard网站](https://replit.com/@misaka-blog/wgcf-profile-generator)
-
-[warp+机器人](https://t.me/generatewarpplusbot)
-
-</details>
+1. 服务器节点不稳定，最好可以每日更新一次网站订阅
+2. 部分节点有可能无法访问某些网站
 
 ## 订阅链接分享
 
-### 不套warp版本（clashmeta）
+### Clash Meta 客户端订阅
 
 ```
 https://chromego-sub.netlify.app/sub/merged_proxies_new.yaml
 ```
-### 套warp版本（clashmeta）
 
-```
-https://chromego-sub.netlify.app/sub/merged_warp_proxies_new.yaml
-```
+### 通用 base64 订阅
 
-### 通用base64链接 （shadowrocket和nekoray系列）
 ```
 https://chromego-sub.netlify.app/sub/base64.txt
 ```
 
-### sing-box订阅链接（1.8.0以上）
+### sing-box 订阅（适用于 1.8.0 以上）
 
 ```
 https://chromego-sub.netlify.app/sub/sing-box.json
@@ -49,6 +33,7 @@ https://chromego-sub.netlify.app/sub/sing-box.json
 ### Windows
 
 - [clash verge](https://github.com/clash-verge-rev/clash-verge-rev) 
+- [clash nyanpasu]( https://github.com/LibNyanpasu/clash-nyanpasu)
 - [nekoray](https://github.com/MatsuriDayo/nekoray)
 
 ### Android
