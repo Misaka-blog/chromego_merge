@@ -283,25 +283,15 @@ process_urls('./urls/xray_urls.txt', process_xray)
 with open('./templates/clash_template.yaml', 'r', encoding='utf-8') as file:
     config_data = yaml.safe_load(file)
 
-# 读取warp配置文件内容
-with open('./templates/clash_warp_template.yaml', 'r', encoding='utf-8') as file:
-    config_warp_data = yaml.safe_load(file)
-
 # 添加合并后的代理到proxies部分
 if 'proxies' not in config_data or not config_data['proxies']:
     config_data['proxies'] = merged_proxies
 else:
     config_data['proxies'].extend(merged_proxies)
 
-if 'proxies' not in config_warp_data or not config_warp_data['proxies']:
-    config_warp_data['proxies'] = merged_proxies
-else:
-    config_warp_data['proxies'].extend(merged_proxies)
-
 
 # 更新自动选择和节点选择的proxies的name部分
 update_proxy_groups(config_data, merged_proxies)
-update_warp_proxy_groups(config_warp_data, merged_proxies)
 
 # 将更新后的数据写入到一个YAML文件中，并指定编码格式为UTF-8
 with open('./sub/merged_proxies_new.yaml', 'w', encoding='utf-8') as file:
