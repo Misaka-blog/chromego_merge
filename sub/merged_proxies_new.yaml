@@ -280,7 +280,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: United States_None_vmess_95
+- name: None_None_vmess_95
   type: vmess
   server: yh6.dtku41.xyz
   port: 8080
@@ -494,11 +494,11 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
-- name: 节点选择
+- name: 🚀 节点选择
   type: select
   proxies:
-  - 自动选择
-  - DIRECT
+  - ♻️ 自动选择
+  - 🎯 全球直连
   - France_Paris_hysteria2_01
   - France_Paris_hysteria2_11
   - Taiwan_New Taipei_tuic_21
@@ -518,7 +518,7 @@ proxy-groups:
   - United States_None_vmess_92
   - United States_None_vmess_93
   - United States_None_vmess_94
-  - United States_None_vmess_95
+  - None_None_vmess_95
   - Taiwan_Taipei_hysteria2_101
   - Taiwan_Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
@@ -537,7 +537,7 @@ proxy-groups:
   - France_Paris_hy2_5
   - France_None_hy2_6
   - France_None_hy2_7
-- name: 自动选择
+- name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -562,7 +562,7 @@ proxy-groups:
   - United States_None_vmess_92
   - United States_None_vmess_93
   - United States_None_vmess_94
-  - United States_None_vmess_95
+  - None_None_vmess_95
   - Taiwan_Taipei_hysteria2_101
   - Taiwan_Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
@@ -581,9 +581,16 @@ proxy-groups:
   - France_Paris_hy2_5
   - France_None_hy2_6
   - France_None_hy2_7
+- name: 🔮 负载均衡
+  type: load-balance
+  strategy: consistent-hashing
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  proxies: null
 rules:
-- DOMAIN,clash.razord.top,DIRECT
-- DOMAIN,yacd.haishan.me,DIRECT
-- GEOIP,LAN,DIRECT
-- GEOIP,CN,DIRECT
-- MATCH,节点选择
+- DOMAIN,cn.pornhub.com,🚀 节点选择
+- DOMAIN,clash.razord.top,🎯 全球直连
+- DOMAIN,yacd.haishan.me,🎯 全球直连
+- GEOIP,LAN,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🚀 节点选择
