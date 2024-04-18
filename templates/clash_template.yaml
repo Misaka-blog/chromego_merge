@@ -33,7 +33,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🎯 全球直连
+      - DIRECT
 
   - name: ♻️ 自动选择
     type: url-test
@@ -52,8 +52,8 @@ proxy-groups:
 
 rules:
   - DOMAIN,cn.pornhub.com,🚀 节点选择
-  - DOMAIN,clash.razord.top,🎯 全球直连
-  - DOMAIN,yacd.haishan.me,🎯 全球直连
-  - GEOIP,LAN,🎯 全球直连
-  - GEOIP,CN,🎯 全球直连
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
   - MATCH,🚀 节点选择
