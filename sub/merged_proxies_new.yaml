@@ -160,7 +160,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: None_None_vmess_82
+- name: The Netherlands_Amsterdam_vmess_82
   type: vmess
   server: yh9.dtku41.xyz
   port: 8080
@@ -280,7 +280,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: None_None_vmess_95
+- name: United States_None_vmess_95
   type: vmess
   server: yh6.dtku41.xyz
   port: 8080
@@ -498,7 +498,7 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选择
-  - 🎯 全球直连
+  - DIRECT
   - France_Paris_hysteria2_01
   - France_Paris_hysteria2_11
   - Taiwan_New Taipei_tuic_21
@@ -510,7 +510,7 @@ proxy-groups:
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - None_None_vmess_82
+  - The Netherlands_Amsterdam_vmess_82
   - None_None_vmess_83
   - United States_None_vmess_84
   - United States_None_vmess_85
@@ -518,7 +518,7 @@ proxy-groups:
   - United States_None_vmess_92
   - United States_None_vmess_93
   - United States_None_vmess_94
-  - None_None_vmess_95
+  - United States_None_vmess_95
   - Taiwan_Taipei_hysteria2_101
   - Taiwan_Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
@@ -554,7 +554,7 @@ proxy-groups:
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - None_None_vmess_82
+  - The Netherlands_Amsterdam_vmess_82
   - None_None_vmess_83
   - United States_None_vmess_84
   - United States_None_vmess_85
@@ -562,7 +562,7 @@ proxy-groups:
   - United States_None_vmess_92
   - United States_None_vmess_93
   - United States_None_vmess_94
-  - None_None_vmess_95
+  - United States_None_vmess_95
   - Taiwan_Taipei_hysteria2_101
   - Taiwan_Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
@@ -589,8 +589,8 @@ proxy-groups:
   proxies: null
 rules:
 - DOMAIN,cn.pornhub.com,🚀 节点选择
-- DOMAIN,clash.razord.top,🎯 全球直连
-- DOMAIN,yacd.haishan.me,🎯 全球直连
-- GEOIP,LAN,🎯 全球直连
-- GEOIP,CN,🎯 全球直连
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
 - MATCH,🚀 节点选择
