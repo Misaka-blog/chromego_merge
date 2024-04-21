@@ -27,13 +27,18 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_Paris_hysteria2_01
-  type: hysteria2
+- name: France_Paris_tuic_01
   server: 51.159.199.102
-  port: 33491
+  port: 33008
+  type: tuic
+  uuid: df19a216-8317-4890-829c-a8b7717d53d6
   password: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: France_Paris_hysteria2_11
   type: hysteria2
   server: 51.159.199.102
@@ -65,28 +70,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_Los Angeles_hysteria2_41
-  type: hysteria2
+- name: United States_Los Angeles_hysteria_41
+  type: hysteria
   server: 108.181.5.21
-  port: 17644
-  password: dongtaiwang.com
+  port: 44550
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 100 Mbps
-  down: 100 Mbps
-- name: Taiwan_Taoyuan District_ss_42
-  type: ss
-  server: www2.dtku48.xyz
-  port: 33001
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vidC9EcfzKzc/zx9iu8VkKTA0xXTJoWTX/90IvHAHtU=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: q2t9sUj+7N5CztGHJCKvfWbfCRD0qOg2ZEKOb0h7+7k=
-    version: 3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
 - name: United States_Los Angeles_hysteria2_51
   type: hysteria2
   server: 108.181.5.21
@@ -160,7 +156,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: The Netherlands_Amsterdam_vmess_82
+- name: None_None_vmess_82
   type: vmess
   server: yh9.dtku41.xyz
   port: 8080
@@ -175,7 +171,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: United States_None_vmess_83
+- name: None_None_vmess_83
   type: vmess
   server: yh2.dtku41.xyz
   port: 8080
@@ -295,17 +291,18 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: Taiwan_New Taipei_hysteria2_101
-  type: hysteria2
+- name: Taiwan_New Taipei_tuic_101
   server: www.dtku40.xyz
-  port: 22334
+  port: 33098
+  type: tuic
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Taiwan_New Taipei_hysteria2_111
   type: hysteria2
   server: www.dtku40.xyz
@@ -500,19 +497,18 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 负载均衡
   - DIRECT
-  - France_Paris_hysteria2_01
+  - France_Paris_tuic_01
   - France_Paris_hysteria2_11
   - Taiwan_Taoyuan District_tuic_21
   - Taiwan_Taoyuan District_tuic_31
-  - United States_Los Angeles_hysteria2_41
-  - Taiwan_Taoyuan District_ss_42
+  - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria2_51
   - Taiwan_Taoyuan District_ss_52
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - The Netherlands_Amsterdam_vmess_82
-  - United States_None_vmess_83
+  - None_None_vmess_82
+  - None_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
   - None_None_vmess_91
@@ -520,7 +516,7 @@ proxy-groups:
   - United States_None_vmess_93
   - United States_None_vmess_94
   - None_None_vmess_95
-  - Taiwan_New Taipei_hysteria2_101
+  - Taiwan_New Taipei_tuic_101
   - Taiwan_New Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
   - United States_Los Angeles_hy_1
@@ -544,19 +540,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_Paris_hysteria2_01
+  - France_Paris_tuic_01
   - France_Paris_hysteria2_11
   - Taiwan_Taoyuan District_tuic_21
   - Taiwan_Taoyuan District_tuic_31
-  - United States_Los Angeles_hysteria2_41
-  - Taiwan_Taoyuan District_ss_42
+  - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria2_51
   - Taiwan_Taoyuan District_ss_52
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - The Netherlands_Amsterdam_vmess_82
-  - United States_None_vmess_83
+  - None_None_vmess_82
+  - None_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
   - None_None_vmess_91
@@ -564,7 +559,7 @@ proxy-groups:
   - United States_None_vmess_93
   - United States_None_vmess_94
   - None_None_vmess_95
-  - Taiwan_New Taipei_hysteria2_101
+  - Taiwan_New Taipei_tuic_101
   - Taiwan_New Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
   - United States_Los Angeles_hy_1
@@ -588,19 +583,18 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 180
   proxies:
-  - France_Paris_hysteria2_01
+  - France_Paris_tuic_01
   - France_Paris_hysteria2_11
   - Taiwan_Taoyuan District_tuic_21
   - Taiwan_Taoyuan District_tuic_31
-  - United States_Los Angeles_hysteria2_41
-  - Taiwan_Taoyuan District_ss_42
+  - United States_Los Angeles_hysteria_41
   - United States_Los Angeles_hysteria2_51
   - Taiwan_Taoyuan District_ss_52
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - The Netherlands_Amsterdam_vmess_82
-  - United States_None_vmess_83
+  - None_None_vmess_82
+  - None_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
   - None_None_vmess_91
@@ -608,7 +602,7 @@ proxy-groups:
   - United States_None_vmess_93
   - United States_None_vmess_94
   - None_None_vmess_95
-  - Taiwan_New Taipei_hysteria2_101
+  - Taiwan_New Taipei_tuic_101
   - Taiwan_New Taipei_hysteria2_111
   - United States_Los Angeles_hy_0
   - United States_Los Angeles_hy_1
