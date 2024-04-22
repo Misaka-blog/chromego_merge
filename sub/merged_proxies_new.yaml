@@ -156,7 +156,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: The Netherlands_Amsterdam_vmess_82
+- name: None_None_vmess_82
   type: vmess
   server: yh9.dtku41.xyz
   port: 8080
@@ -303,17 +303,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Taiwan_New Taipei_hysteria2_111
-  type: hysteria2
+- name: Taiwan_New Taipei_tuic_111
   server: www.dtku40.xyz
-  port: 22334
+  port: 33098
+  type: tuic
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: United States_Los Angeles_hy_0
   type: hysteria
   server: 173.234.25.51
@@ -507,7 +508,7 @@ proxy-groups:
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - The Netherlands_Amsterdam_vmess_82
+  - None_None_vmess_82
   - None_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
@@ -517,7 +518,7 @@ proxy-groups:
   - United States_None_vmess_94
   - None_None_vmess_95
   - Taiwan_New Taipei_tuic_101
-  - Taiwan_New Taipei_hysteria2_111
+  - Taiwan_New Taipei_tuic_111
   - United States_Los Angeles_hy_0
   - United States_Los Angeles_hy_1
   - United States_Seattle_hy_2
@@ -550,7 +551,7 @@ proxy-groups:
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - The Netherlands_Amsterdam_vmess_82
+  - None_None_vmess_82
   - None_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
@@ -560,7 +561,7 @@ proxy-groups:
   - United States_None_vmess_94
   - None_None_vmess_95
   - Taiwan_New Taipei_tuic_101
-  - Taiwan_New Taipei_hysteria2_111
+  - Taiwan_New Taipei_tuic_111
   - United States_Los Angeles_hy_0
   - United States_Los Angeles_hy_1
   - United States_Seattle_hy_2
@@ -593,7 +594,7 @@ proxy-groups:
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - The Netherlands_Amsterdam_vmess_82
+  - None_None_vmess_82
   - None_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
@@ -603,7 +604,7 @@ proxy-groups:
   - United States_None_vmess_94
   - None_None_vmess_95
   - Taiwan_New Taipei_tuic_101
-  - Taiwan_New Taipei_hysteria2_111
+  - Taiwan_New Taipei_tuic_111
   - United States_Los Angeles_hy_0
   - United States_Los Angeles_hy_1
   - United States_Seattle_hy_2
