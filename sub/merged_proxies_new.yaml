@@ -39,13 +39,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: France_Paris_hysteria2_11
-  type: hysteria2
+- name: France_Paris_tuic_11
   server: 51.159.199.102
-  port: 33491
+  port: 33008
+  type: tuic
+  uuid: df19a216-8317-4890-829c-a8b7717d53d6
   password: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Taiwan_Taoyuan District_tuic_21
   server: www2.dtku48.xyz
   port: 33993
@@ -83,28 +88,19 @@ proxies:
   up: 11
   down: 55
   hop_interval: 10
-- name: United States_Los Angeles_hysteria2_51
-  type: hysteria2
+- name: United States_Los Angeles_hysteria_51
+  type: hysteria
   server: 108.181.5.21
-  port: 17644
-  password: dongtaiwang.com
+  port: 44550
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 100 Mbps
-  down: 100 Mbps
-- name: Taiwan_Taoyuan District_ss_52
-  type: ss
-  server: www2.dtku48.xyz
-  port: 33001
-  cipher: 2022-blake3-chacha20-poly1305
-  password: vidC9EcfzKzc/zx9iu8VkKTA0xXTJoWTX/90IvHAHtU=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: q2t9sUj+7N5CztGHJCKvfWbfCRD0qOg2ZEKOb0h7+7k=
-    version: 3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
 - name: United States_Kansas City_ss_61
   type: ss
   server: 109.104.152.186
@@ -156,7 +152,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: None_None_vmess_82
+- name: The Netherlands_Amsterdam_vmess_82
   type: vmess
   server: yh9.dtku41.xyz
   port: 8080
@@ -171,7 +167,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: None_None_vmess_83
+- name: United States_None_vmess_83
   type: vmess
   server: yh2.dtku41.xyz
   port: 8080
@@ -499,17 +495,16 @@ proxy-groups:
   - 🔮 负载均衡
   - DIRECT
   - France_Paris_tuic_01
-  - France_Paris_hysteria2_11
+  - France_Paris_tuic_11
   - Taiwan_Taoyuan District_tuic_21
   - Taiwan_Taoyuan District_tuic_31
   - United States_Los Angeles_hysteria_41
-  - United States_Los Angeles_hysteria2_51
-  - Taiwan_Taoyuan District_ss_52
+  - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - None_None_vmess_82
-  - None_None_vmess_83
+  - The Netherlands_Amsterdam_vmess_82
+  - United States_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
   - None_None_vmess_91
@@ -542,17 +537,16 @@ proxy-groups:
   tolerance: 50
   proxies:
   - France_Paris_tuic_01
-  - France_Paris_hysteria2_11
+  - France_Paris_tuic_11
   - Taiwan_Taoyuan District_tuic_21
   - Taiwan_Taoyuan District_tuic_31
   - United States_Los Angeles_hysteria_41
-  - United States_Los Angeles_hysteria2_51
-  - Taiwan_Taoyuan District_ss_52
+  - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - None_None_vmess_82
-  - None_None_vmess_83
+  - The Netherlands_Amsterdam_vmess_82
+  - United States_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
   - None_None_vmess_91
@@ -585,17 +579,16 @@ proxy-groups:
   interval: 180
   proxies:
   - France_Paris_tuic_01
-  - France_Paris_hysteria2_11
+  - France_Paris_tuic_11
   - Taiwan_Taoyuan District_tuic_21
   - Taiwan_Taoyuan District_tuic_31
   - United States_Los Angeles_hysteria_41
-  - United States_Los Angeles_hysteria2_51
-  - Taiwan_Taoyuan District_ss_52
+  - United States_Los Angeles_hysteria_51
   - United States_Kansas City_ss_61
   - United States_Kansas City_ss_71
   - United States_None_vmess_81
-  - None_None_vmess_82
-  - None_None_vmess_83
+  - The Netherlands_Amsterdam_vmess_82
+  - United States_None_vmess_83
   - United States_None_vmess_84
   - None_None_vmess_85
   - None_None_vmess_91
