@@ -339,7 +339,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: None_None_vmess_165
+- name: United States_None_vmess_165
   type: vmess
   server: yh6.dtku41.xyz
   port: 8080
@@ -414,7 +414,7 @@ proxies:
     path: 01c3345a-aadb-4e07-a920-947c20d83096-vm
     headers:
       host: emily-citizen-oxford-gba.trycloudflare.com
-- name: None_None_vmess_175
+- name: United States_None_vmess_175
   type: vmess
   server: yh6.dtku41.xyz
   port: 8080
@@ -742,122 +742,18 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
-- name: 🚀 节点选择
+- name: ✈️ 出境游
   type: select
   proxies:
-  - ♻️ 自动选择
+  - ⚡ 低延迟
   - 🔮 负载均衡
   - DIRECT
-  - United States_Kansas City_hysteria2_01
-  - United States_Kansas City_hysteria2_11
-  - United States_Kansas City_vless_21
-  - United States_Kansas City_vless_31
-  - United States_Kansas City_ss_41
-  - United States_Kansas City_ss_51
-  - United States_Kansas City_ss_61
-  - United States_Kansas City_ss_71
-  - France_Paris_tuic_81
-  - France_Paris_tuic_91
-  - Taiwan_Taoyuan District_tuic_101
-  - Taiwan_Taoyuan District_tuic_111
-  - United States_Los Angeles_hysteria_121
-  - United States_Los Angeles_hysteria_131
-  - United States_Kansas City_ss_141
-  - United States_Kansas City_ss_151
-  - United States_None_vmess_161
-  - None_None_vmess_162
-  - None_None_vmess_163
-  - United States_None_vmess_164
-  - None_None_vmess_165
-  - None_None_vmess_171
-  - United States_None_vmess_172
-  - United States_None_vmess_173
-  - United States_None_vmess_174
-  - None_None_vmess_175
-  - Taiwan_Taipei_tuic_181
-  - Taiwan_Taipei_tuic_191
-  - United States_Los Angeles_hy_0
-  - United States_Los Angeles_hy_1
-  - United States_Seattle_hy_2
-  - United States_Seattle_hy_3
-  - France_Paris_hy_4
-  - France_Paris_hy_5
-  - Taiwan_Taipei_hy_6
-  - Taiwan_Taipei_hy_7
-  - France_None_hy_8
-  - France_None_hy_9
-  - France_None_hy_10
-  - United States_Los Angeles_hy_11
-  - United States_Kansas City_hy_12
-  - United States_Kansas City_hy_13
-  - United States_Los Angeles_hy_14
-  - United States_Los Angeles_hy_15
-  - United States_Los Angeles_hy2_0
-  - United States_Los Angeles_hy2_1
-  - United States_Seattle_hy2_2
-  - United States_Seattle_hy2_3
-  - France_Paris_hy2_4
-  - France_Paris_hy2_5
-  - France_None_hy2_6
-  - France_None_hy2_7
-- name: ♻️ 自动选择
+- name: ⚡ 低延迟
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies:
-  - United States_Kansas City_hysteria2_01
-  - United States_Kansas City_hysteria2_11
-  - United States_Kansas City_vless_21
-  - United States_Kansas City_vless_31
-  - United States_Kansas City_ss_41
-  - United States_Kansas City_ss_51
-  - United States_Kansas City_ss_61
-  - United States_Kansas City_ss_71
-  - France_Paris_tuic_81
-  - France_Paris_tuic_91
-  - Taiwan_Taoyuan District_tuic_101
-  - Taiwan_Taoyuan District_tuic_111
-  - United States_Los Angeles_hysteria_121
-  - United States_Los Angeles_hysteria_131
-  - United States_Kansas City_ss_141
-  - United States_Kansas City_ss_151
-  - United States_None_vmess_161
-  - None_None_vmess_162
-  - None_None_vmess_163
-  - United States_None_vmess_164
-  - None_None_vmess_165
-  - None_None_vmess_171
-  - United States_None_vmess_172
-  - United States_None_vmess_173
-  - United States_None_vmess_174
-  - None_None_vmess_175
-  - Taiwan_Taipei_tuic_181
-  - Taiwan_Taipei_tuic_191
-  - United States_Los Angeles_hy_0
-  - United States_Los Angeles_hy_1
-  - United States_Seattle_hy_2
-  - United States_Seattle_hy_3
-  - France_Paris_hy_4
-  - France_Paris_hy_5
-  - Taiwan_Taipei_hy_6
-  - Taiwan_Taipei_hy_7
-  - France_None_hy_8
-  - France_None_hy_9
-  - France_None_hy_10
-  - United States_Los Angeles_hy_11
-  - United States_Kansas City_hy_12
-  - United States_Kansas City_hy_13
-  - United States_Los Angeles_hy_14
-  - United States_Los Angeles_hy_15
-  - United States_Los Angeles_hy2_0
-  - United States_Los Angeles_hy2_1
-  - United States_Seattle_hy2_2
-  - United States_Seattle_hy2_3
-  - France_Paris_hy2_4
-  - France_Paris_hy2_5
-  - France_None_hy2_6
-  - France_None_hy2_7
+  proxies: null
 - name: 🔮 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -884,12 +780,12 @@ proxy-groups:
   - None_None_vmess_162
   - None_None_vmess_163
   - United States_None_vmess_164
-  - None_None_vmess_165
+  - United States_None_vmess_165
   - None_None_vmess_171
   - United States_None_vmess_172
   - United States_None_vmess_173
   - United States_None_vmess_174
-  - None_None_vmess_175
+  - United States_None_vmess_175
   - Taiwan_Taipei_tuic_181
   - Taiwan_Taipei_tuic_191
   - United States_Los Angeles_hy_0
@@ -917,45 +813,47 @@ proxy-groups:
   - France_None_hy2_6
   - France_None_hy2_7
 rules:
-- DOMAIN-KEYWORD,youtube,🚀 节点选择
-- DOMAIN,youtubei.googleapis.com,🚀 节点选择
-- DOMAIN,yt3.ggpht.com,🚀 节点选择
-- DOMAIN-SUFFIX,googlevideo.com,🚀 节点选择
-- DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
-- DOMAIN-SUFFIX,withyoutube.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtu.be,🚀 节点选择
-- DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtubeeducation.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtubegaming.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtubekids.com,🚀 节点选择
-- DOMAIN-SUFFIX,yt.be,🚀 节点选择
-- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
-- DOMAIN-KEYWORD,gmail,🚀 节点选择
-- DOMAIN-KEYWORD,google,🚀 节点选择
-- DOMAIN-SUFFIX,1e100.net,🚀 节点选择
-- DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
-- DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
-- DOMAIN-SUFFIX,g.co,🚀 节点选择
-- DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
-- DOMAIN-SUFFIX,goo.gl,🚀 节点选择
-- DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
-- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
-- DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
-- DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
-- DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
-- DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
-- DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
-- DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtu.be,🚀 节点选择
-- DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
-- DOMAIN-SUFFIX,youtube.com,🚀 节点选择
-- DOMAIN-SUFFIX,yt.be,🚀 节点选择
-- DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
-- DOMAIN,cn.pornhub.com,🚀 节点选择
+- DOMAIN-KEYWORD,youtube,✈️ 出境游
+- DOMAIN,youtubei.googleapis.com,✈️ 出境游
+- DOMAIN,yt3.ggpht.com,✈️ 出境游
+- DOMAIN-SUFFIX,googlevideo.com,✈️ 出境游
+- DOMAIN-SUFFIX,gvt2.com,✈️ 出境游
+- DOMAIN-SUFFIX,withyoutube.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtu.be,✈️ 出境游
+- DOMAIN-SUFFIX,youtube-nocookie.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtube.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtubeeducation.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtubegaming.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtubekids.com,✈️ 出境游
+- DOMAIN-SUFFIX,yt.be,✈️ 出境游
+- DOMAIN-SUFFIX,ytimg.com,✈️ 出境游
+- DOMAIN-KEYWORD,gmail,✈️ 出境游
+- DOMAIN-KEYWORD,google,✈️ 出境游
+- DOMAIN-SUFFIX,1e100.net,✈️ 出境游
+- DOMAIN-SUFFIX,2mdn.net,✈️ 出境游
+- DOMAIN-SUFFIX,app-measurement.net,✈️ 出境游
+- DOMAIN-SUFFIX,g.co,✈️ 出境游
+- DOMAIN-SUFFIX,ggpht.com,✈️ 出境游
+- DOMAIN-SUFFIX,goo.gl,✈️ 出境游
+- DOMAIN-SUFFIX,googleapis.cn,✈️ 出境游
+- DOMAIN-SUFFIX,googleapis.com,✈️ 出境游
+- DOMAIN-SUFFIX,gstatic.cn,✈️ 出境游
+- DOMAIN-SUFFIX,gstatic.com,✈️ 出境游
+- DOMAIN-SUFFIX,gvt0.com,✈️ 出境游
+- DOMAIN-SUFFIX,gvt1.com,✈️ 出境游
+- DOMAIN-SUFFIX,gvt2.com,✈️ 出境游
+- DOMAIN-SUFFIX,gvt3.com,✈️ 出境游
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtu.be,✈️ 出境游
+- DOMAIN-SUFFIX,youtube-nocookie.com,✈️ 出境游
+- DOMAIN-SUFFIX,youtube.com,✈️ 出境游
+- DOMAIN-SUFFIX,yt.be,✈️ 出境游
+- DOMAIN-SUFFIX,ytimg.com,✈️ 出境游
+- IP-CIDR,74.125.0.0/16,no-resolve
+- IP-CIDR,173.194.0.0/16,no-resolve
+- DOMAIN,cn.pornhub.com,✈️ 出境游
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,🚀 节点选择
+- MATCH,✈️ 出境游
