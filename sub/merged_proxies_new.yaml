@@ -1239,47 +1239,37 @@ proxies:
     host: nijigen-works.jp
     password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
     version: 3
+- cipher: aes-128-gcm
+  name: United Kingdom_London_ss_111
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
 - cipher: aes-256-cfb
-  name: South Korea_Incheon_ss_111
+  name: South Korea_Incheon_ss_112
   password: amazonskr05
   port: 443
   server: 43.203.209.219
   type: ss
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ss_112
-  password: SBM7R883jBmnqe6C
-  port: 9053
-  server: 103.172.116.79
+- cipher: aes-256-gcm
+  name: United Kingdom_London_ss_113
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 172.99.190.198
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_113
-  obfs: plain
-  obfs-param: None
-  password: 4R3hUfZ2FHhDmNcP
-  port: 9061
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_114
-  obfs: plain
-  obfs-param: None
-  password: SBM7R883jBmnqe6C
-  port: 9053
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
+- cipher: aes-128-gcm
+  name: United Kingdom_London_ss_114
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
 - cipher: aes-256-cfb
   name: Singapore_Singapore_ssr_115
   obfs: plain
   obfs-param: None
-  password: HSZuyJQcWe8dxNdF
-  port: 9043
+  password: SBM7R883jBmnqe6C
+  port: 9053
   protocol: origin
   protocol-param: None
   server: 103.172.116.79
@@ -1300,8 +1290,8 @@ proxies:
   name: Singapore_Singapore_ssr_117
   obfs: plain
   obfs-param: None
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
   protocol: origin
   protocol-param: None
   server: 103.172.116.79
@@ -1311,8 +1301,8 @@ proxies:
   name: Singapore_Singapore_ssr_118
   obfs: plain
   obfs-param: None
-  password: gYCYXfkUQEs2TaJQ
-  port: 9038
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
   protocol: origin
   protocol-param: None
   server: 103.172.116.79
@@ -1320,28 +1310,6 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   name: Singapore_Singapore_ssr_119
-  obfs: plain
-  obfs-param: None
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1110
-  obfs: plain
-  obfs-param: None
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1111
   obfs: plain
   obfs-param: None
   password: f8npKgNzdkss2ytn
@@ -1352,7 +1320,48 @@ proxies:
   type: ssr
   udp: true
 - cipher: aes-256-cfb
+  name: Singapore_Singapore_ssr_1110
+  obfs: plain
+  obfs-param: None
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  protocol: origin
+  protocol-param: None
+  server: 103.172.116.79
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: Singapore_Singapore_ssr_1111
+  obfs: plain
+  obfs-param: None
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  protocol: origin
+  protocol-param: None
+  server: 103.172.116.79
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
   name: Singapore_Singapore_ssr_1112
+  obfs: plain
+  obfs-param: None
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  protocol: origin
+  protocol-param: None
+  server: 103.172.116.79
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_Boardman_ssr_1113
+  obfs: tls1.2_ticket_auth
+  password: fou8MBGij
+  port: 8081
+  protocol: origin
+  server: us-am3.eqnode.net
+  type: ssr
+- cipher: aes-256-cfb
+  name: Singapore_Singapore_ssr_1114
   obfs: plain
   obfs-param: None
   password: FG5ddLsMPbV5CutE
@@ -1361,7 +1370,18 @@ proxies:
   server: 103.172.116.79
   type: ssr
 - cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1113
+  name: Singapore_Singapore_ssr_1115
+  obfs: plain
+  obfs-param: None
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  protocol: origin
+  protocol-param: None
+  server: 103.172.116.79
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: Singapore_Singapore_ssr_1116
   obfs: plain
   password: y9VURyNzJWNRYEGQ
   port: 9008
@@ -1370,7 +1390,7 @@ proxies:
   server: 103.172.116.79
   type: ssr
 - cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1114
+  name: Singapore_Singapore_ssr_1117
   obfs: plain
   obfs-param: None
   password: GeregetR8cvQHzYr
@@ -1381,40 +1401,18 @@ proxies:
   type: ssr
   udp: true
 - cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1115
-  obfs: plain
-  obfs-param: None
-  password: dML2sfhbVwvtfNPe
-  port: 9058
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1116
-  obfs: plain
-  obfs-param: None
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  name: Singapore_Singapore_ssr_1117
-  obfs: plain
-  obfs-param: None
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
   name: Singapore_Singapore_ssr_1118
+  obfs: plain
+  obfs-param: None
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  protocol: origin
+  protocol-param: None
+  server: 103.172.116.79
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: Singapore_Singapore_ssr_1119
   obfs: plain
   obfs-param: None
   password: FAdUvMJUq5vDgKEq
@@ -1424,14 +1422,6 @@ proxies:
   server: 103.172.116.79
   type: ssr
   udp: true
-- cipher: aes-256-cfb
-  name: United States_Boardman_ssr_1119
-  obfs: tls1.2_ticket_auth
-  password: fou8MBGij
-  port: 8081
-  protocol: origin
-  server: us-am3.eqnode.net
-  type: ssr
 - cipher: aes-256-cfb
   name: Singapore_Singapore_ssr_1120
   obfs: plain
@@ -1441,35 +1431,26 @@ proxies:
   server: 103.172.116.79
   type: ssr
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: GB
-  name: United Kingdom_London_ss_1121
-  password: aXuV8k5a4NFmkphgr5NTlL
-  port: 52338
-  server: 89.185.84.185
-  type: ss
 - cipher: aes-256-cfb
-  country: JP
-  name: Japan_Tokyo_ssr_1122
-  obfs: tls1.2_ticket_auth
-  password: eAokbaDN6
-  port: 8081
-  protocol: origin
-  server: jp-am48-6.eqnode.net
-  type: ssr
+  country: BE
+  name: Japan_Tokyo_ss_1121
+  password: amazonskr05
+  port: 443
+  server: 57.180.37.197
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: RU
-  name: Poland_Warsaw_ss_1123
+  name: Portugal_Viana do Castelo_ss_1122
   password: 3pURuTUf-lFgg5qWg8euFA
   port: 1080
-  server: 77.83.246.55
+  server: 31.129.22.73
   type: ss
 - alterId: 0
   cipher: auto
   country: RU
   h2-opts: {}
   http-opts: {}
-  name: Russia_Moscow_vmess_1124
+  name: Russia_Moscow_vmess_1123
   network: tcp
   port: 47555
   server: 46.29.166.237
@@ -1478,7 +1459,7 @@ proxies:
   uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
 - cipher: aes-256-cfb
   country: SG
-  name: Singapore_Singapore_ss_1125
+  name: Singapore_Singapore_ss_1124
   password: zoogvpn
   port: 443
   server: 172.104.49.76
@@ -1486,48 +1467,18 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: SG
+  name: Singapore_Singapore_ssr_1125
+  obfs: plain
+  obfs-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  protocol: origin
+  protocol-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
+  server: 103.172.116.79
+  type: ssr
+- cipher: aes-256-cfb
+  country: SG
   name: Singapore_Singapore_ssr_1126
-  obfs: plain
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  protocol: origin
-  server: 103.172.116.79
-  type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1127
-  obfs: plain
-  obfs-param: Tm9uZQ%3D%3D
-  password: dML2sfhbVwvtfNPe
-  port: 9058
-  protocol: origin
-  protocol-param: Tm9uZQ%3D%3D
-  server: 103.172.116.79
-  type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1128
-  obfs: plain
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  protocol: origin
-  protocol-param: None
-  server: 103.172.116.79
-  type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1129
-  obfs: plain
-  obfs-param: Tm9uZQ%3D%3D
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  protocol: origin
-  protocol-param: Tm9uZQ%3D%3D
-  server: 103.172.116.79
-  type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1130
   obfs: plain
   obfs-param: VG05dVpRJTNEJTNE
   password: HSZuyJQcWe8dxNdF
@@ -1538,10 +1489,50 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SG
-  name: Singapore_Singapore_ssr_1131
+  name: Singapore_Singapore_ssr_1127
   obfs: plain
   password: UkXRsXvR6buDMG2Y
   port: 9001
+  protocol: origin
+  server: 103.172.116.79
+  type: ssr
+- cipher: aes-256-cfb
+  country: SG
+  name: Singapore_Singapore_ssr_1128
+  obfs: plain
+  obfs-param: Tm9uZQ%3D%3D
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  protocol: origin
+  protocol-param: Tm9uZQ%3D%3D
+  server: 103.172.116.79
+  type: ssr
+- cipher: aes-256-cfb
+  country: SG
+  name: Singapore_Singapore_ssr_1129
+  obfs: plain
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  protocol: origin
+  server: 103.172.116.79
+  type: ssr
+- cipher: aes-256-cfb
+  country: SG
+  name: Singapore_Singapore_ssr_1130
+  obfs: plain
+  obfs-param: Tm9uZQ%3D%3D
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  protocol: origin
+  protocol-param: Tm9uZQ%3D%3D
+  server: 103.172.116.79
+  type: ssr
+- cipher: aes-256-cfb
+  country: SG
+  name: Singapore_Singapore_ssr_1131
+  obfs: plain
+  password: f63gg8EruDnUrmz4
+  port: 9010
   protocol: origin
   server: 103.172.116.79
   type: ssr
@@ -1558,23 +1549,15 @@ proxies:
   country: SG
   name: Singapore_Singapore_ssr_1133
   obfs: plain
-  password: ueLXVkvh4hckhErQ
-  port: 9060
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
   protocol: origin
+  protocol-param: None
   server: 103.172.116.79
   type: ssr
 - cipher: aes-256-cfb
   country: SG
   name: Singapore_Singapore_ssr_1134
-  obfs: plain
-  password: f63gg8EruDnUrmz4
-  port: 9010
-  protocol: origin
-  server: 103.172.116.79
-  type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1135
   obfs: plain
   password: TPqX8edgbAURcAMb
   port: 9079
@@ -1583,7 +1566,7 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SG
-  name: Singapore_Singapore_ssr_1136
+  name: Singapore_Singapore_ssr_1135
   obfs: plain
   password: kSPmvwdFzGMMW5pY
   port: 9007
@@ -1592,24 +1575,33 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: SG
-  name: Singapore_Singapore_ssr_1137
+  name: Singapore_Singapore_ssr_1136
   obfs: plain
-  obfs-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
   protocol: origin
-  protocol-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
   server: 103.172.116.79
   type: ssr
 - cipher: aes-256-cfb
   country: SG
-  name: Singapore_Singapore_ssr_1138
+  name: Singapore_Singapore_ssr_1137
   obfs: plain
   obfs-param: Tm9uZQ%3D%3D
   password: HSZuyJQcWe8dxNdF
   port: 9043
   protocol: origin
   protocol-param: Tm9uZQ%3D%3D
+  server: 103.172.116.79
+  type: ssr
+- cipher: aes-256-cfb
+  country: SG
+  name: Singapore_Singapore_ssr_1138
+  obfs: plain
+  obfs-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  protocol: origin
+  protocol-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
   server: 103.172.116.79
   type: ssr
 - cipher: aes-256-cfb
@@ -1623,40 +1615,34 @@ proxies:
   protocol-param: Vmtjd05XUldjRkpLVkU1RlNsUk9SUSUzRCUzRA%3D%3D
   server: 103.172.116.79
   type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1140
-  obfs: plain
-  obfs-param: Tm9uZQ%3D%3D
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  protocol: origin
-  protocol-param: Tm9uZQ%3D%3D
-  server: 103.172.116.79
-  type: ssr
-- cipher: aes-256-cfb
-  country: SG
-  name: Singapore_Singapore_ssr_1141
-  obfs: plain
-  obfs-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
-  password: HSZuyJQcWe8dxNdF
-  port: 9043
-  protocol: origin
-  protocol-param: VkcwNWRWcFJKVE5FSlRORQ%3D%3D
-  server: 103.172.116.79
-  type: ssr
+- country: SG
+  name: Singapore_Singapore_trojan_1140
+  password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2
+  port: 20230
+  server: sg08.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  country: US
+  name: United States_Hillsboro_ss_1141
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 15.204.87.217
+  type: ss
 - cipher: aes-256-gcm
   country: US
   name: United States_Hillsboro_ss_1142
-  password: lGqs95QkFHo2NV
-  port: 5499
+  password: zDNVedRFPQexG9v
+  port: 6379
   server: 15.204.87.217
   type: ss
 - cipher: aes-256-gcm
   country: US
   name: United States_Hillsboro_ss_1143
-  password: cdBIDV42DCwnfIN
-  port: 8118
+  password: Y6R9pAtvxxzmGC
+  port: 3306
   server: 15.204.87.217
   type: ss
 - cipher: aes-256-gcm
@@ -1666,82 +1652,60 @@ proxies:
   port: 5600
   server: 15.204.87.217
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   country: US
-  name: United States_Hillsboro_ss_1145
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 15.204.87.217
+  name: Australia_None_ss_1145
+  password: 7Fk0MO0Bj2nd0jHepJUKZ1
+  port: 47621
+  server: 170.64.226.74
   type: ss
 - cipher: aes-256-gcm
   country: US
   name: United States_Santa Clara_ss_1146
-  password: Y6R9pAtvxxzmGC
-  port: 5001
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 23.157.40.102
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: US
-  name: United States_Chicago_ss_1147
-  password: 56INZqMWGt0o8Rv4
-  port: 1026
-  server: 195.88.25.214
-  tfo: false
   type: ss
 - cipher: aes-256-gcm
   country: US
-  name: United States_Hillsboro_ss_1148
-  password: zDNVedRFPQexG9v
-  port: 6379
+  name: United States_Hillsboro_ss_1147
+  password: lGqs95QkFHo2NV
+  port: 5499
   server: 15.204.87.217
+  type: ss
+- cipher: aes-256-cfb
+  country: US
+  name: United States_Boardman_ss_1148
+  password: amazonskr05
+  port: 443
+  server: 54.218.48.199
   type: ss
 - cipher: aes-256-gcm
   country: US
   name: United States_Hillsboro_ss_1149
-  password: lGqs95QkFHo2NV
-  port: 5498
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 15.204.87.217
   type: ss
 - cipher: aes-256-gcm
   country: US
   name: United States_Hillsboro_ss_1150
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 15.204.87.217
-  type: ss
-- cipher: aes-256-gcm
-  country: US
-  name: United States_Hillsboro_ss_1151
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 15.204.87.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: US
-  name: United States_New York_ss_1152
-  password: mMTy1P
-  port: 20002
-  server: 38.99.82.85
-  type: ss
-- cipher: aes-256-gcm
-  country: US
-  name: United States_Hillsboro_ss_1153
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 15.204.87.217
-  type: ss
-- cipher: aes-256-gcm
-  country: US
-  name: United States_Hillsboro_ss_1154
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 15.204.87.217
   type: ss
 - cipher: aes-256-gcm
   country: US
-  name: United States_Hillsboro_ss_1155
-  password: faBAoD54k87UJG7
-  port: 2375
+  name: United States_Hillsboro_ss_1151
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 15.204.87.217
+  type: ss
+- cipher: aes-256-gcm
+  country: US
+  name: United States_Hillsboro_ss_1152
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 15.204.87.217
   type: ss
 - alterId: 64
@@ -1749,7 +1713,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: United States_None_vmess_1156
+  name: United States_None_vmess_1153
   network: ws
   port: 38001
   server: 192.74.240.233
@@ -1762,35 +1726,136 @@ proxies:
     headers:
       HOST: www.43535620.xyz
     path: /path/191019072927
-- alterId: 0
+- alterId: 64
   cipher: auto
   country: US
   h2-opts: {}
   http-opts: {}
-  name: United States_Reston_vmess_1157
+  name: United States_San Jose_vmess_1154
   network: ws
-  port: 443
-  server: 69.50.93.90
+  port: 38001
+  server: 38.33.34.17
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
   ws-opts:
-    path: /linkvws
+    path: /path/150907203104
+- alterId: 64
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: United States_San Jose_vmess_1155
+  network: ws
+  port: 37000
+  server: 38.11.60.87
+  servername: www.72795025.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      HOST: www.72795025.xyz
+    path: /path/191019072927
 - alterId: 0
   cipher: auto
   country: US
   h2-opts: {}
   http-opts: {}
-  name: United States_Los Angeles_vmess_1158
-  network: tcp
-  port: 21636
-  server: 207.246.102.64
+  name: United States_None_vmess_1156
+  network: ws
+  port: 8080
+  server: 172.67.185.64
+  servername: oiictw.yydsii.com
   skip-cert-verify: true
   type: vmess
-  uuid: 53d57cfb-189f-4a9f-b620-a3ca168b7ac1
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: United States_None_vmess_1157
+  network: ws
+  port: 8080
+  server: 172.67.199.211
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: United States_None_vmess_1158
+  network: ws
+  port: 8080
+  server: 172.67.172.67
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: United States_None_vmess_1159
+  network: ws
+  port: 8080
+  server: 172.67.199.185
+  servername: oiictw.yydsii.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      HOST: oiictw.yydsii.com
+    path: /
+- alterId: 64
+  cipher: auto
+  country: US
+  h2-opts: {}
+  http-opts: {}
+  name: United States_None_vmess_1160
+  network: ws
+  port: 38001
+  server: 192.74.240.229
+  servername: www.43535620.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      HOST: www.43535620.xyz
+    path: /path/191019072927
+- country: US
+  name: United States_Boardman_trojan_1161
+  password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
+  port: 20230
+  server: us04.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
-  name: Taiwan_Yuanlin_ss_1159
+  name: Taiwan_Yuanlin_ss_1162
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -1806,7 +1871,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Hong Kong_vmess_1160
+  name: Hong Kong_Hong Kong_vmess_1163
   network: ws
   port: '8080'
   server: 103.75.117.204
@@ -1822,7 +1887,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: China_None_vmess_1161
+  name: China_None_vmess_1164
   port: 51193
   server: 183.238.202.173
   skip-cert-verify: false
@@ -1832,7 +1897,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: China_None_vmess_1162
+  name: China_None_vmess_1165
   port: 50004
   server: 112.132.212.19
   skip-cert-verify: false
@@ -1842,7 +1907,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: China_None_trojan_1163
+  name: China_None_trojan_1166
   password: gkviEOYc
   port: 4027
   server: 183.232.139.22
@@ -1851,7 +1916,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: None_None_vmess_1164
+  name: None_None_vmess_1167
   network: ws
   port: '8443'
   server: 104.19.48.0
@@ -1866,20 +1931,20 @@ proxies:
       Host: hk01.linkitnow.net
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1165
+  name: China_None_ss_1168
   password: edfada05-5cb9-423a-9675-4b54c3201441
   port: 61035
   server: zz-hk6.dajuzi.shop
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: China_None_ss_1166
+  name: China_None_ss_1169
   password: hGkQ6915tD
   port: 15001
   server: 59.56.77.178
   tfo: false
   type: ss
-- name: China_None_trojan_1167
+- name: China_None_trojan_1170
   password: ee84695e-978f-40cf-8590-5c36a19de984
   port: 21876
   server: 103twai.aixunx168.top
@@ -1888,7 +1953,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: China_None_vmess_1168
+  name: China_None_vmess_1171
   port: 32011
   server: alm1.the-galgo.top
   skip-cert-verify: false
@@ -1896,7 +1961,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 41430040-dbdd-4eac-bb90-89a1f17f6f71
-- name: China_None_trojan_1169
+- name: China_None_trojan_1172
   password: RmdXQRXg
   port: 23621
   server: 223.113.54.154
@@ -1904,7 +1969,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: None_None_vmess_1170
+  name: None_None_vmess_1173
   network: ws
   port: '2052'
   server: cfcdn3.sanfencdn9.com
@@ -1920,7 +1985,7 @@ proxies:
     path: /video/9TfVEyku
 - alterId: 0
   cipher: auto
-  name: China_Haikou_vmess_1171
+  name: China_Haikou_vmess_1174
   network: ws
   port: 46011
   server: mmjp11.micloud.buzz
@@ -1933,7 +1998,7 @@ proxies:
     headers:
       Host: mmjp11.micloud.buzz
     path: /zh-cn
-- name: China_None_trojan_1172
+- name: China_None_trojan_1175
   password: 32e6cda8-b070-45b6-b7ae-4820c918bdfa
   port: 30881
   server: 107jpai.aixunx168.top
@@ -1941,7 +2006,7 @@ proxies:
   sni: aixunx168.top
   type: trojan
 - cipher: aes-256-cfb
-  name: China_None_ss_1173
+  name: China_None_ss_1176
   password: hGkQ6915tD
   port: 15084
   server: 59.56.77.178
@@ -1949,7 +2014,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: China_Haikou_vmess_1174
+  name: China_Haikou_vmess_1177
   network: ws
   port: 46016
   server: mmsg16.micloud.buzz
@@ -1964,7 +2029,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: China_Guangzhou_vmess_1175
+  name: China_Guangzhou_vmess_1178
   network: ws
   port: '16928'
   server: 120.232.240.56
@@ -1978,7 +2043,14 @@ proxies:
     headers:
       Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
     path: /v2ray
-- name: China_None_trojan_1176
+- cipher: chacha20-ietf-poly1305
+  name: United States_Chicago_ss_1179
+  password: 56INZqMWGt0o8Rv4
+  port: 1026
+  server: 195.88.25.214
+  tfo: false
+  type: ss
+- name: China_None_trojan_1180
   password: RmdXQRXg
   port: 20344
   server: 223.113.54.154
@@ -1986,7 +2058,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: None_None_vmess_1177
+  name: None_None_vmess_1181
   network: ws
   port: '8080'
   server: cfcdn1.sanfencdn9.com
@@ -2001,35 +2073,35 @@ proxies:
       Host: us5PhAx6xsj.fzbqfrse.xyz
     path: /video/f8ZKTGaGoC/
 - cipher: aes-256-cfb
-  name: Singapore_Singapore_ss_1178
+  name: Singapore_Singapore_ss_1182
   password: amazonskr05
   port: 443
   server: 18.141.239.48
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: United States_Boardman_ss_1179
+  name: United States_Boardman_ss_1183
   password: amazonskr05
   port: 443
   server: 34.219.151.61
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Singapore_Singapore_ss_1180
+  name: Singapore_Singapore_ss_1184
   password: amazonskr05
   port: 443
   server: 13.212.117.24
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: China_None_ss_1181
+  name: China_None_ss_1185
   password: hGkQ6915tD
   port: 15083
   server: 59.56.77.178
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: China_None_ss_1182
+  name: China_None_ss_1186
   password: hGkQ6915tD
   port: 15111
   server: 59.56.77.178
@@ -2037,7 +2109,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: China_None_vmess_1183
+  name: China_None_vmess_1187
   network: tcp
   port: '51193'
   server: 183.238.202.173
@@ -2047,7 +2119,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: China_None_vmess_1184
+  name: China_None_vmess_1188
   network: tcp
   port: '50004'
   server: 112.132.212.19
@@ -2057,7 +2129,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: China_None_vmess_1185
+  name: China_None_vmess_1189
   network: tcp
   port: '32011'
   server: alm1.the-galgo.top
@@ -2067,7 +2139,7 @@ proxies:
   uuid: 41430040-dbdd-4eac-bb90-89a1f17f6f71
 - alterId: 0
   cipher: auto
-  name: China_Haikou_vmess_1186
+  name: China_Haikou_vmess_1190
   network: ws
   port: '46011'
   server: mmjp11.micloud.buzz
@@ -2081,7 +2153,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: China_Haikou_vmess_1187
+  name: China_Haikou_vmess_1191
   network: ws
   port: '46016'
   server: mmsg16.micloud.buzz
@@ -2095,14 +2167,14 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: China_None_trojan_1188
+  name: China_None_trojan_1192
   password: gkviEOYc
   port: 50611
   server: 183.232.139.22
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: United Kingdom_None_trojan_1189
+- name: United Kingdom_None_trojan_1193
   network: ws
   password: TeleGram-VPNCTVIP
   port: 443
@@ -2115,7 +2187,7 @@ proxies:
     headers:
       Host: trojan-ws.vpnctvip.dns-dynamic.NeT
     path: /proxyIP=proxyip.us.fxxk.dedyn.io
-- name: South Korea_Eunpyeong-gu_trojan_1190
+- name: South Korea_Eunpyeong-gu_trojan_1194
   network: ws
   password: moist
   port: 27335
@@ -2128,7 +2200,7 @@ proxies:
     headers:
       Host: trojan.freenods.sbs
     path: /?ed=2560
-- name: South Korea_Eunpyeong-gu_trojan_1191
+- name: South Korea_Eunpyeong-gu_trojan_1195
   network: ws
   password: moist
   port: 27335
@@ -2139,7 +2211,7 @@ proxies:
   udp: true
   ws-opts:
     path: /?ed=2560
-- name: South Korea_Eunpyeong-gu_trojan_1192
+- name: South Korea_Eunpyeong-gu_trojan_1196
   network: ws
   password: moist
   port: 27335
@@ -2328,10 +2400,10 @@ proxy-groups:
   - None_None_vmess_74
   - United States_None_ss_81
   - United States_None_ss_91
-  - South Korea_Incheon_ss_111
-  - Singapore_Singapore_ss_112
-  - Singapore_Singapore_ssr_113
-  - Singapore_Singapore_ssr_114
+  - United Kingdom_London_ss_111
+  - South Korea_Incheon_ss_112
+  - United Kingdom_London_ss_113
+  - United Kingdom_London_ss_114
   - Singapore_Singapore_ssr_115
   - Singapore_Singapore_ssr_116
   - Singapore_Singapore_ssr_117
@@ -2340,19 +2412,19 @@ proxy-groups:
   - Singapore_Singapore_ssr_1110
   - Singapore_Singapore_ssr_1111
   - Singapore_Singapore_ssr_1112
-  - Singapore_Singapore_ssr_1113
+  - United States_Boardman_ssr_1113
   - Singapore_Singapore_ssr_1114
   - Singapore_Singapore_ssr_1115
   - Singapore_Singapore_ssr_1116
   - Singapore_Singapore_ssr_1117
   - Singapore_Singapore_ssr_1118
-  - United States_Boardman_ssr_1119
+  - Singapore_Singapore_ssr_1119
   - Singapore_Singapore_ssr_1120
-  - United Kingdom_London_ss_1121
-  - Japan_Tokyo_ssr_1122
-  - Poland_Warsaw_ss_1123
-  - Russia_Moscow_vmess_1124
-  - Singapore_Singapore_ss_1125
+  - Japan_Tokyo_ss_1121
+  - Portugal_Viana do Castelo_ss_1122
+  - Russia_Moscow_vmess_1123
+  - Singapore_Singapore_ss_1124
+  - Singapore_Singapore_ssr_1125
   - Singapore_Singapore_ssr_1126
   - Singapore_Singapore_ssr_1127
   - Singapore_Singapore_ssr_1128
@@ -2367,59 +2439,63 @@ proxy-groups:
   - Singapore_Singapore_ssr_1137
   - Singapore_Singapore_ssr_1138
   - Singapore_Singapore_ssr_1139
-  - Singapore_Singapore_ssr_1140
-  - Singapore_Singapore_ssr_1141
+  - Singapore_Singapore_trojan_1140
+  - United States_Hillsboro_ss_1141
   - United States_Hillsboro_ss_1142
   - United States_Hillsboro_ss_1143
   - United States_Hillsboro_ss_1144
-  - United States_Hillsboro_ss_1145
+  - Australia_None_ss_1145
   - United States_Santa Clara_ss_1146
-  - United States_Chicago_ss_1147
-  - United States_Hillsboro_ss_1148
+  - United States_Hillsboro_ss_1147
+  - United States_Boardman_ss_1148
   - United States_Hillsboro_ss_1149
   - United States_Hillsboro_ss_1150
   - United States_Hillsboro_ss_1151
-  - United States_New York_ss_1152
-  - United States_Hillsboro_ss_1153
-  - United States_Hillsboro_ss_1154
-  - United States_Hillsboro_ss_1155
+  - United States_Hillsboro_ss_1152
+  - United States_None_vmess_1153
+  - United States_San Jose_vmess_1154
+  - United States_San Jose_vmess_1155
   - United States_None_vmess_1156
-  - United States_Reston_vmess_1157
-  - United States_Los Angeles_vmess_1158
-  - Taiwan_Yuanlin_ss_1159
-  - Hong Kong_Hong Kong_vmess_1160
-  - China_None_vmess_1161
-  - China_None_vmess_1162
-  - China_None_trojan_1163
-  - None_None_vmess_1164
-  - China_None_ss_1165
-  - China_None_ss_1166
-  - China_None_trojan_1167
-  - China_None_vmess_1168
-  - China_None_trojan_1169
-  - None_None_vmess_1170
-  - China_Haikou_vmess_1171
+  - United States_None_vmess_1157
+  - United States_None_vmess_1158
+  - United States_None_vmess_1159
+  - United States_None_vmess_1160
+  - United States_Boardman_trojan_1161
+  - Taiwan_Yuanlin_ss_1162
+  - Hong Kong_Hong Kong_vmess_1163
+  - China_None_vmess_1164
+  - China_None_vmess_1165
+  - China_None_trojan_1166
+  - None_None_vmess_1167
+  - China_None_ss_1168
+  - China_None_ss_1169
+  - China_None_trojan_1170
+  - China_None_vmess_1171
   - China_None_trojan_1172
-  - China_None_ss_1173
+  - None_None_vmess_1173
   - China_Haikou_vmess_1174
-  - China_Guangzhou_vmess_1175
-  - China_None_trojan_1176
-  - None_None_vmess_1177
-  - Singapore_Singapore_ss_1178
-  - United States_Boardman_ss_1179
-  - Singapore_Singapore_ss_1180
-  - China_None_ss_1181
-  - China_None_ss_1182
-  - China_None_vmess_1183
-  - China_None_vmess_1184
-  - China_None_vmess_1185
-  - China_Haikou_vmess_1186
-  - China_Haikou_vmess_1187
-  - China_None_trojan_1188
-  - United Kingdom_None_trojan_1189
-  - South Korea_Eunpyeong-gu_trojan_1190
-  - South Korea_Eunpyeong-gu_trojan_1191
-  - South Korea_Eunpyeong-gu_trojan_1192
+  - China_None_trojan_1175
+  - China_None_ss_1176
+  - China_Haikou_vmess_1177
+  - China_Guangzhou_vmess_1178
+  - United States_Chicago_ss_1179
+  - China_None_trojan_1180
+  - None_None_vmess_1181
+  - Singapore_Singapore_ss_1182
+  - United States_Boardman_ss_1183
+  - Singapore_Singapore_ss_1184
+  - China_None_ss_1185
+  - China_None_ss_1186
+  - China_None_vmess_1187
+  - China_None_vmess_1188
+  - China_None_vmess_1189
+  - China_Haikou_vmess_1190
+  - China_Haikou_vmess_1191
+  - China_None_trojan_1192
+  - United Kingdom_None_trojan_1193
+  - South Korea_Eunpyeong-gu_trojan_1194
+  - South Korea_Eunpyeong-gu_trojan_1195
+  - South Korea_Eunpyeong-gu_trojan_1196
   - France_None_hy_0
   - France_None_hy_1
   - France_None_hy_2
@@ -2516,10 +2592,10 @@ proxy-groups:
   - None_None_vmess_74
   - United States_None_ss_81
   - United States_None_ss_91
-  - South Korea_Incheon_ss_111
-  - Singapore_Singapore_ss_112
-  - Singapore_Singapore_ssr_113
-  - Singapore_Singapore_ssr_114
+  - United Kingdom_London_ss_111
+  - South Korea_Incheon_ss_112
+  - United Kingdom_London_ss_113
+  - United Kingdom_London_ss_114
   - Singapore_Singapore_ssr_115
   - Singapore_Singapore_ssr_116
   - Singapore_Singapore_ssr_117
@@ -2528,19 +2604,19 @@ proxy-groups:
   - Singapore_Singapore_ssr_1110
   - Singapore_Singapore_ssr_1111
   - Singapore_Singapore_ssr_1112
-  - Singapore_Singapore_ssr_1113
+  - United States_Boardman_ssr_1113
   - Singapore_Singapore_ssr_1114
   - Singapore_Singapore_ssr_1115
   - Singapore_Singapore_ssr_1116
   - Singapore_Singapore_ssr_1117
   - Singapore_Singapore_ssr_1118
-  - United States_Boardman_ssr_1119
+  - Singapore_Singapore_ssr_1119
   - Singapore_Singapore_ssr_1120
-  - United Kingdom_London_ss_1121
-  - Japan_Tokyo_ssr_1122
-  - Poland_Warsaw_ss_1123
-  - Russia_Moscow_vmess_1124
-  - Singapore_Singapore_ss_1125
+  - Japan_Tokyo_ss_1121
+  - Portugal_Viana do Castelo_ss_1122
+  - Russia_Moscow_vmess_1123
+  - Singapore_Singapore_ss_1124
+  - Singapore_Singapore_ssr_1125
   - Singapore_Singapore_ssr_1126
   - Singapore_Singapore_ssr_1127
   - Singapore_Singapore_ssr_1128
@@ -2555,59 +2631,63 @@ proxy-groups:
   - Singapore_Singapore_ssr_1137
   - Singapore_Singapore_ssr_1138
   - Singapore_Singapore_ssr_1139
-  - Singapore_Singapore_ssr_1140
-  - Singapore_Singapore_ssr_1141
+  - Singapore_Singapore_trojan_1140
+  - United States_Hillsboro_ss_1141
   - United States_Hillsboro_ss_1142
   - United States_Hillsboro_ss_1143
   - United States_Hillsboro_ss_1144
-  - United States_Hillsboro_ss_1145
+  - Australia_None_ss_1145
   - United States_Santa Clara_ss_1146
-  - United States_Chicago_ss_1147
-  - United States_Hillsboro_ss_1148
+  - United States_Hillsboro_ss_1147
+  - United States_Boardman_ss_1148
   - United States_Hillsboro_ss_1149
   - United States_Hillsboro_ss_1150
   - United States_Hillsboro_ss_1151
-  - United States_New York_ss_1152
-  - United States_Hillsboro_ss_1153
-  - United States_Hillsboro_ss_1154
-  - United States_Hillsboro_ss_1155
+  - United States_Hillsboro_ss_1152
+  - United States_None_vmess_1153
+  - United States_San Jose_vmess_1154
+  - United States_San Jose_vmess_1155
   - United States_None_vmess_1156
-  - United States_Reston_vmess_1157
-  - United States_Los Angeles_vmess_1158
-  - Taiwan_Yuanlin_ss_1159
-  - Hong Kong_Hong Kong_vmess_1160
-  - China_None_vmess_1161
-  - China_None_vmess_1162
-  - China_None_trojan_1163
-  - None_None_vmess_1164
-  - China_None_ss_1165
-  - China_None_ss_1166
-  - China_None_trojan_1167
-  - China_None_vmess_1168
-  - China_None_trojan_1169
-  - None_None_vmess_1170
-  - China_Haikou_vmess_1171
+  - United States_None_vmess_1157
+  - United States_None_vmess_1158
+  - United States_None_vmess_1159
+  - United States_None_vmess_1160
+  - United States_Boardman_trojan_1161
+  - Taiwan_Yuanlin_ss_1162
+  - Hong Kong_Hong Kong_vmess_1163
+  - China_None_vmess_1164
+  - China_None_vmess_1165
+  - China_None_trojan_1166
+  - None_None_vmess_1167
+  - China_None_ss_1168
+  - China_None_ss_1169
+  - China_None_trojan_1170
+  - China_None_vmess_1171
   - China_None_trojan_1172
-  - China_None_ss_1173
+  - None_None_vmess_1173
   - China_Haikou_vmess_1174
-  - China_Guangzhou_vmess_1175
-  - China_None_trojan_1176
-  - None_None_vmess_1177
-  - Singapore_Singapore_ss_1178
-  - United States_Boardman_ss_1179
-  - Singapore_Singapore_ss_1180
-  - China_None_ss_1181
-  - China_None_ss_1182
-  - China_None_vmess_1183
-  - China_None_vmess_1184
-  - China_None_vmess_1185
-  - China_Haikou_vmess_1186
-  - China_Haikou_vmess_1187
-  - China_None_trojan_1188
-  - United Kingdom_None_trojan_1189
-  - South Korea_Eunpyeong-gu_trojan_1190
-  - South Korea_Eunpyeong-gu_trojan_1191
-  - South Korea_Eunpyeong-gu_trojan_1192
+  - China_None_trojan_1175
+  - China_None_ss_1176
+  - China_Haikou_vmess_1177
+  - China_Guangzhou_vmess_1178
+  - United States_Chicago_ss_1179
+  - China_None_trojan_1180
+  - None_None_vmess_1181
+  - Singapore_Singapore_ss_1182
+  - United States_Boardman_ss_1183
+  - Singapore_Singapore_ss_1184
+  - China_None_ss_1185
+  - China_None_ss_1186
+  - China_None_vmess_1187
+  - China_None_vmess_1188
+  - China_None_vmess_1189
+  - China_Haikou_vmess_1190
+  - China_Haikou_vmess_1191
+  - China_None_trojan_1192
+  - United Kingdom_None_trojan_1193
+  - South Korea_Eunpyeong-gu_trojan_1194
+  - South Korea_Eunpyeong-gu_trojan_1195
+  - South Korea_Eunpyeong-gu_trojan_1196
   - France_None_hy_0
   - France_None_hy_1
   - France_None_hy_2
