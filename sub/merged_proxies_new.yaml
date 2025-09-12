@@ -201,11 +201,11 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- name: Hong Kong_Yuen Long San Hui_trojan_105
+- name: China_None_trojan_105
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 42.2.170.224
+  port: 391
+  server: 36.156.102.77
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -213,37 +213,37 @@ proxies:
   name: Hong Kong_None_ss_106
   password: amazongreatvpn
   port: 16888
-  server: 43.198.113.57
+  server: 16.162.12.74
   tfo: false
   type: ss
-- name: Hong Kong_Central_trojan_107
+- name: Japan_Tokyo_trojan_107
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 203.218.202.199
+  port: 2282
+  server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: Taiwan_Taichung_ss_108
-  password: 97a6ea47-3009-48bf-bc5b-2c08e2fe2128
-  port: 10100
-  server: 36.235.20.46
+  password: 8220c028-6220-4bf2-b430-48dee74b2c7d
+  port: 10049
+  server: 114.46.70.163
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: Taiwan_New Taipei_ss_109
-  password: 283bd7ec-0b5c-40bc-8a0a-a86a6355b697
-  port: 10089
-  server: 125.228.180.215
+  name: Taiwan_Taichung_ss_109
+  password: 35606e17-e312-43fd-bc04-1ea719df026f
+  port: 10148
+  server: 111.253.209.194
   tfo: false
   type: ss
 - cipher: rc4-md5
-  name: China_None_ss_1010
+  name: China_Guangzhou_ss_1010
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-5eflEJAUDw.download.microsoft.com
+    host: 202509031722041-lmIPZ06Vxb.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -264,15 +264,7 @@ proxies:
   server: 137.220.142.150
   tfo: false
   type: ss
-- name: China_None_trojan_1012
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1924
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-- name: Japan_Tokyo_trojan_1013
+- name: Japan_Tokyo_trojan_1012
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 316
@@ -280,11 +272,19 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+- name: China_None_trojan_1013
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1924
+  server: 36.156.102.77
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 - cipher: aes-256-gcm
   name: Japan_Tokyo_ss_1014
   password: amazongreatvpn
   port: 16888
-  server: 35.75.5.176
+  server: 35.75.21.109
   tfo: false
   type: ss
 - name: Japan_Tokyo_trojan_1015
@@ -319,25 +319,18 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-128-gcm
-  name: China_None_ss_1018
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12009
-  server: awes35lesl.blhao0o.dpdns.org
-  tfo: false
-  type: ss
 - cipher: rc4-md5
-  name: China_None_ss_1019
+  name: China_Guangzhou_ss_1018
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-5eflEJAUDw.download.microsoft.com
+    host: 202509031722041-lmIPZ06Vxb.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: Japan_Tokyo_trojan_1020
+- name: Japan_Tokyo_trojan_1019
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2966
@@ -345,17 +338,17 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: Japan_Tokyo_trojan_1021
+- name: Japan_Tokyo_trojan_1020
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 18233
-  server: 13.231.37.82
+  port: 1823
+  server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Hong Kong_vmess_1022
+  name: Hong Kong_Hong Kong_vmess_1021
   network: kcp
   port: '28590'
   server: 47.239.183.87
@@ -365,7 +358,7 @@ proxies:
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - alterId: 0
   cipher: auto
-  name: Japan_Tokyo_vmess_1023
+  name: Japan_Tokyo_vmess_1022
   network: kcp
   port: '34933'
   server: 8.209.211.236
@@ -373,7 +366,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
-- name: Austria_Vienna_trojan_1024
+- name: Austria_Vienna_trojan_1023
   network: ws
   password: slch2024
   port: 2096
@@ -386,7 +379,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: Austria_Vienna_trojan_1025
+- name: Austria_Vienna_trojan_1024
   network: ws
   password: slch2024
   port: 2096
@@ -399,7 +392,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Austria_Vienna_trojan_1026
+- name: Austria_Vienna_trojan_1025
   network: ws
   password: slch2024
   port: 2096
@@ -412,11 +405,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Switzerland_None_trojan_1027
+- name: Switzerland_None_trojan_1026
   network: ws
   password: slch2024
   port: 2096
   server: 185.18.250.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: United Kingdom_None_trojan_1027
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.26.229.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -437,7 +443,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+    path: /Telegram
 - name: United Kingdom_None_trojan_1029
   network: ws
   password: slch2024
@@ -450,7 +456,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+    path: /Telegram🇮🇷@ShadowProxy66
 - name: United Kingdom_None_trojan_1030
   network: ws
   password: slch2024
@@ -463,25 +469,25 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷@ShadowProxy66
+    path: /Telegram🇨🇳
 - name: United Kingdom_None_trojan_1031
   network: ws
   password: slch2024
   port: 2096
-  server: 195.26.229.195
-  skip-cert-verify: false
+  server: 195.26.229.87
+  skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: United Kingdom_None_trojan_1032
+    path: /TelegramU0001F1E8U0001F1F3
+- name: United States_Ashburn_trojan_1032
   network: ws
   password: slch2024
   port: 2096
-  server: 195.26.229.87
+  server: 193.124.224.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -495,14 +501,14 @@ proxies:
   password: slch2024
   port: 2096
   server: 193.124.224.195
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+    path: /Telegram
 - name: United States_Ashburn_trojan_1034
   network: ws
   password: slch2024
@@ -515,7 +521,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+    path: /Telegram🇨🇳
 - name: United States_Ashburn_trojan_1035
   network: ws
   password: slch2024
@@ -528,12 +534,12 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: United States_Ashburn_trojan_1036
+    path: /由零开始
+- name: Germany_None_trojan_1036
   network: ws
   password: slch2024
   port: 2096
-  server: 193.124.224.195
+  server: 188.244.122.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -554,7 +560,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+    path: /TelegramU0001F1E8U0001F1F3
 - name: Germany_None_trojan_1038
   network: ws
   password: slch2024
@@ -567,7 +573,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+    path: /Telegram🇨🇳
 - name: Germany_None_trojan_1039
   network: ws
   password: slch2024
@@ -580,12 +586,12 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: Germany_None_trojan_1040
+    path: /Telegram
+- name: Spain_None_trojan_1040
   network: ws
   password: slch2024
   port: 2096
-  server: 188.244.122.195
+  server: 185.251.83.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -606,21 +612,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: Spain_None_trojan_1042
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Spain_None_trojan_1043
+- name: Spain_None_trojan_1042
   network: ws
   password: slch2024
   port: 2096
@@ -633,7 +626,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: Spain_None_trojan_1044
+- name: Spain_None_trojan_1043
   network: ws
   password: slch2024
   port: 2096
@@ -646,7 +639,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Spain_None_trojan_1045
+- name: Spain_None_trojan_1044
   network: ws
   password: slch2024
   port: 2096
@@ -659,7 +652,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: Spain_None_trojan_1046
+- name: Spain_None_trojan_1045
   network: ws
   password: slch2024
   port: 2096
@@ -672,6 +665,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: Spain_None_trojan_1046
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.251.81.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
 - name: Spain_None_trojan_1047
   network: ws
   password: slch2024
@@ -684,21 +690,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: Spain_None_trojan_1048
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Spain_None_trojan_1049
+- name: Spain_None_trojan_1048
   network: ws
   password: slch2024
   port: 2096
@@ -711,7 +704,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Spain_None_trojan_1050
+- name: Spain_None_trojan_1049
   network: ws
   password: slch2024
   port: 2096
@@ -724,7 +717,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始U0001F1E8U0001F1F3
-- name: Spain_None_trojan_1051
+- name: Spain_None_trojan_1050
   network: ws
   password: slch2024
   port: 2096
@@ -737,7 +730,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Spain_None_trojan_1052
+- name: Spain_None_trojan_1051
   network: ws
   password: slch2024
   port: 2096
@@ -750,7 +743,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram@ShadowProxy66
-- name: Spain_None_trojan_1053
+- name: Spain_None_trojan_1052
   network: ws
   password: slch2024
   port: 2096
@@ -763,7 +756,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Spain_None_trojan_1054
+- name: Spain_None_trojan_1053
   network: ws
   password: slch2024
   port: 2096
@@ -776,7 +769,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: France_None_trojan_1055
+- name: France_None_trojan_1054
   network: ws
   password: slch2024
   port: 2096
@@ -789,7 +782,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram@ShadowProxy66
-- name: France_None_trojan_1056
+- name: France_None_trojan_1055
   network: ws
   password: slch2024
   port: 2096
@@ -802,7 +795,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: France_None_trojan_1057
+- name: France_None_trojan_1056
   network: ws
   password: slch2024
   port: 2096
@@ -815,11 +808,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: France_None_trojan_1058
+- name: France_None_trojan_1057
   network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: France_None_trojan_1058
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.16.110.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -833,19 +839,6 @@ proxies:
   password: slch2024
   port: 2096
   server: 185.16.110.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: France_None_trojan_1060
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -854,11 +847,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: France_None_trojan_1061
+- name: France_None_trojan_1060
   network: ws
   password: slch2024
   port: 2096
   server: 185.16.110.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /由零开始
+- name: United Kingdom_None_trojan_1061
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.156.19.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -879,7 +885,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+    path: /Telegram
 - name: United Kingdom_None_trojan_1063
   network: ws
   password: slch2024
@@ -892,7 +898,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+    path: /TelegramU0001F1E8U0001F1F3
 - name: United Kingdom_None_trojan_1064
   network: ws
   password: slch2024
@@ -905,21 +911,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: United Kingdom_None_trojan_1065
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Kazakhstan_Almaty_trojan_1066
+- name: Kazakhstan_Almaty_trojan_1065
   network: ws
   password: slch2024
   port: 2096
@@ -932,7 +925,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Kazakhstan_Almaty_trojan_1067
+- name: Kazakhstan_Almaty_trojan_1066
   network: ws
   password: slch2024
   port: 2096
@@ -945,7 +938,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Kazakhstan_Almaty_trojan_1068
+- name: Kazakhstan_Almaty_trojan_1067
   network: ws
   password: slch2024
   port: 2096
@@ -958,7 +951,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Luxembourg_None_trojan_1069
+- name: Luxembourg_None_trojan_1068
   network: ws
   password: slch2024
   port: 2096
@@ -971,6 +964,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
+- name: Luxembourg_None_trojan_1069
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.42.89.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /TelegramU0001F1E8U0001F1F3
 - name: Luxembourg_None_trojan_1070
   network: ws
   password: slch2024
@@ -983,12 +989,12 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+    path: /Telegram
 - name: Luxembourg_None_trojan_1071
   network: ws
   password: slch2024
   port: 2096
-  server: 188.42.89.195
+  server: 188.42.88.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -996,7 +1002,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+    path: /Telegram🇨🇳
 - name: Luxembourg_None_trojan_1072
   network: ws
   password: slch2024
@@ -1009,21 +1015,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: Luxembourg_None_trojan_1073
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 188.42.88.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: Luxembourg_None_trojan_1074
+- name: Luxembourg_None_trojan_1073
   network: ws
   password: slch2024
   port: 2096
@@ -1036,6 +1029,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: The Netherlands_None_trojan_1074
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.164.248.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
 - name: The Netherlands_None_trojan_1075
   network: ws
   password: slch2024
@@ -1048,21 +1054,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: The Netherlands_None_trojan_1076
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 188.164.248.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: Cyprus_None_trojan_1077
+- name: Cyprus_None_trojan_1076
   network: ws
   password: slch2024
   port: 2096
@@ -1075,7 +1068,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: The Netherlands_None_trojan_1078
+- name: The Netherlands_None_trojan_1077
   network: ws
   password: slch2024
   port: 2096
@@ -1088,6 +1081,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: The Netherlands_None_trojan_1078
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.164.248.87
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
 - name: The Netherlands_None_trojan_1079
   network: ws
   password: slch2024
@@ -1100,21 +1106,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: The Netherlands_None_trojan_1080
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 188.164.248.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram🇮🇷@ShadowProxy66
-- name: United States_None_trojan_1081
+- name: United States_None_trojan_1080
   network: ws
   password: slch2024
   port: 2096
@@ -1127,6 +1120,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
+- name: United States_None_trojan_1081
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.148.107.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram@ShadowProxy66
 - name: United States_None_trojan_1082
   network: ws
   password: slch2024
@@ -1139,21 +1145,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram@ShadowProxy66
-- name: United States_None_trojan_1083
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Russia_None_trojan_1084
+- name: Russia_None_trojan_1083
   network: ws
   password: slch2024
   port: 2096
@@ -1166,7 +1159,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Russia_None_trojan_1085
+- name: Russia_None_trojan_1084
   network: ws
   password: slch2024
   port: 2096
@@ -1179,6 +1172,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
+- name: Russia_None_trojan_1085
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.59.218.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
 - name: Russia_None_trojan_1086
   network: ws
   password: slch2024
@@ -1191,21 +1197,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: Russia_None_trojan_1087
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.59.218.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_1088
+- name: United States_None_trojan_1087
   network: ws
   password: slch2024
   port: 2096
@@ -1218,7 +1211,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Russia_None_trojan_1089
+- name: Russia_None_trojan_1088
   network: ws
   password: slch2024
   port: 2096
@@ -1231,7 +1224,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Russia_Moscow_trojan_1090
+- name: Russia_Moscow_trojan_1089
   network: ws
   password: slch2024
   port: 2096
@@ -1244,7 +1237,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_1091
+- name: United States_None_trojan_1090
   network: ws
   password: slch2024
   port: 2096
@@ -1257,7 +1250,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始U0001F1E8U0001F1F3
-- name: United States_None_trojan_1092
+- name: United States_None_trojan_1091
   network: ws
   password: slch2024
   port: 2096
@@ -1270,7 +1263,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: Russia_Moscow_trojan_1093
+- name: Russia_Moscow_trojan_1092
   network: ws
   password: slch2024
   port: 2096
@@ -1283,7 +1276,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: Russia_None_trojan_1094
+- name: Russia_None_trojan_1093
   network: ws
   password: slch2024
   port: 2096
@@ -1296,7 +1289,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: Russia_Moscow_trojan_1095
+- name: Russia_Moscow_trojan_1094
   network: ws
   password: slch2024
   port: 2096
@@ -1309,7 +1302,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: Russia_None_trojan_1096
+- name: Russia_None_trojan_1095
   network: ws
   password: slch2024
   port: 2096
@@ -1322,6 +1315,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
+- name: United States_None_trojan_1096
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.68.156.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇮🇷ShadowProxy66
 - name: United States_None_trojan_1097
   network: ws
   password: slch2024
@@ -1334,7 +1340,7 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷ShadowProxy66
+    path: /Telegram
 - name: United States_None_trojan_1098
   network: ws
   password: slch2024
@@ -1347,21 +1353,8 @@ proxies:
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: United States_None_trojan_1099
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
     path: /
-- name: United States_None_trojan_10100
+- name: United States_None_trojan_1099
   network: ws
   password: slch2024
   port: 2096
@@ -1374,7 +1367,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇮🇷ShadowProxy66
-- name: United States_None_trojan_10101
+- name: United States_None_trojan_10100
   network: ws
   password: slch2024
   port: 2096
@@ -1387,7 +1380,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_10102
+- name: United States_None_trojan_10101
   network: ws
   password: slch2024
   port: 2096
@@ -1400,11 +1393,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10103
+- name: United States_None_trojan_10102
   network: ws
   password: slch2024
   port: 2096
   server: 209.94.90.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: United States_None_trojan_10103
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.200.160.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1417,19 +1423,6 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 192.200.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: United States_None_trojan_10105
-  network: ws
-  password: slch2024
-  port: 2096
   server: 199.34.229.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
@@ -1439,11 +1432,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10106
+- name: United States_None_trojan_10105
   network: ws
   password: slch2024
   port: 2096
   server: 199.34.230.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: United States_None_trojan_10106
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.0.54.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1456,7 +1462,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 192.0.54.195
+  server: 185.148.104.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1469,7 +1475,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 185.148.104.195
+  server: 192.0.63.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1482,19 +1488,6 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: United States_None_trojan_10110
-  network: ws
-  password: slch2024
-  port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
@@ -1504,7 +1497,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10111
+- name: United States_None_trojan_10110
   network: ws
   password: slch2024
   port: 2096
@@ -1517,7 +1510,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10112
+- name: United States_None_trojan_10111
   network: ws
   password: slch2024
   port: 2096
@@ -1530,7 +1523,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_10113
+- name: United States_None_trojan_10112
   network: ws
   password: slch2024
   port: 2096
@@ -1543,7 +1536,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_10114
+- name: United States_None_trojan_10113
   network: ws
   password: slch2024
   port: 2096
@@ -1556,7 +1549,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10115
+- name: United States_None_trojan_10114
   network: ws
   password: slch2024
   port: 2096
@@ -1569,7 +1562,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇮🇷@ShadowProxy66
-- name: United States_None_trojan_10116
+- name: United States_None_trojan_10115
   network: ws
   password: slch2024
   port: 2096
@@ -1582,7 +1575,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10117
+- name: United States_None_trojan_10116
   network: ws
   password: slch2024
   port: 2096
@@ -1595,7 +1588,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10118
+- name: United States_None_trojan_10117
   network: ws
   password: slch2024
   port: 2096
@@ -1608,7 +1601,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10119
+- name: United States_None_trojan_10118
   network: ws
   password: slch2024
   port: 2096
@@ -1621,11 +1614,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10120
+- name: United States_None_trojan_10119
   network: ws
   password: slch2024
   port: 2096
   server: 185.148.105.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: United States_None_trojan_10120
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.13.45.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1638,19 +1644,6 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 195.13.45.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: United States_None_trojan_10122
-  network: ws
-  password: slch2024
-  port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
@@ -1660,7 +1653,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram@ShadowProxy66
-- name: United States_None_trojan_10123
+- name: United States_None_trojan_10122
   network: ws
   password: slch2024
   port: 2096
@@ -1673,7 +1666,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10124
+- name: United States_None_trojan_10123
   network: ws
   password: slch2024
   port: 2096
@@ -1686,7 +1679,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10125
+- name: United States_None_trojan_10124
   network: ws
   password: slch2024
   port: 2096
@@ -1699,7 +1692,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10126
+- name: United States_None_trojan_10125
   network: ws
   password: slch2024
   port: 2096
@@ -1712,7 +1705,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10127
+- name: United States_None_trojan_10126
   network: ws
   password: slch2024
   port: 2096
@@ -1725,7 +1718,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10128
+- name: United States_None_trojan_10127
   network: ws
   password: slch2024
   port: 2096
@@ -1738,7 +1731,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始@ShadowProxy66
-- name: United States_None_trojan_10129
+- name: United States_None_trojan_10128
   network: ws
   password: slch2024
   port: 2096
@@ -1751,7 +1744,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1EEU0001F1F7ShadowProxy66
-- name: United States_None_trojan_10130
+- name: United States_None_trojan_10129
   network: ws
   password: slch2024
   port: 2096
@@ -1764,11 +1757,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10131
+- name: United States_None_trojan_10130
   network: ws
   password: slch2024
   port: 2096
   server: 198.62.62.87
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram
+- name: United States_None_trojan_10131
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1781,19 +1787,6 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 198.62.62.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: United States_None_trojan_10133
-  network: ws
-  password: slch2024
-  port: 2096
   server: 195.13.45.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
@@ -1803,7 +1796,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10134
+- name: United States_None_trojan_10133
   network: ws
   password: slch2024
   port: 2096
@@ -1816,7 +1809,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10135
+- name: United States_None_trojan_10134
   network: ws
   password: slch2024
   port: 2096
@@ -1829,7 +1822,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_10136
+- name: United States_None_trojan_10135
   network: ws
   password: slch2024
   port: 2096
@@ -1842,7 +1835,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10137
+- name: United States_None_trojan_10136
   network: ws
   password: slch2024
   port: 2096
@@ -1855,7 +1848,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram
-- name: United States_None_trojan_10138
+- name: United States_None_trojan_10137
   network: ws
   password: slch2024
   port: 2096
@@ -1868,7 +1861,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /由零开始
-- name: United States_None_trojan_10139
+- name: United States_None_trojan_10138
   network: ws
   password: slch2024
   port: 2096
@@ -1881,7 +1874,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: United States_None_trojan_10140
+- name: United States_None_trojan_10139
   network: ws
   password: slch2024
   port: 2096
@@ -2076,7 +2069,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: rc4-md5
-  name: China_None_ss_1120
+  name: China_Guangzhou_ss_1120
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -2157,7 +2150,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: rc4-md5
-  name: China_None_ss_1128
+  name: China_Guangzhou_ss_1128
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -3860,42 +3853,42 @@ proxy-groups:
   - China_None_vmess_102
   - China_None_ss_103
   - Hong Kong_Central_vmess_104
-  - Hong Kong_Yuen Long San Hui_trojan_105
+  - China_None_trojan_105
   - Hong Kong_None_ss_106
-  - Hong Kong_Central_trojan_107
+  - Japan_Tokyo_trojan_107
   - Taiwan_Taichung_ss_108
-  - Taiwan_New Taipei_ss_109
-  - China_None_ss_1010
+  - Taiwan_Taichung_ss_109
+  - China_Guangzhou_ss_1010
   - Japan_Tokyo_ss_1011
-  - China_None_trojan_1012
-  - Japan_Tokyo_trojan_1013
+  - Japan_Tokyo_trojan_1012
+  - China_None_trojan_1013
   - Japan_Tokyo_ss_1014
   - Japan_Tokyo_trojan_1015
   - China_None_trojan_1016
   - China_None_vmess_1017
-  - China_None_ss_1018
-  - China_None_ss_1019
+  - China_Guangzhou_ss_1018
+  - Japan_Tokyo_trojan_1019
   - Japan_Tokyo_trojan_1020
-  - Japan_Tokyo_trojan_1021
-  - Hong Kong_Hong Kong_vmess_1022
-  - Japan_Tokyo_vmess_1023
+  - Hong Kong_Hong Kong_vmess_1021
+  - Japan_Tokyo_vmess_1022
+  - Austria_Vienna_trojan_1023
   - Austria_Vienna_trojan_1024
   - Austria_Vienna_trojan_1025
-  - Austria_Vienna_trojan_1026
-  - Switzerland_None_trojan_1027
+  - Switzerland_None_trojan_1026
+  - United Kingdom_None_trojan_1027
   - United Kingdom_None_trojan_1028
   - United Kingdom_None_trojan_1029
   - United Kingdom_None_trojan_1030
   - United Kingdom_None_trojan_1031
-  - United Kingdom_None_trojan_1032
+  - United States_Ashburn_trojan_1032
   - United States_Ashburn_trojan_1033
   - United States_Ashburn_trojan_1034
   - United States_Ashburn_trojan_1035
-  - United States_Ashburn_trojan_1036
+  - Germany_None_trojan_1036
   - Germany_None_trojan_1037
   - Germany_None_trojan_1038
   - Germany_None_trojan_1039
-  - Germany_None_trojan_1040
+  - Spain_None_trojan_1040
   - Spain_None_trojan_1041
   - Spain_None_trojan_1042
   - Spain_None_trojan_1043
@@ -3909,49 +3902,49 @@ proxy-groups:
   - Spain_None_trojan_1051
   - Spain_None_trojan_1052
   - Spain_None_trojan_1053
-  - Spain_None_trojan_1054
+  - France_None_trojan_1054
   - France_None_trojan_1055
   - France_None_trojan_1056
   - France_None_trojan_1057
   - France_None_trojan_1058
   - France_None_trojan_1059
   - France_None_trojan_1060
-  - France_None_trojan_1061
+  - United Kingdom_None_trojan_1061
   - United Kingdom_None_trojan_1062
   - United Kingdom_None_trojan_1063
   - United Kingdom_None_trojan_1064
-  - United Kingdom_None_trojan_1065
+  - Kazakhstan_Almaty_trojan_1065
   - Kazakhstan_Almaty_trojan_1066
   - Kazakhstan_Almaty_trojan_1067
-  - Kazakhstan_Almaty_trojan_1068
+  - Luxembourg_None_trojan_1068
   - Luxembourg_None_trojan_1069
   - Luxembourg_None_trojan_1070
   - Luxembourg_None_trojan_1071
   - Luxembourg_None_trojan_1072
   - Luxembourg_None_trojan_1073
-  - Luxembourg_None_trojan_1074
+  - The Netherlands_None_trojan_1074
   - The Netherlands_None_trojan_1075
-  - The Netherlands_None_trojan_1076
-  - Cyprus_None_trojan_1077
+  - Cyprus_None_trojan_1076
+  - The Netherlands_None_trojan_1077
   - The Netherlands_None_trojan_1078
   - The Netherlands_None_trojan_1079
-  - The Netherlands_None_trojan_1080
+  - United States_None_trojan_1080
   - United States_None_trojan_1081
   - United States_None_trojan_1082
-  - United States_None_trojan_1083
+  - Russia_None_trojan_1083
   - Russia_None_trojan_1084
   - Russia_None_trojan_1085
   - Russia_None_trojan_1086
-  - Russia_None_trojan_1087
-  - United States_None_trojan_1088
-  - Russia_None_trojan_1089
-  - Russia_Moscow_trojan_1090
+  - United States_None_trojan_1087
+  - Russia_None_trojan_1088
+  - Russia_Moscow_trojan_1089
+  - United States_None_trojan_1090
   - United States_None_trojan_1091
-  - United States_None_trojan_1092
-  - Russia_Moscow_trojan_1093
-  - Russia_None_trojan_1094
-  - Russia_Moscow_trojan_1095
-  - Russia_None_trojan_1096
+  - Russia_Moscow_trojan_1092
+  - Russia_None_trojan_1093
+  - Russia_Moscow_trojan_1094
+  - Russia_None_trojan_1095
+  - United States_None_trojan_1096
   - United States_None_trojan_1097
   - United States_None_trojan_1098
   - United States_None_trojan_1099
@@ -3995,7 +3988,6 @@ proxy-groups:
   - United States_None_trojan_10137
   - United States_None_trojan_10138
   - United States_None_trojan_10139
-  - United States_None_trojan_10140
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -4015,7 +4007,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1117
   - Taiwan_Taichung_ss_1118
   - Taiwan_Taichung_ss_1119
-  - China_None_ss_1120
+  - China_Guangzhou_ss_1120
   - Japan_Tokyo_ss_1121
   - Japan_Tokyo_trojan_1122
   - China_None_trojan_1123
@@ -4023,7 +4015,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1125
   - China_None_trojan_1126
   - China_None_vmess_1127
-  - China_None_ss_1128
+  - China_Guangzhou_ss_1128
   - Japan_Tokyo_trojan_1129
   - Japan_Tokyo_trojan_1130
   - Hong Kong_Hong Kong_vmess_1131
@@ -4175,42 +4167,42 @@ proxy-groups:
   - China_None_vmess_102
   - China_None_ss_103
   - Hong Kong_Central_vmess_104
-  - Hong Kong_Yuen Long San Hui_trojan_105
+  - China_None_trojan_105
   - Hong Kong_None_ss_106
-  - Hong Kong_Central_trojan_107
+  - Japan_Tokyo_trojan_107
   - Taiwan_Taichung_ss_108
-  - Taiwan_New Taipei_ss_109
-  - China_None_ss_1010
+  - Taiwan_Taichung_ss_109
+  - China_Guangzhou_ss_1010
   - Japan_Tokyo_ss_1011
-  - China_None_trojan_1012
-  - Japan_Tokyo_trojan_1013
+  - Japan_Tokyo_trojan_1012
+  - China_None_trojan_1013
   - Japan_Tokyo_ss_1014
   - Japan_Tokyo_trojan_1015
   - China_None_trojan_1016
   - China_None_vmess_1017
-  - China_None_ss_1018
-  - China_None_ss_1019
+  - China_Guangzhou_ss_1018
+  - Japan_Tokyo_trojan_1019
   - Japan_Tokyo_trojan_1020
-  - Japan_Tokyo_trojan_1021
-  - Hong Kong_Hong Kong_vmess_1022
-  - Japan_Tokyo_vmess_1023
+  - Hong Kong_Hong Kong_vmess_1021
+  - Japan_Tokyo_vmess_1022
+  - Austria_Vienna_trojan_1023
   - Austria_Vienna_trojan_1024
   - Austria_Vienna_trojan_1025
-  - Austria_Vienna_trojan_1026
-  - Switzerland_None_trojan_1027
+  - Switzerland_None_trojan_1026
+  - United Kingdom_None_trojan_1027
   - United Kingdom_None_trojan_1028
   - United Kingdom_None_trojan_1029
   - United Kingdom_None_trojan_1030
   - United Kingdom_None_trojan_1031
-  - United Kingdom_None_trojan_1032
+  - United States_Ashburn_trojan_1032
   - United States_Ashburn_trojan_1033
   - United States_Ashburn_trojan_1034
   - United States_Ashburn_trojan_1035
-  - United States_Ashburn_trojan_1036
+  - Germany_None_trojan_1036
   - Germany_None_trojan_1037
   - Germany_None_trojan_1038
   - Germany_None_trojan_1039
-  - Germany_None_trojan_1040
+  - Spain_None_trojan_1040
   - Spain_None_trojan_1041
   - Spain_None_trojan_1042
   - Spain_None_trojan_1043
@@ -4224,49 +4216,49 @@ proxy-groups:
   - Spain_None_trojan_1051
   - Spain_None_trojan_1052
   - Spain_None_trojan_1053
-  - Spain_None_trojan_1054
+  - France_None_trojan_1054
   - France_None_trojan_1055
   - France_None_trojan_1056
   - France_None_trojan_1057
   - France_None_trojan_1058
   - France_None_trojan_1059
   - France_None_trojan_1060
-  - France_None_trojan_1061
+  - United Kingdom_None_trojan_1061
   - United Kingdom_None_trojan_1062
   - United Kingdom_None_trojan_1063
   - United Kingdom_None_trojan_1064
-  - United Kingdom_None_trojan_1065
+  - Kazakhstan_Almaty_trojan_1065
   - Kazakhstan_Almaty_trojan_1066
   - Kazakhstan_Almaty_trojan_1067
-  - Kazakhstan_Almaty_trojan_1068
+  - Luxembourg_None_trojan_1068
   - Luxembourg_None_trojan_1069
   - Luxembourg_None_trojan_1070
   - Luxembourg_None_trojan_1071
   - Luxembourg_None_trojan_1072
   - Luxembourg_None_trojan_1073
-  - Luxembourg_None_trojan_1074
+  - The Netherlands_None_trojan_1074
   - The Netherlands_None_trojan_1075
-  - The Netherlands_None_trojan_1076
-  - Cyprus_None_trojan_1077
+  - Cyprus_None_trojan_1076
+  - The Netherlands_None_trojan_1077
   - The Netherlands_None_trojan_1078
   - The Netherlands_None_trojan_1079
-  - The Netherlands_None_trojan_1080
+  - United States_None_trojan_1080
   - United States_None_trojan_1081
   - United States_None_trojan_1082
-  - United States_None_trojan_1083
+  - Russia_None_trojan_1083
   - Russia_None_trojan_1084
   - Russia_None_trojan_1085
   - Russia_None_trojan_1086
-  - Russia_None_trojan_1087
-  - United States_None_trojan_1088
-  - Russia_None_trojan_1089
-  - Russia_Moscow_trojan_1090
+  - United States_None_trojan_1087
+  - Russia_None_trojan_1088
+  - Russia_Moscow_trojan_1089
+  - United States_None_trojan_1090
   - United States_None_trojan_1091
-  - United States_None_trojan_1092
-  - Russia_Moscow_trojan_1093
-  - Russia_None_trojan_1094
-  - Russia_Moscow_trojan_1095
-  - Russia_None_trojan_1096
+  - Russia_Moscow_trojan_1092
+  - Russia_None_trojan_1093
+  - Russia_Moscow_trojan_1094
+  - Russia_None_trojan_1095
+  - United States_None_trojan_1096
   - United States_None_trojan_1097
   - United States_None_trojan_1098
   - United States_None_trojan_1099
@@ -4310,7 +4302,6 @@ proxy-groups:
   - United States_None_trojan_10137
   - United States_None_trojan_10138
   - United States_None_trojan_10139
-  - United States_None_trojan_10140
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -4330,7 +4321,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1117
   - Taiwan_Taichung_ss_1118
   - Taiwan_Taichung_ss_1119
-  - China_None_ss_1120
+  - China_Guangzhou_ss_1120
   - Japan_Tokyo_ss_1121
   - Japan_Tokyo_trojan_1122
   - China_None_trojan_1123
@@ -4338,7 +4329,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1125
   - China_None_trojan_1126
   - China_None_vmess_1127
-  - China_None_ss_1128
+  - China_Guangzhou_ss_1128
   - Japan_Tokyo_trojan_1129
   - Japan_Tokyo_trojan_1130
   - Hong Kong_Hong Kong_vmess_1131
