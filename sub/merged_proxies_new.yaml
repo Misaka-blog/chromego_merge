@@ -195,33 +195,25 @@ proxies:
   tls: false
   type: vmess
   uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
-- name: China_None_trojan_105
+- name: Japan_Minokamo_trojan_105
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 4400
-  server: 221.128.195.222
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 443
+  server: 60.82.70.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: Hong Kong_Man Kok_trojan_106
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
+  password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
   server: 58.152.53.162
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: China_None_trojan_107
-  network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 1920
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_108
+  name: China_None_vmess_107
   network: ws
   port: '30806'
   server: v6.heduian.link
@@ -235,46 +227,40 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: China_None_trojan_109
+- name: China_None_trojan_108
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 3271
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 3272
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1010
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 194.68.27.76
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: South Korea_None_ss_1011
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  tfo: false
-  type: ss
-- name: China_None_trojan_1012
+- name: China_None_trojan_109
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 2173
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 1806
   server: 36.156.102.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: China_None_trojan_1013
+- name: China_None_trojan_1010
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 5321
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 2283
   server: 36.156.102.84
-  skip-cert-verify: true
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: China_None_trojan_1011
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 1085
+  server: 36.156.102.84
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: Singapore_Singapore_ss_1014
+  name: Singapore_Singapore_ss_1012
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -284,32 +270,42 @@ proxies:
   server: 5.44.249.43
   tfo: false
   type: ss
-- name: China_None_trojan_1015
+- alterId: 0
+  cipher: auto
+  name: Singapore_None_vmess_1013
+  port: 22433
+  server: 47.245.106.193
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+- name: China_None_trojan_1014
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 24673
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 6752
   server: 36.156.102.84
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: China_None_trojan_1016
+- name: China_None_trojan_1015
   network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
+  password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
   server: 36.156.102.84
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
 - cipher: aes-256-cfb
-  name: Vietnam_None_ss_1017
+  name: Vietnam_None_ss_1016
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.27
+  server: 103.186.154.237
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1018
+  name: Hong Kong_None_vmess_1017
   network: tcp
   port: '41522'
   server: 43.247.135.17
@@ -317,6 +313,16 @@ proxies:
   tls: false
   type: vmess
   uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
+- alterId: 0
+  cipher: auto
+  name: Singapore_None_vmess_1018
+  network: tcp
+  port: '22433'
+  server: 47.245.106.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - name: Singapore_None_trojan_1019
   network: ws
   password: wb6368
@@ -727,20 +733,20 @@ proxy-groups:
   - China_None_vmess_102
   - Hong Kong_None_ss_103
   - Hong Kong_None_vmess_104
-  - China_None_trojan_105
+  - Japan_Minokamo_trojan_105
   - Hong Kong_Man Kok_trojan_106
-  - China_None_trojan_107
-  - China_None_vmess_108
+  - China_None_vmess_107
+  - China_None_trojan_108
   - China_None_trojan_109
-  - Japan_Tokyo_ss_1010
-  - South Korea_None_ss_1011
-  - China_None_trojan_1012
-  - China_None_trojan_1013
-  - Singapore_Singapore_ss_1014
+  - China_None_trojan_1010
+  - China_None_trojan_1011
+  - Singapore_Singapore_ss_1012
+  - Singapore_None_vmess_1013
+  - China_None_trojan_1014
   - China_None_trojan_1015
-  - China_None_trojan_1016
-  - Vietnam_None_ss_1017
-  - Hong Kong_None_vmess_1018
+  - Vietnam_None_ss_1016
+  - Hong Kong_None_vmess_1017
+  - Singapore_None_vmess_1018
   - Singapore_None_trojan_1019
   - Singapore_Singapore_trojan_1020
   - Unknown_vmess_111
@@ -799,20 +805,20 @@ proxy-groups:
   - China_None_vmess_102
   - Hong Kong_None_ss_103
   - Hong Kong_None_vmess_104
-  - China_None_trojan_105
+  - Japan_Minokamo_trojan_105
   - Hong Kong_Man Kok_trojan_106
-  - China_None_trojan_107
-  - China_None_vmess_108
+  - China_None_vmess_107
+  - China_None_trojan_108
   - China_None_trojan_109
-  - Japan_Tokyo_ss_1010
-  - South Korea_None_ss_1011
-  - China_None_trojan_1012
-  - China_None_trojan_1013
-  - Singapore_Singapore_ss_1014
+  - China_None_trojan_1010
+  - China_None_trojan_1011
+  - Singapore_Singapore_ss_1012
+  - Singapore_None_vmess_1013
+  - China_None_trojan_1014
   - China_None_trojan_1015
-  - China_None_trojan_1016
-  - Vietnam_None_ss_1017
-  - Hong Kong_None_vmess_1018
+  - Vietnam_None_ss_1016
+  - Hong Kong_None_vmess_1017
+  - Singapore_None_vmess_1018
   - Singapore_None_trojan_1019
   - Singapore_Singapore_trojan_1020
   - Unknown_vmess_111
