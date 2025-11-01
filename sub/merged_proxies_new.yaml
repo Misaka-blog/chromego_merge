@@ -466,6 +466,7 @@ proxies:
   server: 36.156.102.74
   skip-cert-verify: true
   type: trojan
+  udp: true
 - name: China_None_trojan_1116
   network: tcp
   password: BxceQaOe
@@ -514,6 +515,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: China_Chengdu_trojan_1122
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
@@ -522,6 +524,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: China_None_trojan_1123
   network: tcp
   password: BxceQaOe
@@ -552,7 +555,6 @@ proxies:
   server: 36.156.102.74
   skip-cert-verify: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: China_Jinan_vmess_1127
@@ -563,12 +565,28 @@ proxies:
   tls: false
   type: vmess
   uuid: de32752c-0661-467e-82d3-35bc740a787f
-- name: China_None_trojan_1128
-  password: b00abf05-5768-4ac9-8d20-6b1bd605bcf6
-  port: 42765
-  server: hxfz940e90d9.nfwzdm.com
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
+- name: China_Shanghai_trojan_1128
+  password: 7197668c-0332-466e-9553-41639c4bc95f
+  port: 23100
+  server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: false
+  sni: uk01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- name: China_Shanghai_trojan_1129
+  password: 2c1f575d-08ad-4ad8-b2b2-f147379dd36d
+  port: 28100
+  server: n002.xunxunmimisbs.sbs
+  skip-cert-verify: false
+  sni: db01.xxxxyyyysbs.sbs
+  type: trojan
+  udp: true
+- name: China_Shanghai_trojan_1130
+  password: f128c8a8-d184-4f9d-8aa2-503266130126
+  port: 23100
+  server: n001.xunxunmimisbs.sbs
+  skip-cert-verify: false
+  sni: uk01.xxxxyyyysbs.sbs
   type: trojan
   udp: true
 - name: The Netherlands_Amsterdam_hy_0
@@ -718,7 +736,9 @@ proxy-groups:
   - China_Chengdu_trojan_1125
   - China_None_trojan_1126
   - China_Jinan_vmess_1127
-  - China_None_trojan_1128
+  - China_Shanghai_trojan_1128
+  - China_Shanghai_trojan_1129
+  - China_Shanghai_trojan_1130
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
@@ -788,7 +808,9 @@ proxy-groups:
   - China_Chengdu_trojan_1125
   - China_None_trojan_1126
   - China_Jinan_vmess_1127
-  - China_None_trojan_1128
+  - China_Shanghai_trojan_1128
+  - China_Shanghai_trojan_1129
+  - China_Shanghai_trojan_1130
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
