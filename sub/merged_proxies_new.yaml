@@ -465,6 +465,7 @@ proxies:
   server: 203.198.122.129
   skip-cert-verify: true
   type: trojan
+  udp: true
 - name: China_None_trojan_1117
   network: tcp
   password: BxceQaOe
@@ -490,6 +491,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: China_Chengdu_trojan_1120
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
@@ -517,6 +519,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Japan_Tokyo_trojan_1123
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
@@ -565,14 +568,27 @@ proxies:
   tls: false
   type: vmess
   uuid: de32752c-0661-467e-82d3-35bc740a787f
-- name: Germany_Frankfurt am Main_trojan_1129
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.78.19.159
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+- name: China_None_trojan_1129
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: false
+  sni: dingding-doc.com
   type: trojan
   udp: true
+- name: Japan_None_trojan_1130
+  network: ws
+  password: trojan
+  port: 443
+  server: 103.116.7.1
+  skip-cert-verify: false
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - name: The Netherlands_Amsterdam_hy_0
   type: hysteria
   server: 109.104.153.91
@@ -720,7 +736,8 @@ proxy-groups:
   - China_Chengdu_trojan_1126
   - China_None_trojan_1127
   - China_Jinan_vmess_1128
-  - Germany_Frankfurt am Main_trojan_1129
+  - China_None_trojan_1129
+  - Japan_None_trojan_1130
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
@@ -790,7 +807,8 @@ proxy-groups:
   - China_Chengdu_trojan_1126
   - China_None_trojan_1127
   - China_Jinan_vmess_1128
-  - Germany_Frankfurt am Main_trojan_1129
+  - China_None_trojan_1129
+  - Japan_None_trojan_1130
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
