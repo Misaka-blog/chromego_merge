@@ -466,6 +466,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - name: Hong Kong_Central_trojan_1116
   network: tcp
   password: BxceQaOe
@@ -566,35 +567,32 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: France_Paris_trojan_1128
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.36.161.224
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: Poland_Warsaw_trojan_1129
+- name: The Netherlands_Amsterdam_trojan_1128
   network: ws
-  password: -4146XJHYAzJ4K8Ov6_LBQ
-  port: 11000
-  server: 194.35.116.62
+  password: e812343b-61a1-46fd-b086-b1395d0eb7de
+  port: 443
+  server: 89.110.116.141
   skip-cert-verify: false
-  sni: f4e23c6c168f0e91.noproblemvpn.ru
+  sni: joss.gpj.web.id
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: f4e23c6c168f0e91.noproblemvpn.ru
-    path: /tw
-- name: United States_None_trojan_1130
-  password: telegram-id-directvpn
-  port: 22223
-  server: 51.45.34.73
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+      Host: joss.gpj.web.id
+    path: /Free-VPN-CF-Geo-Project/89.110.116.141=443
+- name: Russia_Moscow_trojan_1129
+  network: ws
+  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
+  port: 2053
+  server: 95.182.120.208
+  skip-cert-verify: false
+  sni: joss.gpj.web.id
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj.web.id
+    path: /Free-VPN-CF-Geo-Project/95.182.120.208=2053
 - name: Unknown_reality_0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -685,9 +683,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_1125
   - Japan_Tokyo_trojan_1126
   - Hong Kong_None_trojan_1127
-  - France_Paris_trojan_1128
-  - Poland_Warsaw_trojan_1129
-  - United States_None_trojan_1130
+  - The Netherlands_Amsterdam_trojan_1128
+  - Russia_Moscow_trojan_1129
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 自动选择
@@ -752,9 +749,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_1125
   - Japan_Tokyo_trojan_1126
   - Hong Kong_None_trojan_1127
-  - France_Paris_trojan_1128
-  - Poland_Warsaw_trojan_1129
-  - United States_None_trojan_1130
+  - The Netherlands_Amsterdam_trojan_1128
+  - Russia_Moscow_trojan_1129
   - Unknown_reality_0
   - Unknown_reality_3
 rules:
