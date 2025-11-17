@@ -444,7 +444,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
 - name: Hong Kong_Central_trojan_1116
   network: tcp
   password: BxceQaOe
@@ -550,32 +549,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d975a2bf-0fa0-3c3e-947a-a7c75b159b1c
-- name: The Netherlands_Amsterdam_trojan_1129
-  network: ws
-  password: e812343b-61a1-46fd-b086-b1395d0eb7de
-  port: 443
-  server: 89.110.116.141
-  skip-cert-verify: false
-  sni: joss.gpj.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj.web.id
-    path: /Free-VPN-CF-Geo-Project/89.110.116.141=443
-- name: Russia_Moscow_trojan_1130
-  network: ws
-  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
-  port: 2053
-  server: 95.182.120.208
-  skip-cert-verify: false
-  sni: joss.gpj.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj.web.id
-    path: /Free-VPN-CF-Geo-Project/95.182.120.208=2053
 - name: Unknown_reality_0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -666,8 +639,6 @@ proxy-groups:
   - Hong Kong_None_trojan_1126
   - Vietnam_None_ss_1127
   - China_Guangzhou_vmess_1128
-  - The Netherlands_Amsterdam_trojan_1129
-  - Russia_Moscow_trojan_1130
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 自动选择
@@ -732,8 +703,6 @@ proxy-groups:
   - Hong Kong_None_trojan_1126
   - Vietnam_None_ss_1127
   - China_Guangzhou_vmess_1128
-  - The Netherlands_Amsterdam_trojan_1129
-  - Russia_Moscow_trojan_1130
   - Unknown_reality_0
   - Unknown_reality_3
 rules:
