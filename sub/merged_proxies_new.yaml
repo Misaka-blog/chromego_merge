@@ -155,7 +155,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Mid Levels_vmess_102
+  name: Hong Kong_Central_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -200,6 +200,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_107
@@ -318,7 +319,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Mid Levels_vmess_1020
+  name: Hong Kong_Central_vmess_1020
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -336,6 +337,53 @@ proxies:
   tls: false
   type: vmess
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
+- name: Hong Kong_Kowloon_trojan_1022
+  password: BxceQaOe
+  port: 443
+  server: 112.118.116.66
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- name: Luxembourg_Luxembourg_trojan_1023
+  network: ws
+  password: f42d1b0d-c398-43cb-be37-d739b1477a5d
+  port: 443
+  server: 107.189.3.96
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj4.web.id
+    path: /Free-VPN-CF-Geo-Project/107.189.3.96=443
+- name: Portugal_Lisbon_trojan_1024
+  network: ws
+  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
+  port: 443
+  server: 5.182.39.57
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj4.web.id
+    path: /Free-VPN-CF-Geo-Project/5.182.39.57=443
+- name: United States_Dallas_trojan_1025
+  network: ws
+  password: 034299f4-a5d4-4bdd-a6b0-a2a308ffe6be
+  port: 8443
+  server: 192.227.138.249
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj4.web.id
+    path: /Free-VPN-CF-Geo-Project/192.227.138.249=8443
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -434,7 +482,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Mid Levels_vmess_1112
+  name: Hong Kong_Central_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -597,7 +645,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Mid Levels_vmess_1130
+  name: Hong Kong_Central_vmess_1130
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -660,7 +708,7 @@ proxy-groups:
   - Unknown_hysteria_81
   - Unknown_hysteria_91
   - United States_None_ss_101
-  - Hong Kong_Mid Levels_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_None_ss_103
   - Hong Kong_Central_trojan_104
   - Hong Kong_Sai Wan_trojan_105
@@ -678,8 +726,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1017
   - Japan_Tokyo_trojan_1018
   - Hong Kong_Central_trojan_1019
-  - Hong Kong_Mid Levels_vmess_1020
+  - Hong Kong_Central_vmess_1020
   - Hong Kong_Hong Kong_vmess_1021
+  - Hong Kong_Kowloon_trojan_1022
+  - Luxembourg_Luxembourg_trojan_1023
+  - Portugal_Lisbon_trojan_1024
+  - United States_Dallas_trojan_1025
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -691,7 +743,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Mid Levels_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Hong Kong_None_ss_1113
   - Hong Kong_Central_trojan_1114
   - Hong Kong_Sai Wan_trojan_1115
@@ -709,7 +761,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1127
   - Japan_Tokyo_trojan_1128
   - Hong Kong_Central_trojan_1129
-  - Hong Kong_Mid Levels_vmess_1130
+  - Hong Kong_Central_vmess_1130
   - Hong Kong_Hong Kong_vmess_1131
   - Unknown_reality_0
   - Unknown_reality_3
@@ -730,7 +782,7 @@ proxy-groups:
   - Unknown_hysteria_81
   - Unknown_hysteria_91
   - United States_None_ss_101
-  - Hong Kong_Mid Levels_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_None_ss_103
   - Hong Kong_Central_trojan_104
   - Hong Kong_Sai Wan_trojan_105
@@ -748,8 +800,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1017
   - Japan_Tokyo_trojan_1018
   - Hong Kong_Central_trojan_1019
-  - Hong Kong_Mid Levels_vmess_1020
+  - Hong Kong_Central_vmess_1020
   - Hong Kong_Hong Kong_vmess_1021
+  - Hong Kong_Kowloon_trojan_1022
+  - Luxembourg_Luxembourg_trojan_1023
+  - Portugal_Lisbon_trojan_1024
+  - United States_Dallas_trojan_1025
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -761,7 +817,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Mid Levels_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Hong Kong_None_ss_1113
   - Hong Kong_Central_trojan_1114
   - Hong Kong_Sai Wan_trojan_1115
@@ -779,7 +835,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1127
   - Japan_Tokyo_trojan_1128
   - Hong Kong_Central_trojan_1129
-  - Hong Kong_Mid Levels_vmess_1130
+  - Hong Kong_Central_vmess_1130
   - Hong Kong_Hong Kong_vmess_1131
   - Unknown_reality_0
   - Unknown_reality_3
