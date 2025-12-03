@@ -212,7 +212,7 @@ proxies:
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Aberdeen_vmess_108
+  name: Hong Kong_Central_vmess_108
   network: ws
   port: '80'
   server: a48b0e7b-t6ngg0-t8tsp0-1szmi.hk3.p5pv.com
@@ -527,6 +527,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1117
@@ -538,7 +539,7 @@ proxies:
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Aberdeen_vmess_1118
+  name: Hong Kong_Central_vmess_1118
   network: ws
   port: '80'
   server: a48b0e7b-t6ngg0-t8tsp0-1szmi.hk3.p5pv.com
@@ -663,6 +664,53 @@ proxies:
   tls: false
   type: vmess
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
+- name: Hong Kong_Kowloon_trojan_1132
+  password: BxceQaOe
+  port: 443
+  server: 112.118.116.66
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- name: Luxembourg_Luxembourg_trojan_1133
+  network: ws
+  password: f42d1b0d-c398-43cb-be37-d739b1477a5d
+  port: 443
+  server: 107.189.3.96
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj4.web.id
+    path: /Free-VPN-CF-Geo-Project/107.189.3.96=443
+- name: Portugal_Lisbon_trojan_1134
+  network: ws
+  password: 6c7d536e-1ecf-448d-83c1-3044dd89ceac
+  port: 443
+  server: 5.182.39.57
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj4.web.id
+    path: /Free-VPN-CF-Geo-Project/5.182.39.57=443
+- name: United States_Dallas_trojan_1135
+  network: ws
+  password: 034299f4-a5d4-4bdd-a6b0-a2a308ffe6be
+  port: 8443
+  server: 192.227.138.249
+  skip-cert-verify: false
+  sni: joss.gpj4.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj4.web.id
+    path: /Free-VPN-CF-Geo-Project/192.227.138.249=8443
 - name: Unknown_reality_0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -714,7 +762,7 @@ proxy-groups:
   - Hong Kong_Sai Wan_trojan_105
   - Hong Kong_Central_trojan_106
   - Hong Kong_Hong Kong_vmess_107
-  - Hong Kong_Aberdeen_vmess_108
+  - Hong Kong_Central_vmess_108
   - Taiwan_Taichung_ss_109
   - Japan_Tokyo_trojan_1010
   - Japan_Tokyo_trojan_1011
@@ -749,7 +797,7 @@ proxy-groups:
   - Hong Kong_Sai Wan_trojan_1115
   - Hong Kong_Central_trojan_1116
   - Hong Kong_Hong Kong_vmess_1117
-  - Hong Kong_Aberdeen_vmess_1118
+  - Hong Kong_Central_vmess_1118
   - Taiwan_Taichung_ss_1119
   - Japan_Tokyo_trojan_1120
   - Japan_Tokyo_trojan_1121
@@ -763,6 +811,10 @@ proxy-groups:
   - Hong Kong_Central_trojan_1129
   - Hong Kong_Central_vmess_1130
   - Hong Kong_Hong Kong_vmess_1131
+  - Hong Kong_Kowloon_trojan_1132
+  - Luxembourg_Luxembourg_trojan_1133
+  - Portugal_Lisbon_trojan_1134
+  - United States_Dallas_trojan_1135
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 自动选择
@@ -788,7 +840,7 @@ proxy-groups:
   - Hong Kong_Sai Wan_trojan_105
   - Hong Kong_Central_trojan_106
   - Hong Kong_Hong Kong_vmess_107
-  - Hong Kong_Aberdeen_vmess_108
+  - Hong Kong_Central_vmess_108
   - Taiwan_Taichung_ss_109
   - Japan_Tokyo_trojan_1010
   - Japan_Tokyo_trojan_1011
@@ -823,7 +875,7 @@ proxy-groups:
   - Hong Kong_Sai Wan_trojan_1115
   - Hong Kong_Central_trojan_1116
   - Hong Kong_Hong Kong_vmess_1117
-  - Hong Kong_Aberdeen_vmess_1118
+  - Hong Kong_Central_vmess_1118
   - Taiwan_Taichung_ss_1119
   - Japan_Tokyo_trojan_1120
   - Japan_Tokyo_trojan_1121
@@ -837,6 +889,10 @@ proxy-groups:
   - Hong Kong_Central_trojan_1129
   - Hong Kong_Central_vmess_1130
   - Hong Kong_Hong Kong_vmess_1131
+  - Hong Kong_Kowloon_trojan_1132
+  - Luxembourg_Luxembourg_trojan_1133
+  - Portugal_Lisbon_trojan_1134
+  - United States_Dallas_trojan_1135
   - Unknown_reality_0
   - Unknown_reality_3
 rules:
