@@ -689,6 +689,19 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: United States_Phoenix_trojan_1162
+  network: ws
+  password: iwangjie
+  port: 15805
+  server: 158.101.11.204
+  skip-cert-verify: false
+  sni: nodes.830901.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -772,6 +785,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1159
   - Japan_Tokyo_trojan_1160
   - Hong Kong_Central_vmess_1161
+  - United States_Phoenix_trojan_1162
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -855,6 +869,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_1159
   - Japan_Tokyo_trojan_1160
   - Hong Kong_Central_vmess_1161
+  - United States_Phoenix_trojan_1162
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
