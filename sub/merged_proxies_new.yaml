@@ -40,15 +40,31 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_Central_trojan_103
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Central_vmess_103
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- name: Hong Kong_Sheung Shui_trojan_104
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 443
-  server: 58.152.18.48
+  server: 58.152.110.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_Sai Wan_trojan_104
+  udp: true
+- name: Hong Kong_Sai Wan_trojan_105
   network: tcp
   password: BxceQaOe
   port: 443
@@ -56,7 +72,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Hong Kong_Sai Wan_trojan_105
+- name: Hong Kong_Sai Wan_trojan_106
   network: tcp
   password: BxceQaOe
   port: 443
@@ -64,47 +80,41 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_106
-  network: tcp
-  password: BxceQaOe
-  port: 26378
-  server: 54.199.47.127
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: Japan_Tokyo_trojan_107
   network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
-  server: 54.199.47.127
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  password: BxceQaOe
+  port: 3760
+  server: 57.180.10.245
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: Japan_Tokyo_trojan_108
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
-  server: 54.199.47.127
+  port: 4006
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: Japan_Tokyo_ss_109
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 103.106.228.247
-  type: ss
+- name: Japan_Tokyo_trojan_109
+  network: tcp
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 1933
+  server: 13.231.188.173
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - cipher: aes-256-cfb
-  name: South Korea_Songpa-gu_ss_1010
+  name: South Korea_Seongnam-si_ss_1010
   password: qwerREWQ@@
-  port: 7747
-  server: 221.150.109.90
+  port: 22376
+  server: 125.141.31.75
   type: ss
 - name: Japan_Tokyo_trojan_1011
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
-  server: 52.198.241.226
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -116,11 +126,11 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1013
+- name: Hong Kong_None_trojan_1013
   network: tcp
   password: BxceQaOe
-  port: 3127
-  server: 54.249.149.192
+  port: 804
+  server: 18.163.28.248
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -128,7 +138,7 @@ proxies:
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
-  server: 54.199.47.127
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -143,8 +153,8 @@ proxies:
 - name: Japan_Tokyo_trojan_1016
   network: tcp
   password: BxceQaOe
-  port: 1112
-  server: 18.181.195.198
+  port: 1221
+  server: 13.231.188.173
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -152,7 +162,7 @@ proxies:
   name: Vietnam_None_ss_1017
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.251
+  server: 103.186.154.248
   type: ss
 - alterId: 2
   cipher: auto
@@ -177,41 +187,111 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /Telegram🇨🇳WangCai2
-- name: United Kingdom_London_trojan_1020
-  password: R8ufkVqwRZAgtwjyrA
-  port: 443
-  server: uk-1.fishchipsexpress.com
+- name: Russia_Moscow Oblast_trojan_1020
+  network: ws
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 8443
+  server: 178.250.187.3
   skip-cert-verify: true
-  sni: uk-1.fishchipsexpress.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1021
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
+  sni: snippets.kkii.eu.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: epge.muarua.filegear-sg.me
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: Germany_None_trojan_1021
+  network: ws
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 443
+  server: 193.23.197.183
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: Curaçao_Willemstad_trojan_1022
+  network: ws
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 2096
+  server: 45.135.235.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: Curaçao_Willemstad_trojan_1023
+  network: ws
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 2096
+  server: 45.135.235.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: United States_None_trojan_1024
+  network: ws
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 443
+  server: 64.181.227.82
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: None_None_trojan_1025
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: one.cf.cdn.hyli.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
     path: /
-- name: United States_None_trojan_1022
+- name: None_None_trojan_1026
   network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
+  password: 5a2c16f9
+  port: 443
+  server: 104.17.237.219
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /?ed=2560
-- name: United States_None_trojan_1023
+      Host: snippets.kkii.eu.org
+    path: /
+- name: United States_None_trojan_1027
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.55
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: United States_None_trojan_1028
   network: ws
   password: 5a2c16f9
   port: 2096
@@ -224,6 +304,58 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /Telegram🇨🇳WangCai2
+- name: United States_None_trojan_1029
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: cf.130519.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: United States_None_trojan_1030
+  network: ws
+  password: 5a2c16f9
+  port: 2096
+  server: 135.84.73.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /TelegramU0001F1E8U0001F1F3WangCai2
+- name: Germany_Frankfurt am Main_trojan_1031
+  network: ws
+  password: 5a2c16f9
+  port: 2053
+  server: 199.119.137.77
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram@V2rayAlpha
+- name: United States_None_trojan_1032
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.65
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -843,7 +975,7 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1181
+- name: United States_None_trojan_1181
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10025
   server: z-eu1.2513142.xyz
@@ -857,7 +989,7 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_1183
+- name: Germany_Frankfurt am Main_trojan_1183
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10028
   server: z-eu2.2513142.xyz
@@ -871,14 +1003,14 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1185
+- name: United States_None_trojan_1185
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10014
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1186
+- name: United States_None_trojan_1186
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10023
   server: z-eu1.2513142.xyz
@@ -892,35 +1024,35 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_1188
+- name: Germany_Frankfurt am Main_trojan_1188
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10015
   server: z-eu1.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_1189
+- name: Germany_Frankfurt am Main_trojan_1189
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10015
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1190
+- name: United States_None_trojan_1190
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10017
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_1191
+- name: Germany_Frankfurt am Main_trojan_1191
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10016
   server: z-eu1.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1192
+- name: United States_None_trojan_1192
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10016
   server: z-eu2.2513142.xyz
@@ -934,7 +1066,7 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_1194
+- name: Germany_Frankfurt am Main_trojan_1194
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10012
   server: z-eu1.2513142.xyz
@@ -948,7 +1080,7 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1196
+- name: United States_None_trojan_1196
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10018
   server: z-eu1.2513142.xyz
@@ -962,14 +1094,14 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_1198
+- name: United States_None_trojan_1198
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10013
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_1199
+- name: Germany_Frankfurt am Main_trojan_1199
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10008
   server: z-eu1.2513142.xyz
@@ -997,7 +1129,7 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_11103
+- name: Germany_Frankfurt am Main_trojan_11103
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10007
   server: z-eu2.2513142.xyz
@@ -1011,14 +1143,14 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_11105
+- name: United States_None_trojan_11105
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10005
   server: z-eu1.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_11106
+- name: United States_None_trojan_11106
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10005
   server: z-eu2.2513142.xyz
@@ -1032,14 +1164,14 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_11108
+- name: Germany_Frankfurt am Main_trojan_11108
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10006
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_11109
+- name: United States_None_trojan_11109
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10010
   server: z-eu1.2513142.xyz
@@ -1053,35 +1185,35 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_11111
+- name: United States_None_trojan_11111
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10011
   server: z-eu1.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_11112
+- name: Germany_Frankfurt am Main_trojan_11112
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10011
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: Germany_Frankfurt am Main_trojan_11113
+- name: United States_None_trojan_11113
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10002
   server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_11114
+- name: Germany_Frankfurt am Main_trojan_11114
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10030
   server: z-eu1.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_11115
+- name: Germany_Frankfurt am Main_trojan_11115
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10030
   server: z-eu2.2513142.xyz
@@ -1123,7 +1255,7 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: United States_None_trojan_11121
+- name: Germany_Frankfurt am Main_trojan_11121
   password: smart@-PhVxMdT5OVnjtTecU-kZoej
   port: 10031
   server: z-eu1.2513142.xyz
@@ -1220,14 +1352,31 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_Central_trojan_11131
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Central_vmess_11131
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- name: Hong Kong_Sheung Shui_trojan_11132
+  network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 443
-  server: 58.152.18.48
+  server: 58.152.110.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_Sai Wan_trojan_11132
+  udp: true
+- name: Hong Kong_Sai Wan_trojan_11133
   network: tcp
   password: BxceQaOe
   port: 443
@@ -1235,7 +1384,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Hong Kong_Sai Wan_trojan_11133
+- name: Hong Kong_Sai Wan_trojan_11134
   network: tcp
   password: BxceQaOe
   port: 443
@@ -1243,43 +1392,41 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_11134
+- name: Japan_Tokyo_trojan_11135
+  network: tcp
   password: BxceQaOe
-  port: 26378
-  server: 54.199.47.127
+  port: 3760
+  server: 57.180.10.245
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_11135
+- name: Japan_Tokyo_trojan_11136
+  network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
-  server: 54.199.47.127
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_11136
+- name: Japan_Tokyo_trojan_11137
+  network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
-  server: 54.199.47.127
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: Japan_Tokyo_ss_11137
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 103.106.228.247
-  type: ss
 - cipher: aes-256-cfb
-  name: South Korea_Songpa-gu_ss_11138
+  name: South Korea_Seongnam-si_ss_11138
   password: qwerREWQ@@
-  port: 7747
-  server: 221.150.109.90
+  port: 22376
+  server: 125.141.31.75
   type: ss
 - name: Japan_Tokyo_trojan_11139
+  network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
-  server: 52.198.241.226
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1291,17 +1438,19 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_11141
+- name: Hong Kong_None_trojan_11141
+  network: tcp
   password: BxceQaOe
-  port: 3127
-  server: 54.249.149.192
+  port: 804
+  server: 18.163.28.248
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: Japan_Tokyo_trojan_11142
+  network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
-  server: 54.199.47.127
+  server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1314,9 +1463,10 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - name: Japan_Tokyo_trojan_11144
+  network: tcp
   password: BxceQaOe
-  port: 1112
-  server: 18.181.195.198
+  port: 1221
+  server: 13.231.188.173
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -1324,7 +1474,7 @@ proxies:
   name: Vietnam_None_ss_11145
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.251
+  server: 103.186.154.248
   type: ss
 - alterId: 2
   cipher: auto
@@ -1336,80 +1486,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Central_vmess_11147
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: Hong Kong_Sheung Shui_trojan_11148
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 443
-  server: 58.152.110.104
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Tokyo_trojan_11149
-  network: tcp
-  password: BxceQaOe
-  port: 3760
-  server: 57.180.10.245
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: Japan_Tokyo_trojan_11150
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
-  server: 13.231.188.173
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Tokyo_trojan_11151
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
-  server: 13.231.188.173
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Tokyo_trojan_11152
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 3901
-  server: 13.231.188.173
-  sni: www.nintendogames.net
-  type: trojan
-- name: Hong Kong_None_trojan_11153
-  network: tcp
-  password: BxceQaOe
-  port: 804
-  server: 18.163.28.248
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: Japan_Tokyo_trojan_11154
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1281
-  server: 13.231.188.173
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Tokyo_trojan_11155
-  network: tcp
-  password: BxceQaOe
-  port: 1221
-  server: 13.231.188.173
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: United Arab Emirates_None_trojan_11156
+- name: United Arab Emirates_None_trojan_11147
   network: ws
   password: 5a2c16f9
   port: 2096
@@ -1422,41 +1499,111 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /Telegram🇨🇳WangCai2
-- name: United Kingdom_London_trojan_11157
-  password: R8ufkVqwRZAgtwjyrA
-  port: 443
-  server: uk-1.fishchipsexpress.com
+- name: Russia_Moscow Oblast_trojan_11148
+  network: ws
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 8443
+  server: 178.250.187.3
   skip-cert-verify: true
-  sni: uk-1.fishchipsexpress.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_11158
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
+  sni: snippets.kkii.eu.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: epge.muarua.filegear-sg.me
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: Germany_None_trojan_11149
+  network: ws
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 443
+  server: 193.23.197.183
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: Curaçao_Willemstad_trojan_11150
+  network: ws
+  password: 554f139b-f31f-41c4-99f9-73d60647db26
+  port: 2096
+  server: 45.135.235.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: Curaçao_Willemstad_trojan_11151
+  network: ws
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 2096
+  server: 45.135.235.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: United States_None_trojan_11152
+  network: ws
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 443
+  server: 64.181.227.82
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: None_None_trojan_11153
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: one.cf.cdn.hyli.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
     path: /
-- name: United States_None_trojan_11159
+- name: None_None_trojan_11154
   network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
+  password: 5a2c16f9
+  port: 443
+  server: 104.17.237.219
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /?ed=2560
-- name: United States_None_trojan_11160
+      Host: snippets.kkii.eu.org
+    path: /
+- name: United States_None_trojan_11155
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.55
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: United States_None_trojan_11156
   network: ws
   password: 5a2c16f9
   port: 2096
@@ -1469,6 +1616,58 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /Telegram🇨🇳WangCai2
+- name: United States_None_trojan_11157
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: cf.130519.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: United States_None_trojan_11158
+  network: ws
+  password: 5a2c16f9
+  port: 2096
+  server: 135.84.73.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /TelegramU0001F1E8U0001F1F3WangCai2
+- name: Germany_Frankfurt am Main_trojan_11159
+  network: ws
+  password: 5a2c16f9
+  port: 2053
+  server: 199.119.137.77
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram@V2rayAlpha
+- name: United States_None_trojan_11160
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.65
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1477,27 +1676,36 @@ proxy-groups:
   - DIRECT
   - United States_None_ss_101
   - Hong Kong_Central_vmess_102
-  - Hong Kong_Central_trojan_103
-  - Hong Kong_Sai Wan_trojan_104
+  - Hong Kong_Central_vmess_103
+  - Hong Kong_Sheung Shui_trojan_104
   - Hong Kong_Sai Wan_trojan_105
-  - Japan_Tokyo_trojan_106
+  - Hong Kong_Sai Wan_trojan_106
   - Japan_Tokyo_trojan_107
   - Japan_Tokyo_trojan_108
-  - Japan_Tokyo_ss_109
-  - South Korea_Songpa-gu_ss_1010
+  - Japan_Tokyo_trojan_109
+  - South Korea_Seongnam-si_ss_1010
   - Japan_Tokyo_trojan_1011
   - Japan_Tokyo_trojan_1012
-  - Japan_Tokyo_trojan_1013
+  - Hong Kong_None_trojan_1013
   - Japan_Tokyo_trojan_1014
   - Japan_Tokyo_trojan_1015
   - Japan_Tokyo_trojan_1016
   - Vietnam_None_ss_1017
   - Hong Kong_Central_vmess_1018
   - United Arab Emirates_None_trojan_1019
-  - United Kingdom_London_trojan_1020
-  - United States_None_trojan_1021
-  - United States_None_trojan_1022
-  - United States_None_trojan_1023
+  - Russia_Moscow Oblast_trojan_1020
+  - Germany_None_trojan_1021
+  - Curaçao_Willemstad_trojan_1022
+  - Curaçao_Willemstad_trojan_1023
+  - United States_None_trojan_1024
+  - None_None_trojan_1025
+  - None_None_trojan_1026
+  - United States_None_trojan_1027
+  - United States_None_trojan_1028
+  - United States_None_trojan_1029
+  - United States_None_trojan_1030
+  - Germany_Frankfurt am Main_trojan_1031
+  - United States_None_trojan_1032
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -1578,47 +1786,47 @@ proxy-groups:
   - Singapore_Singapore_trojan_1178
   - United States_None_trojan_1179
   - Germany_Frankfurt am Main_trojan_1180
-  - Germany_Frankfurt am Main_trojan_1181
+  - United States_None_trojan_1181
   - Germany_Frankfurt am Main_trojan_1182
-  - United States_None_trojan_1183
+  - Germany_Frankfurt am Main_trojan_1183
   - United States_None_trojan_1184
-  - Germany_Frankfurt am Main_trojan_1185
-  - Germany_Frankfurt am Main_trojan_1186
+  - United States_None_trojan_1185
+  - United States_None_trojan_1186
   - United States_None_trojan_1187
-  - United States_None_trojan_1188
-  - United States_None_trojan_1189
-  - Germany_Frankfurt am Main_trojan_1190
-  - United States_None_trojan_1191
-  - Germany_Frankfurt am Main_trojan_1192
+  - Germany_Frankfurt am Main_trojan_1188
+  - Germany_Frankfurt am Main_trojan_1189
+  - United States_None_trojan_1190
+  - Germany_Frankfurt am Main_trojan_1191
+  - United States_None_trojan_1192
   - United States_None_trojan_1193
-  - United States_None_trojan_1194
+  - Germany_Frankfurt am Main_trojan_1194
   - United States_None_trojan_1195
-  - Germany_Frankfurt am Main_trojan_1196
+  - United States_None_trojan_1196
   - United States_None_trojan_1197
-  - Germany_Frankfurt am Main_trojan_1198
-  - United States_None_trojan_1199
+  - United States_None_trojan_1198
+  - Germany_Frankfurt am Main_trojan_1199
   - Germany_Frankfurt am Main_trojan_11100
   - Poland_None_trojan_11101
   - Germany_Frankfurt am Main_trojan_11102
-  - United States_None_trojan_11103
+  - Germany_Frankfurt am Main_trojan_11103
   - United States_None_trojan_11104
-  - Germany_Frankfurt am Main_trojan_11105
-  - Germany_Frankfurt am Main_trojan_11106
+  - United States_None_trojan_11105
+  - United States_None_trojan_11106
   - United States_None_trojan_11107
-  - United States_None_trojan_11108
-  - Germany_Frankfurt am Main_trojan_11109
+  - Germany_Frankfurt am Main_trojan_11108
+  - United States_None_trojan_11109
   - Germany_Frankfurt am Main_trojan_11110
-  - Germany_Frankfurt am Main_trojan_11111
-  - United States_None_trojan_11112
-  - Germany_Frankfurt am Main_trojan_11113
-  - United States_None_trojan_11114
-  - United States_None_trojan_11115
+  - United States_None_trojan_11111
+  - Germany_Frankfurt am Main_trojan_11112
+  - United States_None_trojan_11113
+  - Germany_Frankfurt am Main_trojan_11114
+  - Germany_Frankfurt am Main_trojan_11115
   - United States_Boardman_trojan_11116
   - Canada_Toronto_trojan_11117
   - Peru_Lima_trojan_11118
   - United States_Boardman_trojan_11119
   - South Africa_None_trojan_11120
-  - United States_None_trojan_11121
+  - Germany_Frankfurt am Main_trojan_11121
   - Germany_Frankfurt am Main_trojan_11122
   - India_Mumbai_trojan_11123
   - Singapore_None_trojan_11124
@@ -1628,35 +1836,35 @@ proxy-groups:
   - Hong Kong_Central_vmess_11128
   - United States_None_ss_11129
   - Hong Kong_Central_vmess_11130
-  - Hong Kong_Central_trojan_11131
-  - Hong Kong_Sai Wan_trojan_11132
+  - Hong Kong_Central_vmess_11131
+  - Hong Kong_Sheung Shui_trojan_11132
   - Hong Kong_Sai Wan_trojan_11133
-  - Japan_Tokyo_trojan_11134
+  - Hong Kong_Sai Wan_trojan_11134
   - Japan_Tokyo_trojan_11135
   - Japan_Tokyo_trojan_11136
-  - Japan_Tokyo_ss_11137
-  - South Korea_Songpa-gu_ss_11138
+  - Japan_Tokyo_trojan_11137
+  - South Korea_Seongnam-si_ss_11138
   - Japan_Tokyo_trojan_11139
   - Japan_Tokyo_trojan_11140
-  - Japan_Tokyo_trojan_11141
+  - Hong Kong_None_trojan_11141
   - Japan_Tokyo_trojan_11142
   - Japan_Tokyo_trojan_11143
   - Japan_Tokyo_trojan_11144
   - Vietnam_None_ss_11145
   - Hong Kong_Central_vmess_11146
-  - Hong Kong_Central_vmess_11147
-  - Hong Kong_Sheung Shui_trojan_11148
-  - Japan_Tokyo_trojan_11149
-  - Japan_Tokyo_trojan_11150
-  - Japan_Tokyo_trojan_11151
-  - Japan_Tokyo_trojan_11152
-  - Hong Kong_None_trojan_11153
-  - Japan_Tokyo_trojan_11154
-  - Japan_Tokyo_trojan_11155
-  - United Arab Emirates_None_trojan_11156
-  - United Kingdom_London_trojan_11157
+  - United Arab Emirates_None_trojan_11147
+  - Russia_Moscow Oblast_trojan_11148
+  - Germany_None_trojan_11149
+  - Curaçao_Willemstad_trojan_11150
+  - Curaçao_Willemstad_trojan_11151
+  - United States_None_trojan_11152
+  - None_None_trojan_11153
+  - None_None_trojan_11154
+  - United States_None_trojan_11155
+  - United States_None_trojan_11156
+  - United States_None_trojan_11157
   - United States_None_trojan_11158
-  - United States_None_trojan_11159
+  - Germany_Frankfurt am Main_trojan_11159
   - United States_None_trojan_11160
 - name: 自动选择
   type: url-test
@@ -1666,27 +1874,36 @@ proxy-groups:
   proxies:
   - United States_None_ss_101
   - Hong Kong_Central_vmess_102
-  - Hong Kong_Central_trojan_103
-  - Hong Kong_Sai Wan_trojan_104
+  - Hong Kong_Central_vmess_103
+  - Hong Kong_Sheung Shui_trojan_104
   - Hong Kong_Sai Wan_trojan_105
-  - Japan_Tokyo_trojan_106
+  - Hong Kong_Sai Wan_trojan_106
   - Japan_Tokyo_trojan_107
   - Japan_Tokyo_trojan_108
-  - Japan_Tokyo_ss_109
-  - South Korea_Songpa-gu_ss_1010
+  - Japan_Tokyo_trojan_109
+  - South Korea_Seongnam-si_ss_1010
   - Japan_Tokyo_trojan_1011
   - Japan_Tokyo_trojan_1012
-  - Japan_Tokyo_trojan_1013
+  - Hong Kong_None_trojan_1013
   - Japan_Tokyo_trojan_1014
   - Japan_Tokyo_trojan_1015
   - Japan_Tokyo_trojan_1016
   - Vietnam_None_ss_1017
   - Hong Kong_Central_vmess_1018
   - United Arab Emirates_None_trojan_1019
-  - United Kingdom_London_trojan_1020
-  - United States_None_trojan_1021
-  - United States_None_trojan_1022
-  - United States_None_trojan_1023
+  - Russia_Moscow Oblast_trojan_1020
+  - Germany_None_trojan_1021
+  - Curaçao_Willemstad_trojan_1022
+  - Curaçao_Willemstad_trojan_1023
+  - United States_None_trojan_1024
+  - None_None_trojan_1025
+  - None_None_trojan_1026
+  - United States_None_trojan_1027
+  - United States_None_trojan_1028
+  - United States_None_trojan_1029
+  - United States_None_trojan_1030
+  - Germany_Frankfurt am Main_trojan_1031
+  - United States_None_trojan_1032
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -1767,47 +1984,47 @@ proxy-groups:
   - Singapore_Singapore_trojan_1178
   - United States_None_trojan_1179
   - Germany_Frankfurt am Main_trojan_1180
-  - Germany_Frankfurt am Main_trojan_1181
+  - United States_None_trojan_1181
   - Germany_Frankfurt am Main_trojan_1182
-  - United States_None_trojan_1183
+  - Germany_Frankfurt am Main_trojan_1183
   - United States_None_trojan_1184
-  - Germany_Frankfurt am Main_trojan_1185
-  - Germany_Frankfurt am Main_trojan_1186
+  - United States_None_trojan_1185
+  - United States_None_trojan_1186
   - United States_None_trojan_1187
-  - United States_None_trojan_1188
-  - United States_None_trojan_1189
-  - Germany_Frankfurt am Main_trojan_1190
-  - United States_None_trojan_1191
-  - Germany_Frankfurt am Main_trojan_1192
+  - Germany_Frankfurt am Main_trojan_1188
+  - Germany_Frankfurt am Main_trojan_1189
+  - United States_None_trojan_1190
+  - Germany_Frankfurt am Main_trojan_1191
+  - United States_None_trojan_1192
   - United States_None_trojan_1193
-  - United States_None_trojan_1194
+  - Germany_Frankfurt am Main_trojan_1194
   - United States_None_trojan_1195
-  - Germany_Frankfurt am Main_trojan_1196
+  - United States_None_trojan_1196
   - United States_None_trojan_1197
-  - Germany_Frankfurt am Main_trojan_1198
-  - United States_None_trojan_1199
+  - United States_None_trojan_1198
+  - Germany_Frankfurt am Main_trojan_1199
   - Germany_Frankfurt am Main_trojan_11100
   - Poland_None_trojan_11101
   - Germany_Frankfurt am Main_trojan_11102
-  - United States_None_trojan_11103
+  - Germany_Frankfurt am Main_trojan_11103
   - United States_None_trojan_11104
-  - Germany_Frankfurt am Main_trojan_11105
-  - Germany_Frankfurt am Main_trojan_11106
+  - United States_None_trojan_11105
+  - United States_None_trojan_11106
   - United States_None_trojan_11107
-  - United States_None_trojan_11108
-  - Germany_Frankfurt am Main_trojan_11109
+  - Germany_Frankfurt am Main_trojan_11108
+  - United States_None_trojan_11109
   - Germany_Frankfurt am Main_trojan_11110
-  - Germany_Frankfurt am Main_trojan_11111
-  - United States_None_trojan_11112
-  - Germany_Frankfurt am Main_trojan_11113
-  - United States_None_trojan_11114
-  - United States_None_trojan_11115
+  - United States_None_trojan_11111
+  - Germany_Frankfurt am Main_trojan_11112
+  - United States_None_trojan_11113
+  - Germany_Frankfurt am Main_trojan_11114
+  - Germany_Frankfurt am Main_trojan_11115
   - United States_Boardman_trojan_11116
   - Canada_Toronto_trojan_11117
   - Peru_Lima_trojan_11118
   - United States_Boardman_trojan_11119
   - South Africa_None_trojan_11120
-  - United States_None_trojan_11121
+  - Germany_Frankfurt am Main_trojan_11121
   - Germany_Frankfurt am Main_trojan_11122
   - India_Mumbai_trojan_11123
   - Singapore_None_trojan_11124
@@ -1817,35 +2034,35 @@ proxy-groups:
   - Hong Kong_Central_vmess_11128
   - United States_None_ss_11129
   - Hong Kong_Central_vmess_11130
-  - Hong Kong_Central_trojan_11131
-  - Hong Kong_Sai Wan_trojan_11132
+  - Hong Kong_Central_vmess_11131
+  - Hong Kong_Sheung Shui_trojan_11132
   - Hong Kong_Sai Wan_trojan_11133
-  - Japan_Tokyo_trojan_11134
+  - Hong Kong_Sai Wan_trojan_11134
   - Japan_Tokyo_trojan_11135
   - Japan_Tokyo_trojan_11136
-  - Japan_Tokyo_ss_11137
-  - South Korea_Songpa-gu_ss_11138
+  - Japan_Tokyo_trojan_11137
+  - South Korea_Seongnam-si_ss_11138
   - Japan_Tokyo_trojan_11139
   - Japan_Tokyo_trojan_11140
-  - Japan_Tokyo_trojan_11141
+  - Hong Kong_None_trojan_11141
   - Japan_Tokyo_trojan_11142
   - Japan_Tokyo_trojan_11143
   - Japan_Tokyo_trojan_11144
   - Vietnam_None_ss_11145
   - Hong Kong_Central_vmess_11146
-  - Hong Kong_Central_vmess_11147
-  - Hong Kong_Sheung Shui_trojan_11148
-  - Japan_Tokyo_trojan_11149
-  - Japan_Tokyo_trojan_11150
-  - Japan_Tokyo_trojan_11151
-  - Japan_Tokyo_trojan_11152
-  - Hong Kong_None_trojan_11153
-  - Japan_Tokyo_trojan_11154
-  - Japan_Tokyo_trojan_11155
-  - United Arab Emirates_None_trojan_11156
-  - United Kingdom_London_trojan_11157
+  - United Arab Emirates_None_trojan_11147
+  - Russia_Moscow Oblast_trojan_11148
+  - Germany_None_trojan_11149
+  - Curaçao_Willemstad_trojan_11150
+  - Curaçao_Willemstad_trojan_11151
+  - United States_None_trojan_11152
+  - None_None_trojan_11153
+  - None_None_trojan_11154
+  - United States_None_trojan_11155
+  - United States_None_trojan_11156
+  - United States_None_trojan_11157
   - United States_None_trojan_11158
-  - United States_None_trojan_11159
+  - Germany_Frankfurt am Main_trojan_11159
   - United States_None_trojan_11160
 rules:
 - DOMAIN,clash.razord.top,DIRECT
