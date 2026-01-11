@@ -1142,65 +1142,74 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_Central_trojan_11122
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Jordan_vmess_11122
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: Hong Kong_Sai Wan_trojan_11123
   network: tcp
   password: BxceQaOe
   port: 443
-  server: 58.152.30.149
+  server: 58.152.25.220
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_11123
-  network: tcp
-  password: BxceQaOe
-  port: 2762
-  server: 3.112.71.26
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: Japan_Tokyo_trojan_11124
   network: tcp
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 4006
-  server: 153.121.51.29
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  password: BxceQaOe
+  port: 2053
+  server: 43.207.232.58
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: Japan_Tokyo_trojan_11125
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
-  server: 153.121.51.29
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-cfb
-  name: South Korea_Seongbuk-gu_ss_11126
-  password: qwerREWQ@@
-  port: 28860
-  server: 168.126.234.233
-  type: ss
+- name: Japan_Tokyo_trojan_11126
+  network: tcp
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 160.16.130.66
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: Japan_Tokyo_trojan_11127
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 544
-  server: 160.16.70.180
+  port: 3901
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: Japan_Tokyo_trojan_11128
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 544
-  server: 160.16.150.76
+  port: 3076
+  server: 153.121.38.213
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_11129
+- name: Poland_None_trojan_11129
   network: tcp
   password: BxceQaOe
-  port: 3579
-  server: 3.112.254.143
+  port: 2673
+  server: 95.40.111.8
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -1208,7 +1217,7 @@ proxies:
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 5076
-  server: 160.16.57.238
+  server: 160.16.81.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1216,27 +1225,33 @@ proxies:
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1281
-  server: 160.16.72.33
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: Hong Kong_None_trojan_11132
   network: tcp
   password: BxceQaOe
-  port: 4569
-  server: 43.199.60.168
+  port: 2173
+  server: 43.198.151.117
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: aes-256-cfb
-  name: Vietnam_None_ss_11133
+  name: South Korea_Seongbuk-gu_ss_11133
+  password: qwerREWQ@@
+  port: 51978
+  server: 168.126.234.247
+  type: ss
+- cipher: aes-256-cfb
+  name: Vietnam_None_ss_11134
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.17
+  server: 103.186.155.119
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_11134
+  name: Hong Kong_Tuen Mun_vmess_11135
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1387,19 +1402,20 @@ proxy-groups:
   - None_None_trojan_11119
   - United States_None_ss_11120
   - Hong Kong_Tuen Mun_vmess_11121
-  - Hong Kong_Central_trojan_11122
-  - Japan_Tokyo_trojan_11123
+  - Hong Kong_Jordan_vmess_11122
+  - Hong Kong_Sai Wan_trojan_11123
   - Japan_Tokyo_trojan_11124
   - Japan_Tokyo_trojan_11125
-  - South Korea_Seongbuk-gu_ss_11126
+  - Japan_Tokyo_trojan_11126
   - Japan_Tokyo_trojan_11127
   - Japan_Tokyo_trojan_11128
-  - Japan_Tokyo_trojan_11129
+  - Poland_None_trojan_11129
   - Japan_Tokyo_trojan_11130
   - Japan_Tokyo_trojan_11131
   - Hong Kong_None_trojan_11132
-  - Vietnam_None_ss_11133
-  - Hong Kong_Tuen Mun_vmess_11134
+  - South Korea_Seongbuk-gu_ss_11133
+  - Vietnam_None_ss_11134
+  - Hong Kong_Tuen Mun_vmess_11135
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1543,19 +1559,20 @@ proxy-groups:
   - None_None_trojan_11119
   - United States_None_ss_11120
   - Hong Kong_Tuen Mun_vmess_11121
-  - Hong Kong_Central_trojan_11122
-  - Japan_Tokyo_trojan_11123
+  - Hong Kong_Jordan_vmess_11122
+  - Hong Kong_Sai Wan_trojan_11123
   - Japan_Tokyo_trojan_11124
   - Japan_Tokyo_trojan_11125
-  - South Korea_Seongbuk-gu_ss_11126
+  - Japan_Tokyo_trojan_11126
   - Japan_Tokyo_trojan_11127
   - Japan_Tokyo_trojan_11128
-  - Japan_Tokyo_trojan_11129
+  - Poland_None_trojan_11129
   - Japan_Tokyo_trojan_11130
   - Japan_Tokyo_trojan_11131
   - Hong Kong_None_trojan_11132
-  - Vietnam_None_ss_11133
-  - Hong Kong_Tuen Mun_vmess_11134
+  - South Korea_Seongbuk-gu_ss_11133
+  - Vietnam_None_ss_11134
+  - Hong Kong_Tuen Mun_vmess_11135
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
