@@ -40,7 +40,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_Kowloon_trojan_103
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Kowloon_vmess_103
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: Hong Kong_Kowloon_trojan_104
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 443
@@ -48,65 +63,59 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_Central_trojan_104
+- name: Hong Kong_Sai Wan_trojan_105
   network: tcp
   password: BxceQaOe
   port: 443
-  server: 58.152.30.149
+  server: 58.152.25.220
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_105
-  network: tcp
-  password: BxceQaOe
-  port: 2762
-  server: 3.112.71.26
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: Japan_Tokyo_trojan_106
   network: tcp
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 4006
-  server: 153.121.51.29
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  password: BxceQaOe
+  port: 2053
+  server: 43.207.232.58
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: Japan_Tokyo_trojan_107
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
-  server: 153.121.51.29
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-cfb
-  name: South Korea_Seongbuk-gu_ss_108
-  password: qwerREWQ@@
-  port: 28860
-  server: 168.126.234.233
-  type: ss
+- name: Japan_Tokyo_trojan_108
+  network: tcp
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 160.16.130.66
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: Japan_Tokyo_trojan_109
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 544
-  server: 160.16.70.180
+  port: 3901
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: Japan_Tokyo_trojan_1010
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 544
-  server: 160.16.150.76
+  port: 3076
+  server: 153.121.38.213
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1011
+- name: Poland_None_trojan_1011
   network: tcp
   password: BxceQaOe
-  port: 3579
-  server: 3.112.254.143
+  port: 2673
+  server: 95.40.111.8
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -114,7 +123,7 @@ proxies:
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 5076
-  server: 160.16.57.238
+  server: 160.16.81.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -122,27 +131,33 @@ proxies:
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1281
-  server: 160.16.72.33
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: Hong Kong_None_trojan_1014
   network: tcp
   password: BxceQaOe
-  port: 4569
-  server: 43.199.60.168
+  port: 2173
+  server: 43.198.151.117
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: aes-256-cfb
-  name: Vietnam_None_ss_1015
+  name: South Korea_Seongbuk-gu_ss_1015
+  password: qwerREWQ@@
+  port: 51978
+  server: 168.126.234.247
+  type: ss
+- cipher: aes-256-cfb
+  name: Vietnam_None_ss_1016
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.17
+  server: 103.186.155.119
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1016
+  name: Hong Kong_Tuen Mun_vmess_1017
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1144,7 +1159,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Jordan_vmess_11122
+  name: Hong Kong_Kowloon_vmess_11122
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
@@ -1267,20 +1282,21 @@ proxy-groups:
   - DIRECT
   - United States_None_ss_101
   - Hong Kong_Tuen Mun_vmess_102
-  - Hong Kong_Kowloon_trojan_103
-  - Hong Kong_Central_trojan_104
-  - Japan_Tokyo_trojan_105
+  - Hong Kong_Kowloon_vmess_103
+  - Hong Kong_Kowloon_trojan_104
+  - Hong Kong_Sai Wan_trojan_105
   - Japan_Tokyo_trojan_106
   - Japan_Tokyo_trojan_107
-  - South Korea_Seongbuk-gu_ss_108
+  - Japan_Tokyo_trojan_108
   - Japan_Tokyo_trojan_109
   - Japan_Tokyo_trojan_1010
-  - Japan_Tokyo_trojan_1011
+  - Poland_None_trojan_1011
   - Japan_Tokyo_trojan_1012
   - Japan_Tokyo_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Vietnam_None_ss_1015
-  - Hong Kong_Tuen Mun_vmess_1016
+  - South Korea_Seongbuk-gu_ss_1015
+  - Vietnam_None_ss_1016
+  - Hong Kong_Tuen Mun_vmess_1017
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -1402,7 +1418,7 @@ proxy-groups:
   - None_None_trojan_11119
   - United States_None_ss_11120
   - Hong Kong_Tuen Mun_vmess_11121
-  - Hong Kong_Jordan_vmess_11122
+  - Hong Kong_Kowloon_vmess_11122
   - Hong Kong_Sai Wan_trojan_11123
   - Japan_Tokyo_trojan_11124
   - Japan_Tokyo_trojan_11125
@@ -1424,20 +1440,21 @@ proxy-groups:
   proxies:
   - United States_None_ss_101
   - Hong Kong_Tuen Mun_vmess_102
-  - Hong Kong_Kowloon_trojan_103
-  - Hong Kong_Central_trojan_104
-  - Japan_Tokyo_trojan_105
+  - Hong Kong_Kowloon_vmess_103
+  - Hong Kong_Kowloon_trojan_104
+  - Hong Kong_Sai Wan_trojan_105
   - Japan_Tokyo_trojan_106
   - Japan_Tokyo_trojan_107
-  - South Korea_Seongbuk-gu_ss_108
+  - Japan_Tokyo_trojan_108
   - Japan_Tokyo_trojan_109
   - Japan_Tokyo_trojan_1010
-  - Japan_Tokyo_trojan_1011
+  - Poland_None_trojan_1011
   - Japan_Tokyo_trojan_1012
   - Japan_Tokyo_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Vietnam_None_ss_1015
-  - Hong Kong_Tuen Mun_vmess_1016
+  - South Korea_Seongbuk-gu_ss_1015
+  - Vietnam_None_ss_1016
+  - Hong Kong_Tuen Mun_vmess_1017
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -1559,7 +1576,7 @@ proxy-groups:
   - None_None_trojan_11119
   - United States_None_ss_11120
   - Hong Kong_Tuen Mun_vmess_11121
-  - Hong Kong_Jordan_vmess_11122
+  - Hong Kong_Kowloon_vmess_11122
   - Hong Kong_Sai Wan_trojan_11123
   - Japan_Tokyo_trojan_11124
   - Japan_Tokyo_trojan_11125
