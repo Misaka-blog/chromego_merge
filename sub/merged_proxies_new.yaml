@@ -33,7 +33,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sham Shui Po_vmess_102
+  name: Hong Kong_Central_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -150,7 +150,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sham Shui Po_vmess_1017
+  name: Hong Kong_Central_vmess_1017
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -158,6 +158,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: India_Mumbai_trojan_1018
+  password: M7v%w11Se*
+  port: 443
+  server: amanm.wsone.icu
+  skip-cert-verify: true
+  sni: amanm.wsone.icu
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -327,7 +335,7 @@ proxies:
     headers:
       Host: 17698512164336.682637.xyz
     path: '%2Fahyrtuyjykl'
-- name: United States_None_trojan_1121
+- name: None_None_trojan_1121
   network: ws
   password: 056b39f5-ffb3-4145-8f75-2ffdeb53cb48
   port: 2083
@@ -491,7 +499,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 542f6e13-9542-470c-974a-d31c0a05a37d
-- name: None_None_trojan_1142
+- name: United States_None_trojan_1142
   network: ws
   password: f7cecc70-524e-4bea-af14-d7367fdb4080
   port: 8443
@@ -560,7 +568,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sham Shui Po_vmess_1149
+  name: Hong Kong_Central_vmess_1149
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -677,7 +685,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sham Shui Po_vmess_1164
+  name: Hong Kong_Central_vmess_1164
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -685,6 +693,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: India_Mumbai_trojan_1165
+  password: M7v%w11Se*
+  port: 443
+  server: amanm.wsone.icu
+  skip-cert-verify: true
+  sni: amanm.wsone.icu
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -692,7 +708,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - United States_None_ss_101
-  - Hong Kong_Sham Shui Po_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_San Po Kong_trojan_103
   - Hong Kong_None_trojan_104
   - Japan_Tokyo_trojan_105
@@ -707,7 +723,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1014
   - South Korea_Seocho_ss_1015
   - Vietnam_None_ss_1016
-  - Hong Kong_Sham Shui Po_vmess_1017
+  - Hong Kong_Central_vmess_1017
+  - India_Mumbai_trojan_1018
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -728,7 +745,7 @@ proxy-groups:
   - Hong Kong_Tsim Sha Tsui_trojan_1118
   - Hong Kong_Tsim Sha Tsui_trojan_1119
   - United States_San Francisco_trojan_1120
-  - United States_None_trojan_1121
+  - None_None_trojan_1121
   - Taiwan_Chiayi City_trojan_1122
   - Taiwan_Chiayi City_trojan_1123
   - Taiwan_Chiayi City_trojan_1124
@@ -749,14 +766,14 @@ proxy-groups:
   - United Kingdom_None_trojan_1139
   - China_None_vmess_1140
   - Singapore_None_vmess_1141
-  - None_None_trojan_1142
+  - United States_None_trojan_1142
   - China_None_vmess_1143
   - China_None_vmess_1144
   - Hong Kong_Central_vmess_1145
   - China_None_vmess_1146
   - China_None_vmess_1147
   - United States_None_ss_1148
-  - Hong Kong_Sham Shui Po_vmess_1149
+  - Hong Kong_Central_vmess_1149
   - Hong Kong_San Po Kong_trojan_1150
   - Hong Kong_None_trojan_1151
   - Japan_Tokyo_trojan_1152
@@ -771,7 +788,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1161
   - South Korea_Seocho_ss_1162
   - Vietnam_None_ss_1163
-  - Hong Kong_Sham Shui Po_vmess_1164
+  - Hong Kong_Central_vmess_1164
+  - India_Mumbai_trojan_1165
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -779,7 +797,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_None_ss_101
-  - Hong Kong_Sham Shui Po_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_San Po Kong_trojan_103
   - Hong Kong_None_trojan_104
   - Japan_Tokyo_trojan_105
@@ -794,7 +812,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1014
   - South Korea_Seocho_ss_1015
   - Vietnam_None_ss_1016
-  - Hong Kong_Sham Shui Po_vmess_1017
+  - Hong Kong_Central_vmess_1017
+  - India_Mumbai_trojan_1018
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -815,7 +834,7 @@ proxy-groups:
   - Hong Kong_Tsim Sha Tsui_trojan_1118
   - Hong Kong_Tsim Sha Tsui_trojan_1119
   - United States_San Francisco_trojan_1120
-  - United States_None_trojan_1121
+  - None_None_trojan_1121
   - Taiwan_Chiayi City_trojan_1122
   - Taiwan_Chiayi City_trojan_1123
   - Taiwan_Chiayi City_trojan_1124
@@ -836,14 +855,14 @@ proxy-groups:
   - United Kingdom_None_trojan_1139
   - China_None_vmess_1140
   - Singapore_None_vmess_1141
-  - None_None_trojan_1142
+  - United States_None_trojan_1142
   - China_None_vmess_1143
   - China_None_vmess_1144
   - Hong Kong_Central_vmess_1145
   - China_None_vmess_1146
   - China_None_vmess_1147
   - United States_None_ss_1148
-  - Hong Kong_Sham Shui Po_vmess_1149
+  - Hong Kong_Central_vmess_1149
   - Hong Kong_San Po Kong_trojan_1150
   - Hong Kong_None_trojan_1151
   - Japan_Tokyo_trojan_1152
@@ -858,7 +877,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1161
   - South Korea_Seocho_ss_1162
   - Vietnam_None_ss_1163
-  - Hong Kong_Sham Shui Po_vmess_1164
+  - Hong Kong_Central_vmess_1164
+  - India_Mumbai_trojan_1165
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
