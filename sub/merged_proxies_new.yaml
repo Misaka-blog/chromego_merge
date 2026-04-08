@@ -33,7 +33,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_102
+  name: Hong Kong_Central_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -138,7 +138,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_1015
+  name: Hong Kong_Central_vmess_1015
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -146,18 +146,45 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: The Netherlands_Meppel_trojan_1016
-  password: strong-secret-pass-777
-  port: 4443
-  server: 94.131.105.125
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1017
+- name: Austria_None_trojan_1016
   network: ws
   password: trojan
-  port: 8025
-  server: 54.46.72.234
+  port: 8444
+  server: 152.53.200.167
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: Austria_None_trojan_1017
+  network: ws
+  password: trojan
+  port: 8444
+  server: 152.53.200.98
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: Indonesia_Jakarta_trojan_1018
+  password: M7v%w11Se*
+  port: 443
+  server: qfdfsg.wsone.icu
+  skip-cert-verify: true
+  sni: qfdfsg.wsone.icu
+  type: trojan
+  udp: true
+- name: Japan_Osaka_trojan_1019
+  network: ws
+  password: trojan
+  port: 587
+  server: 217.142.250.195
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -166,6 +193,14 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
+- name: The Netherlands_Meppel_trojan_1020
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  sni: 94.131.105.125
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -264,7 +299,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_1112
+  name: Hong Kong_Central_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -369,7 +404,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_1125
+  name: Hong Kong_Central_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -377,18 +412,45 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: The Netherlands_Meppel_trojan_1126
-  password: strong-secret-pass-777
-  port: 4443
-  server: 94.131.105.125
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1127
+- name: Austria_None_trojan_1126
   network: ws
   password: trojan
-  port: 8025
-  server: 54.46.72.234
+  port: 8444
+  server: 152.53.200.167
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: Austria_None_trojan_1127
+  network: ws
+  password: trojan
+  port: 8444
+  server: 152.53.200.98
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: Indonesia_Jakarta_trojan_1128
+  password: M7v%w11Se*
+  port: 443
+  server: qfdfsg.wsone.icu
+  skip-cert-verify: true
+  sni: qfdfsg.wsone.icu
+  type: trojan
+  udp: true
+- name: Japan_Osaka_trojan_1129
+  network: ws
+  password: trojan
+  port: 587
+  server: 217.142.250.195
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -397,6 +459,14 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
+- name: The Netherlands_Meppel_trojan_1130
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  sni: 94.131.105.125
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -404,7 +474,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - United States_None_ss_101
-  - Hong Kong_Yuen Long San Hui_vmess_102
+  - Hong Kong_Central_vmess_102
   - Japan_Tokyo_trojan_103
   - Japan_Tokyo_trojan_104
   - Japan_Tokyo_trojan_105
@@ -417,9 +487,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1012
   - Japan_Tokyo_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Hong Kong_Yuen Long San Hui_vmess_1015
-  - The Netherlands_Meppel_trojan_1016
-  - United States_None_trojan_1017
+  - Hong Kong_Central_vmess_1015
+  - Austria_None_trojan_1016
+  - Austria_None_trojan_1017
+  - Indonesia_Jakarta_trojan_1018
+  - Japan_Osaka_trojan_1019
+  - The Netherlands_Meppel_trojan_1020
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -431,7 +504,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Yuen Long San Hui_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Japan_Tokyo_trojan_1113
   - Japan_Tokyo_trojan_1114
   - Japan_Tokyo_trojan_1115
@@ -444,9 +517,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1122
   - Japan_Tokyo_trojan_1123
   - Hong Kong_None_trojan_1124
-  - Hong Kong_Yuen Long San Hui_vmess_1125
-  - The Netherlands_Meppel_trojan_1126
-  - United States_None_trojan_1127
+  - Hong Kong_Central_vmess_1125
+  - Austria_None_trojan_1126
+  - Austria_None_trojan_1127
+  - Indonesia_Jakarta_trojan_1128
+  - Japan_Osaka_trojan_1129
+  - The Netherlands_Meppel_trojan_1130
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -454,7 +530,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_None_ss_101
-  - Hong Kong_Yuen Long San Hui_vmess_102
+  - Hong Kong_Central_vmess_102
   - Japan_Tokyo_trojan_103
   - Japan_Tokyo_trojan_104
   - Japan_Tokyo_trojan_105
@@ -467,9 +543,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1012
   - Japan_Tokyo_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Hong Kong_Yuen Long San Hui_vmess_1015
-  - The Netherlands_Meppel_trojan_1016
-  - United States_None_trojan_1017
+  - Hong Kong_Central_vmess_1015
+  - Austria_None_trojan_1016
+  - Austria_None_trojan_1017
+  - Indonesia_Jakarta_trojan_1018
+  - Japan_Osaka_trojan_1019
+  - The Netherlands_Meppel_trojan_1020
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -481,7 +560,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Yuen Long San Hui_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Japan_Tokyo_trojan_1113
   - Japan_Tokyo_trojan_1114
   - Japan_Tokyo_trojan_1115
@@ -494,9 +573,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1122
   - Japan_Tokyo_trojan_1123
   - Hong Kong_None_trojan_1124
-  - Hong Kong_Yuen Long San Hui_vmess_1125
-  - The Netherlands_Meppel_trojan_1126
-  - United States_None_trojan_1127
+  - Hong Kong_Central_vmess_1125
+  - Austria_None_trojan_1126
+  - Austria_None_trojan_1127
+  - Indonesia_Jakarta_trojan_1128
+  - Japan_Osaka_trojan_1129
+  - The Netherlands_Meppel_trojan_1130
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
