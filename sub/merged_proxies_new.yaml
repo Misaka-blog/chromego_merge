@@ -927,7 +927,16 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: France_None_vmess_1111
+  name: United States_Washington_vmess_1111
+  network: h2
+  port: 55165
+  server: 38.22.93.20
+  tls: true
+  type: vmess
+  uuid: 8108a7dc-6162-4366-d492-23dcd3553e38
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1112
   network: ws
   port: 16622
   server: t.cnmjcn.cyou
@@ -939,22 +948,6 @@ proxies:
   ws-opts:
     headers:
       Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1112
-  network: ws
-  port: 16622
-  server: planb.mojcn.com
-  type: vmess
-  udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
-  ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
@@ -972,62 +965,78 @@ proxies:
   server: t.cnmjcn.cyou
   type: vmess
   udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1115
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-headers:
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1116
   network: ws
   port: 16622
   server: t.cnmjcn.cyou
   type: vmess
   udp: true
-  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
   ws-headers:
-    Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: Australia_Melbourne_vmess_1116
-  port: 7754
-  server: efan.dnsefan04881.com
-  type: vmess
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
-- alterId: '0'
-  cipher: auto
   name: France_None_vmess_1117
   network: ws
-  port: 16632
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tls: false
+  port: 16622
+  server: m.cnmjin.net
   type: vmess
   udp: true
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
-  xudp: true
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1118
   network: ws
-  port: 16632
-  server: m.cnmjin.net
+  port: 16622
+  server: planb.mojcn.com
   type: vmess
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+  udp: true
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-headers:
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1119
@@ -1035,57 +1044,49 @@ proxies:
   port: 16622
   server: m.cnmjin.net
   type: vmess
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: France_None_vmess_1120
+  name: China_None_vmess_1120
   network: ws
-  port: 16622
-  server: m.cnmjin.net
+  port: 20010
+  server: 76c3.earthdraft.onezz.top
   type: vmess
-  udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
-  ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+  uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0
   ws-opts:
     headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-    path: /
-  ws-path: /
+      Host: ithome.com
+    path: /chat
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1121
   network: ws
-  port: 16622
+  port: 16632
   server: t.cnmjcn.cyou
   type: vmess
-  udp: true
-  uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
-  ws-headers:
-    Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1122
   network: ws
-  port: 16632
+  port: 16622
   server: m.cnmjin.net
   type: vmess
   udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
   ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
@@ -1093,17 +1094,13 @@ proxies:
   name: France_None_vmess_1123
   network: ws
   port: 16622
-  server: m.cnmjin.net
+  server: t.cnmjcn.cyou
   type: vmess
-  udp: true
-  uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
-  ws-headers:
-    Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1124
@@ -1111,24 +1108,27 @@ proxies:
   port: 16632
   server: m.cnmjin.net
   type: vmess
-  udp: true
-  uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
-  ws-headers:
-    Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1125
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Central_vmess_1125
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1126
@@ -1137,12 +1137,12 @@ proxies:
   server: planb.mojcn.com
   type: vmess
   udp: true
-  uuid: 62e2f63d-eb5b-4e22-9501-7361dab470b0
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
   ws-headers:
-    Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
@@ -1153,25 +1153,28 @@ proxies:
   server: t.cnmjcn.cyou
   type: vmess
   udp: true
-  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-headers:
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1128
   network: ws
   port: 16616
-  server: t.cnmjcn.cyou
+  server: m.cnmjin.net
   type: vmess
   udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
   ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
@@ -1179,96 +1182,75 @@ proxies:
   name: France_None_vmess_1129
   network: ws
   port: 16616
-  server: planb.mojcn.com
+  server: m.cnmjin.net
   type: vmess
   udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-headers:
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1130
   network: ws
   port: 16616
-  server: m.cnmjin.net
+  server: planb.mojcn.com
   type: vmess
-  udp: true
-  uuid: 62e2f63d-eb5b-4e22-9501-7361dab470b0
-  ws-headers:
-    Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1131
   network: ws
   port: 16616
-  server: planb.mojcn.com
+  server: t.cnmjcn.cyou
   type: vmess
-  udp: true
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-headers:
-    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1132
   network: ws
   port: 16616
-  server: planb.mojcn.com
+  server: m.cnmjin.net
   type: vmess
-  udp: true
-  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
-  ws-headers:
-    Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1133
   network: ws
   port: 16616
-  server: t.cnmjcn.cyou
+  server: planb.mojcn.com
   type: vmess
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+  udp: true
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-headers:
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1134
   network: ws
-  port: 16616
-  server: m.cnmjin.net
-  type: vmess
-  udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
-  ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1135
-  network: ws
-  port: 16616
-  server: t.cnmjcn.cyou
+  port: 16617
+  server: planb.mojcn.com
   type: vmess
   udp: true
   uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
@@ -1279,36 +1261,80 @@ proxies:
       Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1136
+- name: United States_None_trojan_1135
   network: ws
-  port: 16616
-  server: planb.mojcn.com
-  type: vmess
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  port: 443
+  server: cloudflare-ip.mofashi.ltd
+  sni: aa.beijng.dpdns.org
+  tls: true
+  type: trojan
   ws-opts:
     headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
-    path: /%2F
+      Host: aa.beijng.dpdns.org
+    path: /?ed=2048
+- name: Japan_None_trojan_1136
+  password: e4756f1c-5ee3-487d-8a98-82bbc81f7e6b
+  port: 443
+  server: jp.co2.vn
+  skip-cert-verify: true
+  sni: www.linemo.jp
+  tls: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1137
   network: ws
-  port: 16616
-  server: m.cnmjin.net
+  port: 16617
+  server: t.cnmjcn.cyou
   type: vmess
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
+- name: None_None_trojan_1138
+  network: ws
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  port: 443
+  server: cfip.1323123.xyz
+  sni: aa.beijng.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aa.beijng.dpdns.org
+    path: /?ed=2048
+- name: None_None_trojan_1139
+  network: ws
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  port: 443
+  server: cloudflare.182682.xyz
+  sni: aa.beijng.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aa.beijng.dpdns.org
+    path: /?ed=2048
+- name: None_None_trojan_1140
+  network: ws
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  port: 443
+  server: aa.beijng.dpdns.org
+  sni: aa.beijng.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aa.beijng.dpdns.org
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: France_None_vmess_1138
+  name: France_None_vmess_1141
   network: ws
-  port: 16616
-  server: m.cnmjin.net
+  port: 16618
+  server: t.cnmjcn.cyou
   type: vmess
   udp: true
   uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
@@ -1317,290 +1343,115 @@ proxies:
   ws-opts:
     headers:
       Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1139
-  network: ws
-  port: 16616
-  server: m.cnmjin.net
-  type: vmess
-  udp: true
-  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
-  ws-headers:
-    Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1140
-  network: ws
-  port: 16616
-  server: t.cnmjcn.cyou
-  type: vmess
-  udp: true
-  uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
-  ws-headers:
-    Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1141
-  network: ws
-  port: 16616
-  server: planb.mojcn.com
-  type: vmess
-  udp: true
-  uuid: 8d95151d-d626-4ed2-83ac-29631f44085b
-  ws-headers:
-    Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1142
   network: ws
-  port: 16616
-  server: t.cnmjcn.cyou
+  port: 16618
+  server: planb.mojcn.com
   type: vmess
   udp: true
-  uuid: 8d95151d-d626-4ed2-83ac-29631f44085b
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
   ws-headers:
-    Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: d26bc33c22885694ea3e533bfbf33059.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1143
   network: ws
-  port: 16616
+  port: 16618
   server: m.cnmjin.net
   type: vmess
   udp: true
-  uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
   ws-headers:
-    Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
     path: /
   ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1144
   network: ws
-  port: 16617
+  port: 16618
   server: t.cnmjcn.cyou
   type: vmess
-  udp: true
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-headers:
-    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1145
   network: ws
-  port: 16617
+  port: 16618
   server: planb.mojcn.com
   type: vmess
-  udp: true
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-headers:
-    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
   ws-opts:
     headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
     path: /
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: France_None_vmess_1146
   network: ws
-  port: 16617
-  server: t.cnmjcn.cyou
-  type: vmess
-  udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
-  ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1147
-  network: ws
-  port: 16617
-  server: planb.mojcn.com
-  type: vmess
-  udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
-  ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1148
-  network: ws
-  port: 16617
+  port: 16618
   server: m.cnmjin.net
   type: vmess
   udp: true
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
   ws-headers:
-    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
   ws-opts:
     headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1149
-  network: ws
-  port: 16617
-  server: m.cnmjin.net
-  type: vmess
+- name: United States_Santa Clara_trojan_1147
+  password: 3f96f3d1-8bd9-49a1-b8e4-c776908c30a5
+  port: 50000
+  server: us200m.jiasu.asia
+  skip-cert-verify: true
+  sni: us200m.jiasu.asia
+  tls: true
+  type: trojan
   udp: true
-  uuid: 62e2f63d-eb5b-4e22-9501-7361dab470b0
-  ws-headers:
-    Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: Taiwan_None_vmess_1150
-  network: http
-  port: 54291
-  server: 103.127.243.66
-  type: vmess
-  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1151
-  network: ws
-  port: 16618
-  server: planb.mojcn.com
-  type: vmess
-  udp: true
-  uuid: 62e2f63d-eb5b-4e22-9501-7361dab470b0
-  ws-headers:
-    Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: f623ed67b551aedf776492df3bf507f4.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1152
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  type: vmess
-  udp: true
-  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
-  ws-headers:
-    Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1153
-  network: ws
-  port: 16618
-  server: planb.mojcn.com
-  type: vmess
-  udp: true
-  uuid: 88eebed0-9f57-4914-b9a3-403d1bc2c7f1
-  ws-headers:
-    Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 0d4a9b9415e8fa3ab4f1a8607a773d28.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: United Kingdom_None_vmess_1154
-  port: 180
-  server: 82.198.246.214
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: United Kingdom_None_vmess_1155
-  port: 180
-  server: 82.198.246.37
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: Iran_None_trojan_1156
+- name: Singapore_Singapore_trojan_1148
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
-  server: 95.81.113.186
+  server: 178.128.209.190
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
-  tls: true
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
-- name: Gibraltar_None_trojan_1157
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 95.164.55.80
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: Denmark_None_trojan_1158
+- alterId: 0
+  cipher: auto
+  name: United Kingdom_None_vmess_1149
+  port: 180
+  server: 82.198.246.97
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: Lebanon_None_trojan_1150
   network: ws
   password: '1234567890'
   port: 443
-  server: 159.195.44.151
+  server: 77.110.96.220
   sni: kfm-bn0.pages.dev
   tls: true
   type: trojan
@@ -1608,90 +1459,22 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: Singapore_Singapore_trojan_1159
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 139.59.239.116
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1160
-  network: ws
-  port: 16648
-  server: t.cnmjcn.cyou
-  type: vmess
-  udp: true
-  uuid: a95a83d7-b9cf-43ad-8c74-4df64f608422
-  ws-headers:
-    Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: ba81e2cd4af365e9a83fe38cc3223a19.mobgslb.tbcache.com
-    path: /
-  ws-path: /
-- name: The Netherlands_Hardenberg_trojan_1161
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 185.239.142.215
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1162
-  network: ws
-  port: 16648
-  server: t.cnmjcn.cyou
-  type: vmess
-  uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
-  ws-opts:
-    headers:
-      Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: Indonesia_Jakarta_vmess_1163
-  port: 30808
-  server: v8.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1164
-  network: ws
-  port: 16648
-  server: planb.mojcn.com
-  type: vmess
-  udp: true
-  uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
-  ws-headers:
-    Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
-  ws-opts:
-    headers:
-      Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
-    path: /
-  ws-path: /
 - cipher: aes-256-cfb
-  name: United States_None_ss_1165
+  name: United States_None_ss_1151
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
-- name: Japan_Tokyo_trojan_1166
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Central_vmess_1152
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: Japan_Tokyo_trojan_1153
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
@@ -1699,7 +1482,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_1167
+- name: Hong Kong_None_trojan_1154
   network: tcp
   password: BxceQaOe
   port: 9211
@@ -1707,7 +1490,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_1168
+- name: Hong Kong_None_trojan_1155
   network: tcp
   password: BxceQaOe
   port: 4886
@@ -1715,7 +1498,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_1169
+- name: Japan_Tokyo_trojan_1156
   network: tcp
   password: BxceQaOe
   port: 3022
@@ -1723,7 +1506,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_1170
+- name: Japan_Tokyo_trojan_1157
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -1731,7 +1514,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1171
+- name: Japan_Tokyo_trojan_1158
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -1739,7 +1522,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1172
+- name: Japan_Tokyo_trojan_1159
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 3057
@@ -1747,7 +1530,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1173
+- name: Japan_Tokyo_trojan_1160
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
@@ -1755,7 +1538,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: United States_None_trojan_1174
+- name: United States_None_trojan_1161
   network: tcp
   password: BxceQaOe
   port: 25675
@@ -1763,7 +1546,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_1175
+- name: Japan_Tokyo_trojan_1162
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
@@ -1771,7 +1554,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1176
+- name: Japan_Tokyo_trojan_1163
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
@@ -1779,7 +1562,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_1177
+- name: Japan_Tokyo_trojan_1164
   network: tcp
   password: BxceQaOe
   port: 14919
@@ -1789,7 +1572,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1178
+  name: Hong Kong_Central_vmess_1165
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1797,109 +1580,91 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: '0'
   cipher: auto
-  name: United Kingdom_None_vmess_1179
+  name: United Kingdom_None_vmess_1166
   network: tcp
   port: '180'
-  server: 82.198.246.250
+  server: 82.198.246.9
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   xudp: true
-- alpn:
-  - ''
-  alterId: '0'
+- name: United States_None_trojan_1167
+  network: ws
+  password: '1234567890'
+  port: 443
+  server: 64.188.70.233
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /?ed=2560
+- name: United States_None_trojan_1168
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: '8443'
+  server: 172.66.44.230
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /tro8sFW1S91B6sZrM1?ed=2560
+- alterId: '0'
   cipher: auto
-  name: Australia_Melbourne_vmess_1180
-  network: tcp
-  port: '7754'
-  server: efan.dnsefan04881.com
+  name: France_None_vmess_1169
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+  ws-opts:
+    headers:
+      Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+    path: /
   xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: Australia_Melbourne_vmess_1181
-  network: tcp
-  port: '7754'
-  server: vm51544542.dns8656815.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  xudp: true
-- name: South Korea_Chilgok-gun_trojan_1182
+- name: United States_San Francisco_trojan_1170
   network: ws
-  password: '1234567890'
-  port: '11965'
-  server: 14.45.224.171
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 172.64.152.23
+  sni: Koma-YT.PAGeS.Dev
   type: trojan
-  udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: South Korea_Nam-gu_trojan_1183
-  network: ws
-  password: '1234567890'
-  port: '25448'
-  server: 118.41.26.148
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
-  type: trojan
+      Host: Koma-YT.PAGeS.Dev
+    path: /tr
+- cipher: aes-128-gcm
+  name: Japan_Tokyo_ss_1171
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: aoe.o.eoa.ccwu.cc
+    mode: websocket
+    mux: false
+    path: /?enc\=aes-128-gcm
+    tls: true
+  port: 2083
+  server: 54.199.22.197
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: South Korea_None_trojan_1184
+- name: South Korea_Buk-gu_trojan_1172
   network: ws
   password: '1234567890'
-  port: '10035'
-  server: 175.197.105.20
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.181 Safari/537.36
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: South Korea_Mapo-gu_trojan_1185
-  network: ws
-  password: '1234567890'
-  port: '20002'
-  server: 112.187.247.37
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: South Korea_Chuncheon_trojan_1186
-  network: ws
-  password: '1234567890'
-  port: 1777
-  server: 138.2.120.74
+  port: 30047
+  server: 211.194.210.183
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
@@ -1907,11 +1672,11 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: South Korea_None_trojan_1187
+- name: South Korea_Cheongju-si_trojan_1173
   network: ws
   password: '1234567890'
-  port: 28017
-  server: 49.142.200.31
+  port: 32603
+  server: 220.86.228.109
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
@@ -1919,18 +1684,29 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: South Korea_Cheongju-si_trojan_1188
+- name: South Korea_Daegu_trojan_1174
   network: ws
   password: '1234567890'
-  port: 19530
-  server: 222.116.195.135
+  port: 10088
+  server: 218.150.86.237
   sni: kfm-bn0.pages.dev
   type: trojan
   ws-opts:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: Austria_None_trojan_1189
+- name: South Korea_Buk-gu_trojan_1175
+  network: ws
+  password: '1234567890'
+  port: 10035
+  server: 121.145.126.10
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- name: Austria_None_trojan_1176
   network: ws
   password: '1234567890'
   port: 443
@@ -1943,7 +1719,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Austria_None_trojan_1190
+- name: Austria_None_trojan_1177
   network: ws
   password: '1234567890'
   port: 443
@@ -1956,7 +1732,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Bulgaria_None_trojan_1191
+- name: Bulgaria_None_trojan_1178
   network: ws
   password: '1234567890'
   port: 443
@@ -1969,7 +1745,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Bulgaria_None_trojan_1192
+- name: Bulgaria_None_trojan_1179
   network: ws
   password: '1234567890'
   port: 443
@@ -1982,7 +1758,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_1193
+- name: Lithuania_Vilnius_trojan_1180
   network: ws
   password: '1234567890'
   port: 443
@@ -1995,7 +1771,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Poland_Warsaw_trojan_1194
+- name: Poland_Warsaw_trojan_1181
   network: ws
   password: '1234567890'
   port: 443
@@ -2008,7 +1784,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_1195
+- name: Lithuania_Vilnius_trojan_1182
   network: ws
   password: '1234567890'
   port: 443
@@ -2021,7 +1797,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Poland_Warsaw_trojan_1196
+- name: Poland_Warsaw_trojan_1183
   network: ws
   password: '1234567890'
   port: 443
@@ -2034,7 +1810,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Poland_Warsaw_trojan_1197
+- name: Poland_Warsaw_trojan_1184
   network: ws
   password: '1234567890'
   port: 443
@@ -2047,7 +1823,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Moldova_Chisinau_trojan_1198
+- name: Moldova_Chisinau_trojan_1185
   network: ws
   password: '1234567890'
   port: 8443
@@ -2060,7 +1836,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_1199
+- name: Lithuania_Vilnius_trojan_1186
   network: ws
   password: '1234567890'
   port: 443
@@ -2073,7 +1849,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_11100
+- name: Lithuania_Vilnius_trojan_1187
   network: ws
   password: '1234567890'
   port: 443
@@ -2086,7 +1862,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Israel_Jerusalem_trojan_11101
+- name: Israel_Jerusalem_trojan_1188
   network: ws
   password: '1234567890'
   port: 443
@@ -2099,7 +1875,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Canada_Ottawa_trojan_11102
+- name: Canada_Ottawa_trojan_1189
   network: ws
   password: '1234567890'
   port: 443
@@ -2112,7 +1888,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Czechia_Doksy_trojan_11103
+- name: Czechia_Doksy_trojan_1190
   network: ws
   password: '1234567890'
   port: 443
@@ -2125,7 +1901,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Czechia_Mimon_trojan_11104
+- name: Czechia_Mimon_trojan_1191
   network: ws
   password: '1234567890'
   port: 443
@@ -2138,7 +1914,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Czechia_Mimon_trojan_11105
+- name: Czechia_Mimon_trojan_1192
   network: ws
   password: '1234567890'
   port: 443
@@ -2151,7 +1927,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_11106
+- name: Germany_None_trojan_1193
   network: ws
   password: '1234567890'
   port: 443
@@ -2164,7 +1940,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Frankfurt am Main_trojan_11107
+- name: Germany_Frankfurt am Main_trojan_1194
   network: ws
   password: '1234567890'
   port: 443
@@ -2177,7 +1953,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Frankfurt am Main_trojan_11108
+- name: Germany_Frankfurt am Main_trojan_1195
   network: ws
   password: '1234567890'
   port: 443
@@ -2190,7 +1966,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Nuremberg_trojan_11109
+- name: Germany_Nuremberg_trojan_1196
   network: ws
   password: '1234567890'
   port: 443
@@ -2203,7 +1979,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Denmark_None_trojan_11110
+- name: Denmark_None_trojan_1197
   network: ws
   password: '1234567890'
   port: 443
@@ -2216,7 +1992,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Russia_None_trojan_11111
+- name: Russia_None_trojan_1198
   network: ws
   password: '1234567890'
   port: 443
@@ -2229,7 +2005,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Battersea_trojan_11112
+- name: United Kingdom_Battersea_trojan_1199
   network: ws
   password: '1234567890'
   port: 443
@@ -2242,7 +2018,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Canterbury_trojan_11113
+- name: United Kingdom_Canterbury_trojan_11100
   network: ws
   password: '1234567890'
   port: 443
@@ -2255,7 +2031,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Cornwall_trojan_11114
+- name: United Kingdom_Cornwall_trojan_11101
   network: ws
   password: '1234567890'
   port: 8443
@@ -2268,7 +2044,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_None_trojan_11115
+- name: United Kingdom_None_trojan_11102
   network: ws
   password: '1234567890'
   port: 443
@@ -2281,7 +2057,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Dagenham_trojan_11116
+- name: United Kingdom_Dagenham_trojan_11103
   network: ws
   password: '1234567890'
   port: 443
@@ -2294,7 +2070,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_None_trojan_11117
+- name: United Kingdom_None_trojan_11104
   network: ws
   password: '1234567890'
   port: 8443
@@ -2307,7 +2083,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iraq_None_trojan_11118
+- name: Iraq_None_trojan_11105
   network: ws
   password: '1234567890'
   port: 443
@@ -2320,7 +2096,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iran_None_trojan_11119
+- name: Iran_None_trojan_11106
   network: ws
   password: '1234567890'
   port: 443
@@ -2333,7 +2109,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iran_None_trojan_11120
+- name: Iran_None_trojan_11107
   network: ws
   password: '1234567890'
   port: 443
@@ -2346,7 +2122,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lebanon_None_trojan_11121
+- name: Lebanon_None_trojan_11108
   network: ws
   password: '1234567890'
   port: 2053
@@ -2359,7 +2135,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Russia_Krasnogorsk_trojan_11122
+- name: Russia_Krasnogorsk_trojan_11109
   network: ws
   password: '1234567890'
   port: 2053
@@ -2372,7 +2148,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Seychelles_None_trojan_11123
+- name: Seychelles_None_trojan_11110
   network: ws
   password: '1234567890'
   port: 443
@@ -2385,7 +2161,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Türkiye_Izmir_trojan_11124
+- name: Türkiye_Izmir_trojan_11111
   network: ws
   password: '1234567890'
   port: 443
@@ -2398,7 +2174,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_11125
+- name: Germany_None_trojan_11112
   network: ws
   password: '1234567890'
   port: 443
@@ -2411,7 +2187,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_11126
+- name: Germany_None_trojan_11113
   network: ws
   password: '1234567890'
   port: 443
@@ -2424,7 +2200,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_11127
+- name: Germany_None_trojan_11114
   network: ws
   password: '1234567890'
   port: 443
@@ -2437,7 +2213,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_New York_trojan_11128
+- name: United States_New York_trojan_11115
   network: ws
   password: '1234567890'
   port: 8443
@@ -2450,7 +2226,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11129
+- name: United States_None_trojan_11116
   network: ws
   password: '1234567890'
   port: 443
@@ -2463,20 +2239,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11130
-  network: ws
-  password: '1234567890'
-  port: 443
-  server: 64.188.70.233
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: kfm-bn0.pages.dev
-    path: /?ed=2560
-- name: United States_None_trojan_11131
+- name: United States_None_trojan_11117
   network: ws
   password: '1234567890'
   port: 443
@@ -2489,7 +2252,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11132
+- name: United States_None_trojan_11118
   network: ws
   password: '1234567890'
   port: 443
@@ -2502,7 +2265,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11133
+- name: United States_None_trojan_11119
   network: ws
   password: '1234567890'
   port: 443
@@ -2515,7 +2278,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11134
+- name: United States_None_trojan_11120
   network: ws
   password: '1234567890'
   port: 443
@@ -2528,7 +2291,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_None_trojan_11135
+- name: United States_None_trojan_11121
   network: ws
   password: '1234567890'
   port: 443
@@ -2541,7 +2304,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_None_trojan_11136
+- name: United States_None_trojan_11122
   network: ws
   password: '1234567890'
   port: 443
@@ -2554,7 +2317,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11137
+- name: United States_None_trojan_11123
   network: ws
   password: '1234567890'
   port: 443
@@ -2567,7 +2330,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11138
+- name: United States_None_trojan_11124
   network: ws
   password: '1234567890'
   port: 443
@@ -2580,7 +2343,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11139
+- name: United States_None_trojan_11125
   network: ws
   password: '1234567890'
   port: 443
@@ -2593,7 +2356,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_11140
+- name: United States_None_trojan_11126
   network: ws
   password: '1234567890'
   port: 8443
@@ -2606,7 +2369,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Unknown_trojan_11141
+- name: Unknown_trojan_11127
   network: ws
   password: '1234567890'
   port: 443
@@ -2703,21 +2466,21 @@ proxy-groups:
   - Unknown_vmess_118
   - Unknown_vmess_119
   - Unknown_vmess_1110
-  - France_None_vmess_1111
+  - United States_Washington_vmess_1111
   - France_None_vmess_1112
   - Australia_Melbourne_vmess_1113
   - France_None_vmess_1114
   - France_None_vmess_1115
-  - Australia_Melbourne_vmess_1116
+  - France_None_vmess_1116
   - France_None_vmess_1117
   - France_None_vmess_1118
   - France_None_vmess_1119
-  - France_None_vmess_1120
+  - China_None_vmess_1120
   - France_None_vmess_1121
   - France_None_vmess_1122
   - France_None_vmess_1123
   - France_None_vmess_1124
-  - Hong Kong_Central_vmess_1125
+  - France_None_vmess_1125
   - France_None_vmess_1126
   - France_None_vmess_1127
   - France_None_vmess_1128
@@ -2727,113 +2490,99 @@ proxy-groups:
   - France_None_vmess_1132
   - France_None_vmess_1133
   - France_None_vmess_1134
-  - France_None_vmess_1135
-  - France_None_vmess_1136
+  - United States_None_trojan_1135
+  - Japan_None_trojan_1136
   - France_None_vmess_1137
-  - France_None_vmess_1138
-  - France_None_vmess_1139
-  - France_None_vmess_1140
+  - None_None_trojan_1138
+  - None_None_trojan_1139
+  - None_None_trojan_1140
   - France_None_vmess_1141
   - France_None_vmess_1142
   - France_None_vmess_1143
   - France_None_vmess_1144
   - France_None_vmess_1145
   - France_None_vmess_1146
-  - France_None_vmess_1147
-  - France_None_vmess_1148
-  - France_None_vmess_1149
-  - Taiwan_None_vmess_1150
-  - France_None_vmess_1151
-  - France_None_vmess_1152
-  - France_None_vmess_1153
-  - United Kingdom_None_vmess_1154
-  - United Kingdom_None_vmess_1155
-  - Iran_None_trojan_1156
-  - Gibraltar_None_trojan_1157
-  - Denmark_None_trojan_1158
-  - Singapore_Singapore_trojan_1159
-  - France_None_vmess_1160
-  - The Netherlands_Hardenberg_trojan_1161
-  - France_None_vmess_1162
-  - Indonesia_Jakarta_vmess_1163
-  - France_None_vmess_1164
-  - United States_None_ss_1165
-  - Japan_Tokyo_trojan_1166
-  - Hong Kong_None_trojan_1167
-  - Hong Kong_None_trojan_1168
-  - Japan_Tokyo_trojan_1169
-  - Japan_Tokyo_trojan_1170
-  - Japan_Tokyo_trojan_1171
-  - Japan_Tokyo_trojan_1172
-  - Japan_Tokyo_trojan_1173
-  - United States_None_trojan_1174
-  - Japan_Tokyo_trojan_1175
-  - Japan_Tokyo_trojan_1176
-  - Japan_Tokyo_trojan_1177
-  - Hong Kong_Central_vmess_1178
-  - United Kingdom_None_vmess_1179
-  - Australia_Melbourne_vmess_1180
-  - Australia_Melbourne_vmess_1181
-  - South Korea_Chilgok-gun_trojan_1182
-  - South Korea_Nam-gu_trojan_1183
-  - South Korea_None_trojan_1184
-  - South Korea_Mapo-gu_trojan_1185
-  - South Korea_Chuncheon_trojan_1186
-  - South Korea_None_trojan_1187
-  - South Korea_Cheongju-si_trojan_1188
-  - Austria_None_trojan_1189
-  - Austria_None_trojan_1190
-  - Bulgaria_None_trojan_1191
-  - Bulgaria_None_trojan_1192
-  - Lithuania_Vilnius_trojan_1193
-  - Poland_Warsaw_trojan_1194
-  - Lithuania_Vilnius_trojan_1195
-  - Poland_Warsaw_trojan_1196
-  - Poland_Warsaw_trojan_1197
-  - Moldova_Chisinau_trojan_1198
-  - Lithuania_Vilnius_trojan_1199
-  - Lithuania_Vilnius_trojan_11100
-  - Israel_Jerusalem_trojan_11101
-  - Canada_Ottawa_trojan_11102
-  - Czechia_Doksy_trojan_11103
-  - Czechia_Mimon_trojan_11104
-  - Czechia_Mimon_trojan_11105
-  - Germany_None_trojan_11106
-  - Germany_Frankfurt am Main_trojan_11107
-  - Germany_Frankfurt am Main_trojan_11108
-  - Germany_Nuremberg_trojan_11109
-  - Denmark_None_trojan_11110
-  - Russia_None_trojan_11111
-  - United Kingdom_Battersea_trojan_11112
-  - United Kingdom_Canterbury_trojan_11113
-  - United Kingdom_Cornwall_trojan_11114
-  - United Kingdom_None_trojan_11115
-  - United Kingdom_Dagenham_trojan_11116
-  - United Kingdom_None_trojan_11117
-  - Iraq_None_trojan_11118
-  - Iran_None_trojan_11119
-  - Iran_None_trojan_11120
-  - Lebanon_None_trojan_11121
-  - Russia_Krasnogorsk_trojan_11122
-  - Seychelles_None_trojan_11123
-  - Türkiye_Izmir_trojan_11124
-  - Germany_None_trojan_11125
-  - Germany_None_trojan_11126
-  - Germany_None_trojan_11127
-  - United States_New York_trojan_11128
-  - United States_None_trojan_11129
-  - United States_None_trojan_11130
-  - United States_None_trojan_11131
-  - United States_None_trojan_11132
-  - United States_None_trojan_11133
-  - United States_None_trojan_11134
-  - United States_None_trojan_11135
-  - United States_None_trojan_11136
-  - United States_None_trojan_11137
-  - United States_None_trojan_11138
-  - United States_None_trojan_11139
-  - United States_None_trojan_11140
-  - Unknown_trojan_11141
+  - United States_Santa Clara_trojan_1147
+  - Singapore_Singapore_trojan_1148
+  - United Kingdom_None_vmess_1149
+  - Lebanon_None_trojan_1150
+  - United States_None_ss_1151
+  - Hong Kong_Central_vmess_1152
+  - Japan_Tokyo_trojan_1153
+  - Hong Kong_None_trojan_1154
+  - Hong Kong_None_trojan_1155
+  - Japan_Tokyo_trojan_1156
+  - Japan_Tokyo_trojan_1157
+  - Japan_Tokyo_trojan_1158
+  - Japan_Tokyo_trojan_1159
+  - Japan_Tokyo_trojan_1160
+  - United States_None_trojan_1161
+  - Japan_Tokyo_trojan_1162
+  - Japan_Tokyo_trojan_1163
+  - Japan_Tokyo_trojan_1164
+  - Hong Kong_Central_vmess_1165
+  - United Kingdom_None_vmess_1166
+  - United States_None_trojan_1167
+  - United States_None_trojan_1168
+  - France_None_vmess_1169
+  - United States_San Francisco_trojan_1170
+  - Japan_Tokyo_ss_1171
+  - South Korea_Buk-gu_trojan_1172
+  - South Korea_Cheongju-si_trojan_1173
+  - South Korea_Daegu_trojan_1174
+  - South Korea_Buk-gu_trojan_1175
+  - Austria_None_trojan_1176
+  - Austria_None_trojan_1177
+  - Bulgaria_None_trojan_1178
+  - Bulgaria_None_trojan_1179
+  - Lithuania_Vilnius_trojan_1180
+  - Poland_Warsaw_trojan_1181
+  - Lithuania_Vilnius_trojan_1182
+  - Poland_Warsaw_trojan_1183
+  - Poland_Warsaw_trojan_1184
+  - Moldova_Chisinau_trojan_1185
+  - Lithuania_Vilnius_trojan_1186
+  - Lithuania_Vilnius_trojan_1187
+  - Israel_Jerusalem_trojan_1188
+  - Canada_Ottawa_trojan_1189
+  - Czechia_Doksy_trojan_1190
+  - Czechia_Mimon_trojan_1191
+  - Czechia_Mimon_trojan_1192
+  - Germany_None_trojan_1193
+  - Germany_Frankfurt am Main_trojan_1194
+  - Germany_Frankfurt am Main_trojan_1195
+  - Germany_Nuremberg_trojan_1196
+  - Denmark_None_trojan_1197
+  - Russia_None_trojan_1198
+  - United Kingdom_Battersea_trojan_1199
+  - United Kingdom_Canterbury_trojan_11100
+  - United Kingdom_Cornwall_trojan_11101
+  - United Kingdom_None_trojan_11102
+  - United Kingdom_Dagenham_trojan_11103
+  - United Kingdom_None_trojan_11104
+  - Iraq_None_trojan_11105
+  - Iran_None_trojan_11106
+  - Iran_None_trojan_11107
+  - Lebanon_None_trojan_11108
+  - Russia_Krasnogorsk_trojan_11109
+  - Seychelles_None_trojan_11110
+  - Türkiye_Izmir_trojan_11111
+  - Germany_None_trojan_11112
+  - Germany_None_trojan_11113
+  - Germany_None_trojan_11114
+  - United States_New York_trojan_11115
+  - United States_None_trojan_11116
+  - United States_None_trojan_11117
+  - United States_None_trojan_11118
+  - United States_None_trojan_11119
+  - United States_None_trojan_11120
+  - United States_None_trojan_11121
+  - United States_None_trojan_11122
+  - United States_None_trojan_11123
+  - United States_None_trojan_11124
+  - United States_None_trojan_11125
+  - United States_None_trojan_11126
+  - Unknown_trojan_11127
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2918,21 +2667,21 @@ proxy-groups:
   - Unknown_vmess_118
   - Unknown_vmess_119
   - Unknown_vmess_1110
-  - France_None_vmess_1111
+  - United States_Washington_vmess_1111
   - France_None_vmess_1112
   - Australia_Melbourne_vmess_1113
   - France_None_vmess_1114
   - France_None_vmess_1115
-  - Australia_Melbourne_vmess_1116
+  - France_None_vmess_1116
   - France_None_vmess_1117
   - France_None_vmess_1118
   - France_None_vmess_1119
-  - France_None_vmess_1120
+  - China_None_vmess_1120
   - France_None_vmess_1121
   - France_None_vmess_1122
   - France_None_vmess_1123
   - France_None_vmess_1124
-  - Hong Kong_Central_vmess_1125
+  - France_None_vmess_1125
   - France_None_vmess_1126
   - France_None_vmess_1127
   - France_None_vmess_1128
@@ -2942,113 +2691,99 @@ proxy-groups:
   - France_None_vmess_1132
   - France_None_vmess_1133
   - France_None_vmess_1134
-  - France_None_vmess_1135
-  - France_None_vmess_1136
+  - United States_None_trojan_1135
+  - Japan_None_trojan_1136
   - France_None_vmess_1137
-  - France_None_vmess_1138
-  - France_None_vmess_1139
-  - France_None_vmess_1140
+  - None_None_trojan_1138
+  - None_None_trojan_1139
+  - None_None_trojan_1140
   - France_None_vmess_1141
   - France_None_vmess_1142
   - France_None_vmess_1143
   - France_None_vmess_1144
   - France_None_vmess_1145
   - France_None_vmess_1146
-  - France_None_vmess_1147
-  - France_None_vmess_1148
-  - France_None_vmess_1149
-  - Taiwan_None_vmess_1150
-  - France_None_vmess_1151
-  - France_None_vmess_1152
-  - France_None_vmess_1153
-  - United Kingdom_None_vmess_1154
-  - United Kingdom_None_vmess_1155
-  - Iran_None_trojan_1156
-  - Gibraltar_None_trojan_1157
-  - Denmark_None_trojan_1158
-  - Singapore_Singapore_trojan_1159
-  - France_None_vmess_1160
-  - The Netherlands_Hardenberg_trojan_1161
-  - France_None_vmess_1162
-  - Indonesia_Jakarta_vmess_1163
-  - France_None_vmess_1164
-  - United States_None_ss_1165
-  - Japan_Tokyo_trojan_1166
-  - Hong Kong_None_trojan_1167
-  - Hong Kong_None_trojan_1168
-  - Japan_Tokyo_trojan_1169
-  - Japan_Tokyo_trojan_1170
-  - Japan_Tokyo_trojan_1171
-  - Japan_Tokyo_trojan_1172
-  - Japan_Tokyo_trojan_1173
-  - United States_None_trojan_1174
-  - Japan_Tokyo_trojan_1175
-  - Japan_Tokyo_trojan_1176
-  - Japan_Tokyo_trojan_1177
-  - Hong Kong_Central_vmess_1178
-  - United Kingdom_None_vmess_1179
-  - Australia_Melbourne_vmess_1180
-  - Australia_Melbourne_vmess_1181
-  - South Korea_Chilgok-gun_trojan_1182
-  - South Korea_Nam-gu_trojan_1183
-  - South Korea_None_trojan_1184
-  - South Korea_Mapo-gu_trojan_1185
-  - South Korea_Chuncheon_trojan_1186
-  - South Korea_None_trojan_1187
-  - South Korea_Cheongju-si_trojan_1188
-  - Austria_None_trojan_1189
-  - Austria_None_trojan_1190
-  - Bulgaria_None_trojan_1191
-  - Bulgaria_None_trojan_1192
-  - Lithuania_Vilnius_trojan_1193
-  - Poland_Warsaw_trojan_1194
-  - Lithuania_Vilnius_trojan_1195
-  - Poland_Warsaw_trojan_1196
-  - Poland_Warsaw_trojan_1197
-  - Moldova_Chisinau_trojan_1198
-  - Lithuania_Vilnius_trojan_1199
-  - Lithuania_Vilnius_trojan_11100
-  - Israel_Jerusalem_trojan_11101
-  - Canada_Ottawa_trojan_11102
-  - Czechia_Doksy_trojan_11103
-  - Czechia_Mimon_trojan_11104
-  - Czechia_Mimon_trojan_11105
-  - Germany_None_trojan_11106
-  - Germany_Frankfurt am Main_trojan_11107
-  - Germany_Frankfurt am Main_trojan_11108
-  - Germany_Nuremberg_trojan_11109
-  - Denmark_None_trojan_11110
-  - Russia_None_trojan_11111
-  - United Kingdom_Battersea_trojan_11112
-  - United Kingdom_Canterbury_trojan_11113
-  - United Kingdom_Cornwall_trojan_11114
-  - United Kingdom_None_trojan_11115
-  - United Kingdom_Dagenham_trojan_11116
-  - United Kingdom_None_trojan_11117
-  - Iraq_None_trojan_11118
-  - Iran_None_trojan_11119
-  - Iran_None_trojan_11120
-  - Lebanon_None_trojan_11121
-  - Russia_Krasnogorsk_trojan_11122
-  - Seychelles_None_trojan_11123
-  - Türkiye_Izmir_trojan_11124
-  - Germany_None_trojan_11125
-  - Germany_None_trojan_11126
-  - Germany_None_trojan_11127
-  - United States_New York_trojan_11128
-  - United States_None_trojan_11129
-  - United States_None_trojan_11130
-  - United States_None_trojan_11131
-  - United States_None_trojan_11132
-  - United States_None_trojan_11133
-  - United States_None_trojan_11134
-  - United States_None_trojan_11135
-  - United States_None_trojan_11136
-  - United States_None_trojan_11137
-  - United States_None_trojan_11138
-  - United States_None_trojan_11139
-  - United States_None_trojan_11140
-  - Unknown_trojan_11141
+  - United States_Santa Clara_trojan_1147
+  - Singapore_Singapore_trojan_1148
+  - United Kingdom_None_vmess_1149
+  - Lebanon_None_trojan_1150
+  - United States_None_ss_1151
+  - Hong Kong_Central_vmess_1152
+  - Japan_Tokyo_trojan_1153
+  - Hong Kong_None_trojan_1154
+  - Hong Kong_None_trojan_1155
+  - Japan_Tokyo_trojan_1156
+  - Japan_Tokyo_trojan_1157
+  - Japan_Tokyo_trojan_1158
+  - Japan_Tokyo_trojan_1159
+  - Japan_Tokyo_trojan_1160
+  - United States_None_trojan_1161
+  - Japan_Tokyo_trojan_1162
+  - Japan_Tokyo_trojan_1163
+  - Japan_Tokyo_trojan_1164
+  - Hong Kong_Central_vmess_1165
+  - United Kingdom_None_vmess_1166
+  - United States_None_trojan_1167
+  - United States_None_trojan_1168
+  - France_None_vmess_1169
+  - United States_San Francisco_trojan_1170
+  - Japan_Tokyo_ss_1171
+  - South Korea_Buk-gu_trojan_1172
+  - South Korea_Cheongju-si_trojan_1173
+  - South Korea_Daegu_trojan_1174
+  - South Korea_Buk-gu_trojan_1175
+  - Austria_None_trojan_1176
+  - Austria_None_trojan_1177
+  - Bulgaria_None_trojan_1178
+  - Bulgaria_None_trojan_1179
+  - Lithuania_Vilnius_trojan_1180
+  - Poland_Warsaw_trojan_1181
+  - Lithuania_Vilnius_trojan_1182
+  - Poland_Warsaw_trojan_1183
+  - Poland_Warsaw_trojan_1184
+  - Moldova_Chisinau_trojan_1185
+  - Lithuania_Vilnius_trojan_1186
+  - Lithuania_Vilnius_trojan_1187
+  - Israel_Jerusalem_trojan_1188
+  - Canada_Ottawa_trojan_1189
+  - Czechia_Doksy_trojan_1190
+  - Czechia_Mimon_trojan_1191
+  - Czechia_Mimon_trojan_1192
+  - Germany_None_trojan_1193
+  - Germany_Frankfurt am Main_trojan_1194
+  - Germany_Frankfurt am Main_trojan_1195
+  - Germany_Nuremberg_trojan_1196
+  - Denmark_None_trojan_1197
+  - Russia_None_trojan_1198
+  - United Kingdom_Battersea_trojan_1199
+  - United Kingdom_Canterbury_trojan_11100
+  - United Kingdom_Cornwall_trojan_11101
+  - United Kingdom_None_trojan_11102
+  - United Kingdom_Dagenham_trojan_11103
+  - United Kingdom_None_trojan_11104
+  - Iraq_None_trojan_11105
+  - Iran_None_trojan_11106
+  - Iran_None_trojan_11107
+  - Lebanon_None_trojan_11108
+  - Russia_Krasnogorsk_trojan_11109
+  - Seychelles_None_trojan_11110
+  - Türkiye_Izmir_trojan_11111
+  - Germany_None_trojan_11112
+  - Germany_None_trojan_11113
+  - Germany_None_trojan_11114
+  - United States_New York_trojan_11115
+  - United States_None_trojan_11116
+  - United States_None_trojan_11117
+  - United States_None_trojan_11118
+  - United States_None_trojan_11119
+  - United States_None_trojan_11120
+  - United States_None_trojan_11121
+  - United States_None_trojan_11122
+  - United States_None_trojan_11123
+  - United States_None_trojan_11124
+  - United States_None_trojan_11125
+  - United States_None_trojan_11126
+  - Unknown_trojan_11127
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
