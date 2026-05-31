@@ -184,6 +184,13 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: Hong Kong_Wanchai_trojan_1020
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -490,6 +497,13 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: Hong Kong_Wanchai_trojan_1135
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -515,6 +529,7 @@ proxy-groups:
   - Hong Kong_Sham Shui Po_vmess_1017
   - United Kingdom_None_vmess_1018
   - United Kingdom_None_vmess_1019
+  - Hong Kong_Wanchai_trojan_1020
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -549,6 +564,7 @@ proxy-groups:
   - United Kingdom_None_vmess_1132
   - United Kingdom_None_vmess_1133
   - United Kingdom_None_vmess_1134
+  - Hong Kong_Wanchai_trojan_1135
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -574,6 +590,7 @@ proxy-groups:
   - Hong Kong_Sham Shui Po_vmess_1017
   - United Kingdom_None_vmess_1018
   - United Kingdom_None_vmess_1019
+  - Hong Kong_Wanchai_trojan_1020
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -608,6 +625,7 @@ proxy-groups:
   - United Kingdom_None_vmess_1132
   - United Kingdom_None_vmess_1133
   - United Kingdom_None_vmess_1134
+  - Hong Kong_Wanchai_trojan_1135
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
