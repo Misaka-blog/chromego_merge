@@ -387,90 +387,55 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: aes-128-gcm
-  name: Romania_Bucharest_ss_1127
-  password: phizo046s4oqsm33sfvm
-  port: '13265'
-  server: 86.106.84.198
-  type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: United Kingdom_None_vmess_1128
-  network: tcp
-  port: '180'
-  server: 82.198.246.37
-  servername: <nil>
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: United Kingdom_None_vmess_1129
-  port: 180
-  server: 82.198.246.37
-  servername: <nil>
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: United States_None_trojan_1130
+- name: United States_None_trojan_1127
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
+  port: '46424'
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  tls: true
+  sni: de.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1128
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: '47909'
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: is.01.naiun.bilibili.com
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1131
+  name: Canada_Montreal_ss_1129
   password: amazonskr05
   port: 443
-  server: 15.223.63.40
+  server: 3.96.152.83
   skip-cert-verify: false
   type: ss
   udp: false
 - cipher: aes-256-cfb
-  name: Germany_Frankfurt am Main_ss_1132
+  name: Germany_Frankfurt am Main_ss_1130
   password: amazonskr05
   port: 443
-  server: 18.159.210.129
+  server: 3.79.104.163
   skip-cert-verify: false
   type: ss
   udp: false
 - cipher: aes-128-gcm
-  name: United States_None_ss_1133
-  password: 3px0wmx0e81145g568ga
-  port: '10880'
-  server: 69.164.240.86
+  name: Romania_Bucharest_ss_1131
+  password: kfuzkwdg4oynv495aywc
+  port: 13262
+  server: 86.106.84.195
+  skip-cert-verify: true
+  tfo: false
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: Spain_Madrid_ss_1132
+  password: ZET59LF6DvCC8KVt
+  port: '9005'
+  server: 5.188.181.201
   type: ss
   udp: true
-- name: Czechia_None_trojan_1134
-  network: tcp
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  port: '443'
-  server: ch-2.bexum.fun
-  skip-cert-verify: false
-  sni: ch-2.bexum.fun
-  type: trojan
-  udp: true
-- name: Kazakhstan_Pavlodar_trojan_1135
-  network: tcp
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  port: '5443'
-  server: kz-1.bexum.fun
-  skip-cert-verify: false
-  sni: kz-1.bexum.fun
-  type: trojan
-  udp: true
-- name: Germany_None_trojan_1136
+- name: Germany_None_trojan_1133
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
   server: de-1.hysteria.ltd
@@ -527,16 +492,13 @@ proxy-groups:
   - United Kingdom_None_vmess_1124
   - Hong Kong_Central_vmess_1125
   - United Kingdom_None_vmess_1126
-  - Romania_Bucharest_ss_1127
-  - United Kingdom_None_vmess_1128
-  - United Kingdom_None_vmess_1129
-  - United States_None_trojan_1130
-  - Canada_Montreal_ss_1131
-  - Germany_Frankfurt am Main_ss_1132
-  - United States_None_ss_1133
-  - Czechia_None_trojan_1134
-  - Kazakhstan_Pavlodar_trojan_1135
-  - Germany_None_trojan_1136
+  - United States_None_trojan_1127
+  - United States_None_trojan_1128
+  - Canada_Montreal_ss_1129
+  - Germany_Frankfurt am Main_ss_1130
+  - Romania_Bucharest_ss_1131
+  - Spain_Madrid_ss_1132
+  - Germany_None_trojan_1133
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -586,16 +548,13 @@ proxy-groups:
   - United Kingdom_None_vmess_1124
   - Hong Kong_Central_vmess_1125
   - United Kingdom_None_vmess_1126
-  - Romania_Bucharest_ss_1127
-  - United Kingdom_None_vmess_1128
-  - United Kingdom_None_vmess_1129
-  - United States_None_trojan_1130
-  - Canada_Montreal_ss_1131
-  - Germany_Frankfurt am Main_ss_1132
-  - United States_None_ss_1133
-  - Czechia_None_trojan_1134
-  - Kazakhstan_Pavlodar_trojan_1135
-  - Germany_None_trojan_1136
+  - United States_None_trojan_1127
+  - United States_None_trojan_1128
+  - Canada_Montreal_ss_1129
+  - Germany_Frankfurt am Main_ss_1130
+  - Romania_Bucharest_ss_1131
+  - Spain_Madrid_ss_1132
+  - Germany_None_trojan_1133
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
