@@ -387,67 +387,60 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: chacha20-ietf-poly1305
-  name: United Kingdom_Enfield_ss_1127
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: '8080'
-  server: 82.38.31.192
+- cipher: aes-256-gcm
+  name: Russia_St Petersburg_ss_1127
+  password: fbaf33bcffe53cf9
+  port: '20129'
+  server: 195.58.49.104
   type: ss
-  udp: true
-- name: United States_None_trojan_1128
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: '46424'
-  server: 155.117.198.83
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1129
-  password: amazonskr05
-  port: 443
-  server: 3.96.152.83
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1130
-  password: amazonskr05
-  port: 443
-  server: 52.60.99.199
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: South Korea_Songpa-gu_ss_1131
-  password: qwerREWQ@@
-  port: 55104
-  server: 221.150.109.20
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- name: Unknown_trojan_1132
-  network: tcp
-  password: BxceQaOe
-  port: '443'
-  server: 140.235.140.105
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: United Kingdom_None_vmess_1133
-  network: raw
-  port: '180'
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
+  name: France_None_vmess_1128
+  network: ws
+  port: 16618
+  server: t.cnmjcn.cyou
   type: vmess
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1129
+  network: ws
+  port: 16626
+  server: planb.mojcn.com
+  type: vmess
+  uuid: cef172fc-87b0-4db7-9ffc-52b5aca91014
+  ws-opts:
+    headers:
+      Host: 781a7e8778459cb48b666fc3985a2450.mobgslb.tbcache.com
+    path: /
+- name: United States_None_trojan_1130
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 155.117.198.87
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  type: trojan
+- name: Japan_Tokyo_trojan_1131
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: '8443'
+  server: 47.245.62.4
+  skip-cert-verify: false
+  sni: dxy1h.twiladaphne.ndjp.net
+  type: trojan
   udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- name: Germany_None_trojan_1134
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /proxyip=104.168.132.123,172.104.53.198,85.121.50.16,151.242.125.226
+- name: Germany_None_trojan_1132
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
   server: de-1.hysteria.ltd
@@ -504,14 +497,12 @@ proxy-groups:
   - United Kingdom_None_vmess_1124
   - Hong Kong_Yuen Long San Hui_vmess_1125
   - United Kingdom_None_vmess_1126
-  - United Kingdom_Enfield_ss_1127
-  - United States_None_trojan_1128
-  - Canada_Montreal_ss_1129
-  - Canada_Montreal_ss_1130
-  - South Korea_Songpa-gu_ss_1131
-  - Unknown_trojan_1132
-  - United Kingdom_None_vmess_1133
-  - Germany_None_trojan_1134
+  - Russia_St Petersburg_ss_1127
+  - France_None_vmess_1128
+  - France_None_vmess_1129
+  - United States_None_trojan_1130
+  - Japan_Tokyo_trojan_1131
+  - Germany_None_trojan_1132
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -561,14 +552,12 @@ proxy-groups:
   - United Kingdom_None_vmess_1124
   - Hong Kong_Yuen Long San Hui_vmess_1125
   - United Kingdom_None_vmess_1126
-  - United Kingdom_Enfield_ss_1127
-  - United States_None_trojan_1128
-  - Canada_Montreal_ss_1129
-  - Canada_Montreal_ss_1130
-  - South Korea_Songpa-gu_ss_1131
-  - Unknown_trojan_1132
-  - United Kingdom_None_vmess_1133
-  - Germany_None_trojan_1134
+  - Russia_St Petersburg_ss_1127
+  - France_None_vmess_1128
+  - France_None_vmess_1129
+  - United States_None_trojan_1130
+  - Japan_Tokyo_trojan_1131
+  - Germany_None_trojan_1132
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
