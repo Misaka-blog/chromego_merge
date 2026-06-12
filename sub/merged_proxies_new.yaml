@@ -387,19 +387,67 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 2
-  cipher: auto
-  name: United States_None_vmess_1127
+- name: Hong Kong_None_trojan_1127
   network: tcp
-  port: 30845
-  server: 103.182.97.12
-  skip-cert-verify: false
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: None_None_vmess_1128
+  network: ws
+  port: 8080
+  server: jd.103672.xyz
   tls: false
   type: vmess
+  uuid: c14a83db-f333-452e-acff-93b8f7160b10
+  ws-opts:
+    headers:
+      Host: dedasabo.103466.xyz
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  name: None_None_trojan_1129
+  network: ws
+  password: 0cb2739d-98b8-45ce-b52c-4305c40975a6
+  port: '443'
+  server: h2.bnm.uw.to
+  skip-cert-verify: false
+  sni: h2.bnm.uw.to
+  type: trojan
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- name: Germany_None_trojan_1128
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /0cb2739d-98b8-45ce-b52c-4305c40975a6-tr
+- name: United States_None_trojan_1130
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: '45619'
+  server: 155.117.198.85
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- name: None_None_trojan_1131
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.147.104
+  skip-cert-verify: false
+  sni: www.creationlong.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /assignment
+- name: Germany_None_trojan_1132
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
   server: de-1.hysteria.ltd
@@ -456,8 +504,12 @@ proxy-groups:
   - United Kingdom_None_vmess_1124
   - Hong Kong_Central_vmess_1125
   - United Kingdom_None_vmess_1126
-  - United States_None_vmess_1127
-  - Germany_None_trojan_1128
+  - Hong Kong_None_trojan_1127
+  - None_None_vmess_1128
+  - None_None_trojan_1129
+  - United States_None_trojan_1130
+  - None_None_trojan_1131
+  - Germany_None_trojan_1132
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -507,8 +559,12 @@ proxy-groups:
   - United Kingdom_None_vmess_1124
   - Hong Kong_Central_vmess_1125
   - United Kingdom_None_vmess_1126
-  - United States_None_vmess_1127
-  - Germany_None_trojan_1128
+  - Hong Kong_None_trojan_1127
+  - None_None_vmess_1128
+  - None_None_trojan_1129
+  - United States_None_trojan_1130
+  - None_None_trojan_1131
+  - Germany_None_trojan_1132
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
