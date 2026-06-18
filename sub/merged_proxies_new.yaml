@@ -396,44 +396,85 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Türkiye_Istanbul_trojan_1126
-  network: tcp
-  password: SoftNetConnect
-  port: '42549'
-  server: 194.5.193.58
-  skip-cert-verify: true
-  sni: www.speedtest.net
-  type: trojan
-  udp: true
-- name: None_None_trojan_1127
+- name: United States_Los Angeles_trojan_1126
   network: ws
-  password: humanity
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 64.64.236.127
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- name: United States_Phoenix_trojan_1127
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 192.243.113.108
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- name: United States_Los Angeles_trojan_1128
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 45.78.79.135
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  name: None_None_trojan_1129
+  network: ws
+  password: bc2f8931-cb3d-4a13-8198-ad0d9d5ef06a
   port: '443'
-  server: 104.18.152.97
+  server: HKNTT1.mmm.uw.to
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: HKNTT1.mmm.uw.to
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /assignment
-- cipher: chacha20-ietf-poly1305
-  name: United Kingdom_Enfield_ss_1128
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /bc2f8931-cb3d-4a13-8198-ad0d9d5ef06a-tr
+- name: United States_Los Angeles_trojan_1130
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: '443'
-  server: 82.38.31.15
-  type: ss
+  server: 154.64.235.152
+  skip-cert-verify: false
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: United States_None_ss_1129
-  password: yu2XnSPWhmQjxn83iJA3DA
-  port: '3478'
-  server: 207.2.120.46
-  type: ss
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /
+- name: Japan_Tokyo_trojan_1131
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: '443'
+  server: 18.182.54.28
+  skip-cert-verify: false
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
   udp: true
-- name: South Korea_Chuncheon_trojan_1130
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /
+- name: South Korea_Chuncheon_trojan_1132
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -446,7 +487,7 @@ proxies:
     headers:
       Host: tjsp.hhxaf.cc.cd
     path: /
-- name: United States_Los Angeles_trojan_1131
+- name: United States_Los Angeles_trojan_1133
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -459,7 +500,7 @@ proxies:
     headers:
       Host: hhcm.hhxaf.cc.cd
     path: /
-- name: United States_None_trojan_1132
+- name: United States_None_trojan_1134
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -521,13 +562,15 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - Türkiye_Istanbul_trojan_1126
-  - None_None_trojan_1127
-  - United Kingdom_Enfield_ss_1128
-  - United States_None_ss_1129
-  - South Korea_Chuncheon_trojan_1130
-  - United States_Los Angeles_trojan_1131
-  - United States_None_trojan_1132
+  - United States_Los Angeles_trojan_1126
+  - United States_Phoenix_trojan_1127
+  - United States_Los Angeles_trojan_1128
+  - None_None_trojan_1129
+  - United States_Los Angeles_trojan_1130
+  - Japan_Tokyo_trojan_1131
+  - South Korea_Chuncheon_trojan_1132
+  - United States_Los Angeles_trojan_1133
+  - United States_None_trojan_1134
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -577,13 +620,15 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - Türkiye_Istanbul_trojan_1126
-  - None_None_trojan_1127
-  - United Kingdom_Enfield_ss_1128
-  - United States_None_ss_1129
-  - South Korea_Chuncheon_trojan_1130
-  - United States_Los Angeles_trojan_1131
-  - United States_None_trojan_1132
+  - United States_Los Angeles_trojan_1126
+  - United States_Phoenix_trojan_1127
+  - United States_Los Angeles_trojan_1128
+  - None_None_trojan_1129
+  - United States_Los Angeles_trojan_1130
+  - Japan_Tokyo_trojan_1131
+  - South Korea_Chuncheon_trojan_1132
+  - United States_Los Angeles_trojan_1133
+  - United States_None_trojan_1134
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
