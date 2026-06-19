@@ -396,61 +396,59 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_Los Angeles_trojan_1126
+- name: Hong Kong_None_trojan_1126
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: '46424'
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- name: Japan_Kisarazu_trojan_1127
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: '443'
-  server: 154.64.235.152
+  port: 443
+  server: 207.65.189.9
   skip-cert-verify: false
   sni: hhcm.hhxaf.cc.cd
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
     path: /
-- name: Japan_Tokyo_trojan_1127
+- name: South Korea_Gwangjin-gu_trojan_1128
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: '443'
-  server: 18.182.54.28
+  port: 443
+  server: 211.49.57.175
   skip-cert-verify: false
   sni: hhcm.hhxaf.cc.cd
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.90 Safari/537.36
     path: /
-- name: United States_San Jose_trojan_1128
+- name: South Korea_Chuncheon_trojan_1129
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
-  server: 154.26.187.6
+  server: 150.230.249.88
   sni: hhcm.hhxaf.cc.cd
   type: trojan
   ws-opts:
     headers:
       Host: hhcm.hhxaf.cc.cd
     path: /
-- name: United States_None_trojan_1129
+- name: Spain_Arrecife_trojan_1130
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
-  server: 172.237.13.221
-  sni: hhcm.hhxaf.cc.cd
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-    path: /
-- name: Australia_Melbourne_trojan_1130
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 188.253.118.174
+  server: 85.155.176.241
   sni: hhcm.hhxaf.cc.cd
   type: trojan
   ws-opts:
@@ -545,11 +543,11 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - United States_Los Angeles_trojan_1126
-  - Japan_Tokyo_trojan_1127
-  - United States_San Jose_trojan_1128
-  - United States_None_trojan_1129
-  - Australia_Melbourne_trojan_1130
+  - Hong Kong_None_trojan_1126
+  - Japan_Kisarazu_trojan_1127
+  - South Korea_Gwangjin-gu_trojan_1128
+  - South Korea_Chuncheon_trojan_1129
+  - Spain_Arrecife_trojan_1130
   - South Korea_Chuncheon_trojan_1131
   - United States_Los Angeles_trojan_1132
   - United States_None_trojan_1133
@@ -602,11 +600,11 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - United States_Los Angeles_trojan_1126
-  - Japan_Tokyo_trojan_1127
-  - United States_San Jose_trojan_1128
-  - United States_None_trojan_1129
-  - Australia_Melbourne_trojan_1130
+  - Hong Kong_None_trojan_1126
+  - Japan_Kisarazu_trojan_1127
+  - South Korea_Gwangjin-gu_trojan_1128
+  - South Korea_Chuncheon_trojan_1129
+  - Spain_Arrecife_trojan_1130
   - South Korea_Chuncheon_trojan_1131
   - United States_Los Angeles_trojan_1132
   - United States_None_trojan_1133
