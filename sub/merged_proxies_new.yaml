@@ -409,95 +409,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_None_trojan_1126
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: '58995'
-  server: d1.catcat321.com
-  skip-cert-verify: true
-  sni: d.usj1.cat.bilibili.com
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  name: Switzerland_Les Acacias_trojan_1127
-  network: tcp
-  password: SoftNetConnect
-  port: '42549'
-  server: 37.156.44.215
-  skip-cert-verify: true
-  sni: www.speedtest.net
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1128
-  network: tcp
-  password: 63872b0d-87dd-4474-b690-92773af2922e
-  port: '42531'
-  server: d1.catcat321.com
-  skip-cert-verify: true
-  sni: d.usj1.cat.bilibili.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1129
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 50888
-  server: d1.catcat321.com
-  skip-cert-verify: true
-  sni: d.usj1.cat.bilibili.com
-  type: trojan
-- name: United States_None_trojan_1130
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 13320
-  server: d1.catcat321.com
-  skip-cert-verify: true
-  sni: d.usj1.cat.bilibili.com
-  type: trojan
-- alpn:
-  - h2
-  - http/1.1
-  name: United States_None_trojan_1131
-  network: ws
-  password: 0cb2739d-98b8-45ce-b52c-4305c40975a6
-  port: '443'
-  server: h2.bnm.uw.to
-  skip-cert-verify: false
-  sni: h2.bnm.uw.to
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /0cb2739d-98b8-45ce-b52c-4305c40975a6-tr
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: United States_None_trojan_1132
-  network: ws
-  password: Mitivpn
-  port: '443'
-  server: 151.101.1.242
-  skip-cert-verify: false
-  sni: cdn.gamingdll.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /de=mitivpn
-- name: Switzerland_Les Acacias_trojan_1133
-  network: tcp
-  password: SoftNetConnect
-  port: '42549'
-  server: 37.156.44.215
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: United Arab Emirates_None_trojan_1134
+- name: United Arab Emirates_None_trojan_1126
   network: ws
   password: MITIVPN
   port: 443
@@ -510,7 +422,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_1135
+- name: United Kingdom_None_trojan_1127
   network: ws
   password: MITIVPN
   port: 443
@@ -523,7 +435,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_1136
+- name: The Netherlands_None_trojan_1128
   network: ws
   password: MiTiVPN
   port: 443
@@ -536,7 +448,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_1137
+- name: United States_None_trojan_1129
   network: ws
   password: Mitivpn
   port: 443
@@ -599,18 +511,10 @@ proxy-groups:
   - Japan_Tokyo_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_None_trojan_1126
-  - Switzerland_Les Acacias_trojan_1127
-  - United States_None_trojan_1128
+  - United Arab Emirates_None_trojan_1126
+  - United Kingdom_None_trojan_1127
+  - The Netherlands_None_trojan_1128
   - United States_None_trojan_1129
-  - United States_None_trojan_1130
-  - United States_None_trojan_1131
-  - United States_None_trojan_1132
-  - Switzerland_Les Acacias_trojan_1133
-  - United Arab Emirates_None_trojan_1134
-  - United Kingdom_None_trojan_1135
-  - The Netherlands_None_trojan_1136
-  - United States_None_trojan_1137
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -661,18 +565,10 @@ proxy-groups:
   - Japan_Tokyo_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_None_trojan_1126
-  - Switzerland_Les Acacias_trojan_1127
-  - United States_None_trojan_1128
+  - United Arab Emirates_None_trojan_1126
+  - United Kingdom_None_trojan_1127
+  - The Netherlands_None_trojan_1128
   - United States_None_trojan_1129
-  - United States_None_trojan_1130
-  - United States_None_trojan_1131
-  - United States_None_trojan_1132
-  - Switzerland_Les Acacias_trojan_1133
-  - United Arab Emirates_None_trojan_1134
-  - United Kingdom_None_trojan_1135
-  - The Netherlands_None_trojan_1136
-  - United States_None_trojan_1137
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
