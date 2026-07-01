@@ -27,6 +27,36 @@ dns:
 proxies:
 - alterId: 0
   cipher: auto
+  name: Singapore_None_vmess_101
+  network: tcp
+  port: '443'
+  server: web.51.la
+  servername: web.51.la
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Singapore_None_vmess_102
+  network: tcp
+  port: '443'
+  server: web.51.la
+  servername: web.51.la
+  tls: true
+  type: vmess
+  uuid: c6e84072-2e69-4928-90af-436b3fcd0663
+- alterId: 0
+  cipher: auto
+  name: Singapore_None_vmess_103
+  network: tcp
+  port: '443'
+  server: web.51.la
+  servername: web.51.la
+  tls: true
+  type: vmess
+  uuid: e0c6b3b7-9f5b-4bd6-9abf-260663aa4f1b
+- alterId: 0
+  cipher: auto
   name: Unknown_vmess_111
   network: tcp
   port: '1'
@@ -61,6 +91,9 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
+  - Singapore_None_vmess_101
+  - Singapore_None_vmess_102
+  - Singapore_None_vmess_103
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -70,6 +103,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - Singapore_None_vmess_101
+  - Singapore_None_vmess_102
+  - Singapore_None_vmess_103
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
