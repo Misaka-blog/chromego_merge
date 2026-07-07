@@ -419,7 +419,53 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United Arab Emirates_None_trojan_1126
+- alpn:
+  - http/1.1
+  name: United States_None_trojan_1126
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 141.193.213.21
+  skip-cert-verify: true
+  sni: fffffl-lls.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl
+- alpn:
+  - http/1.1
+  name: None_None_trojan_1127
+  network: ws
+  password: MITIVPN
+  port: '443'
+  server: www.speedtest.net
+  skip-cert-verify: true
+  sni: De-Ge-N.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de
+- name: United States_San Francisco_trojan_1128
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.64.146.211
+  skip-cert-verify: true
+  sni: www.gossipglove.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /assignment
+- name: United Arab Emirates_None_trojan_1129
   network: ws
   password: MITIVPN
   port: 443
@@ -432,7 +478,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_1127
+- name: United Kingdom_None_trojan_1130
   network: ws
   password: MITIVPN
   port: 443
@@ -445,7 +491,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_1128
+- name: The Netherlands_None_trojan_1131
   network: ws
   password: MiTiVPN
   port: 443
@@ -458,7 +504,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_1129
+- name: United States_None_trojan_1132
   network: ws
   password: Mitivpn
   port: 443
@@ -521,10 +567,13 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United Arab Emirates_None_trojan_1126
-  - United Kingdom_None_trojan_1127
-  - The Netherlands_None_trojan_1128
-  - United States_None_trojan_1129
+  - United States_None_trojan_1126
+  - None_None_trojan_1127
+  - United States_San Francisco_trojan_1128
+  - United Arab Emirates_None_trojan_1129
+  - United Kingdom_None_trojan_1130
+  - The Netherlands_None_trojan_1131
+  - United States_None_trojan_1132
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -575,10 +624,13 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United Arab Emirates_None_trojan_1126
-  - United Kingdom_None_trojan_1127
-  - The Netherlands_None_trojan_1128
-  - United States_None_trojan_1129
+  - United States_None_trojan_1126
+  - None_None_trojan_1127
+  - United States_San Francisco_trojan_1128
+  - United Arab Emirates_None_trojan_1129
+  - United Kingdom_None_trojan_1130
+  - The Netherlands_None_trojan_1131
+  - United States_None_trojan_1132
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
