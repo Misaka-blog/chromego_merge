@@ -419,41 +419,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: China_None_vmess_1126
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- name: Hong Kong_None_trojan_1127
-  password: BxceQaOe
-  port: '29443'
-  server: 43.199.252.80
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: France_Paris_ss_1128
-  password: amazonskr05
-  port: '443'
-  server: 13.37.239.23
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: France_Paris_ss_1129
+  name: France_Paris_ss_1126
   password: amazonskr05
   port: '443'
   server: 15.188.74.101
   type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_1130
+- name: United Arab Emirates_None_trojan_1127
   network: ws
   password: MITIVPN
   port: 443
@@ -466,7 +439,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_1131
+- name: United Kingdom_None_trojan_1128
   network: ws
   password: MITIVPN
   port: 443
@@ -479,7 +452,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_1132
+- name: The Netherlands_None_trojan_1129
   network: ws
   password: MiTiVPN
   port: 443
@@ -492,7 +465,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_1133
+- name: United States_None_trojan_1130
   network: ws
   password: Mitivpn
   port: 443
@@ -555,14 +528,11 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - China_None_vmess_1126
-  - Hong Kong_None_trojan_1127
-  - France_Paris_ss_1128
-  - France_Paris_ss_1129
-  - United Arab Emirates_None_trojan_1130
-  - United Kingdom_None_trojan_1131
-  - The Netherlands_None_trojan_1132
-  - United States_None_trojan_1133
+  - France_Paris_ss_1126
+  - United Arab Emirates_None_trojan_1127
+  - United Kingdom_None_trojan_1128
+  - The Netherlands_None_trojan_1129
+  - United States_None_trojan_1130
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -613,14 +583,11 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - China_None_vmess_1126
-  - Hong Kong_None_trojan_1127
-  - France_Paris_ss_1128
-  - France_Paris_ss_1129
-  - United Arab Emirates_None_trojan_1130
-  - United Kingdom_None_trojan_1131
-  - The Netherlands_None_trojan_1132
-  - United States_None_trojan_1133
+  - France_Paris_ss_1126
+  - United Arab Emirates_None_trojan_1127
+  - United Kingdom_None_trojan_1128
+  - The Netherlands_None_trojan_1129
+  - United States_None_trojan_1130
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
