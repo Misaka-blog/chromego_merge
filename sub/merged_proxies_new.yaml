@@ -409,83 +409,44 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: United States_New York_ss_1126
-  password: rihjnjl3qsfr7u15
-  plugin: obfs
-  plugin-opts:
-    host: ''
-    mode: http
-  port: '8080'
-  server: 45.39.33.174
-  type: ss
-  udp: true
-- name: Hong Kong_None_trojan_1127
+- name: China_Shanghai_trojan_1126
   network: tcp
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: '39001'
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_1127
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: Hong Kong_None_trojan_1128
   password: BxceQaOe
   port: '45744'
   server: 16.162.191.181
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- name: United States_Los Angeles_trojan_1128
-  network: ws
-  password: '666'
-  port: '443'
-  server: 149.248.7.25
-  skip-cert-verify: false
-  sni: 6oode.xqwd.qog.hh.penqiask.ccwu.cc
+- name: China_Shanghai_trojan_1129
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: '39001'
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: 114.80.8.128
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
-    path: /glasspanel/guest000_0_5de14443985f/
-- name: United States_Los Angeles_trojan_1129
-  network: ws
-  password: '666'
-  port: '443'
-  server: 207.246.97.245
-  skip-cert-verify: false
-  sni: 6oode.xqwd.qog.hh.penqiask.ccwu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /glasspanel/guest000_0_5de14443985f/
-- name: United States_Los Angeles_trojan_1130
-  network: ws
-  password: '666'
-  port: '443'
-  server: 149.28.89.69
-  skip-cert-verify: false
-  sni: 6oode.xqwd.qog.hh.penqiask.ccwu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /glasspanel/guest000_0_5de14443985f/
-- name: United States_None_trojan_1131
-  network: ws
-  password: '666'
-  port: '443'
-  server: cloudflare-ip.mofashi.ltd
-  skip-cert-verify: false
-  sni: 6oode.xqwd.qog.hh.penqiask.ccwu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
-    path: /glasspanel/guest000_0_5de14443985f/
-- name: United Arab Emirates_None_trojan_1132
+- name: United Arab Emirates_None_trojan_1130
   network: ws
   password: MITIVPN
   port: 443
@@ -498,7 +459,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_1133
+- name: United Kingdom_None_trojan_1131
   network: ws
   password: MITIVPN
   port: 443
@@ -511,7 +472,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_1134
+- name: The Netherlands_None_trojan_1132
   network: ws
   password: MiTiVPN
   port: 443
@@ -524,7 +485,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_1135
+- name: United States_None_trojan_1133
   network: ws
   password: Mitivpn
   port: 443
@@ -587,16 +548,14 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Poland_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - United States_New York_ss_1126
-  - Hong Kong_None_trojan_1127
-  - United States_Los Angeles_trojan_1128
-  - United States_Los Angeles_trojan_1129
-  - United States_Los Angeles_trojan_1130
-  - United States_None_trojan_1131
-  - United Arab Emirates_None_trojan_1132
-  - United Kingdom_None_trojan_1133
-  - The Netherlands_None_trojan_1134
-  - United States_None_trojan_1135
+  - China_Shanghai_trojan_1126
+  - China_None_vmess_1127
+  - Hong Kong_None_trojan_1128
+  - China_Shanghai_trojan_1129
+  - United Arab Emirates_None_trojan_1130
+  - United Kingdom_None_trojan_1131
+  - The Netherlands_None_trojan_1132
+  - United States_None_trojan_1133
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -647,16 +606,14 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Poland_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - United States_New York_ss_1126
-  - Hong Kong_None_trojan_1127
-  - United States_Los Angeles_trojan_1128
-  - United States_Los Angeles_trojan_1129
-  - United States_Los Angeles_trojan_1130
-  - United States_None_trojan_1131
-  - United Arab Emirates_None_trojan_1132
-  - United Kingdom_None_trojan_1133
-  - The Netherlands_None_trojan_1134
-  - United States_None_trojan_1135
+  - China_Shanghai_trojan_1126
+  - China_None_vmess_1127
+  - Hong Kong_None_trojan_1128
+  - China_Shanghai_trojan_1129
+  - United Arab Emirates_None_trojan_1130
+  - United Kingdom_None_trojan_1131
+  - The Netherlands_None_trojan_1132
+  - United States_None_trojan_1133
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
