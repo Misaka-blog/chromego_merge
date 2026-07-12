@@ -409,44 +409,44 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: China_Shanghai_trojan_1126
-  network: tcp
-  password: 1df3ece1218bedba28c6c6ac726a07bb
-  port: '39001'
-  server: 114.80.8.128
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_1126
+  password: amazonskr05
+  port: 443
+  server: 3.15.0.103
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_1127
+  password: amazonskr05
+  port: 443
+  server: 3.135.183.203
+  type: ss
+  udp: true
+- name: United States_None_trojan_1128
+  password: 4a5759f9-b8b2-4d4a-82e0-011738b92f5e
+  port: '45048'
+  server: 396068668893076.yf.r.hy2use.net
   skip-cert-verify: true
-  sni: www.yrtok.com
+  sni: 11333yf.r.bilibili.com
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: China_None_vmess_1127
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- name: Hong Kong_None_trojan_1128
-  password: BxceQaOe
-  port: '45744'
-  server: 16.162.191.181
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_1129
+  password: amazonskr05
+  port: 443
+  server: 3.16.130.237
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
+  type: ss
   udp: true
-- name: China_Shanghai_trojan_1129
-  password: 1df3ece1218bedba28c6c6ac726a07bb
-  port: '39001'
-  server: 114.80.8.128
-  skip-cert-verify: true
-  sni: 114.80.8.128
-  type: trojan
+- cipher: aes-256-cfb
+  name: Japan_Tokyo_ss_1130
+  password: amazonskr05
+  port: '443'
+  server: 18.183.180.62
+  type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_1130
+- name: United Arab Emirates_None_trojan_1131
   network: ws
   password: MITIVPN
   port: 443
@@ -459,7 +459,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_1131
+- name: United Kingdom_None_trojan_1132
   network: ws
   password: MITIVPN
   port: 443
@@ -472,7 +472,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_1132
+- name: The Netherlands_None_trojan_1133
   network: ws
   password: MiTiVPN
   port: 443
@@ -485,7 +485,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_1133
+- name: United States_None_trojan_1134
   network: ws
   password: Mitivpn
   port: 443
@@ -548,14 +548,15 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Poland_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - China_Shanghai_trojan_1126
-  - China_None_vmess_1127
-  - Hong Kong_None_trojan_1128
-  - China_Shanghai_trojan_1129
-  - United Arab Emirates_None_trojan_1130
-  - United Kingdom_None_trojan_1131
-  - The Netherlands_None_trojan_1132
-  - United States_None_trojan_1133
+  - United States_Columbus_ss_1126
+  - United States_Columbus_ss_1127
+  - United States_None_trojan_1128
+  - United States_Columbus_ss_1129
+  - Japan_Tokyo_ss_1130
+  - United Arab Emirates_None_trojan_1131
+  - United Kingdom_None_trojan_1132
+  - The Netherlands_None_trojan_1133
+  - United States_None_trojan_1134
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -606,14 +607,15 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Poland_None_trojan_1124
   - Hong Kong_Kowloon_vmess_1125
-  - China_Shanghai_trojan_1126
-  - China_None_vmess_1127
-  - Hong Kong_None_trojan_1128
-  - China_Shanghai_trojan_1129
-  - United Arab Emirates_None_trojan_1130
-  - United Kingdom_None_trojan_1131
-  - The Netherlands_None_trojan_1132
-  - United States_None_trojan_1133
+  - United States_Columbus_ss_1126
+  - United States_Columbus_ss_1127
+  - United States_None_trojan_1128
+  - United States_Columbus_ss_1129
+  - Japan_Tokyo_ss_1130
+  - United Arab Emirates_None_trojan_1131
+  - United Kingdom_None_trojan_1132
+  - The Netherlands_None_trojan_1133
+  - United States_None_trojan_1134
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
