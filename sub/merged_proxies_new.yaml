@@ -409,40 +409,42 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_1126
-  network: ws
-  port: 12883
-  server: cs.ktmcn.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 78f2e8f0-68ea-438e-84ec-d58c9416c680
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /
-- name: The Netherlands_None_trojan_1127
+- name: The Netherlands_None_trojan_1126
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
+  port: '443'
   server: 188.164.248.122
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: space.byu.id.yxls.eu.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: space.byu.id.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /in-pdr
-- name: United States_Boardman_trojan_1128
-  password: XG59623478
-  port: 443
-  server: possible-pup.rooster465.autos
-  skip-cert-verify: true
-  sni: possible-pup.rooster465.autos
-  type: trojan
-- name: United Arab Emirates_None_trojan_1129
+- cipher: chacha20-ietf-poly1305
+  name: United Kingdom_Enfield_ss_1127
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: '8080'
+  server: 82.38.31.174
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: Unknown_ss_1128
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: '1416'
+  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: China_None_ss_1129
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: '20028'
+  server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_1130
   network: ws
   password: MITIVPN
   port: 443
@@ -455,7 +457,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_1130
+- name: United Kingdom_None_trojan_1131
   network: ws
   password: MITIVPN
   port: 443
@@ -468,7 +470,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_1131
+- name: The Netherlands_None_trojan_1132
   network: ws
   password: MiTiVPN
   port: 443
@@ -481,7 +483,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_1132
+- name: United States_None_trojan_1133
   network: ws
   password: Mitivpn
   port: 443
@@ -544,13 +546,14 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_None_vmess_1126
-  - The Netherlands_None_trojan_1127
-  - United States_Boardman_trojan_1128
-  - United Arab Emirates_None_trojan_1129
-  - United Kingdom_None_trojan_1130
-  - The Netherlands_None_trojan_1131
-  - United States_None_trojan_1132
+  - The Netherlands_None_trojan_1126
+  - United Kingdom_Enfield_ss_1127
+  - Unknown_ss_1128
+  - China_None_ss_1129
+  - United Arab Emirates_None_trojan_1130
+  - United Kingdom_None_trojan_1131
+  - The Netherlands_None_trojan_1132
+  - United States_None_trojan_1133
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -601,13 +604,14 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_None_vmess_1126
-  - The Netherlands_None_trojan_1127
-  - United States_Boardman_trojan_1128
-  - United Arab Emirates_None_trojan_1129
-  - United Kingdom_None_trojan_1130
-  - The Netherlands_None_trojan_1131
-  - United States_None_trojan_1132
+  - The Netherlands_None_trojan_1126
+  - United Kingdom_Enfield_ss_1127
+  - Unknown_ss_1128
+  - China_None_ss_1129
+  - United Arab Emirates_None_trojan_1130
+  - United Kingdom_None_trojan_1131
+  - The Netherlands_None_trojan_1132
+  - United States_None_trojan_1133
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
