@@ -370,17 +370,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1126
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 94aaf10040.download.windowsupdate.com
-    mode: http
-  port: 920
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-- name: The Netherlands_None_trojan_1127
+- name: The Netherlands_None_trojan_1126
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
@@ -393,6 +383,124 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
+- alpn:
+  - http/1.1
+  name: Hong Kong_Ha Kwai Chung_trojan_1127
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20092'
+  server: krhtybay.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1128
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20017'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1129
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20029'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1130
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20061'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1131
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20006'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1132
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20020'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1133
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20062'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1134
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20109'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: TW.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1135
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20072'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: SG.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1136
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20098'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: Hong Kong_Ha Kwai Chung_trojan_1137
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20112'
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: ca.catxstar.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1138
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20017'
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1139
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: '20081'
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -440,8 +548,20 @@ proxy-groups:
   - Japan_Tokyo_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_Los Angeles_ss_1126
-  - The Netherlands_None_trojan_1127
+  - The Netherlands_None_trojan_1126
+  - Hong Kong_Ha Kwai Chung_trojan_1127
+  - Hong Kong_Ha Kwai Chung_trojan_1128
+  - Hong Kong_Ha Kwai Chung_trojan_1129
+  - Hong Kong_Ha Kwai Chung_trojan_1130
+  - Hong Kong_Ha Kwai Chung_trojan_1131
+  - Hong Kong_Ha Kwai Chung_trojan_1132
+  - Hong Kong_Ha Kwai Chung_trojan_1133
+  - Hong Kong_Ha Kwai Chung_trojan_1134
+  - Hong Kong_Ha Kwai Chung_trojan_1135
+  - Hong Kong_Ha Kwai Chung_trojan_1136
+  - Hong Kong_Ha Kwai Chung_trojan_1137
+  - United States_None_trojan_1138
+  - United States_None_trojan_1139
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -489,8 +609,20 @@ proxy-groups:
   - Japan_Tokyo_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_Los Angeles_ss_1126
-  - The Netherlands_None_trojan_1127
+  - The Netherlands_None_trojan_1126
+  - Hong Kong_Ha Kwai Chung_trojan_1127
+  - Hong Kong_Ha Kwai Chung_trojan_1128
+  - Hong Kong_Ha Kwai Chung_trojan_1129
+  - Hong Kong_Ha Kwai Chung_trojan_1130
+  - Hong Kong_Ha Kwai Chung_trojan_1131
+  - Hong Kong_Ha Kwai Chung_trojan_1132
+  - Hong Kong_Ha Kwai Chung_trojan_1133
+  - Hong Kong_Ha Kwai Chung_trojan_1134
+  - Hong Kong_Ha Kwai Chung_trojan_1135
+  - Hong Kong_Ha Kwai Chung_trojan_1136
+  - Hong Kong_Ha Kwai Chung_trojan_1137
+  - United States_None_trojan_1138
+  - United States_None_trojan_1139
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
