@@ -33,7 +33,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_102
+  name: Hong Kong_Yuen Long San Hui_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -138,7 +138,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1015
+  name: Hong Kong_Yuen Long San Hui_vmess_1015
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -270,7 +270,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1112
+  name: Hong Kong_Yuen Long San Hui_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -375,7 +375,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1125
+  name: Hong Kong_Yuen Long San Hui_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -383,28 +383,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: The Netherlands_None_ss_1126
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 193.29.139.147
-  type: ss
-  udp: true
-- name: The Netherlands_None_trojan_1127
-  network: ws
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: '443'
-  server: 188.164.248.122
-  skip-cert-verify: false
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /in-pdr
-- name: The Netherlands_None_trojan_1128
+- name: The Netherlands_None_trojan_1126
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
@@ -417,7 +396,7 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
-- name: None_None_trojan_1129
+- name: None_None_trojan_1127
   network: ws
   password: humanity
   port: 443
@@ -437,7 +416,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - United States_None_ss_101
-  - Hong Kong_Central_vmess_102
+  - Hong Kong_Yuen Long San Hui_vmess_102
   - Hong Kong_None_trojan_103
   - United States_None_trojan_104
   - Hong Kong_None_trojan_105
@@ -450,7 +429,7 @@ proxy-groups:
   - Hong Kong_None_trojan_1012
   - Hong Kong_None_trojan_1013
   - Japan_Tokyo_trojan_1014
-  - Hong Kong_Central_vmess_1015
+  - Hong Kong_Yuen Long San Hui_vmess_1015
   - The Netherlands_None_trojan_1016
   - None_None_trojan_1017
   - Unknown_vmess_111
@@ -464,7 +443,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Yuen Long San Hui_vmess_1112
   - Hong Kong_None_trojan_1113
   - United States_None_trojan_1114
   - Hong Kong_None_trojan_1115
@@ -477,11 +456,9 @@ proxy-groups:
   - Hong Kong_None_trojan_1122
   - Hong Kong_None_trojan_1123
   - Japan_Tokyo_trojan_1124
-  - Hong Kong_Central_vmess_1125
-  - The Netherlands_None_ss_1126
-  - The Netherlands_None_trojan_1127
-  - The Netherlands_None_trojan_1128
-  - None_None_trojan_1129
+  - Hong Kong_Yuen Long San Hui_vmess_1125
+  - The Netherlands_None_trojan_1126
+  - None_None_trojan_1127
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -489,7 +466,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_None_ss_101
-  - Hong Kong_Central_vmess_102
+  - Hong Kong_Yuen Long San Hui_vmess_102
   - Hong Kong_None_trojan_103
   - United States_None_trojan_104
   - Hong Kong_None_trojan_105
@@ -502,7 +479,7 @@ proxy-groups:
   - Hong Kong_None_trojan_1012
   - Hong Kong_None_trojan_1013
   - Japan_Tokyo_trojan_1014
-  - Hong Kong_Central_vmess_1015
+  - Hong Kong_Yuen Long San Hui_vmess_1015
   - The Netherlands_None_trojan_1016
   - None_None_trojan_1017
   - Unknown_vmess_111
@@ -516,7 +493,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Yuen Long San Hui_vmess_1112
   - Hong Kong_None_trojan_1113
   - United States_None_trojan_1114
   - Hong Kong_None_trojan_1115
@@ -529,11 +506,9 @@ proxy-groups:
   - Hong Kong_None_trojan_1122
   - Hong Kong_None_trojan_1123
   - Japan_Tokyo_trojan_1124
-  - Hong Kong_Central_vmess_1125
-  - The Netherlands_None_ss_1126
-  - The Netherlands_None_trojan_1127
-  - The Netherlands_None_trojan_1128
-  - None_None_trojan_1129
+  - Hong Kong_Yuen Long San Hui_vmess_1125
+  - The Netherlands_None_trojan_1126
+  - None_None_trojan_1127
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
