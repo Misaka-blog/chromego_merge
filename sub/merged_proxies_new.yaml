@@ -56,6 +56,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - name: Hong Kong_None_trojan_105
   network: tcp
   password: BxceQaOe
@@ -80,6 +81,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Hong Kong_None_trojan_108
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -120,6 +122,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Japan_Tokyo_trojan_1013
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -146,55 +149,86 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Japan_None_trojan_1016
+- name: United States_None_trojan_1016
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: Hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: de.catxstar.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1017
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1018
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hkdcrtc-e.catcat321.com
+  type: trojan
+  udp: true
+- name: Japan_None_trojan_1019
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 9450
-  server: rr2.tube-cat.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: None_None_trojan_1017
-  network: ws
-  password: MITIVPN
-  port: 2053
-  server: 104.17.147.22
-  skip-cert-verify: true
-  sni: ikk---7-MiTiVPN----o.kingnetwork.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ikk---7-MiTiVPN----o.kingnetwork.ir
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de
-- name: None_None_trojan_1018
-  network: ws
-  password: MiTiVPN
-  port: 2087
-  server: 104.18.6.178
-  skip-cert-verify: true
-  sni: g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/nl
-- name: United States_None_trojan_1019
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20056
-  server: oplosgru-c.catcat321.com
+  server: rr1.tube-cat.com
   skip-cert-verify: true
   type: trojan
   udp: true
 - name: United States_None_trojan_1020
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20004
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hkdcrtc-e.catcat321.com
+  type: trojan
+  udp: true
+- name: None_None_trojan_1021
+  network: ws
+  password: MiTiVPN
+  port: 2083
+  server: 104.18.7.178
+  skip-cert-verify: true
+  sni: swsjh--MiTiVPN---MiTiVPN-ao.kingnetwork.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: swsjh--MiTiVPN---MiTiVPN-ao.kingnetwork.ir
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw
+- name: None_None_trojan_1022
+  network: ws
+  password: MITIVPN
+  port: 8443
+  server: 104.17.148.22
+  skip-cert-verify: true
+  sni: mehrosaboran---mehrosaboran-7.kingnetwork.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mehrosaboran---mehrosaboran-7.kingnetwork.ir
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/usa
+- name: United States_None_trojan_1023
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1024
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: United States_None_trojan_1021
+- name: United States_None_trojan_1025
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20056
   server: oplosgru-c.catcat321.com
@@ -202,11 +236,11 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: United States_None_trojan_1022
+- name: United States_None_trojan_1026
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20066
+  port: 20004
   server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hk.catxstar.com
   type: trojan
   udp: true
@@ -319,23 +353,24 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 13118
-  server: 18.163.118.58
+  server: 16.162.55.106
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Poland_None_trojan_1114
-  network: tcp
-  password: BxceQaOe
-  port: 11035
-  server: 95.40.61.23
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: Hong Kong_None_trojan_1115
+- name: United States_None_trojan_1114
   network: tcp
   password: BxceQaOe
   port: 27161
-  server: 43.199.34.153
+  server: 54.46.75.237
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- name: Hong Kong_None_trojan_1115
+  network: tcp
+  password: BxceQaOe
+  port: 11035
+  server: 16.162.34.239
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -351,15 +386,16 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 38937
-  server: 18.162.62.144
+  server: 18.163.111.105
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Hong Kong_None_trojan_1118
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 40138
-  server: 18.163.85.97
+  port: 4099
+  server: 18.167.12.183
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -367,47 +403,48 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
-  server: 18.163.180.201
+  server: 16.162.55.106
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_1120
+- name: Japan_Tokyo_trojan_1120
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 48738
-  server: 18.163.180.201
+  port: 6357
+  server: 57.183.19.130
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: Hong Kong_None_trojan_1121
   network: tcp
   password: BxceQaOe
-  port: 9194
-  server: 18.162.152.65
+  port: 45744
+  server: 18.166.236.71
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_1122
+- name: United States_None_trojan_1122
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 17005
-  server: 16.162.105.149
+  server: 54.46.50.201
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_1123
+  udp: true
+- name: Japan_Tokyo_trojan_1123
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
-  server: 16.162.105.149
+  server: 57.183.19.130
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Poland_None_trojan_1124
+- name: Hong Kong_None_trojan_1124
   network: tcp
   password: BxceQaOe
-  port: 29085
-  server: 95.41.27.1
+  port: 38961
+  server: 18.166.236.71
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -428,12 +465,101 @@ proxies:
   skip-cert-verify: true
   sni: de.catxstar.com
   type: trojan
-- alpn:
-  - http/1.1
-  name: None_None_trojan_1127
+- name: United States_None_trojan_1127
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: Hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: de.catxstar.com
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: United States_None_vmess_1128
+  network: ws
+  port: '33410'
+  server: yd4.ainivp.com
+  servername: yd4.ainivp.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9301afcd-025e-781f-1abc-c10efabd1211
+  ws-opts:
+    headers:
+      Host: yd4.ainivp.com
+    path: /ray
+  xudp: true
+- name: United States_None_trojan_1129
+  network: tcp
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1130
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1131
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1132
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  sni: oplosgru-c.catcat321.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1133
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hkdcrtc-e.catcat321.com
+  type: trojan
+  udp: true
+- name: Japan_None_trojan_1134
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 9450
+  server: rr1.tube-cat.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1135
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hkdcrtc-e.catcat321.com
+  type: trojan
+  udp: true
+- name: None_None_trojan_1136
+  network: ws
+  password: MiTiVPN
+  port: 2083
+  server: 104.18.7.178
+  skip-cert-verify: true
+  sni: swsjh--MiTiVPN---MiTiVPN-ao.kingnetwork.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: swsjh--MiTiVPN---MiTiVPN-ao.kingnetwork.ir
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw
+- name: None_None_trojan_1137
   network: ws
   password: MITIVPN
-  port: '8443'
+  port: 8443
   server: 104.17.148.22
   skip-cert-verify: true
   sni: mehrosaboran---mehrosaboran-7.kingnetwork.ir
@@ -441,233 +567,29 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/55.0.2883.87 Safari/537.36
+      Host: mehrosaboran---mehrosaboran-7.kingnetwork.ir
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/usa
-- cipher: chacha20-ietf-poly1305
-  name: Switzerland_Nyon_ss_1128
-  password: kvrov4vd4iszb3aw
-  port: '25026'
-  server: koviraaa.kovira2.ir
-  type: ss
-  udp: true
-- name: Japan_None_trojan_1129
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 9450
-  server: rr1.tube-cat.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1130
+- name: United States_None_trojan_1138
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20066
-  server: Hkdcrtc-e.catcat321.com
+  server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: South Korea_None_ss_1131
-  password: qwerREWQ@@
-  port: 2078
-  server: 27.255.82.134
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1132
-  password: fjlfjafl231303831
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '1313'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1133
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '857'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1134
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '911'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1135
-  password: ayu1245
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '909'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1136
-  password: ay2loud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '906'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1137
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '8001'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1138
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '9022'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1139
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '20012'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1140
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '819'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1141
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '9052'
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1142
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '9047'
-  server: 260323.1.0.l2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1143
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: '812'
-  server: 260323.1.0.l2.unclemanco.com
-  type: ss
-  udp: true
-- name: Japan_None_trojan_1144
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 9450
-  server: rr2.tube-cat.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: None_None_trojan_1145
-  network: ws
-  password: MITIVPN
-  port: 2053
-  server: 104.17.147.22
-  skip-cert-verify: true
-  sni: ikk---7-MiTiVPN----o.kingnetwork.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ikk---7-MiTiVPN----o.kingnetwork.ir
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de
-- name: None_None_trojan_1146
-  network: ws
-  password: MiTiVPN
-  port: 2087
-  server: 104.18.6.178
-  skip-cert-verify: true
-  sni: g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/nl
-- name: United States_None_trojan_1147
+- name: United States_None_trojan_1139
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20056
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
+  sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: United States_None_trojan_1148
+- name: United States_None_trojan_1140
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
   server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1149
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20056
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1150
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20066
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hk.catxstar.com
   type: trojan
   udp: true
@@ -692,13 +614,17 @@ proxy-groups:
   - Japan_Tokyo_trojan_1013
   - Hong Kong_None_trojan_1014
   - Hong Kong_Tuen Mun_vmess_1015
-  - Japan_None_trojan_1016
-  - None_None_trojan_1017
-  - None_None_trojan_1018
-  - United States_None_trojan_1019
+  - United States_None_trojan_1016
+  - United States_None_trojan_1017
+  - United States_None_trojan_1018
+  - Japan_None_trojan_1019
   - United States_None_trojan_1020
-  - United States_None_trojan_1021
-  - United States_None_trojan_1022
+  - None_None_trojan_1021
+  - None_None_trojan_1022
+  - United States_None_trojan_1023
+  - United States_None_trojan_1024
+  - United States_None_trojan_1025
+  - United States_None_trojan_1026
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -712,43 +638,33 @@ proxy-groups:
   - United States_None_ss_1111
   - Hong Kong_Tuen Mun_vmess_1112
   - Hong Kong_None_trojan_1113
-  - Poland_None_trojan_1114
+  - United States_None_trojan_1114
   - Hong Kong_None_trojan_1115
   - Hong Kong_None_trojan_1116
   - Hong Kong_None_trojan_1117
   - Hong Kong_None_trojan_1118
   - Hong Kong_None_trojan_1119
-  - Hong Kong_None_trojan_1120
+  - Japan_Tokyo_trojan_1120
   - Hong Kong_None_trojan_1121
-  - Hong Kong_None_trojan_1122
-  - Hong Kong_None_trojan_1123
-  - Poland_None_trojan_1124
+  - United States_None_trojan_1122
+  - Japan_Tokyo_trojan_1123
+  - Hong Kong_None_trojan_1124
   - Hong Kong_Tuen Mun_vmess_1125
   - United States_None_trojan_1126
-  - None_None_trojan_1127
-  - Switzerland_Nyon_ss_1128
-  - Japan_None_trojan_1129
+  - United States_None_trojan_1127
+  - United States_None_vmess_1128
+  - United States_None_trojan_1129
   - United States_None_trojan_1130
-  - South Korea_None_ss_1131
-  - United States_Los Angeles_ss_1132
-  - United States_Los Angeles_ss_1133
-  - United States_Los Angeles_ss_1134
-  - United States_Los Angeles_ss_1135
-  - United States_Los Angeles_ss_1136
-  - United States_Los Angeles_ss_1137
-  - United States_Los Angeles_ss_1138
-  - United States_Los Angeles_ss_1139
-  - United States_Los Angeles_ss_1140
-  - United States_Los Angeles_ss_1141
-  - United States_Los Angeles_ss_1142
-  - United States_Los Angeles_ss_1143
-  - Japan_None_trojan_1144
-  - None_None_trojan_1145
-  - None_None_trojan_1146
-  - United States_None_trojan_1147
-  - United States_None_trojan_1148
-  - United States_None_trojan_1149
-  - United States_None_trojan_1150
+  - United States_None_trojan_1131
+  - United States_None_trojan_1132
+  - United States_None_trojan_1133
+  - Japan_None_trojan_1134
+  - United States_None_trojan_1135
+  - None_None_trojan_1136
+  - None_None_trojan_1137
+  - United States_None_trojan_1138
+  - United States_None_trojan_1139
+  - United States_None_trojan_1140
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -770,13 +686,17 @@ proxy-groups:
   - Japan_Tokyo_trojan_1013
   - Hong Kong_None_trojan_1014
   - Hong Kong_Tuen Mun_vmess_1015
-  - Japan_None_trojan_1016
-  - None_None_trojan_1017
-  - None_None_trojan_1018
-  - United States_None_trojan_1019
+  - United States_None_trojan_1016
+  - United States_None_trojan_1017
+  - United States_None_trojan_1018
+  - Japan_None_trojan_1019
   - United States_None_trojan_1020
-  - United States_None_trojan_1021
-  - United States_None_trojan_1022
+  - None_None_trojan_1021
+  - None_None_trojan_1022
+  - United States_None_trojan_1023
+  - United States_None_trojan_1024
+  - United States_None_trojan_1025
+  - United States_None_trojan_1026
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -790,43 +710,33 @@ proxy-groups:
   - United States_None_ss_1111
   - Hong Kong_Tuen Mun_vmess_1112
   - Hong Kong_None_trojan_1113
-  - Poland_None_trojan_1114
+  - United States_None_trojan_1114
   - Hong Kong_None_trojan_1115
   - Hong Kong_None_trojan_1116
   - Hong Kong_None_trojan_1117
   - Hong Kong_None_trojan_1118
   - Hong Kong_None_trojan_1119
-  - Hong Kong_None_trojan_1120
+  - Japan_Tokyo_trojan_1120
   - Hong Kong_None_trojan_1121
-  - Hong Kong_None_trojan_1122
-  - Hong Kong_None_trojan_1123
-  - Poland_None_trojan_1124
+  - United States_None_trojan_1122
+  - Japan_Tokyo_trojan_1123
+  - Hong Kong_None_trojan_1124
   - Hong Kong_Tuen Mun_vmess_1125
   - United States_None_trojan_1126
-  - None_None_trojan_1127
-  - Switzerland_Nyon_ss_1128
-  - Japan_None_trojan_1129
+  - United States_None_trojan_1127
+  - United States_None_vmess_1128
+  - United States_None_trojan_1129
   - United States_None_trojan_1130
-  - South Korea_None_ss_1131
-  - United States_Los Angeles_ss_1132
-  - United States_Los Angeles_ss_1133
-  - United States_Los Angeles_ss_1134
-  - United States_Los Angeles_ss_1135
-  - United States_Los Angeles_ss_1136
-  - United States_Los Angeles_ss_1137
-  - United States_Los Angeles_ss_1138
-  - United States_Los Angeles_ss_1139
-  - United States_Los Angeles_ss_1140
-  - United States_Los Angeles_ss_1141
-  - United States_Los Angeles_ss_1142
-  - United States_Los Angeles_ss_1143
-  - Japan_None_trojan_1144
-  - None_None_trojan_1145
-  - None_None_trojan_1146
-  - United States_None_trojan_1147
-  - United States_None_trojan_1148
-  - United States_None_trojan_1149
-  - United States_None_trojan_1150
+  - United States_None_trojan_1131
+  - United States_None_trojan_1132
+  - United States_None_trojan_1133
+  - Japan_None_trojan_1134
+  - United States_None_trojan_1135
+  - None_None_trojan_1136
+  - None_None_trojan_1137
+  - United States_None_trojan_1138
+  - United States_None_trojan_1139
+  - United States_None_trojan_1140
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
