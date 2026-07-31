@@ -363,6 +363,48 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: United States_None_trojan_1126
+  network: tcp
+  password: i99Cef
+  port: '28101'
+  server: 209.248.32.115
+  skip-cert-verify: true
+  sni: download.windowsupdate.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: United States_Los Angeles_ss_1127
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 2fce243671.download.windowsupdate.com
+    mode: http
+  port: '8001'
+  server: 260323.1.0.l3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: United States_Los Angeles_ss_1128
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 2fce243671.download.windowsupdate.com
+    mode: http
+  port: '835'
+  server: 260323.1.0.l3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: United States_Los Angeles_ss_1129
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 2fce243671.download.windowsupdate.com
+    mode: http
+  port: '914'
+  server: 260323.1.0.l3.unclemanco.com
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -409,6 +451,10 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Tuen Mun_vmess_1125
+  - United States_None_trojan_1126
+  - United States_Los Angeles_ss_1127
+  - United States_Los Angeles_ss_1128
+  - United States_Los Angeles_ss_1129
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -455,6 +501,10 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Tuen Mun_vmess_1125
+  - United States_None_trojan_1126
+  - United States_Los Angeles_ss_1127
+  - United States_Los Angeles_ss_1128
+  - United States_Los Angeles_ss_1129
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
