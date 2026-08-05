@@ -346,7 +346,9 @@ proxies:
   server: 95.40.205.94
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  tls: true
   type: trojan
+  udp: true
 - name: Hong Kong_None_trojan_1122
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -381,213 +383,24 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: None_None_trojan_1126
-  network: ws
-  password: ersi13mjahoao8e6
-  port: 443
-  server: hikvision-plus.com
-  skip-cert-verify: true
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ramz.xuithree.dpdns.org
-    path: /dksk
-- cipher: chacha20-ietf-poly1305
-  name: Hong Kong_None_ss_1127
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: '19001'
-  server: ss.047.node-for-bigairport.win
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1128
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: 9022
-  server: 260323.1.0.l3.unclemanco.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1129
-  password: fjlfjafl231303831
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: 1313
-  server: 260323.1.0.l3.unclemanco.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1130
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: 911
-  server: 260323.1.0.l3.unclemanco.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1131
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: 9052
-  server: 260323.1.0.l3.unclemanco.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1132
-  password: ay2loud1
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: 906
-  server: 260323.1.0.l3.unclemanco.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: United States_Los Angeles_ss_1133
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 2fce243671.download.windowsupdate.com
-    mode: http
-  port: 20012
-  server: 260323.1.0.l3.unclemanco.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  name: None_None_trojan_1134
-  network: ws
-  password: ersi13mjahoao8e6
-  port: '443'
-  server: cctvhikvision.center
-  skip-cert-verify: false
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /dksk
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1135
-  password: amazonskr05
-  port: 443
-  server: 13.231.227.228
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: Germany_Frankfurt am Main_ss_1136
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  port: 59924
-  server: 130.61.229.160
-  type: ss
-- cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1137
-  password: amazonskr05
-  port: 443
-  server: 13.61.13.49
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: United States_Ashburn_ss_1138
-  password: amazonskr05
-  port: 443
-  server: 3.85.61.177
-  type: ss
-  udp: true
-- name: United Kingdom_None_trojan_1139
-  network: tcp
-  password: 5CRphqBLXI
-  port: 55604
-  server: 216.173.64.72
-  sni: b32-11.cmj0502.cn
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: United States_None_ss_1140
-  password: YjliYmFlNzVmMmE4ZmJkYjAxNzQ2NWUyNzZlNjhkZGU=
-  port: 59319
-  server: 137.131.177.94
-  type: ss
-- name: Germany_None_trojan_1141
-  password: UaQmDQajuW
-  port: 55523
-  server: 185.132.54.106
-  sni: b32-10.cmj0502.cn
-  type: trojan
-- name: United States_None_trojan_1142
+- name: China_None_trojan_1126
   password: 55354c2b8ee339571bd657a9bb9858cc
-  port: '39221'
-  server: speed-01.aliyun-web-tracker.cn
+  port: 40783
+  server: 106.75.132.91
   skip-cert-verify: true
-  sni: speed-01.aliyun-web-tracker.cn
   type: trojan
-  udp: true
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: Hong Kong_Central_trojan_1143
+- grpc-opts:
+    grpc-service-name: /43588/G43plZahWW
+  name: Brazil_Goiânia_trojan_1127
   network: grpc
-  password: 29db38f0-e302-3768-8867-0b9bf00c77e4cmynw
+  password: 581e14a5fcc14107b9326cc54f047891
   port: '443'
-  server: kaizen-hk-2.gocmydns.com
+  server: 177.3.208.169
   skip-cert-verify: false
-  sni: www.zueuqnpjvcllc.co
+  sni: titandarkness.mooo.com
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: None_None_trojan_1144
-  network: ws
-  password: ersi13mjahoao8e6
-  port: '443'
-  server: nexigen.pro
-  skip-cert-verify: false
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /dksk
-- alpn:
-  - http/1.1
-  name: United States_None_trojan_1145
-  network: ws
-  password: ersi13mjahoao8e6
-  port: '443'
-  server: undef.network
-  skip-cert-verify: false
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /dksk
-- name: Hong Kong_Hong Kong_trojan_1146
+- name: Hong Kong_Hong Kong_trojan_1128
   password: ND91608427
   port: 443
   server: upright-hamster.rooster465.autos
@@ -595,7 +408,7 @@ proxies:
   sni: upright-hamster.rooster465.autos
   type: trojan
   udp: true
-- name: Ireland_Dublin_trojan_1147
+- name: Ireland_Dublin_trojan_1129
   password: ND91608427
   port: 443
   server: skilled-lioness.rooster465.autos
@@ -603,7 +416,7 @@ proxies:
   sni: skilled-lioness.rooster465.autos
   type: trojan
   udp: true
-- name: Romania_None_trojan_1148
+- name: Romania_None_trojan_1130
   password: ND91608427
   port: 443
   server: eager-louse.rooster465.autos
@@ -660,29 +473,11 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - None_None_trojan_1126
-  - Hong Kong_None_ss_1127
-  - United States_Los Angeles_ss_1128
-  - United States_Los Angeles_ss_1129
-  - United States_Los Angeles_ss_1130
-  - United States_Los Angeles_ss_1131
-  - United States_Los Angeles_ss_1132
-  - United States_Los Angeles_ss_1133
-  - None_None_trojan_1134
-  - Japan_Tokyo_ss_1135
-  - Germany_Frankfurt am Main_ss_1136
-  - Sweden_Stockholm_ss_1137
-  - United States_Ashburn_ss_1138
-  - United Kingdom_None_trojan_1139
-  - United States_None_ss_1140
-  - Germany_None_trojan_1141
-  - United States_None_trojan_1142
-  - Hong Kong_Central_trojan_1143
-  - None_None_trojan_1144
-  - United States_None_trojan_1145
-  - Hong Kong_Hong Kong_trojan_1146
-  - Ireland_Dublin_trojan_1147
-  - Romania_None_trojan_1148
+  - China_None_trojan_1126
+  - Brazil_Goiânia_trojan_1127
+  - Hong Kong_Hong Kong_trojan_1128
+  - Ireland_Dublin_trojan_1129
+  - Romania_None_trojan_1130
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -732,29 +527,11 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - None_None_trojan_1126
-  - Hong Kong_None_ss_1127
-  - United States_Los Angeles_ss_1128
-  - United States_Los Angeles_ss_1129
-  - United States_Los Angeles_ss_1130
-  - United States_Los Angeles_ss_1131
-  - United States_Los Angeles_ss_1132
-  - United States_Los Angeles_ss_1133
-  - None_None_trojan_1134
-  - Japan_Tokyo_ss_1135
-  - Germany_Frankfurt am Main_ss_1136
-  - Sweden_Stockholm_ss_1137
-  - United States_Ashburn_ss_1138
-  - United Kingdom_None_trojan_1139
-  - United States_None_ss_1140
-  - Germany_None_trojan_1141
-  - United States_None_trojan_1142
-  - Hong Kong_Central_trojan_1143
-  - None_None_trojan_1144
-  - United States_None_trojan_1145
-  - Hong Kong_Hong Kong_trojan_1146
-  - Ireland_Dublin_trojan_1147
-  - Romania_None_trojan_1148
+  - China_None_trojan_1126
+  - Brazil_Goiânia_trojan_1127
+  - Hong Kong_Hong Kong_trojan_1128
+  - Ireland_Dublin_trojan_1129
+  - Romania_None_trojan_1130
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
