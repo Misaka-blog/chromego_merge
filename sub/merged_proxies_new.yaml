@@ -357,25 +357,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_None_trojan_1126
-  password: 55354c2b8ee339571bd657a9bb9858cc
-  port: '39221'
-  server: speed-01.aliyun-web-tracker.cn
-  skip-cert-verify: true
-  sni: speed-01.aliyun-web-tracker.cn
-  type: trojan
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_1126
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1127
-  password: amazonskr05
-  port: 443
-  server: 13.231.227.228
-  type: ss
-  udp: true
-- name: United States_None_trojan_1128
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: United States_None_trojan_1127
   network: tcp
   password: 55354c2b8ee339571bd657a9bb9858cc
-  port: '53199'
+  port: 53199
   server: speed-01.aliyun-web-tracker.cn
   skip-cert-verify: true
   sni: speed-01.aliyun-web-tracker.cn
@@ -427,9 +424,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_None_trojan_1126
-  - Japan_Tokyo_ss_1127
-  - United States_None_trojan_1128
+  - China_None_vmess_1126
+  - United States_None_trojan_1127
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -476,9 +472,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - United States_None_trojan_1126
-  - Japan_Tokyo_ss_1127
-  - United States_None_trojan_1128
+  - China_None_vmess_1126
+  - United States_None_trojan_1127
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
