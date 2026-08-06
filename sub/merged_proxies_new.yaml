@@ -357,13 +357,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1126
-  password: amazonskr05
-  port: '443'
-  server: 13.115.57.197
-  type: ss
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -410,7 +403,6 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - Japan_Tokyo_ss_1126
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -457,7 +449,6 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - Japan_Tokyo_ss_1126
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
