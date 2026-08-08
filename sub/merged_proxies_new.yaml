@@ -40,7 +40,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Poland_Lubawa_trojan_103
+- name: Poland_None_trojan_103
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
   port: 50887
@@ -357,50 +357,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1126
-  password: amazonskr05
-  port: 443
-  server: 13.61.189.139
-  type: ss
-- cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1127
-  password: amazonskr05
-  port: 443
-  server: 51.21.130.209
-  type: ss
-- cipher: aes-256-cfb
-  name: United States_None_ss_1128
-  password: amazonskr05
-  port: 443
-  server: 98.89.48.191
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: China_None_vmess_1129
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1130
-  password: amazonskr05
-  port: 443
-  server: 13.114.17.103
-  type: ss
-- name: Hong Kong_None_trojan_1131
-  password: BxceQaOe
-  port: '11035'
-  server: 43.198.109.39
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -409,7 +365,7 @@ proxy-groups:
   - DIRECT
   - United States_None_ss_101
   - Hong Kong_Central_vmess_102
-  - Poland_Lubawa_trojan_103
+  - Poland_None_trojan_103
   - Hong Kong_None_trojan_104
   - Hong Kong_None_trojan_105
   - Hong Kong_None_trojan_106
@@ -447,12 +403,6 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - Sweden_Stockholm_ss_1126
-  - Sweden_Stockholm_ss_1127
-  - United States_None_ss_1128
-  - China_None_vmess_1129
-  - Japan_Tokyo_ss_1130
-  - Hong Kong_None_trojan_1131
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -461,7 +411,7 @@ proxy-groups:
   proxies:
   - United States_None_ss_101
   - Hong Kong_Central_vmess_102
-  - Poland_Lubawa_trojan_103
+  - Poland_None_trojan_103
   - Hong Kong_None_trojan_104
   - Hong Kong_None_trojan_105
   - Hong Kong_None_trojan_106
@@ -499,12 +449,6 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - Sweden_Stockholm_ss_1126
-  - Sweden_Stockholm_ss_1127
-  - United States_None_ss_1128
-  - China_None_vmess_1129
-  - Japan_Tokyo_ss_1130
-  - Hong Kong_None_trojan_1131
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
