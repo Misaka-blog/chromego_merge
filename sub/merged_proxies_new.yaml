@@ -251,7 +251,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Poland_None_trojan_1113
+- name: Hong Kong_None_trojan_1113
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
   port: 50887
@@ -357,6 +357,28 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: Japan_Tokyo_ss_1126
+  password: amazonskr05
+  port: 443
+  server: 13.114.17.103
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: United States_Los Angeles_vmess_1127
+  network: ws
+  port: '41963'
+  server: us.klxiaogou.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
+  ws-opts:
+    headers:
+      Host: us.klxiaogou.com
+    path: /124
+  xudp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -390,7 +412,7 @@ proxy-groups:
   - Unknown_vmess_1110
   - United States_None_ss_1111
   - Hong Kong_Central_vmess_1112
-  - Poland_None_trojan_1113
+  - Hong Kong_None_trojan_1113
   - Hong Kong_None_trojan_1114
   - Hong Kong_None_trojan_1115
   - Hong Kong_None_trojan_1116
@@ -403,6 +425,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
+  - Japan_Tokyo_ss_1126
+  - United States_Los Angeles_vmess_1127
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -436,7 +460,7 @@ proxy-groups:
   - Unknown_vmess_1110
   - United States_None_ss_1111
   - Hong Kong_Central_vmess_1112
-  - Poland_None_trojan_1113
+  - Hong Kong_None_trojan_1113
   - Hong Kong_None_trojan_1114
   - Hong Kong_None_trojan_1115
   - Hong Kong_None_trojan_1116
@@ -449,6 +473,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
+  - Japan_Tokyo_ss_1126
+  - United States_Los Angeles_vmess_1127
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
