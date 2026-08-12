@@ -381,30 +381,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: None_None_trojan_1126
-  network: ws
-  password: humanity
-  port: '443'
-  server: www.speedtest.org
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: Japan_Tokyo_trojan_1127
-  password: d050aca3-9df2-4461-90ec-92373c1d7636
-  port: '44184'
-  server: v2jp.k1.ssnss.live
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: Hong Kong_None_trojan_1128
+- name: Hong Kong_None_trojan_1126
   password: BxceQaOe
   port: 27161
   server: 16.162.3.11
@@ -412,7 +389,7 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- name: Hong Kong_None_trojan_1129
+- name: Hong Kong_None_trojan_1127
   password: BxceQaOe
   port: 27161
   server: 16.162.3.11
@@ -420,7 +397,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: Japan_Tokyo_trojan_1130
+- name: Japan_Tokyo_trojan_1128
   password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
   port: 55682
   server: t11.qifei.app
@@ -477,11 +454,9 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - None_None_trojan_1126
-  - Japan_Tokyo_trojan_1127
-  - Hong Kong_None_trojan_1128
-  - Hong Kong_None_trojan_1129
-  - Japan_Tokyo_trojan_1130
+  - Hong Kong_None_trojan_1126
+  - Hong Kong_None_trojan_1127
+  - Japan_Tokyo_trojan_1128
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -531,11 +506,9 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - None_None_trojan_1126
-  - Japan_Tokyo_trojan_1127
-  - Hong Kong_None_trojan_1128
-  - Hong Kong_None_trojan_1129
-  - Japan_Tokyo_trojan_1130
+  - Hong Kong_None_trojan_1126
+  - Hong Kong_None_trojan_1127
+  - Japan_Tokyo_trojan_1128
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
