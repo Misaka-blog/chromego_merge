@@ -33,7 +33,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_102
+  name: Hong Kong_Central_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -138,7 +138,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1015
+  name: Hong Kong_Central_vmess_1015
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -268,7 +268,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1112
+  name: Hong Kong_Central_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -373,7 +373,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1125
+  name: Hong Kong_Central_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -381,7 +381,88 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_None_trojan_1126
+- alpn:
+  - http/1.1
+  name: None_None_trojan_1126
+  network: ws
+  password: MITIVPN
+  port: 443
+  server: 104.19.229.21
+  skip-cert-verify: true
+  sni: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: d--AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- client-fingerprint: chrome
+  name: United States_None_trojan_1127
+  network: ws
+  password: humanity
+  port: '443'
+  server: 130.250.137.171
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1128
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.233
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /assignment
+- alterId: '0'
+  cipher: auto
+  name: United States_None_vmess_1129
+  network: tcp
+  port: 29006
+  server: 366-1095.rabbitpro-in-3.com
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- cipher: chacha20-ietf-poly1305
+  name: Taiwan_Taichung_ss_1130
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)aee97b7:155033
+    mode: tls
+  port: '2377'
+  server: 61.216.165.233
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: None_None_trojan_1131
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 104.17.148.22
+  skip-cert-verify: true
+  sni: gb-ss-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/gb---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: Hong Kong_None_trojan_1132
   password: BxceQaOe
   port: 27161
   server: 16.162.3.11
@@ -389,7 +470,7 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- name: Hong Kong_None_trojan_1127
+- name: Hong Kong_None_trojan_1133
   password: BxceQaOe
   port: 27161
   server: 16.162.3.11
@@ -397,7 +478,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: Japan_Tokyo_trojan_1128
+- name: Japan_Tokyo_trojan_1134
   password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
   port: 55682
   server: t11.qifei.app
@@ -412,7 +493,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - United States_None_ss_101
-  - Hong Kong_Tuen Mun_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_None_trojan_103
   - Hong Kong_None_trojan_104
   - Hong Kong_None_trojan_105
@@ -425,7 +506,7 @@ proxy-groups:
   - Poland_None_trojan_1012
   - Hong Kong_None_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Hong Kong_Tuen Mun_vmess_1015
+  - Hong Kong_Central_vmess_1015
   - Hong Kong_None_trojan_1016
   - Hong Kong_None_trojan_1017
   - Japan_Tokyo_trojan_1018
@@ -440,7 +521,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Tuen Mun_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Hong Kong_None_trojan_1113
   - Hong Kong_None_trojan_1114
   - Hong Kong_None_trojan_1115
@@ -453,10 +534,16 @@ proxy-groups:
   - Poland_None_trojan_1122
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
-  - Hong Kong_Tuen Mun_vmess_1125
-  - Hong Kong_None_trojan_1126
-  - Hong Kong_None_trojan_1127
-  - Japan_Tokyo_trojan_1128
+  - Hong Kong_Central_vmess_1125
+  - None_None_trojan_1126
+  - United States_None_trojan_1127
+  - None_None_trojan_1128
+  - United States_None_vmess_1129
+  - Taiwan_Taichung_ss_1130
+  - None_None_trojan_1131
+  - Hong Kong_None_trojan_1132
+  - Hong Kong_None_trojan_1133
+  - Japan_Tokyo_trojan_1134
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -464,7 +551,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_None_ss_101
-  - Hong Kong_Tuen Mun_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_None_trojan_103
   - Hong Kong_None_trojan_104
   - Hong Kong_None_trojan_105
@@ -477,7 +564,7 @@ proxy-groups:
   - Poland_None_trojan_1012
   - Hong Kong_None_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Hong Kong_Tuen Mun_vmess_1015
+  - Hong Kong_Central_vmess_1015
   - Hong Kong_None_trojan_1016
   - Hong Kong_None_trojan_1017
   - Japan_Tokyo_trojan_1018
@@ -492,7 +579,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Tuen Mun_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Hong Kong_None_trojan_1113
   - Hong Kong_None_trojan_1114
   - Hong Kong_None_trojan_1115
@@ -505,10 +592,16 @@ proxy-groups:
   - Poland_None_trojan_1122
   - Hong Kong_None_trojan_1123
   - Hong Kong_None_trojan_1124
-  - Hong Kong_Tuen Mun_vmess_1125
-  - Hong Kong_None_trojan_1126
-  - Hong Kong_None_trojan_1127
-  - Japan_Tokyo_trojan_1128
+  - Hong Kong_Central_vmess_1125
+  - None_None_trojan_1126
+  - United States_None_trojan_1127
+  - None_None_trojan_1128
+  - United States_None_vmess_1129
+  - Taiwan_Taichung_ss_1130
+  - None_None_trojan_1131
+  - Hong Kong_None_trojan_1132
+  - Hong Kong_None_trojan_1133
+  - Japan_Tokyo_trojan_1134
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
