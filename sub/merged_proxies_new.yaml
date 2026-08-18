@@ -369,112 +369,54 @@ proxies:
   cipher: auto
   name: France_None_vmess_1125
   network: ws
-  port: '16632'
+  port: 16632
   server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
   ws-opts:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
-  xudp: true
 - name: Japan_Tokyo_trojan_1126
   password: HC04361579
   port: 443
-  server: accepted-starling.rooster465.autos
+  server: legible-ocelot.rooster465.autos
   skip-cert-verify: true
-  sni: accepted-starling.rooster465.autos
+  sni: legible-ocelot.rooster465.autos
   type: trojan
 - alterId: '0'
   cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: United States_None_vmess_1127
-  network: http
-  port: '52080'
-  server: 38.246.226.240
+  name: France_None_vmess_1127
+  network: ws
+  port: '16632'
+  server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
+  ws-opts:
+    headers:
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
+    path: /
   xudp: true
 - cipher: chacha20-ietf-poly1305
   name: China_None_ss_1128
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21109'
-  server: 211.91.158.24
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1129
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: '21114'
   server: 211.91.158.24
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1130
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21107'
-  server: 211.91.158.24
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1131
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21119'
-  server: 211.91.158.24
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1132
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21109'
-  server: 211.91.158.27
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1133
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21107'
-  server: 211.91.158.27
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1134
+  name: China_None_ss_1129
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: '21119'
   server: 211.91.158.27
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: United States_Los Angeles_trojan_1135
-  network: tcp
-  password: fg20mtCFHy
-  port: '5444'
-  server: 128.14.180.210
-  skip-cert-verify: true
-  sni: ucyxc.southbyte.xyz
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: United States_Santa Clara_trojan_1136
-  network: tcp
-  password: fg20mtCFHy
-  port: '5444'
-  server: 147.182.198.83
-  skip-cert-verify: true
-  sni: sfouctc.southbyte.xyz
-  type: trojan
-  udp: true
-- name: Hong Kong_None_trojan_1137
+- name: Hong Kong_None_trojan_1130
   password: BxceQaOe
   port: 27161
   server: 16.162.3.11
@@ -482,7 +424,7 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- name: Hong Kong_None_trojan_1138
+- name: Hong Kong_None_trojan_1131
   password: BxceQaOe
   port: 27161
   server: 16.162.3.11
@@ -490,7 +432,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: Japan_Tokyo_trojan_1139
+- name: Japan_Tokyo_trojan_1132
   password: 7d8e6db4-96cc-4710-afc0-619edde2d7a1
   port: 55682
   server: t11.qifei.app
@@ -547,19 +489,12 @@ proxy-groups:
   - Hong Kong_Central_vmess_1124
   - France_None_vmess_1125
   - Japan_Tokyo_trojan_1126
-  - United States_None_vmess_1127
+  - France_None_vmess_1127
   - China_None_ss_1128
   - China_None_ss_1129
-  - China_None_ss_1130
-  - China_None_ss_1131
-  - China_None_ss_1132
-  - China_None_ss_1133
-  - China_None_ss_1134
-  - United States_Los Angeles_trojan_1135
-  - United States_Santa Clara_trojan_1136
-  - Hong Kong_None_trojan_1137
-  - Hong Kong_None_trojan_1138
-  - Japan_Tokyo_trojan_1139
+  - Hong Kong_None_trojan_1130
+  - Hong Kong_None_trojan_1131
+  - Japan_Tokyo_trojan_1132
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -609,19 +544,12 @@ proxy-groups:
   - Hong Kong_Central_vmess_1124
   - France_None_vmess_1125
   - Japan_Tokyo_trojan_1126
-  - United States_None_vmess_1127
+  - France_None_vmess_1127
   - China_None_ss_1128
   - China_None_ss_1129
-  - China_None_ss_1130
-  - China_None_ss_1131
-  - China_None_ss_1132
-  - China_None_ss_1133
-  - China_None_ss_1134
-  - United States_Los Angeles_trojan_1135
-  - United States_Santa Clara_trojan_1136
-  - Hong Kong_None_trojan_1137
-  - Hong Kong_None_trojan_1138
-  - Japan_Tokyo_trojan_1139
+  - Hong Kong_None_trojan_1130
+  - Hong Kong_None_trojan_1131
+  - Japan_Tokyo_trojan_1132
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
