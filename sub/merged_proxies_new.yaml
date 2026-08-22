@@ -363,15 +363,21 @@ proxies:
   port: 65443
   server: 121.46.230.138
   type: ss
+- cipher: aes-256-cfb
+  name: China_None_ss_1127
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.136
+  type: ss
+  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: France_None_vmess_1127
+  name: France_None_vmess_1128
   network: ws
   port: '16632'
   server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -382,48 +388,6 @@ proxies:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1128
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21107'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1129
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21109'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1130
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21117'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1131
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21121'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1132
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21108'
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1133
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21117'
-  server: 211.91.158.44
-  type: ss
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -471,13 +435,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
   - China_None_ss_1126
-  - France_None_vmess_1127
-  - China_None_ss_1128
-  - China_None_ss_1129
-  - China_None_ss_1130
-  - China_None_ss_1131
-  - China_None_ss_1132
-  - China_None_ss_1133
+  - China_None_ss_1127
+  - France_None_vmess_1128
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -525,13 +484,8 @@ proxy-groups:
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
   - China_None_ss_1126
-  - France_None_vmess_1127
-  - China_None_ss_1128
-  - China_None_ss_1129
-  - China_None_ss_1130
-  - China_None_ss_1131
-  - China_None_ss_1132
-  - China_None_ss_1133
+  - China_None_ss_1127
+  - France_None_vmess_1128
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
