@@ -33,7 +33,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_102
+  name: Hong Kong_Central_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -126,7 +126,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_1015
+  name: Hong Kong_Central_vmess_1015
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -370,7 +370,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_1112
+  name: Hong Kong_Central_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -463,7 +463,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_1125
+  name: Hong Kong_Central_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -615,12 +615,159 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-gcm
-  name: China_None_ss_1139
-  password: b160be88-28c2-31bb-a153-8b050228f0c3
-  port: '20016'
-  server: f.4.h.5.3.i.i.9.6.us02-ae5.entry.v51124-3a.qpon
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1139
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10927
+  server: mn.qwer-cn.org
   type: ss
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1140
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10910
+  server: mn.qwer-cn.org
+  type: ss
+- name: United States_None_trojan_1141
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20006
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1142
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10925
+  server: mn.qwer-cn.org
+  type: ss
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1143
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10934
+  server: mn.qwer-cn.org
+  type: ss
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1144
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10936
+  server: mn.qwer-cn.org
+  type: ss
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1145
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: '10920'
+  server: mn.qwer-cn.org
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1146
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: '10933'
+  server: mn.qwer-cn.org
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: Hong Kong_Hong Kong_ss_1147
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: '10913'
+  server: mn.qwer-cn.org
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: China_None_ss_1148
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.138
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1149
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21104'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1150
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21109'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1151
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21117'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1152
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21126'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1153
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21103'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1154
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21108'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1155
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21122'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1156
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21123'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1157
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21103'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1158
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21105'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1159
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21107'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: Singapore_Singapore_trojan_1160
+  network: tcp
+  password: 6fbda1e2-85e5-48dc-9fa0-21be0651aa47
+  port: '22226'
+  server: gfw.cmcuct.com
+  skip-cert-verify: true
+  sni: cos.ap-hongkong.myqcloud.com
+  type: trojan
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -629,7 +776,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - United States_None_ss_101
-  - Hong Kong_Yuen Long San Hui_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_None_trojan_103
   - Hong Kong_None_trojan_104
   - Hong Kong_None_trojan_105
@@ -642,7 +789,7 @@ proxy-groups:
   - Hong Kong_None_trojan_1012
   - Poland_None_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Hong Kong_Yuen Long San Hui_vmess_1015
+  - Hong Kong_Central_vmess_1015
   - United States_Ashburn_vmess_1016
   - Hong Kong_Hong Kong_vmess_1017
   - Hong Kong_None_trojan_1018
@@ -666,7 +813,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Yuen Long San Hui_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Hong Kong_None_trojan_1113
   - Hong Kong_None_trojan_1114
   - Hong Kong_None_trojan_1115
@@ -679,7 +826,7 @@ proxy-groups:
   - Hong Kong_None_trojan_1122
   - Poland_None_trojan_1123
   - Hong Kong_None_trojan_1124
-  - Hong Kong_Yuen Long San Hui_vmess_1125
+  - Hong Kong_Central_vmess_1125
   - United States_Ashburn_vmess_1126
   - Hong Kong_Hong Kong_vmess_1127
   - Hong Kong_None_trojan_1128
@@ -693,7 +840,28 @@ proxy-groups:
   - Singapore_None_vmess_1136
   - China_None_ss_1137
   - United States_None_trojan_1138
-  - China_None_ss_1139
+  - Hong Kong_Hong Kong_ss_1139
+  - Hong Kong_Hong Kong_ss_1140
+  - United States_None_trojan_1141
+  - Hong Kong_Hong Kong_ss_1142
+  - Hong Kong_Hong Kong_ss_1143
+  - Hong Kong_Hong Kong_ss_1144
+  - Hong Kong_Hong Kong_ss_1145
+  - Hong Kong_Hong Kong_ss_1146
+  - Hong Kong_Hong Kong_ss_1147
+  - China_None_ss_1148
+  - China_None_ss_1149
+  - China_None_ss_1150
+  - China_None_ss_1151
+  - China_None_ss_1152
+  - China_None_ss_1153
+  - China_None_ss_1154
+  - China_None_ss_1155
+  - China_None_ss_1156
+  - China_None_ss_1157
+  - China_None_ss_1158
+  - China_None_ss_1159
+  - Singapore_Singapore_trojan_1160
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -701,7 +869,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_None_ss_101
-  - Hong Kong_Yuen Long San Hui_vmess_102
+  - Hong Kong_Central_vmess_102
   - Hong Kong_None_trojan_103
   - Hong Kong_None_trojan_104
   - Hong Kong_None_trojan_105
@@ -714,7 +882,7 @@ proxy-groups:
   - Hong Kong_None_trojan_1012
   - Poland_None_trojan_1013
   - Hong Kong_None_trojan_1014
-  - Hong Kong_Yuen Long San Hui_vmess_1015
+  - Hong Kong_Central_vmess_1015
   - United States_Ashburn_vmess_1016
   - Hong Kong_Hong Kong_vmess_1017
   - Hong Kong_None_trojan_1018
@@ -738,7 +906,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Yuen Long San Hui_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - Hong Kong_None_trojan_1113
   - Hong Kong_None_trojan_1114
   - Hong Kong_None_trojan_1115
@@ -751,7 +919,7 @@ proxy-groups:
   - Hong Kong_None_trojan_1122
   - Poland_None_trojan_1123
   - Hong Kong_None_trojan_1124
-  - Hong Kong_Yuen Long San Hui_vmess_1125
+  - Hong Kong_Central_vmess_1125
   - United States_Ashburn_vmess_1126
   - Hong Kong_Hong Kong_vmess_1127
   - Hong Kong_None_trojan_1128
@@ -765,7 +933,28 @@ proxy-groups:
   - Singapore_None_vmess_1136
   - China_None_ss_1137
   - United States_None_trojan_1138
-  - China_None_ss_1139
+  - Hong Kong_Hong Kong_ss_1139
+  - Hong Kong_Hong Kong_ss_1140
+  - United States_None_trojan_1141
+  - Hong Kong_Hong Kong_ss_1142
+  - Hong Kong_Hong Kong_ss_1143
+  - Hong Kong_Hong Kong_ss_1144
+  - Hong Kong_Hong Kong_ss_1145
+  - Hong Kong_Hong Kong_ss_1146
+  - Hong Kong_Hong Kong_ss_1147
+  - China_None_ss_1148
+  - China_None_ss_1149
+  - China_None_ss_1150
+  - China_None_ss_1151
+  - China_None_ss_1152
+  - China_None_ss_1153
+  - China_None_ss_1154
+  - China_None_ss_1155
+  - China_None_ss_1156
+  - China_None_ss_1157
+  - China_None_ss_1158
+  - China_None_ss_1159
+  - Singapore_Singapore_trojan_1160
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
