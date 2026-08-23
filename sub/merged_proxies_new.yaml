@@ -357,37 +357,40 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: China_None_ss_1126
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
-  type: ss
-- cipher: aes-256-cfb
-  name: China_None_ss_1127
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.136
-  type: ss
+- client-fingerprint: chrome
+  name: Australia_Sydney_trojan_1126
+  password: FH72359861
+  port: '443'
+  server: national-stingray.rooster465.autos
+  skip-cert-verify: true
+  sni: national-stingray.rooster465.autos
+  type: trojan
   udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: France_None_vmess_1128
+- client-fingerprint: chrome
+  name: United States_San Francisco_trojan_1127
   network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
+  password: 8978b84c-6b95-4494-beb6-5246ec82e9ad
+  port: '443'
+  server: cdn3.bpcdn.cc
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  sni: baijofe6666.bpjp2027.top
+  type: trojan
   udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
   ws-opts:
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
-  xudp: true
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /images
+- client-fingerprint: chrome
+  name: Australia_Sydney_trojan_1128
+  network: tcp
+  password: FH72359861
+  port: '443'
+  server: 87.121.33.109
+  skip-cert-verify: true
+  sni: national-stingray.rooster465.autos
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -434,9 +437,9 @@ proxy-groups:
   - Poland_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - China_None_ss_1126
-  - China_None_ss_1127
-  - France_None_vmess_1128
+  - Australia_Sydney_trojan_1126
+  - United States_San Francisco_trojan_1127
+  - Australia_Sydney_trojan_1128
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -483,9 +486,9 @@ proxy-groups:
   - Poland_None_trojan_1123
   - Hong Kong_None_trojan_1124
   - Hong Kong_Central_vmess_1125
-  - China_None_ss_1126
-  - China_None_ss_1127
-  - France_None_vmess_1128
+  - Australia_Sydney_trojan_1126
+  - United States_San Francisco_trojan_1127
+  - Australia_Sydney_trojan_1128
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
