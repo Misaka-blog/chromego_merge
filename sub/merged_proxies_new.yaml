@@ -615,20 +615,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1139
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10927
-  server: mn.qwer-cn.org
-  type: ss
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1140
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10910
-  server: mn.qwer-cn.org
-  type: ss
-- name: United States_None_trojan_1141
-  network: tcp
+- name: United States_None_trojan_1139
   password: a126f35c-e832-4115-8593-b723ade3f7be
   port: 20006
   server: kkvlvvq-a.catcat321.com
@@ -636,63 +623,97 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1142
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10925
-  server: mn.qwer-cn.org
-  type: ss
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1143
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10934
-  server: mn.qwer-cn.org
-  type: ss
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1144
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10936
-  server: mn.qwer-cn.org
-  type: ss
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1145
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: '10920'
-  server: mn.qwer-cn.org
+- cipher: aes-256-cfb
+  name: China_None_ss_1140
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.136
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1146
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: '10933'
-  server: mn.qwer-cn.org
-  type: ss
+- client-fingerprint: chrome
+  name: None_None_trojan_1141
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.23.63
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1147
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: '10913'
-  server: mn.qwer-cn.org
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1142
+  network: ws
+  port: '16632'
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d52b72b0-a509-490a-adae-23da2348d29c
+  ws-opts:
+    headers:
+      Host: 82d16f3a12ad1d0871e0270510bf2ef6.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1143
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21108'
+  server: 211.91.158.44
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: United States_None_ss_1144
+  password: amazonskr05
+  port: 443
+  server: 16.52.46.12
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1145
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21113'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1146
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21118'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: China_None_ss_1147
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21125'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: China_None_ss_1148
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.138
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21103'
+  server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: China_None_ss_1149
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21104'
+  port: '21103'
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: China_None_ss_1150
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21109'
+  port: '21114'
   server: 211.91.158.26
   type: ss
   udp: true
@@ -713,61 +734,23 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   name: China_None_ss_1153
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21103'
+  port: '21105'
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: China_None_ss_1154
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21108'
+  port: '21114'
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: China_None_ss_1155
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21122'
+  port: '21126'
   server: 211.91.158.44
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1156
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21123'
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1157
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21103'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1158
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21105'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: China_None_ss_1159
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: '21107'
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: Singapore_Singapore_trojan_1160
-  network: tcp
-  password: 6fbda1e2-85e5-48dc-9fa0-21be0651aa47
-  port: '22226'
-  server: gfw.cmcuct.com
-  skip-cert-verify: true
-  sni: cos.ap-hongkong.myqcloud.com
-  type: trojan
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -840,15 +823,15 @@ proxy-groups:
   - Singapore_None_vmess_1136
   - China_None_ss_1137
   - United States_None_trojan_1138
-  - Hong Kong_Hong Kong_ss_1139
-  - Hong Kong_Hong Kong_ss_1140
-  - United States_None_trojan_1141
-  - Hong Kong_Hong Kong_ss_1142
-  - Hong Kong_Hong Kong_ss_1143
-  - Hong Kong_Hong Kong_ss_1144
-  - Hong Kong_Hong Kong_ss_1145
-  - Hong Kong_Hong Kong_ss_1146
-  - Hong Kong_Hong Kong_ss_1147
+  - United States_None_trojan_1139
+  - China_None_ss_1140
+  - None_None_trojan_1141
+  - France_None_vmess_1142
+  - China_None_ss_1143
+  - United States_None_ss_1144
+  - China_None_ss_1145
+  - China_None_ss_1146
+  - China_None_ss_1147
   - China_None_ss_1148
   - China_None_ss_1149
   - China_None_ss_1150
@@ -857,11 +840,6 @@ proxy-groups:
   - China_None_ss_1153
   - China_None_ss_1154
   - China_None_ss_1155
-  - China_None_ss_1156
-  - China_None_ss_1157
-  - China_None_ss_1158
-  - China_None_ss_1159
-  - Singapore_Singapore_trojan_1160
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -933,15 +911,15 @@ proxy-groups:
   - Singapore_None_vmess_1136
   - China_None_ss_1137
   - United States_None_trojan_1138
-  - Hong Kong_Hong Kong_ss_1139
-  - Hong Kong_Hong Kong_ss_1140
-  - United States_None_trojan_1141
-  - Hong Kong_Hong Kong_ss_1142
-  - Hong Kong_Hong Kong_ss_1143
-  - Hong Kong_Hong Kong_ss_1144
-  - Hong Kong_Hong Kong_ss_1145
-  - Hong Kong_Hong Kong_ss_1146
-  - Hong Kong_Hong Kong_ss_1147
+  - United States_None_trojan_1139
+  - China_None_ss_1140
+  - None_None_trojan_1141
+  - France_None_vmess_1142
+  - China_None_ss_1143
+  - United States_None_ss_1144
+  - China_None_ss_1145
+  - China_None_ss_1146
+  - China_None_ss_1147
   - China_None_ss_1148
   - China_None_ss_1149
   - China_None_ss_1150
@@ -950,11 +928,6 @@ proxy-groups:
   - China_None_ss_1153
   - China_None_ss_1154
   - China_None_ss_1155
-  - China_None_ss_1156
-  - China_None_ss_1157
-  - China_None_ss_1158
-  - China_None_ss_1159
-  - Singapore_Singapore_trojan_1160
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
