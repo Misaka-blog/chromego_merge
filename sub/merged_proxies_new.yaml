@@ -256,9 +256,7 @@ proxies:
   server: 18.181.83.46
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  tls: true
   type: trojan
-  udp: true
 - name: Japan_Tokyo_trojan_1116
   network: tcp
   password: BxceQaOe
@@ -331,16 +329,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: United States_None_trojan_1126
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: '20085'
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
+- cipher: aes-256-cfb
+  name: China_None_ss_1126
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
+  type: ss
 - name: United States_None_trojan_1127
   network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
@@ -349,76 +343,48 @@ proxies:
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- cipher: aes-256-cfb
-  name: China_None_ss_1128
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.138
-  type: ss
-  udp: true
-- name: United States_None_trojan_1129
+- client-fingerprint: chrome
+  name: United States_None_trojan_1128
+  network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
+  port: '20066'
   server: hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
-  tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: United States_Chicago_trojan_1130
-  network: raw
-  password: 5e89314202a8405f
-  port: '101'
-  server: kuso30.pacemakere.com
+- alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1129
+  network: ws
+  port: '16632'
+  server: planb.mojcn.com.linuxlh.xin
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
-  tls: true
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: United States_San Jose_trojan_1131
-  password: c857562678594197
-  port: 20063
-  server: saj2000e.pacemakere.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - client-fingerprint: chrome
-  name: Japan_None_trojan_1132
-  network: raw
-  password: 6519a715da174466
-  port: '101'
-  server: jcnp178.pacemakere.com
-  skip-cert-verify: false
-  tls: true
-  type: trojan
-  udp: true
-- name: United States_Chicago_trojan_1133
-  password: 3b9deff947c74dde
-  port: 101
-  server: kuso153.pacemakere.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: United States_None_ss_1134
-  password: amazonskr05
-  port: 443
-  server: 13.135.167.23
-  type: ss
-- cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1135
-  password: amazonskr05
-  port: 443
-  server: 18.132.52.104
-  type: ss
-- name: United States_None_trojan_1136
+  name: United States_None_trojan_1130
   network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20085
-  server: hkdcrtc-e.catcat321.com
+  port: '20085'
+  server: kkvlvvq-a.catcat321.com
   skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1131
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20065
+  server: kkvlvvq-a.catcat321.com
   sni: hk.catxstar.com
   type: trojan
 proxy-groups:
@@ -467,17 +433,12 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Kowloon_vmess_1125
-  - United States_None_trojan_1126
+  - China_None_ss_1126
   - United States_None_trojan_1127
-  - China_None_ss_1128
-  - United States_None_trojan_1129
-  - United States_Chicago_trojan_1130
-  - United States_San Jose_trojan_1131
-  - Japan_None_trojan_1132
-  - United States_Chicago_trojan_1133
-  - United States_None_ss_1134
-  - United Kingdom_London_ss_1135
-  - United States_None_trojan_1136
+  - United States_None_trojan_1128
+  - France_None_vmess_1129
+  - United States_None_trojan_1130
+  - United States_None_trojan_1131
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -524,17 +485,12 @@ proxy-groups:
   - Hong Kong_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Kowloon_vmess_1125
-  - United States_None_trojan_1126
+  - China_None_ss_1126
   - United States_None_trojan_1127
-  - China_None_ss_1128
-  - United States_None_trojan_1129
-  - United States_Chicago_trojan_1130
-  - United States_San Jose_trojan_1131
-  - Japan_None_trojan_1132
-  - United States_Chicago_trojan_1133
-  - United States_None_ss_1134
-  - United Kingdom_London_ss_1135
-  - United States_None_trojan_1136
+  - United States_None_trojan_1128
+  - France_None_vmess_1129
+  - United States_None_trojan_1130
+  - United States_None_trojan_1131
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
