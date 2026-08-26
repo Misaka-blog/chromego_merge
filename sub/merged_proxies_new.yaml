@@ -329,45 +329,33 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_None_trojan_1126
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20085
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: United States_None_trojan_1127
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: United States_None_trojan_1128
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: United States_None_trojan_1129
-  network: raw
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: '20065'
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: false
+  name: United States_None_trojan_1126
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: '20066'
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
   sni: hk.catxstar.com
-  tls: false
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: United States_None_ss_1130
+  name: United Kingdom_London_ss_1127
   password: amazonskr05
-  port: 443
-  server: 16.52.90.245
+  port: '443'
+  server: 18.171.235.36
   type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: United States_None_trojan_1128
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: '20066'
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -415,10 +403,8 @@ proxy-groups:
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
   - United States_None_trojan_1126
-  - United States_None_trojan_1127
+  - United Kingdom_London_ss_1127
   - United States_None_trojan_1128
-  - United States_None_trojan_1129
-  - United States_None_ss_1130
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -466,10 +452,8 @@ proxy-groups:
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
   - United States_None_trojan_1126
-  - United States_None_trojan_1127
+  - United Kingdom_London_ss_1127
   - United States_None_trojan_1128
-  - United States_None_trojan_1129
-  - United States_None_ss_1130
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
