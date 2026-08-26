@@ -33,7 +33,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_102
+  name: Hong Kong_Central_vmess_102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -124,7 +124,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_1015
+  name: Hong Kong_Central_vmess_1015
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -230,7 +230,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_1112
+  name: Hong Kong_Central_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -321,7 +321,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_1125
+  name: Hong Kong_Central_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -329,20 +329,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: China_None_ss_1126
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
-  type: ss
-- name: United States_None_trojan_1127
-  network: tcp
+- name: United States_None_trojan_1126
   password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
+  port: 20068
   server: kkvlvvq-a.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: South Korea_Changwon_ss_1127
+  password: 1234!@#$
+  port: '1774'
+  server: 49.254.204.133
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: United States_None_trojan_1128
   network: tcp
@@ -353,40 +354,50 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: France_None_vmess_1129
+- cipher: aes-256-cfb
+  name: Canada_Montreal_ss_1129
+  password: amazonskr05
+  port: '443'
+  server: 35.182.226.235
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_None_ss_1130
+  password: amazonskr05
+  port: 443
+  server: 16.52.90.213
+  type: ss
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: United States_None_trojan_1131
   network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+  password: epc3ufz9q4ocqeqh
+  port: '2087'
+  server: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  sni: uwu.dianaw.cc.cd
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: Singapore_None_vmess_1132
+  network: tcp
+  port: '53386'
+  server: x-ui.zxhh.top
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
+  uuid: 32e75662-c1ed-4e8d-f78c-3dcc685cc795
   xudp: true
-- client-fingerprint: chrome
-  name: United States_None_trojan_1130
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: '20085'
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_1131
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20065
-  server: kkvlvvq-a.catcat321.com
-  sni: hk.catxstar.com
-  type: trojan
 proxy-groups:
 - name: 节点选择
   type: select
@@ -394,7 +405,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - United States_None_ss_101
-  - Hong Kong_Kowloon_vmess_102
+  - Hong Kong_Central_vmess_102
   - China_None_ss_103
   - China_None_ss_104
   - Japan_Tokyo_trojan_105
@@ -407,7 +418,7 @@ proxy-groups:
   - China_None_ss_1012
   - Hong Kong_None_trojan_1013
   - China_None_ss_1014
-  - Hong Kong_Kowloon_vmess_1015
+  - Hong Kong_Central_vmess_1015
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -419,7 +430,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Kowloon_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - China_None_ss_1113
   - China_None_ss_1114
   - Japan_Tokyo_trojan_1115
@@ -432,13 +443,14 @@ proxy-groups:
   - China_None_ss_1122
   - Hong Kong_None_trojan_1123
   - China_None_ss_1124
-  - Hong Kong_Kowloon_vmess_1125
-  - China_None_ss_1126
-  - United States_None_trojan_1127
+  - Hong Kong_Central_vmess_1125
+  - United States_None_trojan_1126
+  - South Korea_Changwon_ss_1127
   - United States_None_trojan_1128
-  - France_None_vmess_1129
-  - United States_None_trojan_1130
+  - Canada_Montreal_ss_1129
+  - United States_None_ss_1130
   - United States_None_trojan_1131
+  - Singapore_None_vmess_1132
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -446,7 +458,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - United States_None_ss_101
-  - Hong Kong_Kowloon_vmess_102
+  - Hong Kong_Central_vmess_102
   - China_None_ss_103
   - China_None_ss_104
   - Japan_Tokyo_trojan_105
@@ -459,7 +471,7 @@ proxy-groups:
   - China_None_ss_1012
   - Hong Kong_None_trojan_1013
   - China_None_ss_1014
-  - Hong Kong_Kowloon_vmess_1015
+  - Hong Kong_Central_vmess_1015
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -471,7 +483,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Kowloon_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - China_None_ss_1113
   - China_None_ss_1114
   - Japan_Tokyo_trojan_1115
@@ -484,13 +496,14 @@ proxy-groups:
   - China_None_ss_1122
   - Hong Kong_None_trojan_1123
   - China_None_ss_1124
-  - Hong Kong_Kowloon_vmess_1125
-  - China_None_ss_1126
-  - United States_None_trojan_1127
+  - Hong Kong_Central_vmess_1125
+  - United States_None_trojan_1126
+  - South Korea_Changwon_ss_1127
   - United States_None_trojan_1128
-  - France_None_vmess_1129
-  - United States_None_trojan_1130
+  - Canada_Montreal_ss_1129
+  - United States_None_ss_1130
   - United States_None_trojan_1131
+  - Singapore_None_vmess_1132
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
