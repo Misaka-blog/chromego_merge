@@ -238,6 +238,22 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: France_None_vmess_1028
+  network: ws
+  port: 16617
+  server: p4.cnb.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6ee2a7ba-cd92-427f-ac4f-2f8d284e316c
+  ws-opts:
+    headers:
+      Host: 5b22547ba5cc9b83a7a9534b4a7cf9ea.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
   name: Unknown_vmess_111
   network: tcp
   port: '80'
@@ -447,13 +463,74 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: United States_None_trojan_1128
-  password: HOrViv
-  port: 28102
-  server: 209.248.32.117
-  skip-cert-verify: true
-  sni: ctldl.windowsupdate.com
+- cipher: aes-256-cfb
+  name: United Kingdom_London_ss_1128
+  password: amazonskr05
+  port: 443
+  server: 18.171.210.5
+  type: ss
+- cipher: aes-256-cfb
+  name: Ireland_Dublin_ss_1129
+  password: amazonskr05
+  port: 443
+  server: 34.244.150.119
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: China_None_ss_1130
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.232
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_1131
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- cipher: aes-256-cfb
+  name: Ireland_Dublin_ss_1132
+  password: amazonskr05
+  port: '443'
+  server: 176.34.158.52
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: None_None_trojan_1133
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /assignment
+- cipher: aes-256-cfb
+  name: Canada_Montreal_ss_1134
+  password: amazonskr05
+  port: 443
+  server: 3.96.124.46
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Canada_Montreal_ss_1135
+  password: amazonskr05
+  port: 443
+  server: 35.182.250.193
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -487,6 +564,7 @@ proxy-groups:
   - Hong Kong_Kowloon_vmess_1025
   - Japan_Tokyo_trojan_1026
   - Hong Kong_None_trojan_1027
+  - France_None_vmess_1028
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -514,7 +592,14 @@ proxy-groups:
   - Hong Kong_Kowloon_vmess_1125
   - Japan_Tokyo_trojan_1126
   - Hong Kong_None_trojan_1127
-  - United States_None_trojan_1128
+  - United Kingdom_London_ss_1128
+  - Ireland_Dublin_ss_1129
+  - China_None_ss_1130
+  - China_None_vmess_1131
+  - Ireland_Dublin_ss_1132
+  - None_None_trojan_1133
+  - Canada_Montreal_ss_1134
+  - Canada_Montreal_ss_1135
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -548,6 +633,7 @@ proxy-groups:
   - Hong Kong_Kowloon_vmess_1025
   - Japan_Tokyo_trojan_1026
   - Hong Kong_None_trojan_1027
+  - France_None_vmess_1028
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -575,7 +661,14 @@ proxy-groups:
   - Hong Kong_Kowloon_vmess_1125
   - Japan_Tokyo_trojan_1126
   - Hong Kong_None_trojan_1127
-  - United States_None_trojan_1128
+  - United Kingdom_London_ss_1128
+  - Ireland_Dublin_ss_1129
+  - China_None_ss_1130
+  - China_None_vmess_1131
+  - Ireland_Dublin_ss_1132
+  - None_None_trojan_1133
+  - Canada_Montreal_ss_1134
+  - Canada_Montreal_ss_1135
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
