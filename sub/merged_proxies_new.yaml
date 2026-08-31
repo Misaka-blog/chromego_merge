@@ -239,8 +239,75 @@ proxies:
 - cipher: aes-256-cfb
   name: United Kingdom_London_ss_1028
   password: amazonskr05
+  port: 443
+  server: 35.176.118.152
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_1029
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- cipher: aes-256-cfb
+  name: China_None_ss_1030
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.233
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: None_None_trojan_1031
+  network: ws
+  password: humanity
   port: '443'
-  server: 18.132.203.206
+  server: 104.18.152.207
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_Boardman_trojan_1032
+  network: ws
+  password: e20fd145-65f1-4aa3-96be-da0524bbb16e
+  port: '20230'
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /
+- alterId: 0
+  cipher: auto
+  name: United States_None_vmess_1033
+  network: http
+  port: 52080
+  server: 38.246.226.240
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+- cipher: aes-256-cfb
+  name: Canada_Montreal_ss_1034
+  password: amazonskr05
+  port: 443
+  server: 35.182.226.121
   type: ss
   udp: true
 - alterId: 0
@@ -458,19 +525,61 @@ proxies:
   name: United Kingdom_London_ss_1128
   password: amazonskr05
   port: 443
-  server: 18.132.203.206
+  server: 35.176.118.152
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_1129
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: aes-256-cfb
-  name: China_None_ss_1129
+  name: China_None_ss_1130
   password: 7eadc6dbe2ae
   port: '65443'
-  server: 121.46.230.138
+  server: 121.46.230.233
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: None_None_trojan_1131
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.207
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_Boardman_trojan_1132
+  network: ws
+  password: e20fd145-65f1-4aa3-96be-da0524bbb16e
+  port: '20230'
+  server: us003.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /
 - alterId: 0
   cipher: auto
-  name: United States_None_vmess_1130
+  name: United States_None_vmess_1133
   network: http
   port: 52080
   server: 38.246.226.240
@@ -480,10 +589,10 @@ proxies:
   udp: true
   uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
 - cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1131
+  name: Canada_Montreal_ss_1134
   password: amazonskr05
   port: 443
-  server: 18.133.240.229
+  server: 35.182.226.121
   type: ss
   udp: true
 proxy-groups:
@@ -520,6 +629,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1026
   - Hong Kong_None_trojan_1027
   - United Kingdom_London_ss_1028
+  - China_None_vmess_1029
+  - China_None_ss_1030
+  - None_None_trojan_1031
+  - United States_Boardman_trojan_1032
+  - United States_None_vmess_1033
+  - Canada_Montreal_ss_1034
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -548,9 +663,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1126
   - Hong Kong_None_trojan_1127
   - United Kingdom_London_ss_1128
-  - China_None_ss_1129
-  - United States_None_vmess_1130
-  - United Kingdom_London_ss_1131
+  - China_None_vmess_1129
+  - China_None_ss_1130
+  - None_None_trojan_1131
+  - United States_Boardman_trojan_1132
+  - United States_None_vmess_1133
+  - Canada_Montreal_ss_1134
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -585,6 +703,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1026
   - Hong Kong_None_trojan_1027
   - United Kingdom_London_ss_1028
+  - China_None_vmess_1029
+  - China_None_ss_1030
+  - None_None_trojan_1031
+  - United States_Boardman_trojan_1032
+  - United States_None_vmess_1033
+  - Canada_Montreal_ss_1034
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -613,9 +737,12 @@ proxy-groups:
   - Japan_Tokyo_trojan_1126
   - Hong Kong_None_trojan_1127
   - United Kingdom_London_ss_1128
-  - China_None_ss_1129
-  - United States_None_vmess_1130
-  - United Kingdom_London_ss_1131
+  - China_None_vmess_1129
+  - China_None_ss_1130
+  - None_None_trojan_1131
+  - United States_Boardman_trojan_1132
+  - United States_None_vmess_1133
+  - Canada_Montreal_ss_1134
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
