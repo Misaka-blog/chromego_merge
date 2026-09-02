@@ -123,7 +123,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1012
+  name: Hong Kong_Tuen Mun_vmess_1012
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -214,7 +214,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1025
+  name: Hong Kong_Tuen Mun_vmess_1025
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -225,28 +225,32 @@ proxies:
 - cipher: aes-256-cfb
   name: China_None_ss_1026
   password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.137
+  port: '65443'
+  server: 121.46.230.138
   type: ss
-- alterId: '0'
+  udp: true
+- cipher: aes-256-cfb
+  name: China_None_ss_1027
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.233
+  type: ss
+  udp: true
+- alterId: 2
   cipher: auto
-  name: France_None_vmess_1027
-  network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
+  name: China_Chengdu_vmess_1028
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
-  ws-opts:
-    headers:
-      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
-    path: /
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
 - alterId: 0
   cipher: auto
-  name: France_None_vmess_1028
+  name: France_None_vmess_1029
   network: ws
   port: 16626
   server: planb.mojcn.com.linuxlh.xin
@@ -260,86 +264,97 @@ proxies:
       Host: 706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com
     path: /
   xudp: true
+- alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1030
+  network: ws
+  port: '16632'
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  ws-opts:
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - cipher: aes-256-cfb
-  name: Thailand_Bangkok_ss_1029
+  name: China_None_ss_1031
   password: 7eadc6dbe2ae
   port: '65443'
-  server: 103.169.67.34
+  server: 121.46.230.232
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1030
-  password: amazonskr05
-  port: 443
-  server: 35.182.129.250
-  type: ss
-  udp: true
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: United States_None_vmess_1031
-  port: 21585
-  server: fduysry-g05.jp01-nn-vm0.entry.fr0528.art
+  name: France_None_vmess_1032
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-- alterId: '1'
-  cipher: auto
-  name: Japan_Tokyo_vmess_1032
-  network: tcp
-  port: 21586
-  server: g06.jp01-nn-vm0.entry.fr0528.art
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9c955dfc-c1d6-3de3-8230-deac3bd9c1a2
+  uuid: 62e0878c-ff8c-4a67-b18f-89886e24750c
+  ws-opts:
+    headers:
+      Host: 706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com
+    path: /
   xudp: true
-- alterId: 1
-  cipher: auto
-  name: Japan_Tokyo_vmess_1033
-  port: 28788
-  server: mi4lkpu-g06.jp06-jz-vm0.entry.fr0528.art
+- client-fingerprint: chrome
+  name: United States_None_trojan_1033
+  network: tcp
+  password: 5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7
+  port: '14492'
+  server: adakv1-u03.sonofthewinds.com
   skip-cert-verify: false
-  tls: true
+  sni: un5.sonofthewinds.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: United States_None_trojan_1034
+  network: tcp
+  password: 5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7
+  port: '14460'
+  server: adakv1-s01.sonofthewinds.com
+  skip-cert-verify: false
+  sni: vs1.sonofthewinds.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1035
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
-  uuid: 2375151e-88f8-3a69-bf57-c462ff20c6d8
-- cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1034
-  password: amazonskr05
-  port: 443
-  server: 18.175.119.181
-  type: ss
-  udp: true
-- alterId: 1
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  ws-opts:
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
   cipher: auto
-  name: Japan_Tokyo_vmess_1035
-  port: 21584
-  server: ou79bps-g04.jp01-nn-vm0.entry.fr0528.art
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d687b024-a5cf-3433-8d06-1c99e2e28821
-- alterId: 1
-  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
   name: United States_None_vmess_1036
-  port: 21585
-  server: xgfyxry-g05.jp01-nn-vm0.entry.fr0528.art
+  network: http
+  port: '52080'
+  server: 38.246.226.240
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-- cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1037
-  password: amazonskr05
-  port: '443'
-  server: 13.40.94.70
-  type: ss
-  udp: true
+  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+  xudp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -438,7 +453,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1112
+  name: Hong Kong_Tuen Mun_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -529,7 +544,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1125
+  name: Hong Kong_Tuen Mun_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -537,22 +552,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1126
-  network: ws
-  port: 16632
-  server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  name: China_None_ss_1126
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.138
+  type: ss
   udp: true
-  uuid: 522bf832-cb94-4588-bb4e-a578d1f72603
-  ws-opts:
-    headers:
-      Host: bc35dd8f9bb478fdf27856815a6d1dc8.mobgslb.tbcache.com
-    path: /
-  xudp: true
 - cipher: aes-256-cfb
   name: China_None_ss_1127
   password: 7eadc6dbe2ae
@@ -560,20 +566,125 @@ proxies:
   server: 121.46.230.233
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_1128
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1129
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 62e0878c-ff8c-4a67-b18f-89886e24750c
+  ws-opts:
+    headers:
+      Host: 706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1130
+  network: ws
+  port: '16632'
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  ws-opts:
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - cipher: aes-256-cfb
-  name: China_None_ss_1128
+  name: China_None_ss_1131
   password: 7eadc6dbe2ae
   port: '65443'
   server: 121.46.230.232
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1129
-  password: amazonskr05
-  port: '443'
-  server: 13.40.94.70
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1132
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 62e0878c-ff8c-4a67-b18f-89886e24750c
+  ws-opts:
+    headers:
+      Host: 706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: United States_None_trojan_1133
+  network: tcp
+  password: 5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7
+  port: '14492'
+  server: adakv1-u03.sonofthewinds.com
+  skip-cert-verify: false
+  sni: un5.sonofthewinds.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: United States_None_trojan_1134
+  network: tcp
+  password: 5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7
+  port: '14460'
+  server: adakv1-s01.sonofthewinds.com
+  skip-cert-verify: false
+  sni: vs1.sonofthewinds.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: France_None_vmess_1135
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  ws-opts:
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: United States_None_vmess_1136
+  network: http
+  port: '52080'
+  server: 38.246.226.240
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+  xudp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -591,7 +702,7 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Central_vmess_1012
+  - Hong Kong_Tuen Mun_vmess_1012
   - China_None_ss_1013
   - China_None_ss_1014
   - Singapore_Singapore_trojan_1015
@@ -604,19 +715,18 @@ proxy-groups:
   - China_None_ss_1022
   - Hong Kong_None_trojan_1023
   - China_None_ss_1024
-  - Hong Kong_Central_vmess_1025
+  - Hong Kong_Tuen Mun_vmess_1025
   - China_None_ss_1026
-  - France_None_vmess_1027
-  - France_None_vmess_1028
-  - Thailand_Bangkok_ss_1029
-  - Canada_Montreal_ss_1030
-  - United States_None_vmess_1031
-  - Japan_Tokyo_vmess_1032
-  - Japan_Tokyo_vmess_1033
-  - United Kingdom_London_ss_1034
-  - Japan_Tokyo_vmess_1035
+  - China_None_ss_1027
+  - China_Chengdu_vmess_1028
+  - France_None_vmess_1029
+  - France_None_vmess_1030
+  - China_None_ss_1031
+  - France_None_vmess_1032
+  - United States_None_trojan_1033
+  - United States_None_trojan_1034
+  - France_None_vmess_1035
   - United States_None_vmess_1036
-  - United Kingdom_London_ss_1037
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -628,7 +738,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Tuen Mun_vmess_1112
   - China_None_ss_1113
   - China_None_ss_1114
   - Singapore_Singapore_trojan_1115
@@ -641,11 +751,18 @@ proxy-groups:
   - China_None_ss_1122
   - Hong Kong_None_trojan_1123
   - China_None_ss_1124
-  - Hong Kong_Central_vmess_1125
-  - France_None_vmess_1126
+  - Hong Kong_Tuen Mun_vmess_1125
+  - China_None_ss_1126
   - China_None_ss_1127
-  - China_None_ss_1128
-  - United Kingdom_London_ss_1129
+  - China_None_vmess_1128
+  - France_None_vmess_1129
+  - France_None_vmess_1130
+  - China_None_ss_1131
+  - France_None_vmess_1132
+  - United States_None_trojan_1133
+  - United States_None_trojan_1134
+  - France_None_vmess_1135
+  - United States_None_vmess_1136
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -663,7 +780,7 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Central_vmess_1012
+  - Hong Kong_Tuen Mun_vmess_1012
   - China_None_ss_1013
   - China_None_ss_1014
   - Singapore_Singapore_trojan_1015
@@ -676,19 +793,18 @@ proxy-groups:
   - China_None_ss_1022
   - Hong Kong_None_trojan_1023
   - China_None_ss_1024
-  - Hong Kong_Central_vmess_1025
+  - Hong Kong_Tuen Mun_vmess_1025
   - China_None_ss_1026
-  - France_None_vmess_1027
-  - France_None_vmess_1028
-  - Thailand_Bangkok_ss_1029
-  - Canada_Montreal_ss_1030
-  - United States_None_vmess_1031
-  - Japan_Tokyo_vmess_1032
-  - Japan_Tokyo_vmess_1033
-  - United Kingdom_London_ss_1034
-  - Japan_Tokyo_vmess_1035
+  - China_None_ss_1027
+  - China_Chengdu_vmess_1028
+  - France_None_vmess_1029
+  - France_None_vmess_1030
+  - China_None_ss_1031
+  - France_None_vmess_1032
+  - United States_None_trojan_1033
+  - United States_None_trojan_1034
+  - France_None_vmess_1035
   - United States_None_vmess_1036
-  - United Kingdom_London_ss_1037
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -700,7 +816,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Tuen Mun_vmess_1112
   - China_None_ss_1113
   - China_None_ss_1114
   - Singapore_Singapore_trojan_1115
@@ -713,11 +829,18 @@ proxy-groups:
   - China_None_ss_1122
   - Hong Kong_None_trojan_1123
   - China_None_ss_1124
-  - Hong Kong_Central_vmess_1125
-  - France_None_vmess_1126
+  - Hong Kong_Tuen Mun_vmess_1125
+  - China_None_ss_1126
   - China_None_ss_1127
-  - China_None_ss_1128
-  - United Kingdom_London_ss_1129
+  - China_None_vmess_1128
+  - France_None_vmess_1129
+  - France_None_vmess_1130
+  - China_None_ss_1131
+  - France_None_vmess_1132
+  - United States_None_trojan_1133
+  - United States_None_trojan_1134
+  - France_None_vmess_1135
+  - United States_None_vmess_1136
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
