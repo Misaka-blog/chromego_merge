@@ -229,35 +229,6 @@ proxies:
   server: 121.46.230.138
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: China_None_ss_1027
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.137
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: United States_None_ss_1028
-  password: amazonskr05
-  port: '443'
-  server: 16.52.44.169
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1029
-  password: amazonskr05
-  port: '443'
-  server: 15.156.204.87
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1030
-  password: amazonskr05
-  port: '443'
-  server: 35.182.118.89
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -462,35 +433,6 @@ proxies:
   server: 121.46.230.138
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: China_None_ss_1127
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.137
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: United States_None_ss_1128
-  password: amazonskr05
-  port: '443'
-  server: 16.52.44.169
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1129
-  password: amazonskr05
-  port: '443'
-  server: 15.156.204.87
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_1130
-  password: amazonskr05
-  port: '443'
-  server: 35.182.118.89
-  type: ss
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -523,10 +465,6 @@ proxy-groups:
   - China_None_ss_1024
   - Hong Kong_Central_vmess_1025
   - China_None_ss_1026
-  - China_None_ss_1027
-  - United States_None_ss_1028
-  - Canada_Montreal_ss_1029
-  - Canada_Montreal_ss_1030
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -553,10 +491,6 @@ proxy-groups:
   - China_None_ss_1124
   - Hong Kong_Central_vmess_1125
   - China_None_ss_1126
-  - China_None_ss_1127
-  - United States_None_ss_1128
-  - Canada_Montreal_ss_1129
-  - Canada_Montreal_ss_1130
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -589,10 +523,6 @@ proxy-groups:
   - China_None_ss_1024
   - Hong Kong_Central_vmess_1025
   - China_None_ss_1026
-  - China_None_ss_1027
-  - United States_None_ss_1028
-  - Canada_Montreal_ss_1029
-  - Canada_Montreal_ss_1030
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -619,10 +549,6 @@ proxy-groups:
   - China_None_ss_1124
   - Hong Kong_Central_vmess_1125
   - China_None_ss_1126
-  - China_None_ss_1127
-  - United States_None_ss_1128
-  - Canada_Montreal_ss_1129
-  - Canada_Montreal_ss_1130
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
