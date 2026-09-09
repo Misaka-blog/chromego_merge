@@ -222,29 +222,76 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Sweden_None_trojan_1026
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10045
-  server: z-sg1.6send.com
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: Japan_Tokyo_trojan_1027
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10009
-  server: z-jp2.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1028
-  password: amazonskr05
-  port: '443'
-  server: 18.170.35.229
+  name: China_None_ss_1026
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.233
   type: ss
   udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1027
+  network: ws
+  port: '16617'
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82e6295c-9db7-4601-ab15-054a5e6129f4
+  ws-opts:
+    headers:
+      Host: 0e3b7b2b2adaf5b7929ddd31a8489521.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: Singapore_None_trojan_1028
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10045
+  server: z-sg2.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: Singapore_Singapore_trojan_1029
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10046
+  server: z-sg2.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: United States_San Francisco_trojan_1030
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: '443'
+  server: jp3.998998.best
+  skip-cert-verify: false
+  sni: nat11.outsidemyheart.space
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /w4e5yh0p945y3?ed=2560
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: Germany_None_vmess_1031
+  network: tcp
+  port: '5941'
+  server: Forde.arosakforosh.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 26f3dc79-c1a5-40aa-b9dd-6436b5e4188e
+  xudp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -442,29 +489,76 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_None_trojan_1126
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10045
-  server: z-sg1.6send.com
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: Japan_Tokyo_trojan_1127
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10009
-  server: z-jp2.1card.cc
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: United Kingdom_London_ss_1128
-  password: amazonskr05
-  port: '443'
-  server: 18.170.35.229
+  name: China_None_ss_1126
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.233
   type: ss
   udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1127
+  network: ws
+  port: '16617'
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82e6295c-9db7-4601-ab15-054a5e6129f4
+  ws-opts:
+    headers:
+      Host: 0e3b7b2b2adaf5b7929ddd31a8489521.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: United States_None_trojan_1128
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10045
+  server: z-sg2.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_1129
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10046
+  server: z-sg2.6send.com
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: United States_San Francisco_trojan_1130
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: '443'
+  server: jp3.998998.best
+  skip-cert-verify: false
+  sni: nat11.outsidemyheart.space
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /w4e5yh0p945y3?ed=2560
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: Germany_None_vmess_1131
+  network: tcp
+  port: '5941'
+  server: Forde.arosakforosh.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 26f3dc79-c1a5-40aa-b9dd-6436b5e4188e
+  xudp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -496,9 +590,12 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Tuen Mun_vmess_1025
-  - Sweden_None_trojan_1026
-  - Japan_Tokyo_trojan_1027
-  - United Kingdom_London_ss_1028
+  - China_None_ss_1026
+  - France_None_vmess_1027
+  - Singapore_None_trojan_1028
+  - Singapore_Singapore_trojan_1029
+  - United States_San Francisco_trojan_1030
+  - Germany_None_vmess_1031
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -524,9 +621,12 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - United States_None_trojan_1126
-  - Japan_Tokyo_trojan_1127
-  - United Kingdom_London_ss_1128
+  - China_None_ss_1126
+  - France_None_vmess_1127
+  - United States_None_trojan_1128
+  - United States_None_trojan_1129
+  - United States_San Francisco_trojan_1130
+  - Germany_None_vmess_1131
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -558,9 +658,12 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Tuen Mun_vmess_1025
-  - Sweden_None_trojan_1026
-  - Japan_Tokyo_trojan_1027
-  - United Kingdom_London_ss_1028
+  - China_None_ss_1026
+  - France_None_vmess_1027
+  - Singapore_None_trojan_1028
+  - Singapore_Singapore_trojan_1029
+  - United States_San Francisco_trojan_1030
+  - Germany_None_vmess_1031
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -586,9 +689,12 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - United States_None_trojan_1126
-  - Japan_Tokyo_trojan_1127
-  - United Kingdom_London_ss_1128
+  - China_None_ss_1126
+  - France_None_vmess_1127
+  - United States_None_trojan_1128
+  - United States_None_trojan_1129
+  - United States_San Francisco_trojan_1130
+  - Germany_None_vmess_1131
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
