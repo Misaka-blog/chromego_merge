@@ -123,7 +123,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1012
+  name: Hong Kong_Yuen Long San Hui_vmess_1012
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -214,7 +214,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1025
+  name: Hong Kong_Yuen Long San Hui_vmess_1025
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -222,6 +222,43 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-gcm
+  name: United States_None_ss_1026
+  password: BWyPPTusFKhGgzKh
+  port: '8388'
+  server: 64.177.90.30
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: China_None_ss_1027
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.138
+  type: ss
+  udp: true
+- name: Japan_Tokyo_trojan_1028
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10010
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: None_None_trojan_1029
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.46
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -320,7 +357,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1112
+  name: Hong Kong_Yuen Long San Hui_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -411,7 +448,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1125
+  name: Hong Kong_Yuen Long San Hui_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -419,64 +456,39 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1126
-  network: ws
-  port: 16626
-  server: planb.mojcn.com.linuxlh.xin
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
-  ws-opts:
-    headers:
-      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: France_None_vmess_1127
-  network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
-  ws-opts:
-    headers:
-      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: United States_None_trojan_1128
-  network: ws
-  password: iwangjie
-  port: '2096'
-  server: 50.62.194.195
-  skip-cert-verify: false
-  sni: nodes.830901.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: ''
 - cipher: aes-256-cfb
-  name: Ireland_Dublin_ss_1129
+  name: China_None_ss_1126
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.138
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Ireland_Dublin_ss_1127
   password: amazonskr05
   port: '443'
   server: 63.32.92.226
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: Ireland_Dublin_ss_1130
+  name: United States_None_ss_1128
   password: amazonskr05
   port: '443'
-  server: 108.129.176.139
+  server: 16.52.168.26
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Ireland_Dublin_ss_1129
+  password: amazonskr05
+  port: '443'
+  server: 3.254.74.220
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Canada_Montreal_ss_1130
+  password: amazonskr05
+  port: '443'
+  server: 35.182.182.58
   type: ss
   udp: true
 proxy-groups:
@@ -496,7 +508,7 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Central_vmess_1012
+  - Hong Kong_Yuen Long San Hui_vmess_1012
   - China_None_ss_1013
   - China_None_ss_1014
   - Hong Kong_None_trojan_1015
@@ -509,7 +521,11 @@ proxy-groups:
   - China_None_ss_1022
   - United States_None_trojan_1023
   - China_None_ss_1024
-  - Hong Kong_Central_vmess_1025
+  - Hong Kong_Yuen Long San Hui_vmess_1025
+  - United States_None_ss_1026
+  - China_None_ss_1027
+  - Japan_Tokyo_trojan_1028
+  - None_None_trojan_1029
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -521,7 +537,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Yuen Long San Hui_vmess_1112
   - China_None_ss_1113
   - China_None_ss_1114
   - Hong Kong_None_trojan_1115
@@ -534,12 +550,12 @@ proxy-groups:
   - China_None_ss_1122
   - United States_None_trojan_1123
   - China_None_ss_1124
-  - Hong Kong_Central_vmess_1125
-  - France_None_vmess_1126
-  - France_None_vmess_1127
-  - United States_None_trojan_1128
+  - Hong Kong_Yuen Long San Hui_vmess_1125
+  - China_None_ss_1126
+  - Ireland_Dublin_ss_1127
+  - United States_None_ss_1128
   - Ireland_Dublin_ss_1129
-  - Ireland_Dublin_ss_1130
+  - Canada_Montreal_ss_1130
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -557,7 +573,7 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Central_vmess_1012
+  - Hong Kong_Yuen Long San Hui_vmess_1012
   - China_None_ss_1013
   - China_None_ss_1014
   - Hong Kong_None_trojan_1015
@@ -570,7 +586,11 @@ proxy-groups:
   - China_None_ss_1022
   - United States_None_trojan_1023
   - China_None_ss_1024
-  - Hong Kong_Central_vmess_1025
+  - Hong Kong_Yuen Long San Hui_vmess_1025
+  - United States_None_ss_1026
+  - China_None_ss_1027
+  - Japan_Tokyo_trojan_1028
+  - None_None_trojan_1029
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -582,7 +602,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Yuen Long San Hui_vmess_1112
   - China_None_ss_1113
   - China_None_ss_1114
   - Hong Kong_None_trojan_1115
@@ -595,12 +615,12 @@ proxy-groups:
   - China_None_ss_1122
   - United States_None_trojan_1123
   - China_None_ss_1124
-  - Hong Kong_Central_vmess_1125
-  - France_None_vmess_1126
-  - France_None_vmess_1127
-  - United States_None_trojan_1128
+  - Hong Kong_Yuen Long San Hui_vmess_1125
+  - China_None_ss_1126
+  - Ireland_Dublin_ss_1127
+  - United States_None_ss_1128
   - Ireland_Dublin_ss_1129
-  - Ireland_Dublin_ss_1130
+  - Canada_Montreal_ss_1130
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
