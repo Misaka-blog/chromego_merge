@@ -222,11 +222,36 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: Taiwan_Chang-hua_vmess_1026
+  network: ws
+  port: 443
+  server: 82259754d625.oylfmxz.cn
+  servername: 82259754d625.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      Host: 82259754d625.oylfmxz.cn
+    path: /
 - cipher: aes-256-cfb
-  name: United States_Columbus_ss_1026
+  name: United States_Columbus_ss_1027
   password: amazonskr05
   port: 443
-  server: 3.149.6.228
+  server: 3.16.81.205
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: France_Paris_ss_1028
+  password: amazonskr05
+  port: '443'
+  server: 13.39.233.161
   type: ss
   udp: true
 - alterId: 0
@@ -426,11 +451,36 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: Taiwan_Chang-hua_vmess_1126
+  network: ws
+  port: 443
+  server: 82259754d625.oylfmxz.cn
+  servername: 82259754d625.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      Host: 82259754d625.oylfmxz.cn
+    path: /
 - cipher: aes-256-cfb
-  name: United States_Columbus_ss_1126
+  name: United States_Columbus_ss_1127
   password: amazonskr05
   port: 443
-  server: 3.149.6.228
+  server: 3.16.81.205
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: France_Paris_ss_1128
+  password: amazonskr05
+  port: '443'
+  server: 13.39.233.161
   type: ss
   udp: true
 proxy-groups:
@@ -464,7 +514,9 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Central_vmess_1025
-  - United States_Columbus_ss_1026
+  - Taiwan_Chang-hua_vmess_1026
+  - United States_Columbus_ss_1027
+  - France_Paris_ss_1028
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -490,7 +542,9 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Central_vmess_1125
-  - United States_Columbus_ss_1126
+  - Taiwan_Chang-hua_vmess_1126
+  - United States_Columbus_ss_1127
+  - France_Paris_ss_1128
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -522,7 +576,9 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Central_vmess_1025
-  - United States_Columbus_ss_1026
+  - Taiwan_Chang-hua_vmess_1026
+  - United States_Columbus_ss_1027
+  - France_Paris_ss_1028
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -548,7 +604,9 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Central_vmess_1125
-  - United States_Columbus_ss_1126
+  - Taiwan_Chang-hua_vmess_1126
+  - United States_Columbus_ss_1127
+  - France_Paris_ss_1128
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
