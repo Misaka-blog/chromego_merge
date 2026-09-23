@@ -222,37 +222,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
-  cipher: auto
-  name: Japan_Osaka_vmess_1026
-  network: ws
-  port: 17577
-  server: 206.190.237.167
-  type: vmess
-  uuid: 3ceb8486-fb82-462c-e989-89182fe660a5
-  ws-opts:
-    path: /3ceb8486
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1027
-  password: amazonskr05
-  port: 443
-  server: 18.179.111.96
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: United States_Ashburn_ss_1028
-  password: amazonskr05
-  port: 443
-  server: 18.207.155.184
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1029
-  password: amazonskr05
-  port: '443'
-  server: 3.112.209.209
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -450,37 +419,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
-  cipher: auto
-  name: Japan_Osaka_vmess_1126
-  network: ws
-  port: 17577
-  server: 206.190.237.167
-  type: vmess
-  uuid: 3ceb8486-fb82-462c-e989-89182fe660a5
-  ws-opts:
-    path: /3ceb8486
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1127
-  password: amazonskr05
-  port: 443
-  server: 18.179.111.96
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: United States_Ashburn_ss_1128
-  password: amazonskr05
-  port: 443
-  server: 18.207.155.184
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1129
-  password: amazonskr05
-  port: '443'
-  server: 3.112.209.209
-  type: ss
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -512,10 +450,6 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Tuen Mun_vmess_1025
-  - Japan_Osaka_vmess_1026
-  - Japan_Tokyo_ss_1027
-  - United States_Ashburn_ss_1028
-  - Japan_Tokyo_ss_1029
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -541,10 +475,6 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - Japan_Osaka_vmess_1126
-  - Japan_Tokyo_ss_1127
-  - United States_Ashburn_ss_1128
-  - Japan_Tokyo_ss_1129
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -576,10 +506,6 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Tuen Mun_vmess_1025
-  - Japan_Osaka_vmess_1026
-  - Japan_Tokyo_ss_1027
-  - United States_Ashburn_ss_1028
-  - Japan_Tokyo_ss_1029
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -605,10 +531,6 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - Japan_Osaka_vmess_1126
-  - Japan_Tokyo_ss_1127
-  - United States_Ashburn_ss_1128
-  - Japan_Tokyo_ss_1129
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
