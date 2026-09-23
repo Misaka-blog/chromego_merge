@@ -222,27 +222,39 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: United States_None_trojan_1026
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.188.109
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
+    path: /assignment
 - cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1026
+  name: Sweden_Stockholm_ss_1027
   password: amazonskr05
   port: 443
   server: 16.170.221.224
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1027
-  password: amazonskr05
-  port: 443
-  server: 13.61.0.108
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Central_vmess_1028
+  network: ws
+  port: 60852
+  server: hkgb707.ifastcdncache.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1028
-  password: amazonskr05
-  port: 443
-  server: 16.170.163.124
-  type: ss
-  udp: true
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -440,13 +452,39 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: United States_None_trojan_1126
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.188.109
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
+    path: /assignment
 - cipher: aes-256-cfb
-  name: United States_Ashburn_ss_1126
+  name: Sweden_Stockholm_ss_1127
   password: amazonskr05
   port: 443
-  server: 18.213.0.46
+  server: 16.170.221.224
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Central_vmess_1128
+  network: ws
+  port: 60852
+  server: hkgb707.ifastcdncache.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
 proxy-groups:
 - name: 节点选择
   type: select
@@ -478,9 +516,9 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Tuen Mun_vmess_1025
-  - Sweden_Stockholm_ss_1026
+  - United States_None_trojan_1026
   - Sweden_Stockholm_ss_1027
-  - Sweden_Stockholm_ss_1028
+  - Hong Kong_Central_vmess_1028
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -506,7 +544,9 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - United States_Ashburn_ss_1126
+  - United States_None_trojan_1126
+  - Sweden_Stockholm_ss_1127
+  - Hong Kong_Central_vmess_1128
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -538,9 +578,9 @@ proxy-groups:
   - United States_None_trojan_1023
   - China_None_ss_1024
   - Hong Kong_Tuen Mun_vmess_1025
-  - Sweden_Stockholm_ss_1026
+  - United States_None_trojan_1026
   - Sweden_Stockholm_ss_1027
-  - Sweden_Stockholm_ss_1028
+  - Hong Kong_Central_vmess_1028
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -566,7 +606,9 @@ proxy-groups:
   - United States_None_trojan_1123
   - China_None_ss_1124
   - Hong Kong_Tuen Mun_vmess_1125
-  - United States_Ashburn_ss_1126
+  - United States_None_trojan_1126
+  - Sweden_Stockholm_ss_1127
+  - Hong Kong_Central_vmess_1128
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
