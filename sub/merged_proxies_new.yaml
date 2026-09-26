@@ -174,7 +174,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1017
+  name: France_None_ss_1017
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -194,7 +194,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1019
+  name: France_None_ss_1019
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -233,31 +233,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: '0'
   cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: Germany_None_vmess_1023
-  network: http
-  port: '10803'
-  server: 5.45.97.147
+  name: France_None_vmess_1023
+  network: ws
+  port: '16626'
+  server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 018fbfb7-721a-49a9-b9f5-fb55d92592b6
+  uuid: a004e196-8e94-4d17-b95d-fa02fa68038e
+  ws-opts:
+    headers:
+      Host: 4b413f3013048c48708eb5ac1ac3d90d.mobgslb.tbcache.com
+    path: /
   xudp: true
-- cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_1024
-  password: amazonskr05
-  port: 443
-  server: 13.113.166.191
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -387,7 +378,7 @@ proxies:
       Host: 24864168545164.oylfmxz.cn
     path: /
 - cipher: aes-128-gcm
-  name: France_None_ss_1115
+  name: Hong Kong_Hong Kong_ss_1115
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -417,7 +408,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: France_None_ss_1118
+  name: Hong Kong_Hong Kong_ss_1118
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -427,7 +418,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1119
+  name: France_None_ss_1119
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -447,7 +438,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1121
+  name: France_None_ss_1121
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -466,61 +457,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1123
-  password: amazonskr05
-  port: 443
-  server: 13.49.64.122
-  type: ss
-- client-fingerprint: chrome
-  name: United States_None_trojan_1124
+- alterId: '0'
+  cipher: auto
+  name: France_None_vmess_1123
   network: ws
-  password: humanity
-  port: '443'
-  server: render.com
+  port: '16626'
+  server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
+  uuid: a004e196-8e94-4d17-b95d-fa02fa68038e
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
-        (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
-    path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: None_None_trojan_1125
-  network: ws
-  password: humanity
-  port: '443'
-  server: join-telegram-channel.tirexnet.kdns.fr
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: United States_None_trojan_1126
-  network: ws
-  password: humanity
-  port: '443'
-  server: 172.67.74.2
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /assignment
+      Host: 4b413f3013048c48708eb5ac1ac3d90d.mobgslb.tbcache.com
+    path: /
+  xudp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -543,14 +495,13 @@ proxy-groups:
   - Taiwan_Chang-hua_vmess_1014
   - France_None_ss_1015
   - Hong Kong_Hong Kong_ss_1016
-  - Hong Kong_Hong Kong_ss_1017
+  - France_None_ss_1017
   - France_None_ss_1018
-  - Hong Kong_Hong Kong_ss_1019
+  - France_None_ss_1019
   - Hong Kong_Hong Kong_ss_1020
   - France_None_ss_1021
   - Hong Kong_Tuen Mun_vmess_1022
-  - Germany_None_vmess_1023
-  - Japan_Tokyo_ss_1024
+  - France_None_vmess_1023
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -565,18 +516,15 @@ proxy-groups:
   - Hong Kong_Tuen Mun_vmess_1112
   - United States_None_trojan_1113
   - Taiwan_Chang-hua_vmess_1114
-  - France_None_ss_1115
+  - Hong Kong_Hong Kong_ss_1115
   - Hong Kong_Hong Kong_ss_1116
   - Hong Kong_Hong Kong_ss_1117
-  - France_None_ss_1118
-  - Hong Kong_Hong Kong_ss_1119
+  - Hong Kong_Hong Kong_ss_1118
+  - France_None_ss_1119
   - Hong Kong_Hong Kong_ss_1120
-  - Hong Kong_Hong Kong_ss_1121
+  - France_None_ss_1121
   - Hong Kong_Tuen Mun_vmess_1122
-  - Sweden_Stockholm_ss_1123
-  - United States_None_trojan_1124
-  - None_None_trojan_1125
-  - United States_None_trojan_1126
+  - France_None_vmess_1123
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -599,14 +547,13 @@ proxy-groups:
   - Taiwan_Chang-hua_vmess_1014
   - France_None_ss_1015
   - Hong Kong_Hong Kong_ss_1016
-  - Hong Kong_Hong Kong_ss_1017
+  - France_None_ss_1017
   - France_None_ss_1018
-  - Hong Kong_Hong Kong_ss_1019
+  - France_None_ss_1019
   - Hong Kong_Hong Kong_ss_1020
   - France_None_ss_1021
   - Hong Kong_Tuen Mun_vmess_1022
-  - Germany_None_vmess_1023
-  - Japan_Tokyo_ss_1024
+  - France_None_vmess_1023
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -621,18 +568,15 @@ proxy-groups:
   - Hong Kong_Tuen Mun_vmess_1112
   - United States_None_trojan_1113
   - Taiwan_Chang-hua_vmess_1114
-  - France_None_ss_1115
+  - Hong Kong_Hong Kong_ss_1115
   - Hong Kong_Hong Kong_ss_1116
   - Hong Kong_Hong Kong_ss_1117
-  - France_None_ss_1118
-  - Hong Kong_Hong Kong_ss_1119
+  - Hong Kong_Hong Kong_ss_1118
+  - France_None_ss_1119
   - Hong Kong_Hong Kong_ss_1120
-  - Hong Kong_Hong Kong_ss_1121
+  - France_None_ss_1121
   - Hong Kong_Tuen Mun_vmess_1122
-  - Sweden_Stockholm_ss_1123
-  - United States_None_trojan_1124
-  - None_None_trojan_1125
-  - United States_None_trojan_1126
+  - France_None_vmess_1123
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
