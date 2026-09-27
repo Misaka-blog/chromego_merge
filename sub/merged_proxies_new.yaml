@@ -123,7 +123,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1012
+  name: Hong Kong_Central_vmess_1012
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -154,7 +154,7 @@ proxies:
       Host: 24864168545164.oylfmxz.cn
     path: /
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1015
+  name: France_None_ss_1015
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -184,7 +184,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: France_None_ss_1018
+  name: Hong Kong_Hong Kong_ss_1018
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -214,7 +214,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: France_None_ss_1021
+  name: Hong Kong_Hong Kong_ss_1021
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -225,7 +225,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1022
+  name: Hong Kong_Central_vmess_1022
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -233,21 +233,28 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: United States_None_trojan_1023
+- cipher: aes-256-cfb
+  name: United States_Ashburn_ss_1023
+  password: amazonskr05
+  port: 443
+  server: 3.85.21.125
+  type: ss
+  udp: true
+- client-fingerprint: safari
+  name: Taiwan_Chang-hua_trojan_1024
   network: ws
-  password: humanity
+  password: f15900b5-f86b-432d-a67c-45325dc66a2d
   port: '443'
-  server: www.speedtest.org
+  server: zhilegelian1.bpca2026.top
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: zhilegelian1.bpca2026.top
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /assignment
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /images
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -346,7 +353,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1112
+  name: Hong Kong_Central_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -417,7 +424,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: France_None_ss_1119
+  name: Hong Kong_Hong Kong_ss_1119
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -437,7 +444,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: France_None_ss_1121
+  name: Hong Kong_Hong Kong_ss_1121
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -448,7 +455,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_1122
+  name: Hong Kong_Central_vmess_1122
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -456,21 +463,28 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: None_None_trojan_1123
+- cipher: aes-256-cfb
+  name: United States_Ashburn_ss_1123
+  password: amazonskr05
+  port: 443
+  server: 3.85.21.125
+  type: ss
+  udp: true
+- client-fingerprint: safari
+  name: Taiwan_Chang-hua_trojan_1124
   network: ws
-  password: humanity
+  password: f15900b5-f86b-432d-a67c-45325dc66a2d
   port: '443'
-  server: www.speedtest.org
+  server: zhilegelian1.bpca2026.top
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: zhilegelian1.bpca2026.top
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /assignment
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /images
 proxy-groups:
 - name: 节点选择
   type: select
@@ -488,18 +502,19 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Tuen Mun_vmess_1012
+  - Hong Kong_Central_vmess_1012
   - United States_None_trojan_1013
   - Taiwan_Chang-hua_vmess_1014
-  - Hong Kong_Hong Kong_ss_1015
+  - France_None_ss_1015
   - Hong Kong_Hong Kong_ss_1016
   - Hong Kong_Hong Kong_ss_1017
-  - France_None_ss_1018
+  - Hong Kong_Hong Kong_ss_1018
   - France_None_ss_1019
   - Hong Kong_Hong Kong_ss_1020
-  - France_None_ss_1021
-  - Hong Kong_Tuen Mun_vmess_1022
-  - United States_None_trojan_1023
+  - Hong Kong_Hong Kong_ss_1021
+  - Hong Kong_Central_vmess_1022
+  - United States_Ashburn_ss_1023
+  - Taiwan_Chang-hua_trojan_1024
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -511,18 +526,19 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Tuen Mun_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - United States_None_trojan_1113
   - Taiwan_Chang-hua_vmess_1114
   - Hong Kong_Hong Kong_ss_1115
   - Hong Kong_Hong Kong_ss_1116
   - France_None_ss_1117
   - Hong Kong_Hong Kong_ss_1118
-  - France_None_ss_1119
+  - Hong Kong_Hong Kong_ss_1119
   - Hong Kong_Hong Kong_ss_1120
-  - France_None_ss_1121
-  - Hong Kong_Tuen Mun_vmess_1122
-  - None_None_trojan_1123
+  - Hong Kong_Hong Kong_ss_1121
+  - Hong Kong_Central_vmess_1122
+  - United States_Ashburn_ss_1123
+  - Taiwan_Chang-hua_trojan_1124
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -540,18 +556,19 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Tuen Mun_vmess_1012
+  - Hong Kong_Central_vmess_1012
   - United States_None_trojan_1013
   - Taiwan_Chang-hua_vmess_1014
-  - Hong Kong_Hong Kong_ss_1015
+  - France_None_ss_1015
   - Hong Kong_Hong Kong_ss_1016
   - Hong Kong_Hong Kong_ss_1017
-  - France_None_ss_1018
+  - Hong Kong_Hong Kong_ss_1018
   - France_None_ss_1019
   - Hong Kong_Hong Kong_ss_1020
-  - France_None_ss_1021
-  - Hong Kong_Tuen Mun_vmess_1022
-  - United States_None_trojan_1023
+  - Hong Kong_Hong Kong_ss_1021
+  - Hong Kong_Central_vmess_1022
+  - United States_Ashburn_ss_1023
+  - Taiwan_Chang-hua_trojan_1024
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -563,18 +580,19 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Tuen Mun_vmess_1112
+  - Hong Kong_Central_vmess_1112
   - United States_None_trojan_1113
   - Taiwan_Chang-hua_vmess_1114
   - Hong Kong_Hong Kong_ss_1115
   - Hong Kong_Hong Kong_ss_1116
   - France_None_ss_1117
   - Hong Kong_Hong Kong_ss_1118
-  - France_None_ss_1119
+  - Hong Kong_Hong Kong_ss_1119
   - Hong Kong_Hong Kong_ss_1120
-  - France_None_ss_1121
-  - Hong Kong_Tuen Mun_vmess_1122
-  - None_None_trojan_1123
+  - Hong Kong_Hong Kong_ss_1121
+  - Hong Kong_Central_vmess_1122
+  - United States_Ashburn_ss_1123
+  - Taiwan_Chang-hua_trojan_1124
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
