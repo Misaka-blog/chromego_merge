@@ -164,7 +164,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1016
+  name: Ireland_None_ss_1016
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -174,7 +174,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1017
+  name: France_None_ss_1017
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -204,7 +204,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1020
+  name: Ireland_None_ss_1020
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -214,7 +214,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1021
+  name: France_None_ss_1021
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -233,6 +233,60 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alpn:
+  - h2
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  name: Colombia_Bogotá_vmess_1023
+  network: tcp
+  port: 2083
+  server: 87.120.106.125
+  servername: qbbnomkb5d6c.libreone.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9081f4d6-7271-49ba-bb9e-b4bb6dc0bb1e
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: United States_San Francisco_vmess_1024
+  network: ws
+  port: '2083'
+  server: 172.64.154.103
+  servername: or.521166.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  ws-opts:
+    headers:
+      Host: or.521166.xyz
+    path: /or3
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: United States_None_vmess_1025
+  network: ws
+  port: '2083'
+  server: 172.64.229.138
+  servername: or.521166.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  ws-opts:
+    headers:
+      Host: or.521166.xyz
+    path: /or3
+  xudp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -372,7 +426,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1116
+  name: Ireland_None_ss_1116
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -382,7 +436,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1117
+  name: France_None_ss_1117
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -392,7 +446,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1118
+  name: France_None_ss_1118
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -412,7 +466,7 @@ proxies:
   server: gd.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: Hong Kong_Hong Kong_ss_1120
+  name: Ireland_None_ss_1120
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -422,7 +476,7 @@ proxies:
   server: gd2.bjnet2.com
   type: ss
 - cipher: aes-128-gcm
-  name: France_None_ss_1121
+  name: Hong Kong_Hong Kong_ss_1121
   password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
   plugin: obfs
   plugin-opts:
@@ -441,6 +495,49 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: Japan_Tokyo_ss_1123
+  password: amazonskr05
+  port: 443
+  server: 18.179.37.17
+  type: ss
+- cipher: aes-128-gcm
+  name: Latvia_Riga_ss_1124
+  password: ce45b16adec66e4a199d92b9689eae9f
+  port: '11469'
+  server: 109.248.148.139
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: None_None_trojan_1125
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.12.149
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1126
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.155
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /assignment
 proxy-groups:
 - name: 节点选择
   type: select
@@ -462,13 +559,16 @@ proxy-groups:
   - United States_None_trojan_1013
   - Taiwan_Chang-hua_vmess_1014
   - Hong Kong_Hong Kong_ss_1015
-  - Hong Kong_Hong Kong_ss_1016
-  - Hong Kong_Hong Kong_ss_1017
+  - Ireland_None_ss_1016
+  - France_None_ss_1017
   - Hong Kong_Hong Kong_ss_1018
   - France_None_ss_1019
-  - Hong Kong_Hong Kong_ss_1020
-  - Hong Kong_Hong Kong_ss_1021
+  - Ireland_None_ss_1020
+  - France_None_ss_1021
   - Hong Kong_Tuen Mun_vmess_1022
+  - Colombia_Bogotá_vmess_1023
+  - United States_San Francisco_vmess_1024
+  - United States_None_vmess_1025
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -484,13 +584,17 @@ proxy-groups:
   - United States_None_trojan_1113
   - Taiwan_Chang-hua_vmess_1114
   - Hong Kong_Hong Kong_ss_1115
-  - Hong Kong_Hong Kong_ss_1116
-  - Hong Kong_Hong Kong_ss_1117
-  - Hong Kong_Hong Kong_ss_1118
+  - Ireland_None_ss_1116
+  - France_None_ss_1117
+  - France_None_ss_1118
   - Hong Kong_Hong Kong_ss_1119
-  - Hong Kong_Hong Kong_ss_1120
-  - France_None_ss_1121
+  - Ireland_None_ss_1120
+  - Hong Kong_Hong Kong_ss_1121
   - Hong Kong_Tuen Mun_vmess_1122
+  - Japan_Tokyo_ss_1123
+  - Latvia_Riga_ss_1124
+  - None_None_trojan_1125
+  - None_None_trojan_1126
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -512,13 +616,16 @@ proxy-groups:
   - United States_None_trojan_1013
   - Taiwan_Chang-hua_vmess_1014
   - Hong Kong_Hong Kong_ss_1015
-  - Hong Kong_Hong Kong_ss_1016
-  - Hong Kong_Hong Kong_ss_1017
+  - Ireland_None_ss_1016
+  - France_None_ss_1017
   - Hong Kong_Hong Kong_ss_1018
   - France_None_ss_1019
-  - Hong Kong_Hong Kong_ss_1020
-  - Hong Kong_Hong Kong_ss_1021
+  - Ireland_None_ss_1020
+  - France_None_ss_1021
   - Hong Kong_Tuen Mun_vmess_1022
+  - Colombia_Bogotá_vmess_1023
+  - United States_San Francisco_vmess_1024
+  - United States_None_vmess_1025
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -534,13 +641,17 @@ proxy-groups:
   - United States_None_trojan_1113
   - Taiwan_Chang-hua_vmess_1114
   - Hong Kong_Hong Kong_ss_1115
-  - Hong Kong_Hong Kong_ss_1116
-  - Hong Kong_Hong Kong_ss_1117
-  - Hong Kong_Hong Kong_ss_1118
+  - Ireland_None_ss_1116
+  - France_None_ss_1117
+  - France_None_ss_1118
   - Hong Kong_Hong Kong_ss_1119
-  - Hong Kong_Hong Kong_ss_1120
-  - France_None_ss_1121
+  - Ireland_None_ss_1120
+  - Hong Kong_Hong Kong_ss_1121
   - Hong Kong_Tuen Mun_vmess_1122
+  - Japan_Tokyo_ss_1123
+  - Latvia_Riga_ss_1124
+  - None_None_trojan_1125
+  - None_None_trojan_1126
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
