@@ -320,6 +320,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: United States_Ashburn_ss_1026
+  password: amazonskr05
+  port: 443
+  server: 54.90.169.61
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Sweden_Stockholm_ss_1027
+  password: amazonskr05
+  port: 443
+  server: 13.48.104.64
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -616,10 +631,18 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: Sweden_Stockholm_ss_1126
+  name: United States_Ashburn_ss_1126
   password: amazonskr05
-  port: '443'
-  server: 51.20.86.152
+  port: 443
+  server: 54.90.169.61
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Sweden_Stockholm_ss_1127
+  password: amazonskr05
+  port: 443
+  server: 13.48.104.64
   type: ss
   udp: true
 proxy-groups:
@@ -653,6 +676,8 @@ proxy-groups:
   - United States_None_vmess_1023
   - Singapore_None_vmess_1024
   - Hong Kong_Central_vmess_1025
+  - United States_Ashburn_ss_1026
+  - Sweden_Stockholm_ss_1027
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -678,7 +703,8 @@ proxy-groups:
   - United States_None_vmess_1123
   - Singapore_None_vmess_1124
   - Hong Kong_Central_vmess_1125
-  - Sweden_Stockholm_ss_1126
+  - United States_Ashburn_ss_1126
+  - Sweden_Stockholm_ss_1127
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -710,6 +736,8 @@ proxy-groups:
   - United States_None_vmess_1023
   - Singapore_None_vmess_1024
   - Hong Kong_Central_vmess_1025
+  - United States_Ashburn_ss_1026
+  - Sweden_Stockholm_ss_1027
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -735,7 +763,8 @@ proxy-groups:
   - United States_None_vmess_1123
   - Singapore_None_vmess_1124
   - Hong Kong_Central_vmess_1125
-  - Sweden_Stockholm_ss_1126
+  - United States_Ashburn_ss_1126
+  - Sweden_Stockholm_ss_1127
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
