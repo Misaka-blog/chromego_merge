@@ -320,27 +320,70 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: None_None_vmess_1026
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: None_None_trojan_1026
   network: ws
-  port: 2083
-  server: cdn.sfacg.uk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  password: humanity
+  port: '443'
+  server: 104.21.46.3
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: or3.sfacg.uk
-    path: /or3
-- cipher: aes-256-cfb
-  name: United States_Ashburn_ss_1027
-  password: amazonskr05
-  port: 443
-  server: 54.234.217.115
-  type: ss
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1027
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.26.15.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1028
+  network: ws
+  password: humanity
+  port: '443'
+  server: www.speedtest.org
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_None_trojan_1029
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.188.109
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.115 Safari/537.36
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -688,8 +731,10 @@ proxy-groups:
   - United States_None_vmess_1023
   - Singapore_None_vmess_1024
   - Hong Kong_Central_vmess_1025
-  - None_None_vmess_1026
-  - United States_Ashburn_ss_1027
+  - None_None_trojan_1026
+  - None_None_trojan_1027
+  - None_None_trojan_1028
+  - United States_None_trojan_1029
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -748,8 +793,10 @@ proxy-groups:
   - United States_None_vmess_1023
   - Singapore_None_vmess_1024
   - Hong Kong_Central_vmess_1025
-  - None_None_vmess_1026
-  - United States_Ashburn_ss_1027
+  - None_None_trojan_1026
+  - None_None_trojan_1027
+  - None_None_trojan_1028
+  - United States_None_trojan_1029
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
