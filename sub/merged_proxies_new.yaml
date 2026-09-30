@@ -123,7 +123,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1012
+  name: Hong Kong_Wong Tai Sin_vmess_1012
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -134,7 +134,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1013
   network: ws
-  port: '443'
+  port: 443
   server: ADncdOvLHR4M1P36.v.3dns.vip
   servername: ADncdOvLHR4M1P36.v.3dns.vip
   skip-cert-verify: false
@@ -149,7 +149,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1014
   network: ws
-  port: '443'
+  port: 443
   server: kBONDXW9liFCi4h4.v.3dns.vip
   servername: kBONDXW9liFCi4h4.v.3dns.vip
   skip-cert-verify: false
@@ -164,7 +164,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1015
   network: ws
-  port: '443'
+  port: 443
   server: aZW0eunYVdvRe73k.v.3dns.vip
   servername: aZW0eunYVdvRe73k.v.3dns.vip
   skip-cert-verify: false
@@ -179,7 +179,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1016
   network: ws
-  port: '443'
+  port: 443
   server: syJ2gGUgMwBwQwQx.v.3dns.vip
   servername: syJ2gGUgMwBwQwQx.v.3dns.vip
   skip-cert-verify: false
@@ -194,7 +194,7 @@ proxies:
   cipher: auto
   name: Japan_Tokyo_vmess_1017
   network: ws
-  port: '443'
+  port: 443
   server: Z9FfBx3zs2q5O0BG.v.3dns.vip
   servername: Z9FfBx3zs2q5O0BG.v.3dns.vip
   skip-cert-verify: false
@@ -209,7 +209,7 @@ proxies:
   cipher: auto
   name: Japan_Tokyo_vmess_1018
   network: ws
-  port: '443'
+  port: 443
   server: kQov7UKaDknXb8a3.v.3dns.vip
   servername: kQov7UKaDknXb8a3.v.3dns.vip
   skip-cert-verify: false
@@ -224,7 +224,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1019
   network: ws
-  port: '443'
+  port: 443
   server: kneNaKHeSXnZH259.v.3dns.vip
   servername: kneNaKHeSXnZH259.v.3dns.vip
   skip-cert-verify: false
@@ -239,7 +239,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1020
   network: ws
-  port: '443'
+  port: 443
   server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   skip-cert-verify: false
@@ -254,7 +254,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1021
   network: ws
-  port: '443'
+  port: 443
   server: 6JiziO8PxQAXBAtZ.v.3dns.vip
   servername: 6JiziO8PxQAXBAtZ.v.3dns.vip
   skip-cert-verify: false
@@ -269,7 +269,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1022
   network: ws
-  port: '443'
+  port: 443
   server: 8nTzyR5KNivfabaT.v.3dns.vip
   servername: 8nTzyR5KNivfabaT.v.3dns.vip
   skip-cert-verify: false
@@ -284,7 +284,7 @@ proxies:
   cipher: auto
   name: United States_None_vmess_1023
   network: ws
-  port: '443'
+  port: 443
   server: 53vXOVarmgcreAsv.v.3dns.vip
   servername: 53vXOVarmgcreAsv.v.3dns.vip
   skip-cert-verify: false
@@ -299,7 +299,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1024
   network: ws
-  port: '443'
+  port: 443
   server: bJ1Aa2ZyJxYamYuK.v.3dns.vip
   servername: bJ1Aa2ZyJxYamYuK.v.3dns.vip
   skip-cert-verify: false
@@ -312,7 +312,7 @@ proxies:
     path: /ws-vmess
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1025
+  name: Hong Kong_Wong Tai Sin_vmess_1025
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -321,90 +321,87 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: United States_None_trojan_1026
-  password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=
-  port: 443
-  server: 192.236.151.43
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12103
+  server: 7d0a2gz0-7a0c.aws-agent.net
   skip-cert-verify: true
-  sni: 192.236.151.43
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: The Netherlands_Amsterdam_trojan_1027
-  network: ws
-  password: humanity
-  port: '443'
-  server: 188.114.97.7
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1027
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10115
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1028
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.174.36
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1028
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12107
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1029
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.73.213
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1029
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12102
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1030
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.19.229.21
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1030
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10125
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1031
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.26.15.137
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1031
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10135
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: /assignment
+- name: United States_None_trojan_1032
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10155
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: United States_None_trojan_1033
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12122
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: United States_None_trojan_1034
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12142
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: United States_None_trojan_1035
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 11171
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
 - client-fingerprint: chrome
-  name: None_None_trojan_1032
+  name: None_None_trojan_1036
   network: ws
   password: humanity
   port: '443'
@@ -415,26 +412,153 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.167 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1033
+  name: None_None_trojan_1037
   network: ws
   password: humanity
   port: '443'
-  server: www.ignitelimit.com
+  server: 104.18.152.233
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: None_None_trojan_1038
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.21.46.3
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1034
+  name: None_None_trojan_1039
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.121
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1040
+  network: ws
+  password: humanity
+  port: '443'
+  server: www.ignitelimit.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_Ashburn_trojan_1041
+  network: ws
+  password: humanity
+  port: '443'
+  server: 86.38.214.205
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: None_None_trojan_1042
+  network: ws
+  password: humanity
+  port: '443'
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1043
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.26.14.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_None_trojan_1044
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.221.242
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1045
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.17.177.143
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1046
   network: ws
   password: humanity
   port: '443'
@@ -445,15 +569,15 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1035
+  name: None_None_trojan_1047
   network: ws
   password: humanity
   port: '443'
-  server: 104.16.174.185
+  server: 104.16.174.6
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -461,14 +585,29 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1036
+  name: None_None_trojan_1048
   network: ws
   password: humanity
   port: '443'
-  server: 104.18.152.204
+  server: 104.18.152.179
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/68.0.3440.106 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1049
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.108
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -476,10 +615,70 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1037
+  name: None_None_trojan_1050
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.17.111.3
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1051
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.133
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1052
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.71
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1053
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.159
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1054
   network: ws
   password: humanity
   port: '443'
@@ -490,24 +689,62 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: United States_None_trojan_1038
+  name: None_None_trojan_1055
   network: ws
   password: humanity
   port: '443'
-  server: 216.24.57.1
+  server: 104.16.174.72
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
+        Safari/537.36
     path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1056
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.101
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+    path: /assignment
+- cipher: chacha20-ietf-poly1305
+  name: United States_San Jose_ss_1057
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
+    mode: tls
+  port: '2377'
+  server: 134.195.101.117
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: United States_San Jose_ss_1058
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)9f6b1e7:141612
+    mode: tls
+  port: '2377'
+  server: 134.195.101.118
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_111
@@ -606,7 +843,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1112
+  name: Hong Kong_Wong Tai Sin_vmess_1112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -617,7 +854,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1113
   network: ws
-  port: '443'
+  port: 443
   server: ADncdOvLHR4M1P36.v.3dns.vip
   servername: ADncdOvLHR4M1P36.v.3dns.vip
   skip-cert-verify: false
@@ -632,7 +869,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1114
   network: ws
-  port: '443'
+  port: 443
   server: kBONDXW9liFCi4h4.v.3dns.vip
   servername: kBONDXW9liFCi4h4.v.3dns.vip
   skip-cert-verify: false
@@ -647,7 +884,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1115
   network: ws
-  port: '443'
+  port: 443
   server: aZW0eunYVdvRe73k.v.3dns.vip
   servername: aZW0eunYVdvRe73k.v.3dns.vip
   skip-cert-verify: false
@@ -662,7 +899,7 @@ proxies:
   cipher: auto
   name: Hong Kong_Hong Kong_vmess_1116
   network: ws
-  port: '443'
+  port: 443
   server: syJ2gGUgMwBwQwQx.v.3dns.vip
   servername: syJ2gGUgMwBwQwQx.v.3dns.vip
   skip-cert-verify: false
@@ -677,7 +914,7 @@ proxies:
   cipher: auto
   name: Japan_Tokyo_vmess_1117
   network: ws
-  port: '443'
+  port: 443
   server: Z9FfBx3zs2q5O0BG.v.3dns.vip
   servername: Z9FfBx3zs2q5O0BG.v.3dns.vip
   skip-cert-verify: false
@@ -692,7 +929,7 @@ proxies:
   cipher: auto
   name: Japan_Tokyo_vmess_1118
   network: ws
-  port: '443'
+  port: 443
   server: kQov7UKaDknXb8a3.v.3dns.vip
   servername: kQov7UKaDknXb8a3.v.3dns.vip
   skip-cert-verify: false
@@ -707,7 +944,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1119
   network: ws
-  port: '443'
+  port: 443
   server: kneNaKHeSXnZH259.v.3dns.vip
   servername: kneNaKHeSXnZH259.v.3dns.vip
   skip-cert-verify: false
@@ -722,7 +959,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1120
   network: ws
-  port: '443'
+  port: 443
   server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
   skip-cert-verify: false
@@ -737,7 +974,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1121
   network: ws
-  port: '443'
+  port: 443
   server: 6JiziO8PxQAXBAtZ.v.3dns.vip
   servername: 6JiziO8PxQAXBAtZ.v.3dns.vip
   skip-cert-verify: false
@@ -752,7 +989,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1122
   network: ws
-  port: '443'
+  port: 443
   server: 8nTzyR5KNivfabaT.v.3dns.vip
   servername: 8nTzyR5KNivfabaT.v.3dns.vip
   skip-cert-verify: false
@@ -767,7 +1004,7 @@ proxies:
   cipher: auto
   name: United States_None_vmess_1123
   network: ws
-  port: '443'
+  port: 443
   server: 53vXOVarmgcreAsv.v.3dns.vip
   servername: 53vXOVarmgcreAsv.v.3dns.vip
   skip-cert-verify: false
@@ -782,7 +1019,7 @@ proxies:
   cipher: auto
   name: Singapore_None_vmess_1124
   network: ws
-  port: '443'
+  port: 443
   server: bJ1Aa2ZyJxYamYuK.v.3dns.vip
   servername: bJ1Aa2ZyJxYamYuK.v.3dns.vip
   skip-cert-verify: false
@@ -795,7 +1032,7 @@ proxies:
     path: /ws-vmess
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_1125
+  name: Hong Kong_Wong Tai Sin_vmess_1125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -804,90 +1041,87 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: United States_None_trojan_1126
-  password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=
-  port: 443
-  server: 192.236.151.43
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12103
+  server: 7d0a2gz0-7a0c.aws-agent.net
   skip-cert-verify: true
-  sni: 192.236.151.43
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: The Netherlands_Amsterdam_trojan_1127
-  network: ws
-  password: humanity
-  port: '443'
-  server: 188.114.97.7
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1127
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10115
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1128
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.174.36
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1128
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12107
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1129
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.73.213
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1129
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12102
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1130
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.19.229.21
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1130
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10125
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: None_None_trojan_1131
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.26.15.137
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+- name: United States_None_trojan_1131
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10135
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: /assignment
+- name: United States_None_trojan_1132
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 10155
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: United States_None_trojan_1133
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12122
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: United States_None_trojan_1134
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12142
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: United States_None_trojan_1135
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 11171
+  server: 63182sh8-4d7b.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
 - client-fingerprint: chrome
-  name: None_None_trojan_1132
+  name: None_None_trojan_1136
   network: ws
   password: humanity
   port: '443'
@@ -898,26 +1132,153 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.167 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1133
+  name: None_None_trojan_1137
   network: ws
   password: humanity
   port: '443'
-  server: www.ignitelimit.com
+  server: 104.18.152.233
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: None_None_trojan_1138
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.21.46.3
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1134
+  name: None_None_trojan_1139
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.121
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1140
+  network: ws
+  password: humanity
+  port: '443'
+  server: www.ignitelimit.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_Ashburn_trojan_1141
+  network: ws
+  password: humanity
+  port: '443'
+  server: 86.38.214.205
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: None_None_trojan_1142
+  network: ws
+  password: humanity
+  port: '443'
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1143
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.26.14.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: United States_None_trojan_1144
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.221.242
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1145
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.17.177.143
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1146
   network: ws
   password: humanity
   port: '443'
@@ -928,15 +1289,15 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1135
+  name: None_None_trojan_1147
   network: ws
   password: humanity
   port: '443'
-  server: 104.16.174.185
+  server: 104.16.174.6
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -944,14 +1305,29 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1136
+  name: None_None_trojan_1148
   network: ws
   password: humanity
   port: '443'
-  server: 104.18.152.204
+  server: 104.18.152.179
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/68.0.3440.106 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1149
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.108
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -959,10 +1335,70 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: None_None_trojan_1137
+  name: None_None_trojan_1150
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.17.111.3
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1151
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.133
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1152
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.71
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1153
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.159
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1154
   network: ws
   password: humanity
   port: '443'
@@ -973,24 +1409,62 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: United States_None_trojan_1138
+  name: None_None_trojan_1155
   network: ws
   password: humanity
   port: '443'
-  server: 216.24.57.1
+  server: 104.16.174.72
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
+        Safari/537.36
     path: /assignment
+- client-fingerprint: chrome
+  name: None_None_trojan_1156
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.101
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
+    path: /assignment
+- cipher: chacha20-ietf-poly1305
+  name: United States_San Jose_ss_1157
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
+    mode: tls
+  port: '2377'
+  server: 134.195.101.117
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: United States_San Jose_ss_1158
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)9f6b1e7:141612
+    mode: tls
+  port: '2377'
+  server: 134.195.101.118
+  type: ss
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1008,7 +1482,7 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Central_vmess_1012
+  - Hong Kong_Wong Tai Sin_vmess_1012
   - Hong Kong_Hong Kong_vmess_1013
   - Hong Kong_Hong Kong_vmess_1014
   - Hong Kong_Hong Kong_vmess_1015
@@ -1021,20 +1495,40 @@ proxy-groups:
   - Singapore_None_vmess_1022
   - United States_None_vmess_1023
   - Singapore_None_vmess_1024
-  - Hong Kong_Central_vmess_1025
+  - Hong Kong_Wong Tai Sin_vmess_1025
   - United States_None_trojan_1026
-  - The Netherlands_Amsterdam_trojan_1027
-  - None_None_trojan_1028
-  - None_None_trojan_1029
-  - None_None_trojan_1030
-  - None_None_trojan_1031
-  - None_None_trojan_1032
-  - None_None_trojan_1033
-  - None_None_trojan_1034
-  - None_None_trojan_1035
+  - United States_None_trojan_1027
+  - United States_None_trojan_1028
+  - United States_None_trojan_1029
+  - United States_None_trojan_1030
+  - United States_None_trojan_1031
+  - United States_None_trojan_1032
+  - United States_None_trojan_1033
+  - United States_None_trojan_1034
+  - United States_None_trojan_1035
   - None_None_trojan_1036
   - None_None_trojan_1037
-  - United States_None_trojan_1038
+  - None_None_trojan_1038
+  - None_None_trojan_1039
+  - None_None_trojan_1040
+  - United States_Ashburn_trojan_1041
+  - None_None_trojan_1042
+  - None_None_trojan_1043
+  - United States_None_trojan_1044
+  - None_None_trojan_1045
+  - None_None_trojan_1046
+  - None_None_trojan_1047
+  - None_None_trojan_1048
+  - None_None_trojan_1049
+  - None_None_trojan_1050
+  - None_None_trojan_1051
+  - None_None_trojan_1052
+  - None_None_trojan_1053
+  - None_None_trojan_1054
+  - None_None_trojan_1055
+  - None_None_trojan_1056
+  - United States_San Jose_ss_1057
+  - United States_San Jose_ss_1058
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -1046,7 +1540,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Wong Tai Sin_vmess_1112
   - Hong Kong_Hong Kong_vmess_1113
   - Hong Kong_Hong Kong_vmess_1114
   - Hong Kong_Hong Kong_vmess_1115
@@ -1059,20 +1553,40 @@ proxy-groups:
   - Singapore_None_vmess_1122
   - United States_None_vmess_1123
   - Singapore_None_vmess_1124
-  - Hong Kong_Central_vmess_1125
+  - Hong Kong_Wong Tai Sin_vmess_1125
   - United States_None_trojan_1126
-  - The Netherlands_Amsterdam_trojan_1127
-  - None_None_trojan_1128
-  - None_None_trojan_1129
-  - None_None_trojan_1130
-  - None_None_trojan_1131
-  - None_None_trojan_1132
-  - None_None_trojan_1133
-  - None_None_trojan_1134
-  - None_None_trojan_1135
+  - United States_None_trojan_1127
+  - United States_None_trojan_1128
+  - United States_None_trojan_1129
+  - United States_None_trojan_1130
+  - United States_None_trojan_1131
+  - United States_None_trojan_1132
+  - United States_None_trojan_1133
+  - United States_None_trojan_1134
+  - United States_None_trojan_1135
   - None_None_trojan_1136
   - None_None_trojan_1137
-  - United States_None_trojan_1138
+  - None_None_trojan_1138
+  - None_None_trojan_1139
+  - None_None_trojan_1140
+  - United States_Ashburn_trojan_1141
+  - None_None_trojan_1142
+  - None_None_trojan_1143
+  - United States_None_trojan_1144
+  - None_None_trojan_1145
+  - None_None_trojan_1146
+  - None_None_trojan_1147
+  - None_None_trojan_1148
+  - None_None_trojan_1149
+  - None_None_trojan_1150
+  - None_None_trojan_1151
+  - None_None_trojan_1152
+  - None_None_trojan_1153
+  - None_None_trojan_1154
+  - None_None_trojan_1155
+  - None_None_trojan_1156
+  - United States_San Jose_ss_1157
+  - United States_San Jose_ss_1158
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1090,7 +1604,7 @@ proxy-groups:
   - Unknown_vmess_109
   - Unknown_vmess_1010
   - United States_None_ss_1011
-  - Hong Kong_Central_vmess_1012
+  - Hong Kong_Wong Tai Sin_vmess_1012
   - Hong Kong_Hong Kong_vmess_1013
   - Hong Kong_Hong Kong_vmess_1014
   - Hong Kong_Hong Kong_vmess_1015
@@ -1103,20 +1617,40 @@ proxy-groups:
   - Singapore_None_vmess_1022
   - United States_None_vmess_1023
   - Singapore_None_vmess_1024
-  - Hong Kong_Central_vmess_1025
+  - Hong Kong_Wong Tai Sin_vmess_1025
   - United States_None_trojan_1026
-  - The Netherlands_Amsterdam_trojan_1027
-  - None_None_trojan_1028
-  - None_None_trojan_1029
-  - None_None_trojan_1030
-  - None_None_trojan_1031
-  - None_None_trojan_1032
-  - None_None_trojan_1033
-  - None_None_trojan_1034
-  - None_None_trojan_1035
+  - United States_None_trojan_1027
+  - United States_None_trojan_1028
+  - United States_None_trojan_1029
+  - United States_None_trojan_1030
+  - United States_None_trojan_1031
+  - United States_None_trojan_1032
+  - United States_None_trojan_1033
+  - United States_None_trojan_1034
+  - United States_None_trojan_1035
   - None_None_trojan_1036
   - None_None_trojan_1037
-  - United States_None_trojan_1038
+  - None_None_trojan_1038
+  - None_None_trojan_1039
+  - None_None_trojan_1040
+  - United States_Ashburn_trojan_1041
+  - None_None_trojan_1042
+  - None_None_trojan_1043
+  - United States_None_trojan_1044
+  - None_None_trojan_1045
+  - None_None_trojan_1046
+  - None_None_trojan_1047
+  - None_None_trojan_1048
+  - None_None_trojan_1049
+  - None_None_trojan_1050
+  - None_None_trojan_1051
+  - None_None_trojan_1052
+  - None_None_trojan_1053
+  - None_None_trojan_1054
+  - None_None_trojan_1055
+  - None_None_trojan_1056
+  - United States_San Jose_ss_1057
+  - United States_San Jose_ss_1058
   - Unknown_vmess_111
   - Unknown_vmess_112
   - Unknown_vmess_113
@@ -1128,7 +1662,7 @@ proxy-groups:
   - Unknown_vmess_119
   - Unknown_vmess_1110
   - United States_None_ss_1111
-  - Hong Kong_Central_vmess_1112
+  - Hong Kong_Wong Tai Sin_vmess_1112
   - Hong Kong_Hong Kong_vmess_1113
   - Hong Kong_Hong Kong_vmess_1114
   - Hong Kong_Hong Kong_vmess_1115
@@ -1141,20 +1675,40 @@ proxy-groups:
   - Singapore_None_vmess_1122
   - United States_None_vmess_1123
   - Singapore_None_vmess_1124
-  - Hong Kong_Central_vmess_1125
+  - Hong Kong_Wong Tai Sin_vmess_1125
   - United States_None_trojan_1126
-  - The Netherlands_Amsterdam_trojan_1127
-  - None_None_trojan_1128
-  - None_None_trojan_1129
-  - None_None_trojan_1130
-  - None_None_trojan_1131
-  - None_None_trojan_1132
-  - None_None_trojan_1133
-  - None_None_trojan_1134
-  - None_None_trojan_1135
+  - United States_None_trojan_1127
+  - United States_None_trojan_1128
+  - United States_None_trojan_1129
+  - United States_None_trojan_1130
+  - United States_None_trojan_1131
+  - United States_None_trojan_1132
+  - United States_None_trojan_1133
+  - United States_None_trojan_1134
+  - United States_None_trojan_1135
   - None_None_trojan_1136
   - None_None_trojan_1137
-  - United States_None_trojan_1138
+  - None_None_trojan_1138
+  - None_None_trojan_1139
+  - None_None_trojan_1140
+  - United States_Ashburn_trojan_1141
+  - None_None_trojan_1142
+  - None_None_trojan_1143
+  - United States_None_trojan_1144
+  - None_None_trojan_1145
+  - None_None_trojan_1146
+  - None_None_trojan_1147
+  - None_None_trojan_1148
+  - None_None_trojan_1149
+  - None_None_trojan_1150
+  - None_None_trojan_1151
+  - None_None_trojan_1152
+  - None_None_trojan_1153
+  - None_None_trojan_1154
+  - None_None_trojan_1155
+  - None_None_trojan_1156
+  - United States_San Jose_ss_1157
+  - United States_San Jose_ss_1158
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
